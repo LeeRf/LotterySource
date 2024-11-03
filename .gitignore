@@ -1,5 +1,11 @@
 # Build results #
 .vs
+
+/SuperLotto/DoubleBall/bin/
+/SuperLotto/DoubleBall/obj/
+/SuperLotto/SuperLotto/bin/
+/SuperLotto/SuperLotto/obj/
+
 /SuperLotto/SuperLotto/bin/Debug/SuperLotto.exe
 /SuperLotto/SuperLotto/bin/Debug/SuperLotto.exe
 /SuperLotto/SuperLotto/bin/Debug/SuperLotto.pdb
@@ -12,4 +18,3 @@
 /SuperLotto/SuperLotto/obj/Debug/SuperLotto.csproj.Up2Date
 /SuperLotto/SuperLotto/obj/Debug/SuperLotto.exe
 /SuperLotto/SuperLotto/obj/Debug/SuperLotto.pdb
-/SuperLotto/SuperLotto/obj/Debug/新建 文本文档.txt
