@@ -107,17 +107,25 @@ namespace SuperLotto.Other
         /// </summary>
         public static readonly string BlueBallAlreadyMaxCount = "蓝色球已经达到最大的数量";
         /// <summary>
-        /// 红球胆号最多可选择5个号码
+        /// 红球胆号最多可选择4个号码
         /// </summary>
-        public static readonly string RedBallDanMaxCount = "红球胆号最多可选择5个号码";
+        public static readonly string RedBallDanMaxCount = "红球胆号最多可选择4个号码";
         /// <summary>
         /// 红球拖号最多可选择20个号码
         /// </summary>
         public static readonly string RedBallTuoMaxCount = "红球拖号最多可选择20个号码";
         /// <summary>
-        /// 胆号和拖号的数量相加至少大等于6
+        /// 蓝球胆号最多可选择1个号码
         /// </summary>
-        public static readonly string DantuoCountInsufficient = "胆号和拖号的数量相加至少大等于6";
+        public static readonly string BlueBallDanMaxCount = "篮球胆号最多可选择1个号码";
+        /// <summary>
+        /// 蓝球拖号最多可选择11个号码
+        /// </summary>
+        public static readonly string BlueBallTuoMaxCount = "红球拖号最多可选择11个号码";
+        /// <summary>
+        /// 胆号和拖号的数量相加至少大等于7
+        /// </summary>
+        public static readonly string DantuoCountInsufficient = "胆号和拖号的数量相加至少大等于7";
         /// <summary>
         /// 请先将未完成的自选号码选择完毕或者删除！
         /// </summary>

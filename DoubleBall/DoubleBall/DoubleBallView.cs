@@ -465,7 +465,7 @@ namespace DoubleBalls
                     //[机选页]、自选复式页] 的无限守号开奖
                     case int index when index <= 3 && index >= 1:
                         //五等奖及以下用动画方案过渡
-                        if ((int)GetLoopStopCondition() <= 10) LoopDataPreparationAndSettingFlag(long.MaxValue);
+                        if ((int)GetLoopStopCondition() <= (int) AwardType.FiveAward) LoopDataPreparationAndSettingFlag(long.MaxValue);
                         else
                         {
                             //二等奖及以上用最佳算力方案

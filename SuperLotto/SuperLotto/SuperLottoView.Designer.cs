@@ -2867,7 +2867,7 @@
             this.nudOneBonus.ForeColor = System.Drawing.Color.Black;
             this.nudOneBonus.Location = new System.Drawing.Point(136, 468);
             this.nudOneBonus.Maximum = new decimal(new int[] {
-            10000000,
+            20000000,
             0,
             0,
             0});
@@ -2880,7 +2880,7 @@
             this.nudOneBonus.Size = new System.Drawing.Size(109, 23);
             this.nudOneBonus.TabIndex = 647;
             this.nudOneBonus.Value = new decimal(new int[] {
-            6000000,
+            10000000,
             0,
             0,
             0});

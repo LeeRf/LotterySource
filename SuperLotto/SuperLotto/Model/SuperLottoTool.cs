@@ -728,13 +728,21 @@ namespace SuperLotto.Model
         }
 
         /// <summary>
+        /// 临时方法、避免报错
+        /// </summary>
+        public long GetDantuoCombinationTotalZhu(int redDanCount, int redTuoCount, int blueDanCount)
+        {
+            return 0;
+        }
+
+        /// <summary>
         /// 获取胆拖号指定组合的总注数
         /// </summary>
-        public long GetDantuoCombinationTotalZhu(int redDanCount, int redTuoCount, int blueCount)
+        public long GetDantuoCombinationTotalZhu(int redDanCount, int redTuoCount, int blueDanCount, int blueTuoCount)
         {
             int pickCount = 6 - redDanCount;
             return
-                Factorial(redTuoCount) / (Factorial(pickCount) * Factorial(redTuoCount - pickCount)) * blueCount;
+                Factorial(redTuoCount) / (Factorial(pickCount) * Factorial(redTuoCount - pickCount)) * blueDanCount;
         }
     }
 }

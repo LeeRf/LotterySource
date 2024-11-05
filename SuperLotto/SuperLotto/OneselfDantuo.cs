@@ -26,21 +26,29 @@ namespace SuperLotto
         /// </summary>
         public static int _RedTuoCount = 0;
         /// <summary>
-        /// 记录蓝球已选择的数量
+        /// 记录蓝球胆已选择的数量
         /// </summary>
-        public static int _BlueCount = 0;
+        public static int _BlueDanCount = 0;
+        /// <summary>
+        /// 记录蓝球拖已选择的数量
+        /// </summary>
+        public static int _BlueTuoCount = 0;
         /// <summary>
         /// 红色球胆码最高可选数量
         /// </summary>
-        public const int _MAXDREDCOUNT = 5;
+        public const int _MAX_RED_DAN_COUNT = 4;
         /// <summary>
         /// 红色球拖码最高可选数量
         /// </summary>
-        public const int _MAXTREDCOUNT = 20;
+        public const int _MAX_RED_TUO_COUNT = 20;
         /// <summary>
-        /// 蓝色球最高可选数量
+        /// 蓝色球胆码最高可选数量
         /// </summary>
-        public const int _MAXBLUECOUNT = 16;
+        public const int _MAX_BLUE_DAN_COUNT = 1;
+        /// <summary>
+        /// 蓝色球拖码最高可选数量
+        /// </summary>
+        public const int _MAX_BLUE_TUO_COUNT = 11;
 
         private const double _OPACITY = 0.9d;
 
@@ -68,18 +76,28 @@ namespace SuperLotto
             Opacity = _OPACITY;
         }
 
+
+        public const int 
+            DRed = 1,
+            TRed = 2,
+            DBlue = 3,
+            TBlue = 4;
+
         private void lblDRed1_Click(object sender, EventArgs e)
         {
             LeeLabel superLotto = ((LeeLabel)sender);
             string superLottoType = superLotto.Tag.ToString();
 
             int ballType = 0;
-            if (superLottoType.Equals("TRed")) ballType = 1;
-            else if (superLottoType.Equals("Blue")) ballType = 2;
+
+            if (superLottoType.Equals("DRed")) ballType = DRed;
+            else if (superLottoType.Equals("TRed")) ballType = TRed;
+            else if (superLottoType.Equals("DBlue")) ballType = DBlue;
+            else ballType = TBlue;
 
             #region Check Max Count
 
-            bool selectOver = _RedDanCount == 0 && _RedTuoCount == 0 && _BlueCount == 0;
+            bool selectOver = _RedDanCount == 0 && _RedTuoCount == 0 && _BlueDanCount == 0 && _BlueTuoCount == 0;
 
             int currentTotalZhu = int.Parse(_superLottoView.lblDantuoBuyZhu.Tag.ToString());
             //以达到最高限制就提示提示
@@ -91,14 +109,16 @@ namespace SuperLotto
 
             int checkRedDanCount = _RedDanCount;
             int checkRedTuoCount = _RedTuoCount;
-            int checkBlueCount = _BlueCount;
+            int checkBlueDanCount = _BlueDanCount;
+            int checkBlueTuoCount = _BlueTuoCount;
 
-            if (ballType == 0) checkRedDanCount++;
-            else if (ballType == 1) checkRedTuoCount++;
-            else checkBlueCount++;
+            if (ballType == DRed) checkRedDanCount++;
+            else if (ballType == TRed) checkRedTuoCount++;
+            else if (ballType == DBlue) checkBlueDanCount++;
+            else checkBlueTuoCount++;
 
             //计算预期总注是否大于最高注数提示
-            long anticipateTotalZhu = _superLottoView._superLottoToo.GetDantuoCombinationTotalZhu(checkRedDanCount, checkRedTuoCount, checkBlueCount) + currentTotalZhu;
+            long anticipateTotalZhu = _superLottoView._superLottoToo.GetDantuoCombinationTotalZhu(checkRedDanCount, checkRedTuoCount, checkBlueDanCount) + currentTotalZhu;
 
             if (anticipateTotalZhu > SuperLottoView._MaxOneselfSuperLottoTotalZhu)
             {
@@ -106,15 +126,27 @@ namespace SuperLotto
                 return;
             }
 
-            if (ballType == 0 && _RedDanCount == _MAXDREDCOUNT)
+            if (ballType == DRed && _RedDanCount == _MAX_RED_DAN_COUNT)
             {
                 Info.ShowWarningMessage(Info.RedBallDanMaxCount);
                 return;
             }
 
-            if (ballType == 1 && _RedTuoCount == _MAXTREDCOUNT)
+            if (ballType == TRed && _RedTuoCount == _MAX_RED_TUO_COUNT)
             {
                 Info.ShowWarningMessage(Info.RedBallTuoMaxCount);
+                return;
+            }
+
+            if (ballType == DBlue && _BlueDanCount == _MAX_BLUE_DAN_COUNT)
+            {
+                Info.ShowWarningMessage(Info.BlueBallDanMaxCount);
+                return;
+            }
+
+            if (ballType == TBlue && _BlueTuoCount == _MAX_BLUE_TUO_COUNT)
+            {
+                Info.ShowWarningMessage(Info.BlueBallTuoMaxCount);
                 return;
             }
 
@@ -122,7 +154,7 @@ namespace SuperLotto
 
             if (ballType == 0) _RedDanCount++;
             else if (ballType == 1) _RedTuoCount++;
-            else _BlueCount++;
+            else _BlueDanCount++;
 
             superLotto.Visible = false;
             DisableTheSameNumbers(ballType, superLotto.Text);
@@ -154,7 +186,7 @@ namespace SuperLotto
 
             if (ballType == "DRed") _RedDanCount--;
             if (ballType == "TRed") _RedTuoCount--;
-            if (ballType == "Blue") _BlueCount--;
+            if (ballType == "Blue") _BlueDanCount--;
 
             foreach (Control item in Controls)
             {
@@ -193,7 +225,7 @@ namespace SuperLotto
 
             _RedDanCount = 0;
             _RedTuoCount = 0;
-            _BlueCount = 0;
+            _BlueDanCount = 0;
             ResetOpacityAndShow();
 
         }

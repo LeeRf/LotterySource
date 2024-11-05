@@ -203,7 +203,7 @@ namespace SuperLotto
                 //判断鼠标是否在窗口区外
                 if (p.X > ClientSize.Width || p.X < 0 || p.Y > ClientSize.Height || p.Y < 0)
                 {
-                    Opacity = 0.10;
+                    Opacity = 0.10d;
                 }
             }
         }

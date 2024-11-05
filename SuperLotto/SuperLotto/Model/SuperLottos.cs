@@ -12,8 +12,8 @@ namespace SuperLotto.Model
     /// </summary>
     public enum AwardType
     {
-        //一等奖默认600万~ 二等奖默认30万
-        Null = -1, NotAward = 0, OneAward = 6000000, TwoAward = 300000, ThreeAward = 10000, FourAward = 3000, FiveAward = 300, SixAward = 200, SevenAward = 100, EightAward = 15, NineAward = 5
+        //一等奖默认1000万~ 二等奖默认30万
+        Null = -1, NotAward = 0, OneAward = 10000000, TwoAward = 300000, ThreeAward = 10000, FourAward = 3000, FiveAward = 300, SixAward = 200, SevenAward = 100, EightAward = 15, NineAward = 5
     }
 
     /// <summary>

@@ -88,7 +88,7 @@ namespace SuperLotto.Model
         /// <summary>
         /// 一等奖奖金金额
         /// </summary>
-        public long OneAward { get; set; } = 6000000;
+        public long OneAward { get; set; } = 10000000;
         /// <summary>
         /// 二等奖奖金金额
         /// </summary>
