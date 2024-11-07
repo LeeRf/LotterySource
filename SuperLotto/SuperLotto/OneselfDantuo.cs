@@ -77,18 +77,18 @@ namespace SuperLotto
         }
 
 
-        public const int 
-            DRed = 1,
-            TRed = 2,
-            DBlue = 3,
-            TBlue = 4;
+        public readonly static int 
+            DRed = 0,
+            TRed = 1,
+            DBlue = 2,
+            TBlue = 3;
 
         private void lblDRed1_Click(object sender, EventArgs e)
         {
             LeeLabel superLotto = ((LeeLabel)sender);
             string superLottoType = superLotto.Tag.ToString();
 
-            int ballType = 0;
+            int ballType = -1;
 
             if (superLottoType.Equals("DRed")) ballType = DRed;
             else if (superLottoType.Equals("TRed")) ballType = TRed;
@@ -118,7 +118,8 @@ namespace SuperLotto
             else checkBlueTuoCount++;
 
             //计算预期总注是否大于最高注数提示
-            long anticipateTotalZhu = _superLottoView._superLottoToo.GetDantuoCombinationTotalZhu(checkRedDanCount, checkRedTuoCount, checkBlueDanCount) + currentTotalZhu;
+            long anticipateTotalZhu = _superLottoView._superLottoToo
+                .GetDantuoCombinationTotalZhu(checkRedDanCount, checkRedTuoCount, checkBlueDanCount, checkBlueTuoCount) + currentTotalZhu;
 
             if (anticipateTotalZhu > SuperLottoView._MaxOneselfSuperLottoTotalZhu)
             {
@@ -152,9 +153,10 @@ namespace SuperLotto
 
             #endregion
 
-            if (ballType == 0) _RedDanCount++;
-            else if (ballType == 1) _RedTuoCount++;
-            else _BlueDanCount++;
+            if (ballType == DRed) _RedDanCount++;
+            else if (ballType == TRed) _RedTuoCount++;
+            else if (ballType == DBlue) _BlueDanCount++;
+            else _BlueTuoCount++;
 
             superLotto.Visible = false;
             DisableTheSameNumbers(ballType, superLotto.Text);
@@ -163,52 +165,47 @@ namespace SuperLotto
 
         private void DisableTheSameNumbers(int ballType, string selectBall)
         {
-            if (ballType != 2)
+            string tagType = "DRed";
+
+            if (ballType == DRed) tagType = "TRed";
+            else if (ballType == DBlue) tagType = "TBlue";
+            else if (ballType == TBlue) tagType = "DBlue";
+
+            foreach (var item in Controls)
             {
-                foreach (var item in Controls)
+                if (item is LeeLabel lbl)
                 {
-                    //不为蓝球时、还可见时、相等时
-                    if (item is LeeLabel lbl)
+                    if (tagType.Equals(lbl.Tag.ToString()) && lbl.Visible && lbl.Text == selectBall)
                     {
-                        if (!"Blue".Equals(lbl.Tag.ToString()) && lbl.Visible && lbl.Text == selectBall)
-                        {
-                            lbl.Enabled = false;
-                            break;
-                        }
+                        lbl.Enabled = false;
+                        break;
                     }
                 }
             }
         }
 
-        public void RollBackSelectBall(string ballType, int number)
+        public void RollBackSelectBall(string backType, int number)
         {
-            if (ballType == "Red") ballType = "DRed";
+            if (backType == "DRed") _RedDanCount--;
+            if (backType == "TRed") _RedTuoCount--;
+            if (backType == "DBlue") _BlueDanCount--;
+            if (backType == "TBlue") _BlueTuoCount--;
 
-            if (ballType == "DRed") _RedDanCount--;
-            if (ballType == "TRed") _RedTuoCount--;
-            if (ballType == "Blue") _BlueDanCount--;
+            string type = backType.Replace("D", "").Replace("T", "");
 
             foreach (Control item in Controls)
             {
-                if (item is LeeLabel && !item.Visible || !item.Enabled)
+                string tagType = item.Tag.ToString();
+                if (tagType.IndexOf(type) != -1 && int.Parse(item.Text) == number)
                 {
-                    if (int.Parse(item.Text) == number)
+                    if (backType == tagType) item.Visible = true;
+                    else
                     {
-                        if (ballType != "Blue" && item.Tag.ToString() != "Blue")
-                        {
-                            item.Visible = true;
-                            item.Enabled = true;
-                        }
-
-                        if (ballType == "Blue" && item.Tag.ToString() == "Blue")
-                        {
-                            item.Visible = true;
-                            break;
-                        }
+                        item.Visible = true;
+                        item.Enabled = true;
                     }
                 }
             }
-
             ResetOpacityAndShow();
         }
 
@@ -226,8 +223,8 @@ namespace SuperLotto
             _RedDanCount = 0;
             _RedTuoCount = 0;
             _BlueDanCount = 0;
+            _BlueTuoCount = 0;
             ResetOpacityAndShow();
-
         }
 
         private void ResetOpacityAndShow()

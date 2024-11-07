@@ -2324,9 +2324,13 @@ namespace SuperLotto
         /// </summary>
         private Color _NotLotteryColor = Color.LightGray;
         /// <summary>
-        /// 红球胆拖号的拖号颜色
+        /// 红球的拖号颜色
         /// </summary>
         public Color _RedColorTuo = Color.DarkOrange;
+        /// <summary>
+        /// 蓝球的拖号颜色
+        /// </summary>
+        public Color _BlueColorTuo = Color.DarkTurquoise;
         /// <summary>
         /// 胆拖号、拖未中奖的颜色
         /// </summary>
@@ -2751,6 +2755,8 @@ namespace SuperLotto
         /// </summary>
         private void ContinueAddSuperLottoToControls(SuperLottos _OneselfNumberSuperLotto, OneselfControlHelper Chelper, int ballType, int number)
         {
+            bool isComplex = _OneselfNumberSuperLotto is ComplexSuperLottoNumber;
+
             //继续选择添加自选大乐透号码
             Label ballOne = new Label();
             ballOne.Text = FormatNumber(number, 2);
@@ -2760,11 +2766,13 @@ namespace SuperLotto
             ballOne.Click += lblComplexRollBack_Click;
 
             if (ballType == 0) 
-                CopyComplexLabelStyle(lblComplexRed, ballOne);
+                CopyComplexLabelStyle(isComplex ? lblComplexRed : lblRedBallDan, ballOne);
             else if (ballType == 1) 
                 CopyComplexLabelStyle(lblRedBallTuo, ballOne);
-            else 
-                CopyComplexLabelStyle(lblComplexBlue, ballOne);
+            else if(ballType == 2)
+                CopyComplexLabelStyle(isComplex ? lblComplexBlue : lblBlueBallDan, ballOne);
+            else
+                CopyComplexLabelStyle(lblBlueBallTuo, ballOne);
 
             //调整新添加的球的位置
             ballOne.Location = new Point(Chelper.cumsumPoint.X + _INTERVAL, Chelper.cumsumPoint.Y);
@@ -2964,16 +2972,21 @@ namespace SuperLotto
             Label ball = new Label();
             ball.Text = FormatNumber(number, 2);
 
-            if (ballType == 0) CopyLabelStyle(lblComplexRed, ball);
-            if (ballType == 1)
+            if (ballType == 0) CopyLabelStyle(isComplex ? lblComplexRed : lblRedBallDan, ball);
+            else if (ballType == 1)
             {
                 ball.Location = lblRedBallA.Location;
                 CopyComplexLabelStyle(lblRedBallTuo, ball);
             }
-            if (ballType == 2)
+            else if(ballType == 2)
             {
                 ball.Location = lblRedBallA.Location;
-                CopyComplexLabelStyle(lblComplexBlue, ball);
+                CopyComplexLabelStyle(isComplex ? lblComplexBlue : lblBlueBallDan, ball);
+            }
+            else
+            {
+                ball.Location = lblRedBallA.Location;
+                CopyComplexLabelStyle(lblBlueBallTuo, ball);
             }
 
             ball.MouseEnter += LabelBall_MouseEnter;
@@ -2987,7 +3000,7 @@ namespace SuperLotto
         }
 
         /// <summary>
-        /// 删除红球控件、其它红球位置依次往前移动
+        /// 删除球控件、其它球位置依次往前移动
         /// </summary>
         private void RemoveLabelAndChangeLocation(Label number, ref Point lastBall, ref Label rollBackBall)
         {
@@ -3035,12 +3048,14 @@ namespace SuperLotto
             }
             else
             {
-                if (ballType.Equals("Red"))
+                if (ballType.Equals("DRed"))
                     _DantuoSuperLottoNumber.RemoveRedBallDan(int.Parse(number.Text));
                 else if (ballType.Equals("TRed"))
                     _DantuoSuperLottoNumber.RemoveRedBallTuo(int.Parse(number.Text));
-                else
+                else if (ballType.Equals("DBlue"))
                     _DantuoSuperLottoNumber.RemoveBlueBallDan(int.Parse(number.Text));
+                else
+                    _DantuoSuperLottoNumber.RemoveBlueBallTuo(int.Parse(number.Text));
             }
         }
 
@@ -3539,7 +3554,7 @@ namespace SuperLotto
         {
             string ballType = ((Control)sender).Tag.ToString();
 
-            if (ballType == "Red")
+            if (ballType == "Red" || ballType == "DRed")
             {
                 ((Control)sender).ForeColor = _RedBallColor;
             }
@@ -3547,9 +3562,13 @@ namespace SuperLotto
             {
                 ((Control)sender).ForeColor = _RedColorTuo;
             }
-            else
+            else if(ballType == "Blue" || ballType == "DBlue")
             {
                 ((Control)sender).ForeColor = _BlueBallColor;
+            }
+            else
+            {
+                ((Control)sender).ForeColor = _BlueColorTuo;
             }
         }
 
@@ -3621,10 +3640,10 @@ namespace SuperLotto
             _myDantuoSuperLottoNumberList.Add(_DantuoSuperLottoNumber);
 
             #region 重新给承载大乐透的Label赋值
-
             int redDIndex = 0;
             int redTIndex = 0;
-            int blueIndex = 0;
+            int blueDIndex = 0;
+            int blueTIndex = 0;
 
             foreach (var im in _DantuoHelper.oneselfPanel.Controls)
             {
@@ -3637,7 +3656,7 @@ namespace SuperLotto
 
                     if (redDIndex <= _DantuoSuperLottoNumber.redBallDanCount - 1)
                     {
-                        superLotto.Tag = "Red";
+                        superLotto.Tag = "DRed";
                         superLotto.ForeColor = _RedBallColor;
                         superLotto.Text = FormatNumber(_DantuoSuperLottoNumber.redBalls[redDIndex++], 2);
                     }
@@ -3647,11 +3666,17 @@ namespace SuperLotto
                         superLotto.ForeColor = _RedColorTuo;
                         superLotto.Text = FormatNumber(_DantuoSuperLottoNumber.redBallTuos[redTIndex++], 2);
                     }
+                    else if (blueDIndex <= _DantuoSuperLottoNumber.blueBallDanCount - 1)
+                    {
+                        superLotto.Tag = "DBlue";
+                        superLotto.ForeColor = _BlueBallColor;
+                        superLotto.Text = FormatNumber(_DantuoSuperLottoNumber.blueBalls[blueDIndex++], 2);
+                    }
                     else
                     {
-                        superLotto.Tag = "Blue";
-                        superLotto.ForeColor = _BlueBallColor;
-                        superLotto.Text = FormatNumber(_DantuoSuperLottoNumber.blueBalls[blueIndex++], 2);
+                        superLotto.Tag = "TBlue";
+                        superLotto.ForeColor = _BlueColorTuo;
+                        superLotto.Text = FormatNumber(_DantuoSuperLottoNumber.blueBallTuos[blueTIndex++], 2);
                     }
                 }
             }
@@ -3685,6 +3710,7 @@ namespace SuperLotto
             if (ballType == 0) _DantuoSuperLottoNumber.AddRedBallDan(number);
             if (ballType == 1) _DantuoSuperLottoNumber.AddRedBallTuo(number);
             if (ballType == 2) _DantuoSuperLottoNumber.AddBlueBallDan(number);
+            if (ballType == 3) _DantuoSuperLottoNumber.AddBlueBallTuo(number);
         }
 
         /// <summary>
@@ -3776,7 +3802,7 @@ namespace SuperLotto
             int redTuoMinCount = 6 - redDanCount;
 
             //只减红球拖号数量和蓝球数量
-            while (_superLottoToo.GetDantuoCombinationTotalZhu(redDanCount, redTuoCount, blueCount) + buyTotalZhu > _MaxOneselfSuperLottoTotalZhu)
+            while (_superLottoToo.GetDantuoCombinationTotalZhu(redDanCount, redTuoCount, blueCount, /*TODO:四个参数*/ blueCount) + buyTotalZhu > _MaxOneselfSuperLottoTotalZhu)
             {
                 //红球拖个数大于拖应最小数量 并且 (轮到红球减 或者 蓝球数量只剩1减无可减)
                 if (redTuoCount > redTuoMinCount && (redSubtraction || blueCount == 1))
@@ -3794,7 +3820,7 @@ namespace SuperLotto
                 if (((redDanCount + redTuoCount) == 6) && blueCount == 1) break;
             }
 
-            buyTotalZhu += (int)_superLottoToo.GetDantuoCombinationTotalZhu(redDanCount, redTuoCount,blueCount);
+            buyTotalZhu += (int)_superLottoToo.GetDantuoCombinationTotalZhu(redDanCount, redTuoCount,blueCount, /*TODO:四个参数*/ blueCount);
         }
 
         private int _CreateIndexByDantuo = 0;

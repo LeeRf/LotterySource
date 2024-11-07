@@ -39,11 +39,11 @@
             this.DanTuoPage = new System.Windows.Forms.TabPage();
             this.lblTuoBlueCount = new System.Windows.Forms.Label();
             this.cmbBlueTuoCount = new System.Windows.Forms.ComboBox();
-            this.flpDantuoNumber = new System.Windows.Forms.FlowLayoutPanel();
             this.panDantuoStyle = new System.Windows.Forms.Panel();
+            this.lblBlueBallTuo = new SuperLotto.Controls.LeeLabel();
             this.picDantuoAccomplish = new System.Windows.Forms.PictureBox();
             this.lblRedBallTuo = new SuperLotto.Controls.LeeLabel();
-            this.lblBlueBalldt = new SuperLotto.Controls.LeeLabel();
+            this.lblBlueBallDan = new SuperLotto.Controls.LeeLabel();
             this.lblRedBallDan = new SuperLotto.Controls.LeeLabel();
             this.label66 = new System.Windows.Forms.Label();
             this.lblDanBlueTitle = new System.Windows.Forms.Label();
@@ -80,6 +80,7 @@
             this.pictureBox24 = new System.Windows.Forms.PictureBox();
             this.picDantuoRed = new System.Windows.Forms.PictureBox();
             this.pictureBox26 = new System.Windows.Forms.PictureBox();
+            this.flpDantuoNumber = new System.Windows.Forms.FlowLayoutPanel();
             this.ExplainPage = new System.Windows.Forms.TabPage();
             this.SoftwareExplain = new System.Windows.Forms.RichTextBox();
             this.AboutMePage = new System.Windows.Forms.TabPage();
@@ -152,7 +153,6 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.picMenuWork = new System.Windows.Forms.PictureBox();
             this.OneselfPage = new System.Windows.Forms.TabPage();
-            this.flpComplexNumber = new System.Windows.Forms.FlowLayoutPanel();
             this.label18 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -188,6 +188,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.picScheme = new System.Windows.Forms.PictureBox();
+            this.flpComplexNumber = new System.Windows.Forms.FlowLayoutPanel();
             this.SettingPage = new System.Windows.Forms.TabPage();
             this.leeLabel2 = new SuperLotto.Controls.LeeLabel();
             this.label71 = new System.Windows.Forms.Label();
@@ -470,7 +471,6 @@
             this.DanTuoPage.BackColor = System.Drawing.Color.White;
             this.DanTuoPage.Controls.Add(this.lblTuoBlueCount);
             this.DanTuoPage.Controls.Add(this.cmbBlueTuoCount);
-            this.DanTuoPage.Controls.Add(this.flpDantuoNumber);
             this.DanTuoPage.Controls.Add(this.panDantuoStyle);
             this.DanTuoPage.Controls.Add(this.lblDanBlueTitle);
             this.DanTuoPage.Controls.Add(this.label70);
@@ -497,6 +497,7 @@
             this.DanTuoPage.Controls.Add(this.pictureBox24);
             this.DanTuoPage.Controls.Add(this.picDantuoRed);
             this.DanTuoPage.Controls.Add(this.pictureBox26);
+            this.DanTuoPage.Controls.Add(this.flpDantuoNumber);
             this.DanTuoPage.Location = new System.Drawing.Point(4, 26);
             this.DanTuoPage.Name = "DanTuoPage";
             this.DanTuoPage.Padding = new System.Windows.Forms.Padding(3);
@@ -512,7 +513,7 @@
             this.lblTuoBlueCount.ForeColor = System.Drawing.Color.DimGray;
             this.lblTuoBlueCount.Location = new System.Drawing.Point(267, 35);
             this.lblTuoBlueCount.Name = "lblTuoBlueCount";
-            this.lblTuoBlueCount.Size = new System.Drawing.Size(41, 16);
+            this.lblTuoBlueCount.Size = new System.Drawing.Size(40, 16);
             this.lblTuoBlueCount.TabIndex = 728;
             this.lblTuoBlueCount.Text = "蓝球拖";
             // 
@@ -540,37 +541,40 @@
             this.cmbBlueTuoCount.Size = new System.Drawing.Size(47, 24);
             this.cmbBlueTuoCount.TabIndex = 729;
             // 
-            // flpDantuoNumber
-            // 
-            this.flpDantuoNumber.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.flpDantuoNumber.AutoScroll = true;
-            this.flpDantuoNumber.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flpDantuoNumber.Location = new System.Drawing.Point(3, 88);
-            this.flpDantuoNumber.Name = "flpDantuoNumber";
-            this.flpDantuoNumber.Size = new System.Drawing.Size(826, 545);
-            this.flpDantuoNumber.TabIndex = 716;
-            // 
             // panDantuoStyle
             // 
+            this.panDantuoStyle.Controls.Add(this.lblBlueBallTuo);
             this.panDantuoStyle.Controls.Add(this.picDantuoAccomplish);
             this.panDantuoStyle.Controls.Add(this.lblRedBallTuo);
-            this.panDantuoStyle.Controls.Add(this.lblBlueBalldt);
+            this.panDantuoStyle.Controls.Add(this.lblBlueBallDan);
             this.panDantuoStyle.Controls.Add(this.lblRedBallDan);
             this.panDantuoStyle.Controls.Add(this.label66);
             this.panDantuoStyle.Location = new System.Drawing.Point(546, 95);
             this.panDantuoStyle.Name = "panDantuoStyle";
-            this.panDantuoStyle.Size = new System.Drawing.Size(126, 31);
+            this.panDantuoStyle.Size = new System.Drawing.Size(146, 31);
             this.panDantuoStyle.TabIndex = 727;
             this.panDantuoStyle.Visible = false;
+            // 
+            // lblBlueBallTuo
+            // 
+            this.lblBlueBallTuo.AutoSize = true;
+            this.lblBlueBallTuo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblBlueBallTuo.EnterColor = System.Drawing.Color.Silver;
+            this.lblBlueBallTuo.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblBlueBallTuo.ForeColor = System.Drawing.Color.DarkTurquoise;
+            this.lblBlueBallTuo.Location = new System.Drawing.Point(97, 7);
+            this.lblBlueBallTuo.Name = "lblBlueBallTuo";
+            this.lblBlueBallTuo.Size = new System.Drawing.Size(22, 17);
+            this.lblBlueBallTuo.TabIndex = 705;
+            this.lblBlueBallTuo.Tag = "TBlue";
+            this.lblBlueBallTuo.Text = "00";
             // 
             // picDantuoAccomplish
             // 
             this.picDantuoAccomplish.BackColor = System.Drawing.Color.Transparent;
             this.picDantuoAccomplish.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picDantuoAccomplish.Image = global::SuperLotto.Properties.Resources.Accomplish;
-            this.picDantuoAccomplish.Location = new System.Drawing.Point(100, 7);
+            this.picDantuoAccomplish.Location = new System.Drawing.Point(120, 6);
             this.picDantuoAccomplish.Name = "picDantuoAccomplish";
             this.picDantuoAccomplish.Size = new System.Drawing.Size(18, 18);
             this.picDantuoAccomplish.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -592,19 +596,19 @@
             this.lblRedBallTuo.Tag = "TRed";
             this.lblRedBallTuo.Text = "00";
             // 
-            // lblBlueBalldt
+            // lblBlueBallDan
             // 
-            this.lblBlueBalldt.AutoSize = true;
-            this.lblBlueBalldt.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblBlueBalldt.EnterColor = System.Drawing.Color.Silver;
-            this.lblBlueBalldt.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblBlueBalldt.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblBlueBalldt.Location = new System.Drawing.Point(78, 7);
-            this.lblBlueBalldt.Name = "lblBlueBalldt";
-            this.lblBlueBalldt.Size = new System.Drawing.Size(22, 17);
-            this.lblBlueBalldt.TabIndex = 696;
-            this.lblBlueBalldt.Tag = "Blue";
-            this.lblBlueBalldt.Text = "00";
+            this.lblBlueBallDan.AutoSize = true;
+            this.lblBlueBallDan.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblBlueBallDan.EnterColor = System.Drawing.Color.Silver;
+            this.lblBlueBallDan.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblBlueBallDan.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.lblBlueBallDan.Location = new System.Drawing.Point(78, 7);
+            this.lblBlueBallDan.Name = "lblBlueBallDan";
+            this.lblBlueBallDan.Size = new System.Drawing.Size(22, 17);
+            this.lblBlueBallDan.TabIndex = 696;
+            this.lblBlueBallDan.Tag = "DBlue";
+            this.lblBlueBallDan.Text = "00";
             // 
             // lblRedBallDan
             // 
@@ -641,7 +645,7 @@
             this.lblDanBlueTitle.ForeColor = System.Drawing.Color.DimGray;
             this.lblDanBlueTitle.Location = new System.Drawing.Point(168, 35);
             this.lblDanBlueTitle.Name = "lblDanBlueTitle";
-            this.lblDanBlueTitle.Size = new System.Drawing.Size(41, 16);
+            this.lblDanBlueTitle.Size = new System.Drawing.Size(40, 16);
             this.lblDanBlueTitle.TabIndex = 722;
             this.lblDanBlueTitle.Text = "蓝球胆";
             // 
@@ -667,7 +671,7 @@
             this.lblRedTuo.ForeColor = System.Drawing.Color.DimGray;
             this.lblRedTuo.Location = new System.Drawing.Point(267, 9);
             this.lblRedTuo.Name = "lblRedTuo";
-            this.lblRedTuo.Size = new System.Drawing.Size(41, 16);
+            this.lblRedTuo.Size = new System.Drawing.Size(40, 16);
             this.lblRedTuo.TabIndex = 715;
             this.lblRedTuo.Text = "红球拖";
             // 
@@ -805,7 +809,7 @@
             this.lblRedDanTitle.ForeColor = System.Drawing.Color.DimGray;
             this.lblRedDanTitle.Location = new System.Drawing.Point(168, 9);
             this.lblRedDanTitle.Name = "lblRedDanTitle";
-            this.lblRedDanTitle.Size = new System.Drawing.Size(41, 16);
+            this.lblRedDanTitle.Size = new System.Drawing.Size(40, 16);
             this.lblRedDanTitle.TabIndex = 701;
             this.lblRedDanTitle.Text = "红球胆";
             // 
@@ -1107,6 +1111,18 @@
             this.pictureBox26.TabIndex = 718;
             this.pictureBox26.TabStop = false;
             this.pictureBox26.Tag = "0";
+            // 
+            // flpDantuoNumber
+            // 
+            this.flpDantuoNumber.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.flpDantuoNumber.AutoScroll = true;
+            this.flpDantuoNumber.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flpDantuoNumber.Location = new System.Drawing.Point(3, 88);
+            this.flpDantuoNumber.Name = "flpDantuoNumber";
+            this.flpDantuoNumber.Size = new System.Drawing.Size(826, 545);
+            this.flpDantuoNumber.TabIndex = 716;
             // 
             // ExplainPage
             // 
@@ -2118,7 +2134,6 @@
             // OneselfPage
             // 
             this.OneselfPage.BackColor = System.Drawing.Color.White;
-            this.OneselfPage.Controls.Add(this.flpComplexNumber);
             this.OneselfPage.Controls.Add(this.label18);
             this.OneselfPage.Controls.Add(this.label2);
             this.OneselfPage.Controls.Add(this.label8);
@@ -2141,24 +2156,13 @@
             this.OneselfPage.Controls.Add(this.pictureBox3);
             this.OneselfPage.Controls.Add(this.pictureBox2);
             this.OneselfPage.Controls.Add(this.picScheme);
+            this.OneselfPage.Controls.Add(this.flpComplexNumber);
             this.OneselfPage.Location = new System.Drawing.Point(4, 26);
             this.OneselfPage.Name = "OneselfPage";
             this.OneselfPage.Padding = new System.Windows.Forms.Padding(3);
             this.OneselfPage.Size = new System.Drawing.Size(832, 638);
             this.OneselfPage.TabIndex = 1;
             this.OneselfPage.Text = "自选-复式";
-            // 
-            // flpComplexNumber
-            // 
-            this.flpComplexNumber.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.flpComplexNumber.AutoScroll = true;
-            this.flpComplexNumber.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flpComplexNumber.Location = new System.Drawing.Point(3, 88);
-            this.flpComplexNumber.Name = "flpComplexNumber";
-            this.flpComplexNumber.Size = new System.Drawing.Size(826, 545);
-            this.flpComplexNumber.TabIndex = 650;
             // 
             // label18
             // 
@@ -2646,6 +2650,18 @@
             this.picScheme.TabIndex = 422;
             this.picScheme.TabStop = false;
             this.picScheme.Tag = "0";
+            // 
+            // flpComplexNumber
+            // 
+            this.flpComplexNumber.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.flpComplexNumber.AutoScroll = true;
+            this.flpComplexNumber.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flpComplexNumber.Location = new System.Drawing.Point(3, 88);
+            this.flpComplexNumber.Name = "flpComplexNumber";
+            this.flpComplexNumber.Size = new System.Drawing.Size(826, 545);
+            this.flpComplexNumber.TabIndex = 650;
             // 
             // SettingPage
             // 
@@ -4942,7 +4958,7 @@
         private System.Windows.Forms.ComboBox cmbBlueDanCount;
         private System.Windows.Forms.Panel panDantuoStyle;
         private Controls.LeeLabel lblRedBallTuo;
-        private Controls.LeeLabel lblBlueBalldt;
+        private Controls.LeeLabel lblBlueBallDan;
         private Controls.LeeLabel lblRedBallDan;
         private System.Windows.Forms.Label label66;
         private System.Windows.Forms.PictureBox picDantuoAccomplish;
@@ -4960,6 +4976,7 @@
         private System.Windows.Forms.PictureBox picSuperLotto;
         private System.Windows.Forms.Label lblTuoBlueCount;
         private System.Windows.Forms.ComboBox cmbBlueTuoCount;
+        private Controls.LeeLabel lblBlueBallTuo;
     }
 }
 

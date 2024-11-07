@@ -170,7 +170,7 @@ namespace DoubleBalls
 
                         if (ballType == "Blue" && item.Tag.ToString() == "Blue")
                         {
-                            item.Visible = true;
+                            item.Enabled = true;
                             break;
                         }
                     }

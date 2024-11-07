@@ -1431,7 +1431,7 @@
             this.leeLabel4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.leeLabel4.EnterColor = System.Drawing.Color.Silver;
             this.leeLabel4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.leeLabel4.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.leeLabel4.ForeColor = System.Drawing.Color.DarkTurquoise;
             this.leeLabel4.Location = new System.Drawing.Point(16, 70);
             this.leeLabel4.Name = "leeLabel4";
             this.leeLabel4.Size = new System.Drawing.Size(20, 17);
@@ -1445,13 +1445,14 @@
             this.lblTBlue12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblTBlue12.EnterColor = System.Drawing.Color.Silver;
             this.lblTBlue12.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblTBlue12.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.lblTBlue12.ForeColor = System.Drawing.Color.DarkTurquoise;
             this.lblTBlue12.Location = new System.Drawing.Point(354, 70);
             this.lblTBlue12.Name = "lblTBlue12";
             this.lblTBlue12.Size = new System.Drawing.Size(22, 17);
             this.lblTBlue12.TabIndex = 795;
             this.lblTBlue12.Tag = "TBlue";
             this.lblTBlue12.Text = "12";
+            this.lblTBlue12.Click += new System.EventHandler(this.lblDRed1_Click);
             // 
             // lblTBlue11
             // 
@@ -1459,13 +1460,14 @@
             this.lblTBlue11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblTBlue11.EnterColor = System.Drawing.Color.Silver;
             this.lblTBlue11.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblTBlue11.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.lblTBlue11.ForeColor = System.Drawing.Color.DarkTurquoise;
             this.lblTBlue11.Location = new System.Drawing.Point(326, 70);
             this.lblTBlue11.Name = "lblTBlue11";
             this.lblTBlue11.Size = new System.Drawing.Size(22, 17);
             this.lblTBlue11.TabIndex = 794;
             this.lblTBlue11.Tag = "TBlue";
             this.lblTBlue11.Text = "11";
+            this.lblTBlue11.Click += new System.EventHandler(this.lblDRed1_Click);
             // 
             // lblTBlue10
             // 
@@ -1473,13 +1475,14 @@
             this.lblTBlue10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblTBlue10.EnterColor = System.Drawing.Color.Silver;
             this.lblTBlue10.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblTBlue10.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.lblTBlue10.ForeColor = System.Drawing.Color.DarkTurquoise;
             this.lblTBlue10.Location = new System.Drawing.Point(298, 70);
             this.lblTBlue10.Name = "lblTBlue10";
             this.lblTBlue10.Size = new System.Drawing.Size(22, 17);
             this.lblTBlue10.TabIndex = 793;
             this.lblTBlue10.Tag = "TBlue";
             this.lblTBlue10.Text = "10";
+            this.lblTBlue10.Click += new System.EventHandler(this.lblDRed1_Click);
             // 
             // lblTBlue9
             // 
@@ -1487,13 +1490,14 @@
             this.lblTBlue9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblTBlue9.EnterColor = System.Drawing.Color.Silver;
             this.lblTBlue9.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblTBlue9.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.lblTBlue9.ForeColor = System.Drawing.Color.DarkTurquoise;
             this.lblTBlue9.Location = new System.Drawing.Point(270, 70);
             this.lblTBlue9.Name = "lblTBlue9";
             this.lblTBlue9.Size = new System.Drawing.Size(22, 17);
             this.lblTBlue9.TabIndex = 792;
             this.lblTBlue9.Tag = "TBlue";
             this.lblTBlue9.Text = "09";
+            this.lblTBlue9.Click += new System.EventHandler(this.lblDRed1_Click);
             // 
             // lblTBlue8
             // 
@@ -1501,13 +1505,14 @@
             this.lblTBlue8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblTBlue8.EnterColor = System.Drawing.Color.Silver;
             this.lblTBlue8.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblTBlue8.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.lblTBlue8.ForeColor = System.Drawing.Color.DarkTurquoise;
             this.lblTBlue8.Location = new System.Drawing.Point(242, 70);
             this.lblTBlue8.Name = "lblTBlue8";
             this.lblTBlue8.Size = new System.Drawing.Size(22, 17);
             this.lblTBlue8.TabIndex = 791;
             this.lblTBlue8.Tag = "TBlue";
             this.lblTBlue8.Text = "08";
+            this.lblTBlue8.Click += new System.EventHandler(this.lblDRed1_Click);
             // 
             // lblTBlue7
             // 
@@ -1515,13 +1520,14 @@
             this.lblTBlue7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblTBlue7.EnterColor = System.Drawing.Color.Silver;
             this.lblTBlue7.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblTBlue7.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.lblTBlue7.ForeColor = System.Drawing.Color.DarkTurquoise;
             this.lblTBlue7.Location = new System.Drawing.Point(214, 70);
             this.lblTBlue7.Name = "lblTBlue7";
             this.lblTBlue7.Size = new System.Drawing.Size(22, 17);
             this.lblTBlue7.TabIndex = 790;
             this.lblTBlue7.Tag = "TBlue";
             this.lblTBlue7.Text = "07";
+            this.lblTBlue7.Click += new System.EventHandler(this.lblDRed1_Click);
             // 
             // lblTBlue6
             // 
@@ -1529,13 +1535,14 @@
             this.lblTBlue6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblTBlue6.EnterColor = System.Drawing.Color.Silver;
             this.lblTBlue6.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblTBlue6.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.lblTBlue6.ForeColor = System.Drawing.Color.DarkTurquoise;
             this.lblTBlue6.Location = new System.Drawing.Point(186, 70);
             this.lblTBlue6.Name = "lblTBlue6";
             this.lblTBlue6.Size = new System.Drawing.Size(22, 17);
             this.lblTBlue6.TabIndex = 789;
             this.lblTBlue6.Tag = "TBlue";
             this.lblTBlue6.Text = "06";
+            this.lblTBlue6.Click += new System.EventHandler(this.lblDRed1_Click);
             // 
             // lblTBlue5
             // 
@@ -1543,13 +1550,14 @@
             this.lblTBlue5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblTBlue5.EnterColor = System.Drawing.Color.Silver;
             this.lblTBlue5.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblTBlue5.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.lblTBlue5.ForeColor = System.Drawing.Color.DarkTurquoise;
             this.lblTBlue5.Location = new System.Drawing.Point(158, 70);
             this.lblTBlue5.Name = "lblTBlue5";
             this.lblTBlue5.Size = new System.Drawing.Size(22, 17);
             this.lblTBlue5.TabIndex = 788;
             this.lblTBlue5.Tag = "TBlue";
             this.lblTBlue5.Text = "05";
+            this.lblTBlue5.Click += new System.EventHandler(this.lblDRed1_Click);
             // 
             // lblTBlue4
             // 
@@ -1557,13 +1565,14 @@
             this.lblTBlue4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblTBlue4.EnterColor = System.Drawing.Color.Silver;
             this.lblTBlue4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblTBlue4.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.lblTBlue4.ForeColor = System.Drawing.Color.DarkTurquoise;
             this.lblTBlue4.Location = new System.Drawing.Point(130, 70);
             this.lblTBlue4.Name = "lblTBlue4";
             this.lblTBlue4.Size = new System.Drawing.Size(22, 17);
             this.lblTBlue4.TabIndex = 787;
             this.lblTBlue4.Tag = "TBlue";
             this.lblTBlue4.Text = "04";
+            this.lblTBlue4.Click += new System.EventHandler(this.lblDRed1_Click);
             // 
             // lblTBlue3
             // 
@@ -1571,13 +1580,14 @@
             this.lblTBlue3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblTBlue3.EnterColor = System.Drawing.Color.Silver;
             this.lblTBlue3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblTBlue3.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.lblTBlue3.ForeColor = System.Drawing.Color.DarkTurquoise;
             this.lblTBlue3.Location = new System.Drawing.Point(102, 70);
             this.lblTBlue3.Name = "lblTBlue3";
             this.lblTBlue3.Size = new System.Drawing.Size(22, 17);
             this.lblTBlue3.TabIndex = 786;
             this.lblTBlue3.Tag = "TBlue";
             this.lblTBlue3.Text = "03";
+            this.lblTBlue3.Click += new System.EventHandler(this.lblDRed1_Click);
             // 
             // lblTBlue2
             // 
@@ -1585,13 +1595,14 @@
             this.lblTBlue2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblTBlue2.EnterColor = System.Drawing.Color.Silver;
             this.lblTBlue2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblTBlue2.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.lblTBlue2.ForeColor = System.Drawing.Color.DarkTurquoise;
             this.lblTBlue2.Location = new System.Drawing.Point(74, 70);
             this.lblTBlue2.Name = "lblTBlue2";
             this.lblTBlue2.Size = new System.Drawing.Size(22, 17);
             this.lblTBlue2.TabIndex = 785;
             this.lblTBlue2.Tag = "TBlue";
             this.lblTBlue2.Text = "02";
+            this.lblTBlue2.Click += new System.EventHandler(this.lblDRed1_Click);
             // 
             // lblTBlue1
             // 
@@ -1599,13 +1610,14 @@
             this.lblTBlue1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblTBlue1.EnterColor = System.Drawing.Color.Silver;
             this.lblTBlue1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblTBlue1.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.lblTBlue1.ForeColor = System.Drawing.Color.DarkTurquoise;
             this.lblTBlue1.Location = new System.Drawing.Point(46, 70);
             this.lblTBlue1.Name = "lblTBlue1";
             this.lblTBlue1.Size = new System.Drawing.Size(22, 17);
             this.lblTBlue1.TabIndex = 784;
             this.lblTBlue1.Tag = "TBlue";
             this.lblTBlue1.Text = "01";
+            this.lblTBlue1.Click += new System.EventHandler(this.lblDRed1_Click);
             // 
             // OneselfDantuo
             // 
