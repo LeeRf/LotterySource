@@ -590,7 +590,7 @@ namespace SuperLotto.Model
             }
         }
 
-        public int Combo(int n1, int n2)
+        public static int Combo(int n1, int n2)
         {
             int h, f;
             if (n1 / 2 < n2) n2 = n1 - n2;
@@ -732,7 +732,7 @@ namespace SuperLotto.Model
         /// </summary>
         public long GetDantuoCombinationTotalZhu(int redDanCount, int redTuoCount, int blueDanCount, int blueTuoCount)
         {
-            return Combo(redDanCount, 5 - redTuoCount) * Combo(blueDanCount, 2 - blueTuoCount);
+            return Combo(redTuoCount, 5 - redDanCount) * Combo(blueTuoCount, 2 - blueDanCount);
         }
     }
 }

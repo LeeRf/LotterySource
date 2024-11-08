@@ -411,8 +411,8 @@ namespace SuperLotto.Model
         /// </summary>
         public long GetSuperLottoCombination()
         {
-            int pickCount = REDCOUNT - redBallDanCount;
-            return Factorial(redBallTuoCount) / (Factorial(pickCount) * Factorial(redBallTuoCount - pickCount)) * blueBallDanCount;
+            return SuperLottoTool
+                .Combo(redBallTuoCount, 5 - redBallDanCount) * SuperLottoTool.Combo(blueBallTuoCount, 2 - blueBallDanCount);
         }
 
         /// <summary>
