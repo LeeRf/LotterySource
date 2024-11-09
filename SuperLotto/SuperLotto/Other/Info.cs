@@ -127,6 +127,10 @@ namespace SuperLotto.Other
         /// </summary>
         public static readonly string DantuoCountInsufficient = "胆号和拖号的数量相加至少大等于7";
         /// <summary>
+        /// 红球胆、拖的数量至少大等于5
+        /// </summary>
+        public static readonly string DantuoRedCountInsufficient = "红球胆、拖的数量至少大等于5";
+        /// <summary>
         /// 请先将未完成的自选号码选择完毕或者删除！
         /// </summary>
         public static readonly string UnfinishedOneselfNumber = "请先将未完成的自选号码选择完毕或者删除！";

@@ -16,7 +16,7 @@ namespace SuperLotto
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SuperLottoView());
+            Application.Run(new Demo());
         }
     }
 }

@@ -233,9 +233,8 @@ namespace SuperLotto.Model
             {
                 for (int i = 0; i < redBallCount; i++)
                     maxRedWinPrizes[i] = redBalls[i];
-
-                //TODO: 暂时这么写、记得改 原版 maxBlueWinPrize = blueBalls[0];
-                blueBalls.CopyTo(maxBlueWinPrize, 0);
+                for (int i = 0; i < blueBallCount; i++)
+                    maxBlueWinPrize[i] = blueBalls[i];
             }
             else
             {

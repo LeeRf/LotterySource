@@ -150,8 +150,9 @@ namespace SuperLotto.Model
         /// </summary>
         /// <param name="redBallDanCount">红胆球数量</param>
         /// <param name="redBallTuoCount">红拖球数量</param>
-        /// <param name="blueBallCount">蓝色球数量</param>
-        public DantuoSuperLottoNumber GetDantuoSuperLottoNumber(int redBallDanCount, int redBallTuoCount, int blueBallCount)
+        /// <param name="blueBallDanCount">蓝胆球数量</param>
+        /// /// <param name="blueBallTuoCount">蓝拖球数量</param>
+        public DantuoSuperLottoNumber GetDantuoSuperLottoNumber(int redBallDanCount, int redBallTuoCount, int blueBallDanCount, int blueBallTuoCount)
         {
             DantuoSuperLottoNumber dantuoSuperLottoNumber = new DantuoSuperLottoNumber();
 
@@ -178,7 +179,7 @@ namespace SuperLotto.Model
 
             Array.Sort(dantuoSuperLottoNumber.redBallTuos);
 
-            for (int i = 0; i < blueBallCount; i++)
+            for (int i = 0; i < blueBallDanCount; i++)
             {
                 int blueIndex = MyRandom.GetMyRandom(0, _bluesBallList.Count - 1);
 
@@ -189,9 +190,21 @@ namespace SuperLotto.Model
 
             Array.Sort(dantuoSuperLottoNumber.blueBalls);
 
+            for (int i = 0; i < blueBallTuoCount; i++)
+            {
+                int blueIndex = MyRandom.GetMyRandom(0, _bluesBallList.Count - 1);
+
+                dantuoSuperLottoNumber.blueBallTuos[i] = _bluesBallList[blueIndex];
+
+                _bluesBallList.RemoveAt(blueIndex);
+            }
+
+            Array.Sort(dantuoSuperLottoNumber.blueBallTuos);
+
             dantuoSuperLottoNumber.redBallDanCount = redBallDanCount;
             dantuoSuperLottoNumber.redBallTuoCount = redBallTuoCount;
-            dantuoSuperLottoNumber.blueBallDanCount = blueBallCount;
+            dantuoSuperLottoNumber.blueBallDanCount = blueBallDanCount;
+            dantuoSuperLottoNumber.blueBallTuoCount = blueBallTuoCount;
             dantuoSuperLottoNumber.serialNumber = ++SuperLottoView._DantuoSuperLottoSuperLottoCount;
 
             ResetRedBallList();

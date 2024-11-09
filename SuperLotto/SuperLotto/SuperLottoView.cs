@@ -842,14 +842,14 @@ namespace SuperLotto
 
                 for (int i = 0; i < _randomSuperLottoCount; i++)
                 {
-                    CreateDantuoRandomCombination(ref redCount, ref redTuoCount, ref blueCount);
+                    CreateDantuoRandomCombination(ref redCount, ref redTuoCount, ref blueCount,/*TODO:篮球托码，这里先暂时用胆码*/ref blueCount);
 
                     //动态调整生成的注数
-                    DynamicAmendMaxDantuoTotalZhu(ref redCount, ref redTuoCount, ref blueCount, ref buyTotalZhu);
+                    DynamicAmendMaxDantuoTotalZhu(ref redCount, ref redTuoCount, ref blueCount, /*TODO:篮球托码，这里先暂时用胆码*/ref blueCount, ref buyTotalZhu);
 
                     if (buyTotalZhu <= _MaxOneselfSuperLottoTotalZhu)
                     {
-                        DantuoSuperLottoNumber cdbn = _superLottoToo.GetDantuoSuperLottoNumber(redCount, redTuoCount, blueCount);
+                        DantuoSuperLottoNumber cdbn = _superLottoToo.GetDantuoSuperLottoNumber(redCount, redTuoCount, blueCount, /*TODO:篮球托码，这里先暂时用胆码*/blueCount);
 
                         thisTimeBuyTotalZhu += cdbn.GetSuperLottoCombination();
                         thisTimeMonetary += cdbn.GetSuperLottoCombination() * 2 * int.Parse(cmbMultiple.Text);
@@ -880,21 +880,50 @@ namespace SuperLotto
         /// <summary>
         /// 创建胆拖的随机组合号
         /// </summary>
-        private void CreateDantuoRandomCombination(ref int redDanCount, ref int redTuoCount, ref int blueCount)
+        private void CreateDantuoRandomCombination(ref int redDanCount, ref int redTuoCount, ref int blueDanCount, ref int blueTuoCount)
         {
+            /**
+             * 情况组合如下：
+             *   红球胆：随机      红球拖：随机
+             *   红球胆：2        红球拖：随机
+             *   红球胆：随机      红球拖：3
+             *   -------------------------------
+             *   篮球胆：随机      篮球拖：随机
+             */
             if (cmbRedDanCount.SelectedIndex == 0)
-                redDanCount = MyRandom.GetRandomNum(1, 6);
+                redDanCount = MyRandom.GetRandomNum(1, 5);
 
             if (cmbRedTuoCount.SelectedIndex == 0)
-                redTuoCount = MyRandom.GetRandomNum(6 - redDanCount, 21);
+                redTuoCount = MyRandom.GetRandomNum(5 - redDanCount, 21);
 
-            if (cmbBlueDanCount.SelectedIndex == 0)
-                blueCount = MyRandom.GetRandomNum(1, 17);
+            //红球胆：2        红球拖：随机
+            if (cmbRedDanCount.SelectedIndex != 0 && cmbRedTuoCount.SelectedIndex == 0)
+            {
+                int randomRedDanCount = int.Parse(cmbRedDanCount.Text);
+                if (randomRedDanCount < 5)
+                {
+                    //红胆小于5时限制拖的最小生成数量
+                    redTuoCount = MyRandom.GetRandomNum(5 - randomRedDanCount, 21);
+                }
+            }
 
+            //红球胆：随机      红球拖：3
             if (cmbRedDanCount.SelectedIndex == 0 && cmbRedTuoCount.SelectedIndex != 0)
             {
-                redDanCount = MyRandom.GetRandomNum(6 - redTuoCount, 6);
+                int randomRedTuoCount = int.Parse(cmbRedTuoCount.Text);
+                if (randomRedTuoCount < 5)
+                {
+                    //红拖小于5时限制胆的最小生成数量
+                    redDanCount = MyRandom.GetRandomNum(5 - randomRedTuoCount, 5);
+                }
             }
+
+            //篮球固定生成一个
+            if (cmbBlueDanCount.SelectedIndex == 0)
+                blueDanCount = 1;
+
+            if (cmbBlueTuoCount.SelectedIndex == 0)
+                blueTuoCount = MyRandom.GetRandomNum(1, 11);
         }
 
         /// <summary>
@@ -920,7 +949,7 @@ namespace SuperLotto
                 }
                 else if (selectIndex == 3)
                 {
-                    ParseDantuoCombination(ref redCount, ref redTuoCount, ref blueCount);
+                    ParseDantuoCombination(ref redCount, ref redTuoCount, ref blueCount, /*TODO:篮球托码，这里先暂时用胆码*/ref blueCount);
                 }
             }
         }
@@ -934,7 +963,6 @@ namespace SuperLotto
         private void StatisticsLoopLotteryAwardCount(SuperLottos _mySuperLottoNumber, LoopDataSummarizing loopDataSummarizing, LoopDataAnalyse loopDataAnalyse)
         {
             _mySuperLottoNumber.SettingAwardTypeTotalZhu(loopDataSummarizing);
-
 
             if (_mySuperLottoNumber.awardType == AwardType.NineAward)
             {
@@ -1696,7 +1724,7 @@ namespace SuperLotto
                 int redDanCount = 0;
                 int redTuoCount = 0;
                 int blueCount = 0;
-                ParseDantuoCombination(ref redDanCount, ref redTuoCount, ref blueCount);
+                ParseDantuoCombination(ref redDanCount, ref redTuoCount, ref blueCount, ref blueCount/*TODO:篮球托码，这里先暂时用胆码*/);
 
                 _DantuoSuperLottoSuperLottoCount = 0;
                 _myDantuoSuperLottoNumberList.Clear();
@@ -1705,13 +1733,13 @@ namespace SuperLotto
 
                 for (int v = 0; v < myCount; v++)
                 {
-                    CreateDantuoRandomCombination(ref redDanCount, ref redTuoCount, ref blueCount);
+                    CreateDantuoRandomCombination(ref redDanCount, ref redTuoCount, ref blueCount,/*TODO:篮球托码，这里先暂时用胆码*/ref blueCount);
                     //动态调整生成的注数
-                    DynamicAmendMaxDantuoTotalZhu(ref redDanCount, ref redTuoCount, ref blueCount, ref buyTotalZhu);
+                    DynamicAmendMaxDantuoTotalZhu(ref redDanCount, ref redTuoCount, ref blueCount,/*TODO:篮球托码，这里先暂时用胆码*/ref blueCount, ref buyTotalZhu);
 
                     if (buyTotalZhu <= _MaxOneselfSuperLottoTotalZhu)
                     {
-                        _myDantuoSuperLottoNumberList.Add(_superLottoToo.GetDantuoSuperLottoNumber(redDanCount, redTuoCount, blueCount));
+                        _myDantuoSuperLottoNumberList.Add(_superLottoToo.GetDantuoSuperLottoNumber(redDanCount, redTuoCount, blueCount, /*TODO:篮球托码，这里先暂时用胆码*/blueCount));
                     }
                     else break;
                 }
@@ -1735,7 +1763,7 @@ namespace SuperLotto
         /// <summary>
         /// 将胆拖数量控件转换
         /// </summary>
-        private void ParseDantuoCombination(ref int redDanCount, ref int redTuoCount, ref int blueCount)
+        private void ParseDantuoCombination(ref int redDanCount, ref int redTuoCount, ref int blueDanCount, ref int blueTuoCount)
         {
             if (cmbRedDanCount.SelectedIndex != 0)
                 redDanCount = int.Parse(cmbRedDanCount.Text);
@@ -1744,7 +1772,10 @@ namespace SuperLotto
                 redTuoCount = int.Parse(cmbRedTuoCount.Text);
 
             if (cmbBlueDanCount.SelectedIndex != 0)
-                blueCount = int.Parse(cmbBlueDanCount.Text);
+                blueDanCount = int.Parse(cmbBlueDanCount.Text);
+
+            if (cmbBlueTuoCount.SelectedIndex != 0)
+                blueTuoCount = int.Parse(cmbBlueTuoCount.Text);
         }
 
         /// <summary>
@@ -3721,7 +3752,7 @@ namespace SuperLotto
             _DantuoHelper.Reset();
             _DantuoSuperLottoNumber = null;
         }
-        
+
         /// <summary>
         /// 生成机选胆拖号
         /// </summary>
@@ -3747,16 +3778,15 @@ namespace SuperLotto
 
             int redDanCount = 0;
             int redTuoCount = 0;
-            int blueCount = 0;
-            ParseDantuoCombination(ref redDanCount, ref redTuoCount, ref blueCount);
+            int blueDanCount = 0;
+            int blueTuoCount = 0;
 
-            if (redDanCount != 0 && redTuoCount != 0)
+            ParseDantuoCombination(ref redDanCount, ref redTuoCount, ref blueDanCount, ref blueTuoCount);
+
+            if (redDanCount != 0 && redTuoCount != 0 && redDanCount + redTuoCount < 5)
             {
-                if (redDanCount + redTuoCount < 6)
-                {
-                    Info.ShowWarningMessage(Info.DantuoCountInsufficient);
-                    return;
-                }
+                Info.ShowWarningMessage(Info.DantuoRedCountInsufficient);
+                return;
             }
 
             int buyTotalZhu = ParseTagValueToInt(lblDantuoBuyZhu);
@@ -3768,15 +3798,14 @@ namespace SuperLotto
 
             for (int i = 0; i < createCount; i++)
             {
-                CreateDantuoRandomCombination(ref redDanCount, ref redTuoCount, ref blueCount);
-
-                //动态调整生成的注数
-                DynamicAmendMaxDantuoTotalZhu(ref redDanCount, ref redTuoCount, ref blueCount, ref buyTotalZhu);
+                CreateDantuoRandomCombination(ref redDanCount, ref redTuoCount, ref blueDanCount, ref blueTuoCount);
+                //动态调整生成的注数 TODO: 记得更改动态调整胆拖逻辑
+                //DynamicAmendMaxDantuoTotalZhu(ref redDanCount, ref redTuoCount, ref blueDanCount, ref blueTuoCount, ref buyTotalZhu);
 
                 if (buyTotalZhu <= _MaxOneselfSuperLottoTotalZhu)
                 {
                     createIndex++;
-                    DantuoSuperLottoNumber superLottoNumber = _superLottoToo.GetDantuoSuperLottoNumber(redDanCount, redTuoCount, blueCount);
+                    DantuoSuperLottoNumber superLottoNumber = _superLottoToo.GetDantuoSuperLottoNumber(redDanCount, redTuoCount, blueDanCount, blueTuoCount);
                     _myDantuoSuperLottoNumberList.Add(superLottoNumber);
                 }
                 else break;
@@ -3794,33 +3823,33 @@ namespace SuperLotto
         /// </summary>
         /// <param name="redDanCount">红色球胆号数量</param>
         /// <param name="redTuoCount">红色球拖号数量</param>
-        /// <param name="blueCount">蓝色球数量</param>
+        /// <param name="blueDanCount">蓝色球胆号数量</param>
         /// <param name="buyTotalZhu">目前已购买的总注数</param>
-        private void DynamicAmendMaxDantuoTotalZhu(ref int redDanCount, ref int redTuoCount,ref int blueCount, ref int buyTotalZhu)
+        private void DynamicAmendMaxDantuoTotalZhu(ref int redDanCount, ref int redTuoCount, ref int blueDanCount, ref int blueTuoCount, ref int buyTotalZhu)
         {
             bool redSubtraction = false;
             int redTuoMinCount = 6 - redDanCount;
 
             //只减红球拖号数量和蓝球数量
-            while (_superLottoToo.GetDantuoCombinationTotalZhu(redDanCount, redTuoCount, blueCount, /*TODO:四个参数*/ blueCount) + buyTotalZhu > _MaxOneselfSuperLottoTotalZhu)
+            while (_superLottoToo.GetDantuoCombinationTotalZhu(redDanCount, redTuoCount, blueDanCount, blueTuoCount) + buyTotalZhu > _MaxOneselfSuperLottoTotalZhu)
             {
                 //红球拖个数大于拖应最小数量 并且 (轮到红球减 或者 蓝球数量只剩1减无可减)
-                if (redTuoCount > redTuoMinCount && (redSubtraction || blueCount == 1))
+                if (redTuoCount > redTuoMinCount && (redSubtraction || blueDanCount == 1))
                 {
                     redTuoCount--;
                     redSubtraction = false;
                 }
                 //蓝球数量需要大于 1 才可减
-                else if (blueCount > 1)
+                else if (blueDanCount > 1)
                 {
-                    blueCount--;
+                    blueDanCount--;
                     redSubtraction = true;
                 }
 
-                if (((redDanCount + redTuoCount) == 6) && blueCount == 1) break;
+                if (((redDanCount + redTuoCount) == 6) && blueDanCount == 1) break;
             }
 
-            buyTotalZhu += (int)_superLottoToo.GetDantuoCombinationTotalZhu(redDanCount, redTuoCount,blueCount, /*TODO:四个参数*/ blueCount);
+            buyTotalZhu += (int)_superLottoToo.GetDantuoCombinationTotalZhu(redDanCount, redTuoCount,blueDanCount, blueTuoCount);
         }
 
         private int _CreateIndexByDantuo = 0;
@@ -3848,10 +3877,11 @@ namespace SuperLotto
         {
             _DantuoHelper.oneselfPanel = new Panel();
 
-            int danWidth = dantuoNumber.redBallDanCount * _INTERVAL;
-            int tuoWidth = dantuoNumber.redBallTuoCount * _INTERVAL;
-            int blueWidth = dantuoNumber.blueBallDanCount * _INTERVAL;
-            int cumsumWidth = danWidth + tuoWidth + blueWidth - 2;
+            int redDanWidth = dantuoNumber.redBallDanCount * _INTERVAL;
+            int redTuoWidth = dantuoNumber.redBallTuoCount * _INTERVAL;
+            int blueDanWidth = dantuoNumber.blueBallDanCount * _INTERVAL;
+            int blueTuoWidth = dantuoNumber.blueBallTuoCount * _INTERVAL;
+            int cumsumWidth = redDanWidth + redTuoWidth + blueDanWidth + blueTuoWidth - 2;
 
             if (!showImage) cumsumWidth -= _INTERVAL;
 
@@ -3866,13 +3896,16 @@ namespace SuperLotto
                 dantuoNumber.redBallDanCount + "-" + dantuoNumber.redBallTuoCount + "-" + dantuoNumber.blueBallDanCount);
 
             AddSuperLottosLabel(1, 
-                dantuoNumber.redBallDanCount, dantuoNumber.redBalls, lblComplexRed, _DantuoHelper);
+                dantuoNumber.redBallDanCount, dantuoNumber.redBalls, lblRedBallDan, _DantuoHelper);
 
             AddSuperLottosLabel(0, 
                 dantuoNumber.redBallTuoCount, dantuoNumber.redBallTuos, lblRedBallTuo, _DantuoHelper);
 
             AddSuperLottosLabel(0, 
-                dantuoNumber.blueBallDanCount, dantuoNumber.blueBalls, lblComplexBlue, _DantuoHelper);
+                dantuoNumber.blueBallDanCount, dantuoNumber.blueBalls, lblBlueBallDan, _DantuoHelper);
+
+            AddSuperLottosLabel(0,
+                dantuoNumber.blueBallTuoCount, dantuoNumber.blueBallTuos, lblBlueBallTuo, _DantuoHelper);
 
             AddHandleButtonImage(_DantuoHelper, flpDantuoNumber, showImage);
 
@@ -4737,30 +4770,6 @@ namespace SuperLotto
             else
             {
                 return ParseTagValueToInt(lblDantuoBuyZhu);
-            }
-        }
-
-        private void cmbBlueDanCount_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            cmbBlueTuoCount.Enabled = true;
-            int selectIndex = cmbBlueDanCount.SelectedIndex;
-
-            if(cmbBlueTuoCount.Items.Count >= 12)
-            {
-                cmbBlueTuoCount.Items.RemoveAt(cmbBlueTuoCount.Items.Count - 1);
-            }
-
-            if(selectIndex == 1)
-            {
-                cmbBlueTuoCount.Items.Add(11);
-                cmbBlueTuoCount.SelectedIndex = 0;
-            }
-
-            if (selectIndex == 2)
-            {
-                cmbBlueTuoCount.Items.Add("无");
-                cmbBlueTuoCount.SelectedIndex = 11;
-                cmbBlueTuoCount.Enabled = false;
             }
         }
 

@@ -92,8 +92,8 @@ namespace SuperLotto.Model
         /**
          * 胆拖
          *  红球胆最大球数 4
-         *  红球拖最大球数 18
-         *  篮球胆最大球数 2
+         *  红球拖最大球数 20
+         *  篮球胆最大球数 1
          *  蓝球拖最大球数 11
          */
         public DantuoSuperLottoNumber() : base(AwardType.Null) => InitDantuoSuperLotto();
@@ -104,8 +104,8 @@ namespace SuperLotto.Model
         private void InitDantuoSuperLotto()
         {
             redBalls = new int[4];
-            redBallTuos = new int[18];
-            blueBalls = new int[2];
+            redBallTuos = new int[20];
+            blueBalls = new int[1];
             blueBallTuos = new int[11];
 
             for (int i = 0; i < redBalls.Length; i++)
@@ -403,7 +403,7 @@ namespace SuperLotto.Model
         /// </summary>
         public override bool IsOKNumber()
         {
-            return redBallDanCount >= 1 && (redBallDanCount + redBallTuoCount) >= 5 && blueBallDanCount >= 1 && (blueBallDanCount + blueBallTuoCount) >= 2;
+            return /*redBallDanCount >= 1 && */(redBallDanCount + redBallTuoCount) >= 5 && /*blueBallDanCount >= 1 && */(blueBallDanCount + blueBallTuoCount) >= 2;
         }
 
         /// <summary>
