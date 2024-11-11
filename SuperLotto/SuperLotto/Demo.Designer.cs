@@ -151,7 +151,7 @@
             this.lblClose.EnterColor = System.Drawing.Color.Red;
             this.lblClose.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblClose.ForeColor = System.Drawing.Color.DarkSalmon;
-            this.lblClose.Location = new System.Drawing.Point(694, 9);
+            this.lblClose.Location = new System.Drawing.Point(578, 9);
             this.lblClose.Name = "lblClose";
             this.lblClose.Size = new System.Drawing.Size(41, 17);
             this.lblClose.TabIndex = 624;
@@ -398,10 +398,10 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Bisque;
+            this.label11.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label11.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.label11.Enabled = false;
-            this.label11.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label11.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label11.Location = new System.Drawing.Point(12, 311);
             this.label11.MaximumSize = new System.Drawing.Size(0, 1);
             this.label11.Name = "label11";
@@ -559,10 +559,10 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Bisque;
+            this.label9.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label9.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.label9.Enabled = false;
-            this.label9.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label9.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label9.Location = new System.Drawing.Point(12, 276);
             this.label9.MaximumSize = new System.Drawing.Size(0, 1);
             this.label9.Name = "label9";
@@ -660,10 +660,10 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Bisque;
+            this.label8.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label8.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.label8.Enabled = false;
-            this.label8.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label8.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label8.Location = new System.Drawing.Point(12, 242);
             this.label8.MaximumSize = new System.Drawing.Size(0, 1);
             this.label8.Name = "label8";
@@ -776,10 +776,10 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Bisque;
+            this.label7.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label7.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.label7.Enabled = false;
-            this.label7.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label7.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label7.Location = new System.Drawing.Point(12, 208);
             this.label7.MaximumSize = new System.Drawing.Size(0, 1);
             this.label7.Name = "label7";
@@ -892,10 +892,10 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Bisque;
+            this.label6.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label6.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.label6.Enabled = false;
-            this.label6.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label6.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label6.Location = new System.Drawing.Point(12, 174);
             this.label6.MaximumSize = new System.Drawing.Size(0, 1);
             this.label6.Name = "label6";
@@ -1023,10 +1023,10 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Bisque;
+            this.label5.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label5.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.label5.Enabled = false;
-            this.label5.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label5.Location = new System.Drawing.Point(12, 140);
             this.label5.MaximumSize = new System.Drawing.Size(0, 1);
             this.label5.Name = "label5";
@@ -1139,10 +1139,10 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Bisque;
+            this.label4.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label4.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.label4.Enabled = false;
-            this.label4.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label4.Location = new System.Drawing.Point(12, 106);
             this.label4.MaximumSize = new System.Drawing.Size(0, 1);
             this.label4.Name = "label4";
@@ -1270,10 +1270,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Bisque;
+            this.label3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label3.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.label3.Enabled = false;
-            this.label3.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label3.Location = new System.Drawing.Point(12, 71);
             this.label3.MaximumSize = new System.Drawing.Size(0, 1);
             this.label3.Name = "label3";
@@ -1416,10 +1416,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.SandyBrown;
+            this.label2.BackColor = System.Drawing.Color.PeachPuff;
             this.label2.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.label2.Enabled = false;
-            this.label2.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label2.Location = new System.Drawing.Point(10, 4);
             this.label2.MaximumSize = new System.Drawing.Size(0, 1);
             this.label2.Name = "label2";
@@ -1430,10 +1430,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.SandyBrown;
+            this.label1.BackColor = System.Drawing.Color.PeachPuff;
             this.label1.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.label1.Enabled = false;
-            this.label1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label1.Location = new System.Drawing.Point(10, 2);
             this.label1.MaximumSize = new System.Drawing.Size(0, 1);
             this.label1.Name = "label1";
@@ -1444,10 +1444,10 @@
             // lblSplit
             // 
             this.lblSplit.AutoSize = true;
-            this.lblSplit.BackColor = System.Drawing.Color.Bisque;
+            this.lblSplit.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lblSplit.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.lblSplit.Enabled = false;
-            this.lblSplit.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblSplit.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.lblSplit.Location = new System.Drawing.Point(11, 36);
             this.lblSplit.MaximumSize = new System.Drawing.Size(0, 1);
             this.lblSplit.Name = "lblSplit";
@@ -1731,7 +1731,7 @@
             this.linkLabel5.ForeColor = System.Drawing.Color.OrangeRed;
             this.linkLabel5.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel5.LinkColor = System.Drawing.Color.OrangeRed;
-            this.linkLabel5.Location = new System.Drawing.Point(520, 337);
+            this.linkLabel5.Location = new System.Drawing.Point(446, 11);
             this.linkLabel5.Name = "linkLabel5";
             this.linkLabel5.Size = new System.Drawing.Size(17, 12);
             this.linkLabel5.TabIndex = 653;
@@ -1748,7 +1748,7 @@
             this.linkLabel6.ForeColor = System.Drawing.Color.OrangeRed;
             this.linkLabel6.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel6.LinkColor = System.Drawing.Color.OrangeRed;
-            this.linkLabel6.Location = new System.Drawing.Point(505, 337);
+            this.linkLabel6.Location = new System.Drawing.Point(431, 11);
             this.linkLabel6.Name = "linkLabel6";
             this.linkLabel6.Size = new System.Drawing.Size(17, 12);
             this.linkLabel6.TabIndex = 652;
@@ -1765,7 +1765,7 @@
             this.linkLabel3.ForeColor = System.Drawing.Color.DodgerBlue;
             this.linkLabel3.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel3.LinkColor = System.Drawing.Color.DodgerBlue;
-            this.linkLabel3.Location = new System.Drawing.Point(490, 337);
+            this.linkLabel3.Location = new System.Drawing.Point(416, 11);
             this.linkLabel3.Name = "linkLabel3";
             this.linkLabel3.Size = new System.Drawing.Size(17, 12);
             this.linkLabel3.TabIndex = 651;
@@ -1782,7 +1782,7 @@
             this.linkLabel2.ForeColor = System.Drawing.Color.DodgerBlue;
             this.linkLabel2.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel2.LinkColor = System.Drawing.Color.DodgerBlue;
-            this.linkLabel2.Location = new System.Drawing.Point(475, 337);
+            this.linkLabel2.Location = new System.Drawing.Point(401, 11);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(17, 12);
             this.linkLabel2.TabIndex = 650;
@@ -1799,7 +1799,7 @@
             this.linkLabel1.ForeColor = System.Drawing.Color.DodgerBlue;
             this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel1.LinkColor = System.Drawing.Color.DodgerBlue;
-            this.linkLabel1.Location = new System.Drawing.Point(460, 337);
+            this.linkLabel1.Location = new System.Drawing.Point(386, 11);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(17, 12);
             this.linkLabel1.TabIndex = 649;
@@ -1809,13 +1809,12 @@
             // 
             // leeLabel33
             // 
-            this.leeLabel33.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.leeLabel33.AutoSize = true;
             this.leeLabel33.Cursor = System.Windows.Forms.Cursors.Hand;
             this.leeLabel33.EnterColor = System.Drawing.Color.Black;
             this.leeLabel33.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.leeLabel33.ForeColor = System.Drawing.Color.Gray;
-            this.leeLabel33.Location = new System.Drawing.Point(411, 335);
+            this.leeLabel33.Location = new System.Drawing.Point(337, 9);
             this.leeLabel33.Name = "leeLabel33";
             this.leeLabel33.Size = new System.Drawing.Size(44, 17);
             this.leeLabel33.TabIndex = 689;
@@ -1824,13 +1823,12 @@
             // 
             // leeLabel38
             // 
-            this.leeLabel38.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.leeLabel38.AutoSize = true;
             this.leeLabel38.Cursor = System.Windows.Forms.Cursors.Hand;
             this.leeLabel38.EnterColor = System.Drawing.Color.Black;
             this.leeLabel38.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.leeLabel38.ForeColor = System.Drawing.Color.Gray;
-            this.leeLabel38.Location = new System.Drawing.Point(586, 335);
+            this.leeLabel38.Location = new System.Drawing.Point(512, 9);
             this.leeLabel38.Name = "leeLabel38";
             this.leeLabel38.Size = new System.Drawing.Size(20, 17);
             this.leeLabel38.TabIndex = 690;
@@ -1839,13 +1837,12 @@
             // 
             // leeLabel39
             // 
-            this.leeLabel39.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.leeLabel39.AutoSize = true;
             this.leeLabel39.Cursor = System.Windows.Forms.Cursors.Hand;
             this.leeLabel39.EnterColor = System.Drawing.Color.Black;
             this.leeLabel39.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.leeLabel39.ForeColor = System.Drawing.Color.Gray;
-            this.leeLabel39.Location = new System.Drawing.Point(544, 335);
+            this.leeLabel39.Location = new System.Drawing.Point(470, 9);
             this.leeLabel39.Name = "leeLabel39";
             this.leeLabel39.Size = new System.Drawing.Size(43, 17);
             this.leeLabel39.TabIndex = 689;
@@ -1857,7 +1854,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(746, 739);
+            this.ClientSize = new System.Drawing.Size(630, 739);
             this.Controls.Add(this.leeLabel38);
             this.Controls.Add(this.leeLabel33);
             this.Controls.Add(this.leeLabel39);

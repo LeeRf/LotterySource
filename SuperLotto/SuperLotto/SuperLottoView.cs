@@ -135,6 +135,7 @@ namespace SuperLotto
                 Blue1.Visible = true;
                 Blue2.Visible = true;
                 lblLengthways.Visible = true;
+
                 SoftwareExplain.ReadOnly = true;
                 cmbStopCondition.Visible = true;
                 cmbMultiple.Visible = true;

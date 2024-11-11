@@ -1576,12 +1576,13 @@
             this.lblLengthways.Enabled = false;
             this.lblLengthways.ForeColor = System.Drawing.Color.Gainsboro;
             this.lblLengthways.Location = new System.Drawing.Point(837, 34);
-            this.lblLengthways.MaximumSize = new System.Drawing.Size(1, 810);
+            this.lblLengthways.MaximumSize = new System.Drawing.Size(1, 2000);
             this.lblLengthways.Name = "lblLengthways";
-            this.lblLengthways.Size = new System.Drawing.Size(1, 810);
+            this.lblLengthways.Size = new System.Drawing.Size(1, 1980);
             this.lblLengthways.TabIndex = 555;
             this.lblLengthways.Text = "|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||" +
-    "|||||||||||\r\n";
+    "||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||" +
+    "||||\r\n";
             this.lblLengthways.Visible = false;
             // 
             // btnInfiniteRondomLoopYear
@@ -3622,7 +3623,7 @@
             this.leeLabel12.ForeColor = System.Drawing.Color.Black;
             this.leeLabel12.Location = new System.Drawing.Point(26, 78);
             this.leeLabel12.Name = "leeLabel12";
-            this.leeLabel12.Size = new System.Drawing.Size(664, 374);
+            this.leeLabel12.Size = new System.Drawing.Size(664, 408);
             this.leeLabel12.TabIndex = 596;
             this.leeLabel12.Text = resources.GetString("leeLabel12.Text");
             // 
@@ -4726,6 +4727,7 @@
             // 
             // panLotteryRules
             // 
+            this.panLotteryRules.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panLotteryRules.Controls.Add(this.leeLabel80);
             this.panLotteryRules.Controls.Add(this.leeLabel86);
             this.panLotteryRules.Controls.Add(this.label38);

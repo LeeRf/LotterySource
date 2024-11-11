@@ -131,6 +131,13 @@ namespace DoubleBalls
                 lblLengthways.Visible = true;
 
                 SoftwareExplain.ReadOnly = true;
+                cmbStopCondition.Visible = true;
+                cmbMultiple.Visible = true;
+
+                foreach (Control item in panLotteryRules.Controls)
+                {
+                    if (!item.Visible) item.Visible = true;
+                }
             };
 
             #endregion

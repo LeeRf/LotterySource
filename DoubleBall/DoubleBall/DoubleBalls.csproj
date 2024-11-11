@@ -66,8 +66,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\ExtendLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Data\IniHelper.cs">
       <CustomToolNamespace>DoubleBalls.Data</CustomToolNamespace>
+    </Compile>
+    <Compile Include="Demo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Demo.Designer.cs">
+      <DependentUpon>Demo.cs</DependentUpon>
     </Compile>
     <Compile Include="LoopDataAnalyse.cs">
       <SubType>Form</SubType>
@@ -180,6 +189,9 @@
     <EmbeddedResource Include="Controls\FrmLoading.resx">
       <DependentUpon>FrmLoading.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Demo.resx">
+      <DependentUpon>Demo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DoubleBallView.resx">
       <DependentUpon>DoubleBallView.cs</DependentUpon>
     </EmbeddedResource>
@@ -249,6 +261,12 @@
   <ItemGroup>
     <Content Include="Other\DLL\e_sqlite3.dll" />
     <Content Include="Other\DLL\MaterialSkin.dll" />
+    <None Include="Resources\upage-data.png" />
+    <None Include="Resources\email002.png" />
+    <None Include="Resources\VeChat-ico.png" />
+    <None Include="Resources\author.jpg" />
+    <None Include="Resources\bilibili.png" />
+    <None Include="Resources\github-ico.png" />
     <None Include="Resources\historys.png" />
     <None Include="Resources\delete1.png" />
     <None Include="Resources\Accomplish.png" />
