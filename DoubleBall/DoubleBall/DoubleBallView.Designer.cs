@@ -1284,6 +1284,7 @@
             this.lblBilibiliLink.Size = new System.Drawing.Size(296, 18);
             this.lblBilibiliLink.TabIndex = 636;
             this.lblBilibiliLink.Text = "https://space.bilibili.com/486305074";
+            this.lblBilibiliLink.Click += new System.EventHandler(this.lblGitHubLink_Click);
             // 
             // extendLabel5
             // 
@@ -1322,6 +1323,7 @@
             this.lblGitHubLink.Size = new System.Drawing.Size(312, 18);
             this.lblGitHubLink.TabIndex = 632;
             this.lblGitHubLink.Text = "https://github.com/LeeRf/LotterySource";
+            this.lblGitHubLink.Click += new System.EventHandler(this.lblGitHubLink_Click);
             // 
             // extendLabel3
             // 

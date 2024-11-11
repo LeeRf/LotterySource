@@ -212,7 +212,7 @@ namespace SuperLotto
         }
 
         /// <summary>
-        /// 单式号产生开奖号码的综合逻辑处理
+        /// 产生开奖号码的综合逻辑处理
         /// </summary>
         private void ComprehensiveLogicOfLotteryDrawing(List<SuperLottos> _mySuperLottoList, FlowLayoutPanel flpSuperLottoPanel)
         {
@@ -225,7 +225,7 @@ namespace SuperLotto
 
             _mySuperLottoList.ForEach(dbn => dbn.ComparisonSuperLottoNumber(_superLottoToo, _publicSuperLottoToo));
 
-            //循环流控件中的各个Panel(单个Panel里承载6个Label红球、1个蓝球)
+            //循环流控件中的各个Panel(单个Panel里承载5个Label红球、2个蓝球)
             foreach (Panel panel in flpSuperLottoPanel.Controls)
             {
                 int serialNumber = ParseTagValueToInt(panel);
@@ -1732,8 +1732,9 @@ namespace SuperLotto
             {
                 int redDanCount = 0;
                 int redTuoCount = 0;
-                int blueCount = 0;
-                ParseDantuoCombination(ref redDanCount, ref redTuoCount, ref blueCount, ref blueCount/*TODO:篮球托码，这里先暂时用胆码*/);
+                int blueDanCount = 0;
+                int blueTuoCount = 0;
+                ParseDantuoCombination(ref redDanCount, ref redTuoCount, ref blueDanCount, ref blueTuoCount);
 
                 _DantuoSuperLottoSuperLottoCount = 0;
                 _myDantuoSuperLottoNumberList.Clear();
@@ -1742,13 +1743,13 @@ namespace SuperLotto
 
                 for (int v = 0; v < myCount; v++)
                 {
-                    CreateDantuoRandomCombination(ref redDanCount, ref redTuoCount, ref blueCount,/*TODO:篮球托码，这里先暂时用胆码*/ref blueCount);
+                    CreateDantuoRandomCombination(ref redDanCount, ref redTuoCount, ref blueDanCount, ref blueTuoCount);
                     //动态调整生成的注数
-                    DynamicAmendMaxDantuoTotalZhu(ref redDanCount, ref redTuoCount, ref blueCount,/*TODO:篮球托码，这里先暂时用胆码*/ref blueCount, ref buyTotalZhu);
+                    DynamicAmendMaxDantuoTotalZhu(ref redDanCount, ref redTuoCount, ref blueDanCount, ref blueTuoCount, ref buyTotalZhu);
 
                     if (buyTotalZhu <= _MaxOneselfSuperLottoTotalZhu)
                     {
-                        _myDantuoSuperLottoNumberList.Add(_superLottoToo.GetDantuoSuperLottoNumber(redDanCount, redTuoCount, blueCount, /*TODO:篮球托码，这里先暂时用胆码*/blueCount));
+                        _myDantuoSuperLottoNumberList.Add(_superLottoToo.GetDantuoSuperLottoNumber(redDanCount, redTuoCount, blueDanCount, blueTuoCount));
                     }
                     else break;
                 }
@@ -3808,7 +3809,7 @@ namespace SuperLotto
             for (int i = 0; i < createCount; i++)
             {
                 CreateDantuoRandomCombination(ref redDanCount, ref redTuoCount, ref blueDanCount, ref blueTuoCount);
-                //动态调整生成的注数 TODO: 记得更改动态调整胆拖逻辑
+                //动态调整胆拖生成的注数
                 DynamicAmendMaxDantuoTotalZhu(ref redDanCount, ref redTuoCount, ref blueDanCount, ref blueTuoCount, ref buyTotalZhu);
 
                 if (buyTotalZhu <= _MaxOneselfSuperLottoTotalZhu)

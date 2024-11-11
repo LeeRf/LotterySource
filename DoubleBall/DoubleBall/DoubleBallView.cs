@@ -3,9 +3,11 @@ using DoubleBalls.Model;
 using DoubleBalls.Other;
 using DoubleBalls.Style;
 using MaterialSkin.Controls;
+using SuperLotto.Controls;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -4686,6 +4688,12 @@ namespace DoubleBalls
         {
             _OneselfComplex?.HideThis();
             WindowState = FormWindowState.Minimized;
+        }
+
+        private void lblGitHubLink_Click(object sender, EventArgs e)
+        {
+            ExtendLabel link = sender as ExtendLabel;
+            Process.Start(link.Text);
         }
 
         private int ParseTagValueToInt(Control control) => int.Parse(control.Tag.ToString());
