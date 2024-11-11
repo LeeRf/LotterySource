@@ -12,6 +12,8 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
 using System.Windows.Forms;
+using System.Diagnostics;
+using System.Reflection;
 
 namespace SuperLotto
 {
@@ -133,8 +135,14 @@ namespace SuperLotto
                 Blue1.Visible = true;
                 Blue2.Visible = true;
                 lblLengthways.Visible = true;
-
                 SoftwareExplain.ReadOnly = true;
+                cmbStopCondition.Visible = true;
+                cmbMultiple.Visible = true;
+
+                foreach (Control item in panLotteryRules.Controls)
+                {
+                    if (!item.Visible) item.Visible = true;
+                }
             };
 
             #endregion
@@ -183,9 +191,9 @@ namespace SuperLotto
                             redDanCount = int.Parse(cmbRedDanCount.Text);
                             redTuoCount = int.Parse(cmbRedTuoCount.Text);
 
-                            if (redDanCount + redTuoCount < 6)
+                            if (redDanCount + redTuoCount < 5)
                             {
-                                Info.ShowWarningMessage(Info.DantuoCountInsufficient);
+                                Info.ShowWarningMessage(Info.DantuoRedCountInsufficient);
                                 return;
                             }
                         }
@@ -3800,7 +3808,7 @@ namespace SuperLotto
             {
                 CreateDantuoRandomCombination(ref redDanCount, ref redTuoCount, ref blueDanCount, ref blueTuoCount);
                 //动态调整生成的注数 TODO: 记得更改动态调整胆拖逻辑
-                //DynamicAmendMaxDantuoTotalZhu(ref redDanCount, ref redTuoCount, ref blueDanCount, ref blueTuoCount, ref buyTotalZhu);
+                DynamicAmendMaxDantuoTotalZhu(ref redDanCount, ref redTuoCount, ref blueDanCount, ref blueTuoCount, ref buyTotalZhu);
 
                 if (buyTotalZhu <= _MaxOneselfSuperLottoTotalZhu)
                 {
@@ -3828,25 +3836,29 @@ namespace SuperLotto
         private void DynamicAmendMaxDantuoTotalZhu(ref int redDanCount, ref int redTuoCount, ref int blueDanCount, ref int blueTuoCount, ref int buyTotalZhu)
         {
             bool redSubtraction = false;
-            int redTuoMinCount = 6 - redDanCount;
+            int redTuoMinCount = 5 - redDanCount;
 
-            //只减红球拖号数量和蓝球数量
+            /**
+             * 轮番动态减少
+             *   红球拖数量
+             *   篮球拖数量
+             */
             while (_superLottoToo.GetDantuoCombinationTotalZhu(redDanCount, redTuoCount, blueDanCount, blueTuoCount) + buyTotalZhu > _MaxOneselfSuperLottoTotalZhu)
             {
-                //红球拖个数大于拖应最小数量 并且 (轮到红球减 或者 蓝球数量只剩1减无可减)
-                if (redTuoCount > redTuoMinCount && (redSubtraction || blueDanCount == 1))
+                //红球拖个数大于拖应最小数量 并且 (轮到红球减 或者 蓝球拖数量只剩1减无可减)
+                if (redTuoCount > redTuoMinCount && (redSubtraction || blueTuoCount == 1))
                 {
                     redTuoCount--;
                     redSubtraction = false;
                 }
-                //蓝球数量需要大于 1 才可减
-                else if (blueDanCount > 1)
+                //蓝球拖数量需要大于 1 才可减
+                else if (blueTuoCount > 1)
                 {
-                    blueDanCount--;
+                    blueTuoCount--;
                     redSubtraction = true;
                 }
 
-                if (((redDanCount + redTuoCount) == 6) && blueDanCount == 1) break;
+                if (((redDanCount + redTuoCount) == 5) && (blueDanCount + blueTuoCount) == 2) break;
             }
 
             buyTotalZhu += (int)_superLottoToo.GetDantuoCombinationTotalZhu(redDanCount, redTuoCount,blueDanCount, blueTuoCount);
@@ -4516,9 +4528,10 @@ namespace SuperLotto
 
                 lblRedDanTitle.Enabled = false;
                 cmbRedDanCount.Enabled = false;
-                lblRedTuo.Enabled = false;
+                lblRedTuoTitle.Enabled = false;
                 cmbRedTuoCount.Enabled = false;
                 lblDanBlueTitle.Enabled = false;
+                lblTuoBlueTitle.Enabled = false;
                 cmbBlueDanCount.Enabled = false;
                 cmbBlueTuoCount.Enabled = false;
 
@@ -4561,9 +4574,10 @@ namespace SuperLotto
 
                 lblRedDanTitle.Enabled = true;
                 cmbRedDanCount.Enabled = true;
-                lblRedTuo.Enabled = true;
+                lblRedTuoTitle.Enabled = true;
                 cmbRedTuoCount.Enabled = true;
                 lblDanBlueTitle.Enabled = true;
+                lblTuoBlueTitle.Enabled= true;
                 cmbBlueDanCount.Enabled = true;
                 cmbBlueTuoCount.Enabled = true;
 
@@ -4640,9 +4654,10 @@ namespace SuperLotto
                     
                     lblRedDanTitle.Enabled = false;
                     cmbRedDanCount.Enabled = false;
-                    lblRedTuo.Enabled = false;
+                    lblRedTuoTitle.Enabled = false;
                     cmbRedTuoCount.Enabled = false;
                     lblDanBlueTitle.Enabled = false;
+                    lblTuoBlueTitle.Enabled = false;
                     cmbBlueDanCount.Enabled = false;
                     cmbBlueTuoCount.Enabled = false;
                     lblDantuoRandom1.Enabled = false;
@@ -4655,9 +4670,10 @@ namespace SuperLotto
 
                     lblRedDanTitle.Enabled = true;
                     cmbRedDanCount.Enabled = true;
-                    lblRedTuo.Enabled = true;
+                    lblRedTuoTitle.Enabled = true;
                     cmbRedTuoCount.Enabled = true;
                     lblDanBlueTitle.Enabled = true;
+                    lblTuoBlueTitle.Enabled = true;
                     cmbBlueDanCount.Enabled = true;
                     cmbBlueTuoCount.Enabled = true;
                     lblDantuoRandom1.Enabled = true;
@@ -4801,6 +4817,12 @@ namespace SuperLotto
         {
             _OneselfComplex?.HideThis();
             WindowState = FormWindowState.Minimized;
+        }
+
+        private void lblGitHubLink_Click(object sender, EventArgs e)
+        {
+            ExtendLabel link = sender as ExtendLabel;
+            Process.Start(link.Text);
         }
 
         private int ParseTagValueToInt(Control control) => int.Parse(control.Tag.ToString());

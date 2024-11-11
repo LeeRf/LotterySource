@@ -270,9 +270,9 @@
             this.lblClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblClose.AutoSize = true;
             this.lblClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblClose.EnterColor = System.Drawing.Color.OrangeRed;
+            this.lblClose.EnterColor = System.Drawing.Color.Red;
             this.lblClose.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblClose.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblClose.ForeColor = System.Drawing.Color.DarkSalmon;
             this.lblClose.Location = new System.Drawing.Point(306, 2);
             this.lblClose.Name = "lblClose";
             this.lblClose.Size = new System.Drawing.Size(41, 17);

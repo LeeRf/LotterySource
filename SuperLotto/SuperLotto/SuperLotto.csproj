@@ -66,6 +66,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\ExtendLabel.cs">
+      <CustomToolNamespace>SuperLotto.Controls</CustomToolNamespace>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Data\IniHelper.cs">
       <CustomToolNamespace>SuperLotto.Data</CustomToolNamespace>
     </Compile>
@@ -258,6 +262,16 @@
   <ItemGroup>
     <Content Include="Other\DLL\e_sqlite3.dll" />
     <Content Include="Other\DLL\MaterialSkin.dll" />
+    <None Include="Resources\stop1.png" />
+    <None Include="Resources\buy1.png" />
+    <None Include="Resources\scheme.png" />
+    <None Include="Resources\analyse-data.png" />
+    <None Include="Resources\upage-data.png" />
+    <None Include="Resources\author.jpg" />
+    <None Include="Resources\email002.png" />
+    <None Include="Resources\bilibili.png" />
+    <None Include="Resources\VeChat-ico.png" />
+    <None Include="Resources\github-ico.png" />
     <None Include="Resources\TiCai.jpg" />
     <None Include="Resources\SuperLotto3.png" />
     <None Include="Resources\SuperLotto2.png" />

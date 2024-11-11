@@ -410,7 +410,7 @@
             this.label26.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label26.ForeColor = System.Drawing.Color.DarkGray;
+            this.label26.ForeColor = System.Drawing.Color.Gray;
             this.label26.Location = new System.Drawing.Point(868, 174);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(56, 17);
@@ -422,7 +422,7 @@
             this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label24.ForeColor = System.Drawing.Color.DarkGray;
+            this.label24.ForeColor = System.Drawing.Color.Gray;
             this.label24.Location = new System.Drawing.Point(868, 99);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(56, 17);
@@ -598,7 +598,7 @@
             this.lblDanBlueTitle.ForeColor = System.Drawing.Color.DimGray;
             this.lblDanBlueTitle.Location = new System.Drawing.Point(168, 35);
             this.lblDanBlueTitle.Name = "lblDanBlueTitle";
-            this.lblDanBlueTitle.Size = new System.Drawing.Size(41, 16);
+            this.lblDanBlueTitle.Size = new System.Drawing.Size(40, 16);
             this.lblDanBlueTitle.TabIndex = 722;
             this.lblDanBlueTitle.Text = "蓝球号";
             // 
@@ -637,7 +637,7 @@
             this.lblRedTuo.ForeColor = System.Drawing.Color.DimGray;
             this.lblRedTuo.Location = new System.Drawing.Point(267, 9);
             this.lblRedTuo.Name = "lblRedTuo";
-            this.lblRedTuo.Size = new System.Drawing.Size(41, 16);
+            this.lblRedTuo.Size = new System.Drawing.Size(40, 16);
             this.lblRedTuo.TabIndex = 715;
             this.lblRedTuo.Text = "红球拖";
             // 
@@ -673,6 +673,7 @@
             // 
             this.label60.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label60.AutoSize = true;
+            this.label60.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label60.ForeColor = System.Drawing.Color.DimGray;
             this.label60.Location = new System.Drawing.Point(393, 34);
             this.label60.Name = "label60";
@@ -684,6 +685,7 @@
             // 
             this.label61.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label61.AutoSize = true;
+            this.label61.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label61.ForeColor = System.Drawing.Color.DimGray;
             this.label61.Location = new System.Drawing.Point(393, 9);
             this.label61.Name = "label61";
@@ -832,7 +834,7 @@
             this.lblRedDanTitle.ForeColor = System.Drawing.Color.DimGray;
             this.lblRedDanTitle.Location = new System.Drawing.Point(168, 9);
             this.lblRedDanTitle.Name = "lblRedDanTitle";
-            this.lblRedDanTitle.Size = new System.Drawing.Size(41, 16);
+            this.lblRedDanTitle.Size = new System.Drawing.Size(40, 16);
             this.lblRedDanTitle.TabIndex = 701;
             this.lblRedDanTitle.Text = "红球胆";
             // 
@@ -1392,7 +1394,7 @@
             this.SelectDouble.ClickBottomColor = System.Drawing.Color.Crimson;
             this.SelectDouble.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SelectDouble.Depth = 0;
-            this.SelectDouble.Font = new System.Drawing.Font("微软雅黑", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.SelectDouble.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold);
             this.SelectDouble.ForeColor = System.Drawing.Color.Black;
             this.SelectDouble.Location = new System.Drawing.Point(2, 146);
             this.SelectDouble.MouseState = MaterialSkin.MouseState.HOVER;
@@ -1751,6 +1753,7 @@
             // 
             this.label19.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label19.ForeColor = System.Drawing.Color.DimGray;
             this.label19.Location = new System.Drawing.Point(420, 34);
             this.label19.Name = "label19";
@@ -1762,6 +1765,7 @@
             // 
             this.label20.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label20.ForeColor = System.Drawing.Color.DimGray;
             this.label20.Location = new System.Drawing.Point(420, 9);
             this.label20.Name = "label20";
@@ -2175,6 +2179,7 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label2.ForeColor = System.Drawing.Color.DimGray;
             this.label2.Location = new System.Drawing.Point(393, 34);
             this.label2.Name = "label2";
@@ -2186,6 +2191,7 @@
             // 
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label8.ForeColor = System.Drawing.Color.DimGray;
             this.label8.Location = new System.Drawing.Point(393, 9);
             this.label8.Name = "label8";
@@ -2740,7 +2746,7 @@
             this.pictureBox25.Image = global::DoubleBalls.Properties.Resources.Loop;
             this.pictureBox25.Location = new System.Drawing.Point(33, 544);
             this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox25.Size = new System.Drawing.Size(28, 28);
             this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox25.TabIndex = 656;
             this.pictureBox25.TabStop = false;
@@ -3443,7 +3449,7 @@
             this.label28.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label28.ForeColor = System.Drawing.Color.DarkGray;
+            this.label28.ForeColor = System.Drawing.Color.Gray;
             this.label28.Location = new System.Drawing.Point(868, 124);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(56, 17);
@@ -3539,7 +3545,7 @@
             this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label10.ForeColor = System.Drawing.Color.DarkGray;
+            this.label10.ForeColor = System.Drawing.Color.Gray;
             this.label10.Location = new System.Drawing.Point(868, 74);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(56, 17);
@@ -3588,7 +3594,7 @@
             this.label27.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label27.ForeColor = System.Drawing.Color.DarkGray;
+            this.label27.ForeColor = System.Drawing.Color.Gray;
             this.label27.Location = new System.Drawing.Point(868, 224);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(56, 17);
@@ -3647,7 +3653,7 @@
             this.label59.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label59.AutoSize = true;
             this.label59.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label59.ForeColor = System.Drawing.Color.DarkGray;
+            this.label59.ForeColor = System.Drawing.Color.Gray;
             this.label59.Location = new System.Drawing.Point(4, 58);
             this.label59.Name = "label59";
             this.label59.Size = new System.Drawing.Size(56, 17);
@@ -3764,7 +3770,7 @@
             this.label45.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label45.AutoSize = true;
             this.label45.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label45.ForeColor = System.Drawing.Color.DarkGray;
+            this.label45.ForeColor = System.Drawing.Color.Gray;
             this.label45.Location = new System.Drawing.Point(4, 134);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(56, 17);
@@ -3791,7 +3797,7 @@
             this.label44.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label44.AutoSize = true;
             this.label44.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label44.ForeColor = System.Drawing.Color.DarkGray;
+            this.label44.ForeColor = System.Drawing.Color.Gray;
             this.label44.Location = new System.Drawing.Point(4, 83);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(56, 17);
@@ -3818,7 +3824,7 @@
             this.label36.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label36.ForeColor = System.Drawing.Color.DarkGray;
+            this.label36.ForeColor = System.Drawing.Color.Gray;
             this.label36.Location = new System.Drawing.Point(4, 108);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(56, 17);
@@ -3845,7 +3851,7 @@
             this.label31.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label31.ForeColor = System.Drawing.Color.DarkGray;
+            this.label31.ForeColor = System.Drawing.Color.Gray;
             this.label31.Location = new System.Drawing.Point(4, 33);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(56, 17);
@@ -3872,7 +3878,7 @@
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.ForeColor = System.Drawing.Color.DarkGray;
+            this.label5.ForeColor = System.Drawing.Color.Gray;
             this.label5.Location = new System.Drawing.Point(4, 8);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(56, 17);
@@ -3884,7 +3890,7 @@
             this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label25.ForeColor = System.Drawing.Color.DarkGray;
+            this.label25.ForeColor = System.Drawing.Color.Gray;
             this.label25.Location = new System.Drawing.Point(868, 149);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(56, 17);
@@ -4138,7 +4144,7 @@
             this.lblCharityTotalMoney.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblCharityTotalMoney.EnterColor = System.Drawing.Color.OrangeRed;
             this.lblCharityTotalMoney.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblCharityTotalMoney.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblCharityTotalMoney.ForeColor = System.Drawing.Color.Gray;
             this.lblCharityTotalMoney.Location = new System.Drawing.Point(868, 199);
             this.lblCharityTotalMoney.Name = "lblCharityTotalMoney";
             this.lblCharityTotalMoney.Size = new System.Drawing.Size(187, 17);
@@ -4295,9 +4301,9 @@
             this.lblClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblClose.AutoSize = true;
             this.lblClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblClose.EnterColor = System.Drawing.Color.OrangeRed;
+            this.lblClose.EnterColor = System.Drawing.Color.Red;
             this.lblClose.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblClose.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblClose.ForeColor = System.Drawing.Color.Silver;
             this.lblClose.Location = new System.Drawing.Point(1111, 3);
             this.lblClose.Name = "lblClose";
             this.lblClose.Size = new System.Drawing.Size(41, 17);
@@ -4322,9 +4328,9 @@
             this.lblMin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblMin.AutoSize = true;
             this.lblMin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblMin.EnterColor = System.Drawing.Color.OrangeRed;
+            this.lblMin.EnterColor = System.Drawing.Color.Red;
             this.lblMin.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblMin.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblMin.ForeColor = System.Drawing.Color.Silver;
             this.lblMin.Location = new System.Drawing.Point(1045, 3);
             this.lblMin.Name = "lblMin";
             this.lblMin.Size = new System.Drawing.Size(32, 17);
@@ -4338,9 +4344,9 @@
             this.lblMaxUndo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblMaxUndo.AutoSize = true;
             this.lblMaxUndo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblMaxUndo.EnterColor = System.Drawing.Color.OrangeRed;
+            this.lblMaxUndo.EnterColor = System.Drawing.Color.Red;
             this.lblMaxUndo.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblMaxUndo.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblMaxUndo.ForeColor = System.Drawing.Color.Silver;
             this.lblMaxUndo.Location = new System.Drawing.Point(1077, 3);
             this.lblMaxUndo.Name = "lblMaxUndo";
             this.lblMaxUndo.Size = new System.Drawing.Size(34, 17);

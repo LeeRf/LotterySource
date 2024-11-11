@@ -41,6 +41,12 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.panBottom = new System.Windows.Forms.Panel();
+            this.lblNinePrize = new SuperLotto.Controls.LeeLabel();
+            this.label79 = new System.Windows.Forms.Label();
+            this.lblEightPrize = new SuperLotto.Controls.LeeLabel();
+            this.label71 = new System.Windows.Forms.Label();
+            this.lblSevenPrize = new SuperLotto.Controls.LeeLabel();
+            this.label63 = new System.Windows.Forms.Label();
             this.panLoopYear = new System.Windows.Forms.FlowLayoutPanel();
             this.lblYear1 = new SuperLotto.Controls.LeeLabel();
             this.lblLoopYear = new SuperLotto.Controls.LeeLabel();
@@ -111,6 +117,30 @@
             this.label48 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
+            this.panSevenPrize = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
+            this.panEightPrize = new System.Windows.Forms.Panel();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label67 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.label69 = new System.Windows.Forms.Label();
+            this.label70 = new System.Windows.Forms.Label();
+            this.panNinePrize = new System.Windows.Forms.Panel();
+            this.label72 = new System.Windows.Forms.Label();
+            this.label73 = new System.Windows.Forms.Label();
+            this.label74 = new System.Windows.Forms.Label();
+            this.label75 = new System.Windows.Forms.Label();
+            this.label76 = new System.Windows.Forms.Label();
+            this.label77 = new System.Windows.Forms.Label();
+            this.label78 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.lblLoopPeriods = new SuperLotto.Controls.LeeLabel();
             this.label11 = new System.Windows.Forms.Label();
@@ -132,36 +162,6 @@
             this.lblLotteryTotalAwardMoney = new SuperLotto.Controls.LeeLabel();
             this.lblClose = new SuperLotto.Controls.LeeLabel();
             this.picMenuWork = new System.Windows.Forms.PictureBox();
-            this.panSevenPrize = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
-            this.label60 = new System.Windows.Forms.Label();
-            this.label61 = new System.Windows.Forms.Label();
-            this.label62 = new System.Windows.Forms.Label();
-            this.lblSevenPrize = new SuperLotto.Controls.LeeLabel();
-            this.label63 = new System.Windows.Forms.Label();
-            this.panEightPrize = new System.Windows.Forms.Panel();
-            this.label64 = new System.Windows.Forms.Label();
-            this.label65 = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
-            this.label67 = new System.Windows.Forms.Label();
-            this.label68 = new System.Windows.Forms.Label();
-            this.label69 = new System.Windows.Forms.Label();
-            this.label70 = new System.Windows.Forms.Label();
-            this.lblEightPrize = new SuperLotto.Controls.LeeLabel();
-            this.label71 = new System.Windows.Forms.Label();
-            this.panNinePrize = new System.Windows.Forms.Panel();
-            this.label72 = new System.Windows.Forms.Label();
-            this.label73 = new System.Windows.Forms.Label();
-            this.label74 = new System.Windows.Forms.Label();
-            this.label75 = new System.Windows.Forms.Label();
-            this.label76 = new System.Windows.Forms.Label();
-            this.label77 = new System.Windows.Forms.Label();
-            this.label78 = new System.Windows.Forms.Label();
-            this.lblNinePrize = new SuperLotto.Controls.LeeLabel();
-            this.label79 = new System.Windows.Forms.Label();
             this.panBottom.SuspendLayout();
             this.panLoopYear.SuspendLayout();
             this.panMessage.SuspendLayout();
@@ -173,13 +173,13 @@
             this.panFourPrize.SuspendLayout();
             this.panFivePrize.SuspendLayout();
             this.panSixPrize.SuspendLayout();
+            this.panSevenPrize.SuspendLayout();
+            this.panEightPrize.SuspendLayout();
+            this.panNinePrize.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMenuWork)).BeginInit();
-            this.panSevenPrize.SuspendLayout();
-            this.panEightPrize.SuspendLayout();
-            this.panNinePrize.SuspendLayout();
             this.SuspendLayout();
             // 
             // label10
@@ -384,6 +384,81 @@
             this.panBottom.Name = "panBottom";
             this.panBottom.Size = new System.Drawing.Size(578, 779);
             this.panBottom.TabIndex = 622;
+            // 
+            // lblNinePrize
+            // 
+            this.lblNinePrize.AutoSize = true;
+            this.lblNinePrize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblNinePrize.EnterColor = System.Drawing.Color.OrangeRed;
+            this.lblNinePrize.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblNinePrize.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblNinePrize.Location = new System.Drawing.Point(131, 273);
+            this.lblNinePrize.Name = "lblNinePrize";
+            this.lblNinePrize.Size = new System.Drawing.Size(127, 17);
+            this.lblNinePrize.TabIndex = 683;
+            this.lblNinePrize.Tag = "0";
+            this.lblNinePrize.Text = "（null）00000（注）";
+            // 
+            // label79
+            // 
+            this.label79.AutoSize = true;
+            this.label79.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label79.ForeColor = System.Drawing.Color.DarkGray;
+            this.label79.Location = new System.Drawing.Point(69, 273);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(56, 17);
+            this.label79.TabIndex = 684;
+            this.label79.Text = "九等奖注";
+            // 
+            // lblEightPrize
+            // 
+            this.lblEightPrize.AutoSize = true;
+            this.lblEightPrize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblEightPrize.EnterColor = System.Drawing.Color.OrangeRed;
+            this.lblEightPrize.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblEightPrize.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblEightPrize.Location = new System.Drawing.Point(131, 244);
+            this.lblEightPrize.Name = "lblEightPrize";
+            this.lblEightPrize.Size = new System.Drawing.Size(127, 17);
+            this.lblEightPrize.TabIndex = 680;
+            this.lblEightPrize.Tag = "0";
+            this.lblEightPrize.Text = "（null）00000（注）";
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label71.ForeColor = System.Drawing.Color.DarkGray;
+            this.label71.Location = new System.Drawing.Point(69, 244);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(56, 17);
+            this.label71.TabIndex = 681;
+            this.label71.Text = "八等奖注";
+            // 
+            // lblSevenPrize
+            // 
+            this.lblSevenPrize.AutoSize = true;
+            this.lblSevenPrize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblSevenPrize.EnterColor = System.Drawing.Color.OrangeRed;
+            this.lblSevenPrize.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblSevenPrize.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblSevenPrize.Location = new System.Drawing.Point(131, 215);
+            this.lblSevenPrize.Name = "lblSevenPrize";
+            this.lblSevenPrize.Size = new System.Drawing.Size(127, 17);
+            this.lblSevenPrize.TabIndex = 677;
+            this.lblSevenPrize.Tag = "0";
+            this.lblSevenPrize.Text = "（null）00000（注）";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label63.ForeColor = System.Drawing.Color.DarkGray;
+            this.label63.Location = new System.Drawing.Point(69, 215);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(56, 17);
+            this.label63.TabIndex = 678;
+            this.label63.Text = "七等奖注";
             // 
             // panLoopYear
             // 
@@ -1319,6 +1394,324 @@
             this.label50.Tag = "Blue";
             this.label50.Text = "00";
             // 
+            // panSevenPrize
+            // 
+            this.panSevenPrize.Controls.Add(this.label8);
+            this.panSevenPrize.Controls.Add(this.label52);
+            this.panSevenPrize.Controls.Add(this.label55);
+            this.panSevenPrize.Controls.Add(this.label59);
+            this.panSevenPrize.Controls.Add(this.label60);
+            this.panSevenPrize.Controls.Add(this.label61);
+            this.panSevenPrize.Controls.Add(this.label62);
+            this.panSevenPrize.Location = new System.Drawing.Point(273, 211);
+            this.panSevenPrize.Name = "panSevenPrize";
+            this.panSevenPrize.Size = new System.Drawing.Size(168, 27);
+            this.panSevenPrize.TabIndex = 679;
+            this.panSevenPrize.Tag = "Prize";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label8.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label8.ForeColor = System.Drawing.Color.LightGray;
+            this.label8.Location = new System.Drawing.Point(5, 5);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(22, 17);
+            this.label8.TabIndex = 626;
+            this.label8.Tag = "Red";
+            this.label8.Text = "00";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label52.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label52.ForeColor = System.Drawing.Color.LightGray;
+            this.label52.Location = new System.Drawing.Point(27, 5);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(22, 17);
+            this.label52.TabIndex = 628;
+            this.label52.Tag = "Red";
+            this.label52.Text = "00";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label55.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label55.ForeColor = System.Drawing.Color.LightGray;
+            this.label55.Location = new System.Drawing.Point(49, 5);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(22, 17);
+            this.label55.TabIndex = 629;
+            this.label55.Tag = "Red";
+            this.label55.Text = "00";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label59.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label59.ForeColor = System.Drawing.Color.LightGray;
+            this.label59.Location = new System.Drawing.Point(71, 5);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(22, 17);
+            this.label59.TabIndex = 630;
+            this.label59.Tag = "Red";
+            this.label59.Text = "00";
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label60.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label60.ForeColor = System.Drawing.Color.LightGray;
+            this.label60.Location = new System.Drawing.Point(93, 5);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(22, 17);
+            this.label60.TabIndex = 631;
+            this.label60.Tag = "Red";
+            this.label60.Text = "00";
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label61.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label61.ForeColor = System.Drawing.Color.LightGray;
+            this.label61.Location = new System.Drawing.Point(115, 5);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(22, 17);
+            this.label61.TabIndex = 632;
+            this.label61.Tag = "Blue";
+            this.label61.Text = "00";
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label62.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label62.ForeColor = System.Drawing.Color.LightGray;
+            this.label62.Location = new System.Drawing.Point(137, 5);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(22, 17);
+            this.label62.TabIndex = 627;
+            this.label62.Tag = "Blue";
+            this.label62.Text = "00";
+            // 
+            // panEightPrize
+            // 
+            this.panEightPrize.Controls.Add(this.label64);
+            this.panEightPrize.Controls.Add(this.label65);
+            this.panEightPrize.Controls.Add(this.label66);
+            this.panEightPrize.Controls.Add(this.label67);
+            this.panEightPrize.Controls.Add(this.label68);
+            this.panEightPrize.Controls.Add(this.label69);
+            this.panEightPrize.Controls.Add(this.label70);
+            this.panEightPrize.Location = new System.Drawing.Point(273, 240);
+            this.panEightPrize.Name = "panEightPrize";
+            this.panEightPrize.Size = new System.Drawing.Size(168, 27);
+            this.panEightPrize.TabIndex = 682;
+            this.panEightPrize.Tag = "Prize";
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label64.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label64.ForeColor = System.Drawing.Color.LightGray;
+            this.label64.Location = new System.Drawing.Point(5, 5);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(22, 17);
+            this.label64.TabIndex = 626;
+            this.label64.Tag = "Red";
+            this.label64.Text = "00";
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label65.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label65.ForeColor = System.Drawing.Color.LightGray;
+            this.label65.Location = new System.Drawing.Point(27, 5);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(22, 17);
+            this.label65.TabIndex = 628;
+            this.label65.Tag = "Red";
+            this.label65.Text = "00";
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label66.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label66.ForeColor = System.Drawing.Color.LightGray;
+            this.label66.Location = new System.Drawing.Point(49, 5);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(22, 17);
+            this.label66.TabIndex = 629;
+            this.label66.Tag = "Red";
+            this.label66.Text = "00";
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label67.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label67.ForeColor = System.Drawing.Color.LightGray;
+            this.label67.Location = new System.Drawing.Point(71, 5);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(22, 17);
+            this.label67.TabIndex = 630;
+            this.label67.Tag = "Red";
+            this.label67.Text = "00";
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label68.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label68.ForeColor = System.Drawing.Color.LightGray;
+            this.label68.Location = new System.Drawing.Point(93, 5);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(22, 17);
+            this.label68.TabIndex = 631;
+            this.label68.Tag = "Red";
+            this.label68.Text = "00";
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label69.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label69.ForeColor = System.Drawing.Color.LightGray;
+            this.label69.Location = new System.Drawing.Point(115, 5);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(22, 17);
+            this.label69.TabIndex = 632;
+            this.label69.Tag = "Blue";
+            this.label69.Text = "00";
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label70.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label70.ForeColor = System.Drawing.Color.LightGray;
+            this.label70.Location = new System.Drawing.Point(137, 5);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(22, 17);
+            this.label70.TabIndex = 627;
+            this.label70.Tag = "Blue";
+            this.label70.Text = "00";
+            // 
+            // panNinePrize
+            // 
+            this.panNinePrize.Controls.Add(this.label72);
+            this.panNinePrize.Controls.Add(this.label73);
+            this.panNinePrize.Controls.Add(this.label74);
+            this.panNinePrize.Controls.Add(this.label75);
+            this.panNinePrize.Controls.Add(this.label76);
+            this.panNinePrize.Controls.Add(this.label77);
+            this.panNinePrize.Controls.Add(this.label78);
+            this.panNinePrize.Location = new System.Drawing.Point(273, 269);
+            this.panNinePrize.Name = "panNinePrize";
+            this.panNinePrize.Size = new System.Drawing.Size(168, 27);
+            this.panNinePrize.TabIndex = 685;
+            this.panNinePrize.Tag = "Prize";
+            // 
+            // label72
+            // 
+            this.label72.AutoSize = true;
+            this.label72.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label72.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label72.ForeColor = System.Drawing.Color.LightGray;
+            this.label72.Location = new System.Drawing.Point(5, 5);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(22, 17);
+            this.label72.TabIndex = 626;
+            this.label72.Tag = "Red";
+            this.label72.Text = "00";
+            // 
+            // label73
+            // 
+            this.label73.AutoSize = true;
+            this.label73.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label73.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label73.ForeColor = System.Drawing.Color.LightGray;
+            this.label73.Location = new System.Drawing.Point(27, 5);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(22, 17);
+            this.label73.TabIndex = 628;
+            this.label73.Tag = "Red";
+            this.label73.Text = "00";
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label74.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label74.ForeColor = System.Drawing.Color.LightGray;
+            this.label74.Location = new System.Drawing.Point(49, 5);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(22, 17);
+            this.label74.TabIndex = 629;
+            this.label74.Tag = "Red";
+            this.label74.Text = "00";
+            // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label75.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label75.ForeColor = System.Drawing.Color.LightGray;
+            this.label75.Location = new System.Drawing.Point(71, 5);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(22, 17);
+            this.label75.TabIndex = 630;
+            this.label75.Tag = "Red";
+            this.label75.Text = "00";
+            // 
+            // label76
+            // 
+            this.label76.AutoSize = true;
+            this.label76.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label76.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label76.ForeColor = System.Drawing.Color.LightGray;
+            this.label76.Location = new System.Drawing.Point(93, 5);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(22, 17);
+            this.label76.TabIndex = 631;
+            this.label76.Tag = "Red";
+            this.label76.Text = "00";
+            // 
+            // label77
+            // 
+            this.label77.AutoSize = true;
+            this.label77.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label77.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label77.ForeColor = System.Drawing.Color.LightGray;
+            this.label77.Location = new System.Drawing.Point(115, 5);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(22, 17);
+            this.label77.TabIndex = 632;
+            this.label77.Tag = "Blue";
+            this.label77.Text = "00";
+            // 
+            // label78
+            // 
+            this.label78.AutoSize = true;
+            this.label78.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label78.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label78.ForeColor = System.Drawing.Color.LightGray;
+            this.label78.Location = new System.Drawing.Point(137, 5);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(22, 17);
+            this.label78.TabIndex = 627;
+            this.label78.Tag = "Blue";
+            this.label78.Text = "00";
+            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -1578,9 +1971,9 @@
             this.lblClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblClose.AutoSize = true;
             this.lblClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblClose.EnterColor = System.Drawing.Color.OrangeRed;
+            this.lblClose.EnterColor = System.Drawing.Color.Red;
             this.lblClose.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblClose.ForeColor = System.Drawing.Color.Silver;
+            this.lblClose.ForeColor = System.Drawing.Color.DarkSalmon;
             this.lblClose.Location = new System.Drawing.Point(534, 2);
             this.lblClose.Name = "lblClose";
             this.lblClose.Size = new System.Drawing.Size(41, 17);
@@ -1601,399 +1994,6 @@
             this.picMenuWork.TabIndex = 609;
             this.picMenuWork.TabStop = false;
             this.picMenuWork.Tag = "0";
-            // 
-            // panSevenPrize
-            // 
-            this.panSevenPrize.Controls.Add(this.label8);
-            this.panSevenPrize.Controls.Add(this.label52);
-            this.panSevenPrize.Controls.Add(this.label55);
-            this.panSevenPrize.Controls.Add(this.label59);
-            this.panSevenPrize.Controls.Add(this.label60);
-            this.panSevenPrize.Controls.Add(this.label61);
-            this.panSevenPrize.Controls.Add(this.label62);
-            this.panSevenPrize.Location = new System.Drawing.Point(273, 211);
-            this.panSevenPrize.Name = "panSevenPrize";
-            this.panSevenPrize.Size = new System.Drawing.Size(168, 27);
-            this.panSevenPrize.TabIndex = 679;
-            this.panSevenPrize.Tag = "Prize";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label8.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label8.ForeColor = System.Drawing.Color.LightGray;
-            this.label8.Location = new System.Drawing.Point(5, 5);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(22, 17);
-            this.label8.TabIndex = 626;
-            this.label8.Tag = "Red";
-            this.label8.Text = "00";
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label52.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label52.ForeColor = System.Drawing.Color.LightGray;
-            this.label52.Location = new System.Drawing.Point(27, 5);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(22, 17);
-            this.label52.TabIndex = 628;
-            this.label52.Tag = "Red";
-            this.label52.Text = "00";
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label55.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label55.ForeColor = System.Drawing.Color.LightGray;
-            this.label55.Location = new System.Drawing.Point(49, 5);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(22, 17);
-            this.label55.TabIndex = 629;
-            this.label55.Tag = "Red";
-            this.label55.Text = "00";
-            // 
-            // label59
-            // 
-            this.label59.AutoSize = true;
-            this.label59.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label59.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label59.ForeColor = System.Drawing.Color.LightGray;
-            this.label59.Location = new System.Drawing.Point(71, 5);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(22, 17);
-            this.label59.TabIndex = 630;
-            this.label59.Tag = "Red";
-            this.label59.Text = "00";
-            // 
-            // label60
-            // 
-            this.label60.AutoSize = true;
-            this.label60.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label60.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label60.ForeColor = System.Drawing.Color.LightGray;
-            this.label60.Location = new System.Drawing.Point(93, 5);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(22, 17);
-            this.label60.TabIndex = 631;
-            this.label60.Tag = "Red";
-            this.label60.Text = "00";
-            // 
-            // label61
-            // 
-            this.label61.AutoSize = true;
-            this.label61.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label61.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label61.ForeColor = System.Drawing.Color.LightGray;
-            this.label61.Location = new System.Drawing.Point(115, 5);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(22, 17);
-            this.label61.TabIndex = 632;
-            this.label61.Tag = "Blue";
-            this.label61.Text = "00";
-            // 
-            // label62
-            // 
-            this.label62.AutoSize = true;
-            this.label62.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label62.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label62.ForeColor = System.Drawing.Color.LightGray;
-            this.label62.Location = new System.Drawing.Point(137, 5);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(22, 17);
-            this.label62.TabIndex = 627;
-            this.label62.Tag = "Blue";
-            this.label62.Text = "00";
-            // 
-            // lblSevenPrize
-            // 
-            this.lblSevenPrize.AutoSize = true;
-            this.lblSevenPrize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblSevenPrize.EnterColor = System.Drawing.Color.OrangeRed;
-            this.lblSevenPrize.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblSevenPrize.ForeColor = System.Drawing.Color.DarkGray;
-            this.lblSevenPrize.Location = new System.Drawing.Point(131, 215);
-            this.lblSevenPrize.Name = "lblSevenPrize";
-            this.lblSevenPrize.Size = new System.Drawing.Size(127, 17);
-            this.lblSevenPrize.TabIndex = 677;
-            this.lblSevenPrize.Tag = "0";
-            this.lblSevenPrize.Text = "（null）00000（注）";
-            // 
-            // label63
-            // 
-            this.label63.AutoSize = true;
-            this.label63.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label63.ForeColor = System.Drawing.Color.DarkGray;
-            this.label63.Location = new System.Drawing.Point(69, 215);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(56, 17);
-            this.label63.TabIndex = 678;
-            this.label63.Text = "七等奖注";
-            // 
-            // panEightPrize
-            // 
-            this.panEightPrize.Controls.Add(this.label64);
-            this.panEightPrize.Controls.Add(this.label65);
-            this.panEightPrize.Controls.Add(this.label66);
-            this.panEightPrize.Controls.Add(this.label67);
-            this.panEightPrize.Controls.Add(this.label68);
-            this.panEightPrize.Controls.Add(this.label69);
-            this.panEightPrize.Controls.Add(this.label70);
-            this.panEightPrize.Location = new System.Drawing.Point(273, 240);
-            this.panEightPrize.Name = "panEightPrize";
-            this.panEightPrize.Size = new System.Drawing.Size(168, 27);
-            this.panEightPrize.TabIndex = 682;
-            this.panEightPrize.Tag = "Prize";
-            // 
-            // label64
-            // 
-            this.label64.AutoSize = true;
-            this.label64.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label64.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label64.ForeColor = System.Drawing.Color.LightGray;
-            this.label64.Location = new System.Drawing.Point(5, 5);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(22, 17);
-            this.label64.TabIndex = 626;
-            this.label64.Tag = "Red";
-            this.label64.Text = "00";
-            // 
-            // label65
-            // 
-            this.label65.AutoSize = true;
-            this.label65.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label65.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label65.ForeColor = System.Drawing.Color.LightGray;
-            this.label65.Location = new System.Drawing.Point(27, 5);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(22, 17);
-            this.label65.TabIndex = 628;
-            this.label65.Tag = "Red";
-            this.label65.Text = "00";
-            // 
-            // label66
-            // 
-            this.label66.AutoSize = true;
-            this.label66.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label66.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label66.ForeColor = System.Drawing.Color.LightGray;
-            this.label66.Location = new System.Drawing.Point(49, 5);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(22, 17);
-            this.label66.TabIndex = 629;
-            this.label66.Tag = "Red";
-            this.label66.Text = "00";
-            // 
-            // label67
-            // 
-            this.label67.AutoSize = true;
-            this.label67.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label67.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label67.ForeColor = System.Drawing.Color.LightGray;
-            this.label67.Location = new System.Drawing.Point(71, 5);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(22, 17);
-            this.label67.TabIndex = 630;
-            this.label67.Tag = "Red";
-            this.label67.Text = "00";
-            // 
-            // label68
-            // 
-            this.label68.AutoSize = true;
-            this.label68.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label68.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label68.ForeColor = System.Drawing.Color.LightGray;
-            this.label68.Location = new System.Drawing.Point(93, 5);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(22, 17);
-            this.label68.TabIndex = 631;
-            this.label68.Tag = "Red";
-            this.label68.Text = "00";
-            // 
-            // label69
-            // 
-            this.label69.AutoSize = true;
-            this.label69.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label69.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label69.ForeColor = System.Drawing.Color.LightGray;
-            this.label69.Location = new System.Drawing.Point(115, 5);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(22, 17);
-            this.label69.TabIndex = 632;
-            this.label69.Tag = "Blue";
-            this.label69.Text = "00";
-            // 
-            // label70
-            // 
-            this.label70.AutoSize = true;
-            this.label70.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label70.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label70.ForeColor = System.Drawing.Color.LightGray;
-            this.label70.Location = new System.Drawing.Point(137, 5);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(22, 17);
-            this.label70.TabIndex = 627;
-            this.label70.Tag = "Blue";
-            this.label70.Text = "00";
-            // 
-            // lblEightPrize
-            // 
-            this.lblEightPrize.AutoSize = true;
-            this.lblEightPrize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblEightPrize.EnterColor = System.Drawing.Color.OrangeRed;
-            this.lblEightPrize.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblEightPrize.ForeColor = System.Drawing.Color.DarkGray;
-            this.lblEightPrize.Location = new System.Drawing.Point(131, 244);
-            this.lblEightPrize.Name = "lblEightPrize";
-            this.lblEightPrize.Size = new System.Drawing.Size(127, 17);
-            this.lblEightPrize.TabIndex = 680;
-            this.lblEightPrize.Tag = "0";
-            this.lblEightPrize.Text = "（null）00000（注）";
-            // 
-            // label71
-            // 
-            this.label71.AutoSize = true;
-            this.label71.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label71.ForeColor = System.Drawing.Color.DarkGray;
-            this.label71.Location = new System.Drawing.Point(69, 244);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(56, 17);
-            this.label71.TabIndex = 681;
-            this.label71.Text = "八等奖注";
-            // 
-            // panNinePrize
-            // 
-            this.panNinePrize.Controls.Add(this.label72);
-            this.panNinePrize.Controls.Add(this.label73);
-            this.panNinePrize.Controls.Add(this.label74);
-            this.panNinePrize.Controls.Add(this.label75);
-            this.panNinePrize.Controls.Add(this.label76);
-            this.panNinePrize.Controls.Add(this.label77);
-            this.panNinePrize.Controls.Add(this.label78);
-            this.panNinePrize.Location = new System.Drawing.Point(273, 269);
-            this.panNinePrize.Name = "panNinePrize";
-            this.panNinePrize.Size = new System.Drawing.Size(168, 27);
-            this.panNinePrize.TabIndex = 685;
-            this.panNinePrize.Tag = "Prize";
-            // 
-            // label72
-            // 
-            this.label72.AutoSize = true;
-            this.label72.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label72.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label72.ForeColor = System.Drawing.Color.LightGray;
-            this.label72.Location = new System.Drawing.Point(5, 5);
-            this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(22, 17);
-            this.label72.TabIndex = 626;
-            this.label72.Tag = "Red";
-            this.label72.Text = "00";
-            // 
-            // label73
-            // 
-            this.label73.AutoSize = true;
-            this.label73.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label73.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label73.ForeColor = System.Drawing.Color.LightGray;
-            this.label73.Location = new System.Drawing.Point(27, 5);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(22, 17);
-            this.label73.TabIndex = 628;
-            this.label73.Tag = "Red";
-            this.label73.Text = "00";
-            // 
-            // label74
-            // 
-            this.label74.AutoSize = true;
-            this.label74.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label74.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label74.ForeColor = System.Drawing.Color.LightGray;
-            this.label74.Location = new System.Drawing.Point(49, 5);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(22, 17);
-            this.label74.TabIndex = 629;
-            this.label74.Tag = "Red";
-            this.label74.Text = "00";
-            // 
-            // label75
-            // 
-            this.label75.AutoSize = true;
-            this.label75.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label75.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label75.ForeColor = System.Drawing.Color.LightGray;
-            this.label75.Location = new System.Drawing.Point(71, 5);
-            this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(22, 17);
-            this.label75.TabIndex = 630;
-            this.label75.Tag = "Red";
-            this.label75.Text = "00";
-            // 
-            // label76
-            // 
-            this.label76.AutoSize = true;
-            this.label76.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label76.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label76.ForeColor = System.Drawing.Color.LightGray;
-            this.label76.Location = new System.Drawing.Point(93, 5);
-            this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(22, 17);
-            this.label76.TabIndex = 631;
-            this.label76.Tag = "Red";
-            this.label76.Text = "00";
-            // 
-            // label77
-            // 
-            this.label77.AutoSize = true;
-            this.label77.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label77.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label77.ForeColor = System.Drawing.Color.LightGray;
-            this.label77.Location = new System.Drawing.Point(115, 5);
-            this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(22, 17);
-            this.label77.TabIndex = 632;
-            this.label77.Tag = "Blue";
-            this.label77.Text = "00";
-            // 
-            // label78
-            // 
-            this.label78.AutoSize = true;
-            this.label78.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label78.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label78.ForeColor = System.Drawing.Color.LightGray;
-            this.label78.Location = new System.Drawing.Point(137, 5);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(22, 17);
-            this.label78.TabIndex = 627;
-            this.label78.Tag = "Blue";
-            this.label78.Text = "00";
-            // 
-            // lblNinePrize
-            // 
-            this.lblNinePrize.AutoSize = true;
-            this.lblNinePrize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblNinePrize.EnterColor = System.Drawing.Color.OrangeRed;
-            this.lblNinePrize.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblNinePrize.ForeColor = System.Drawing.Color.DarkGray;
-            this.lblNinePrize.Location = new System.Drawing.Point(131, 273);
-            this.lblNinePrize.Name = "lblNinePrize";
-            this.lblNinePrize.Size = new System.Drawing.Size(127, 17);
-            this.lblNinePrize.TabIndex = 683;
-            this.lblNinePrize.Tag = "0";
-            this.lblNinePrize.Text = "（null）00000（注）";
-            // 
-            // label79
-            // 
-            this.label79.AutoSize = true;
-            this.label79.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label79.ForeColor = System.Drawing.Color.DarkGray;
-            this.label79.Location = new System.Drawing.Point(69, 273);
-            this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(56, 17);
-            this.label79.TabIndex = 684;
-            this.label79.Text = "九等奖注";
             // 
             // LoopDataAnalyse
             // 
@@ -2031,16 +2031,16 @@
             this.panFivePrize.PerformLayout();
             this.panSixPrize.ResumeLayout(false);
             this.panSixPrize.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picMenuWork)).EndInit();
             this.panSevenPrize.ResumeLayout(false);
             this.panSevenPrize.PerformLayout();
             this.panEightPrize.ResumeLayout(false);
             this.panEightPrize.PerformLayout();
             this.panNinePrize.ResumeLayout(false);
             this.panNinePrize.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMenuWork)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

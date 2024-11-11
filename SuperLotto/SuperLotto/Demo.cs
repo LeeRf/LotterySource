@@ -19,5 +19,19 @@ namespace SuperLotto
         }
 
         private void lblClose_Click(object sender, EventArgs e) => Close();
+
+        private void Demo_Load(object sender, EventArgs e)
+        {
+            Shown += (o, args) =>
+            {
+                foreach (Control item in panLotteryRules.Controls)
+                {
+                    if(!item.Visible)
+                    {
+                        item.Visible = true;
+                    }
+                }
+            };
+        }
     }
 }
