@@ -222,17 +222,17 @@ namespace SuperLotto.Model
         public void ComparisonSimplexSuperLottoNumber(SimplexSuperLottoNumber _mySuperLottoNumber, SimplexSuperLottoNumber _publicSuperLottoNumber)
         {
             //红球中奖位数
-            int winningRedCount = 0;
+            int winRedCount = 0;
 
             //篮球是否相同
-            int winningBlueCount = 0;
+            int winBlueCount = 0;
 
             //比较红球中的数量
             for (int i = 0; i < _publicSuperLottoNumber.redBalls.Length; i++)
             {
                 if (_mySuperLottoNumber.redBalls.Contains(_publicSuperLottoNumber.redBalls[i]))
                 {
-                    winningRedCount++;
+                    winRedCount++;
                 }
             }
 
@@ -240,11 +240,11 @@ namespace SuperLotto.Model
             {
                 if (_mySuperLottoNumber.blueBalls.Contains(_publicSuperLottoNumber.blueBalls[i]))
                 {
-                    winningBlueCount++;
+                    winBlueCount++;
                 }
             }
 
-            SettingSuperLottoAwardLevel(_mySuperLottoNumber, winningRedCount, winningBlueCount);
+            SettingSuperLottoAwardLevel(_mySuperLottoNumber, winRedCount, winBlueCount);
         }
 
         /// <summary>
@@ -256,10 +256,9 @@ namespace SuperLotto.Model
         public void ComparisonComplexSuperLottoNumber(ComplexSuperLottoNumber _mySuperLottoNumber, SimplexSuperLottoNumber _publicSuperLottoNumber)
         {
             //红球中奖位数
-            int winningRedCount = 0;
-
+            int winRedCount = 0;
             //篮球是否相同
-            int winningBlueCount = 0;
+            int winBlueCount = 0;
 
             int redIndex = 0, blueIndex = 0;
 
@@ -270,7 +269,7 @@ namespace SuperLotto.Model
             {
                 if (_mySuperLottoNumber.redBalls.Contains(_publicSuperLottoNumber.redBalls[i]))
                 {
-                    winningRedCount++;
+                    winRedCount++;
                     //记录中奖的红球号码
                     _mySuperLottoNumber.maxRedWinPrizes[redIndex++] = _publicSuperLottoNumber.redBalls[i];
                 }
@@ -280,17 +279,17 @@ namespace SuperLotto.Model
             {
                 if (_mySuperLottoNumber.blueBalls.Contains(_publicSuperLottoNumber.blueBalls[i]))
                 {
-                    winningBlueCount++;
+                    winBlueCount++;
                     _mySuperLottoNumber.maxBlueWinPrize[blueIndex++] = _publicSuperLottoNumber.blueBalls[i];
                 }
             }
 
-            SettingSuperLottoAwardLevel(_mySuperLottoNumber, winningRedCount, winningBlueCount);
+            SettingSuperLottoAwardLevel(_mySuperLottoNumber, winRedCount, winBlueCount);
 
             if (_mySuperLottoNumber.awardType != AwardType.NotAward)
             {
                 CalculateComplexWinningAmount(
-                    _mySuperLottoNumber, _mySuperLottoNumber.redBallCount, _mySuperLottoNumber.blueBallCount, winningRedCount, winningBlueCount);
+                    _mySuperLottoNumber, _mySuperLottoNumber.redBallCount, _mySuperLottoNumber.blueBallCount, winRedCount, winBlueCount);
             }
         }
 
@@ -298,27 +297,27 @@ namespace SuperLotto.Model
         /// 统计复试号码中奖注数
         /// </summary>
         /// <param name="_mySuperLottoNumber">我的复试号码</param>
-        /// <param name="redC">红色球总数量</param>
-        /// <param name="blueC">蓝色球总数量</param>
-        /// <param name="redZ">红色球中奖个数</param>
-        /// <param name="blueZ">蓝色球中奖个数</param>
+        /// <param name="redCount">红色球总数量</param>
+        /// <param name="blueCount">蓝色球总数量</param>
+        /// <param name="winRedCount">红色球中奖个数</param>
+        /// <param name="winBlueCount">蓝色球中奖个数</param>
         /// <returns></returns>
-        public void CalculateComplexWinningAmount(ComplexSuperLottoNumber _mySuperLottoNumber, int redC, int blueC, int redZ, int blueZ)
+        public void CalculateComplexWinningAmount(ComplexSuperLottoNumber _mySuperLottoNumber, int redCount, int blueCount, int winRedCount, int winBlueCount)
         {
-            int[] aResult = new int[9];
-            for (var i = 0; i <= redZ; i++)
+            int[] awardResults = new int[9];
+            for (var i = 0; i <= winRedCount; i++)
             {
-                for (var x = 0; x <= blueZ; x++)
+                for (var x = 0; x <= winBlueCount; x++)
                 {
                     var m = Rank9x(i, x);
                     if (m != -1)
                     {
-                        aResult[m] += Combo(redZ, i) * Combo(redC - redZ, 5 - i) * Combo(blueC - blueZ, 2 - x) * Combo(blueZ, x);
+                        awardResults[m] += Combo(winRedCount, i) * Combo(redCount - winRedCount, 5 - i) * Combo(blueCount - winBlueCount, 2 - x) * Combo(winBlueCount, x);
                     }
                 }
             }
 
-            SettingWinningCount(_mySuperLottoNumber, aResult);
+            SettingComplexWinningCount(_mySuperLottoNumber, awardResults);
         }
 
         /// <summary>
@@ -379,55 +378,108 @@ namespace SuperLotto.Model
         }
 
         /// <summary>
-        /// 设置该注号码中奖的数量
+        /// 设置复试号码中奖的数量
         /// </summary>
         /// <param name="_mySuperLottoNumber"></param>
-        /// <param name="aResult"></param>
-        private static void SettingWinningCount(ComplexSuperLottoNumber _mySuperLottoNumber, int[] aResult)
+        /// <param name="awardResults"></param>
+        private static void SettingComplexWinningCount(ComplexSuperLottoNumber _mySuperLottoNumber, int[] awardResults)
         {
             if (_mySuperLottoNumber.awardType == AwardType.OneAward)
             {
-                _mySuperLottoNumber.oneAwardTotalZhu = aResult[0];
+                _mySuperLottoNumber.oneAwardTotalZhu = awardResults[0];
             }
 
             if (_mySuperLottoNumber.awardType >= AwardType.TwoAward)
             {
-                _mySuperLottoNumber.twoAwardTotalZhu = aResult[1];
+                _mySuperLottoNumber.twoAwardTotalZhu = awardResults[1];
             }
 
             if (_mySuperLottoNumber.awardType >= AwardType.ThreeAward)
             {
-                _mySuperLottoNumber.threeAwardTotalZhu = aResult[2];
+                _mySuperLottoNumber.threeAwardTotalZhu = awardResults[2];
             }
 
             if (_mySuperLottoNumber.awardType >= AwardType.FourAward)
             {
-                _mySuperLottoNumber.fourAwardTotalZhu = aResult[3];
+                _mySuperLottoNumber.fourAwardTotalZhu = awardResults[3];
             }
 
             if (_mySuperLottoNumber.awardType >= AwardType.FiveAward)
             {
-                _mySuperLottoNumber.fiveAwardTotalZhu = aResult[4];
+                _mySuperLottoNumber.fiveAwardTotalZhu = awardResults[4];
             }
 
             if (_mySuperLottoNumber.awardType >= AwardType.SixAward)
             {
-                _mySuperLottoNumber.sixAwardTotalZhu = aResult[5];
+                _mySuperLottoNumber.sixAwardTotalZhu = awardResults[5];
             }
 
             if (_mySuperLottoNumber.awardType >= AwardType.SevenAward)
             {
-                _mySuperLottoNumber.sevenAwardTotalZhu = aResult[6];
+                _mySuperLottoNumber.sevenAwardTotalZhu = awardResults[6];
             }
 
             if (_mySuperLottoNumber.awardType >= AwardType.EightAward)
             {
-                _mySuperLottoNumber.eightAwardTotalZhu = aResult[7];
+                _mySuperLottoNumber.eightAwardTotalZhu = awardResults[7];
             }
 
             if (_mySuperLottoNumber.awardType >= AwardType.NineAward)
             {
-                _mySuperLottoNumber.nineAwardTotalZhu = aResult[8];
+                _mySuperLottoNumber.nineAwardTotalZhu = awardResults[8];
+            }
+        }
+
+        /// <summary>
+        /// 设置胆拖号码中奖的数量
+        /// </summary>
+        /// <param name="_mySuperLottoNumber"></param>
+        /// <param name="awardResults"></param>
+        private static void SettingDanTuoWinningCount(DantuoSuperLottoNumber _mySuperLottoNumber, int[] awardResults)
+        {
+            if (_mySuperLottoNumber.awardType == AwardType.OneAward)
+            {
+                _mySuperLottoNumber.oneAwardTotalZhu = awardResults[0];
+            }
+
+            if (_mySuperLottoNumber.awardType >= AwardType.TwoAward)
+            {
+                _mySuperLottoNumber.twoAwardTotalZhu = awardResults[1];
+            }
+
+            if (_mySuperLottoNumber.awardType >= AwardType.ThreeAward)
+            {
+                _mySuperLottoNumber.threeAwardTotalZhu = awardResults[2];
+            }
+
+            if (_mySuperLottoNumber.awardType >= AwardType.FourAward)
+            {
+                _mySuperLottoNumber.fourAwardTotalZhu = awardResults[3];
+            }
+
+            if (_mySuperLottoNumber.awardType >= AwardType.FiveAward)
+            {
+                _mySuperLottoNumber.fiveAwardTotalZhu = awardResults[4];
+            }
+
+            if (_mySuperLottoNumber.awardType >= AwardType.SixAward)
+            {
+                _mySuperLottoNumber.sixAwardTotalZhu = awardResults[5];
+            }
+
+            if (_mySuperLottoNumber.awardType >= AwardType.SevenAward)
+            {
+                _mySuperLottoNumber.sevenAwardTotalZhu = awardResults[6];
+            }
+
+            if (_mySuperLottoNumber.awardType >= AwardType.EightAward)
+            {
+                _mySuperLottoNumber.eightAwardTotalZhu = awardResults[7];
+            }
+
+            if (_mySuperLottoNumber.awardType >= AwardType.NineAward)
+            {
+                _mySuperLottoNumber.nineAwardTotalZhu = awardResults[8];
             }
         }
 
@@ -440,12 +492,14 @@ namespace SuperLotto.Model
         public void ComparisonDantuoSuperLottoNumber(DantuoSuperLottoNumber _mySuperLottoNumber, SimplexSuperLottoNumber _publicSuperLottoNumber)
         {
             //红球胆的中奖位数
-            int winningRedCount = 0;
+            int winRedDanCount = 0;
             //红球拖的中奖位数
-            int winningRedTuoCount = 0;
+            int winRedTuoCount = 0;
+            //蓝球胆的中奖位数
+            int winBlueDanCount = 0;
+            //蓝球拖的中奖位数
+            int winBlueTuoCount = 0;
 
-            //篮球是否相同
-            bool winningBlue;
             _mySuperLottoNumber.ResetTotalZhuToDefault();
 
             int redWinPrizesIndex = 0;
@@ -454,72 +508,73 @@ namespace SuperLotto.Model
             {
                 if (_mySuperLottoNumber.redBalls.Contains(_publicSuperLottoNumber.redBalls[i]))
                 {
-                    winningRedCount++;
+                    winRedDanCount++;
                     //记录中奖的红球胆号码
                     _mySuperLottoNumber.maxRedWinPrizes[redWinPrizesIndex++] = _publicSuperLottoNumber.redBalls[i];
                 }
             }
 
-            int pickTuoCount = 6 - _mySuperLottoNumber.redBallDanCount;
+            int pickTuoCount = 5 - _mySuperLottoNumber.redBallDanCount;
 
             //比较红球拖中的数量
             for (int i = 0; i < _publicSuperLottoNumber.redBalls.Length; i++)
             {
                 if (_mySuperLottoNumber.redBallTuos.Contains(_publicSuperLottoNumber.redBalls[i]))
                 {
-                    winningRedTuoCount++;
+                    winRedTuoCount++;
                     //记录中奖的红球拖号码
                     _mySuperLottoNumber.maxRedWinPrizes[redWinPrizesIndex++] = _publicSuperLottoNumber.redBalls[i];
 
-                    if (winningRedTuoCount >= pickTuoCount)
+                    if (winRedTuoCount >= pickTuoCount)
                     {
                         break;
                     }
                 }
             }
 
-            winningRedCount += winningRedTuoCount;
-            winningBlue = _mySuperLottoNumber.blueBalls.Contains(_publicSuperLottoNumber.blueBalls[0]);
 
-            if (winningBlue)
-            {
-                _mySuperLottoNumber.maxBlueWinPrize = _publicSuperLottoNumber.blueBalls;
-            }
+            /**
+             * TODO: Bug -> 比对篮球胆拖逻辑有误
+             */
+            //比较篮球胆中的数量(胆最多为1个)
+            winBlueDanCount = _mySuperLottoNumber.blueBalls.Contains(_publicSuperLottoNumber.blueBalls[0]) ? 1 : 0;
 
-            if (winningRedCount <= 3 && !winningBlue)
+            if (winBlueDanCount > 0)
             {
-                _mySuperLottoNumber.awardType = AwardType.NotAward;
-            }
-            else if (winningRedCount <= 2 && winningBlue)
-            {
-                _mySuperLottoNumber.awardType = AwardType.SixAward;
-            }
-            else if ((winningRedCount == 3 && winningBlue) || (winningRedCount == 4 && !winningBlue))
-            {
-                _mySuperLottoNumber.awardType = AwardType.FiveAward;
-            }
-            else if ((winningRedCount == 4 && winningBlue) || (winningRedCount == 5 && !winningBlue))
-            {
-                _mySuperLottoNumber.awardType = AwardType.FourAward;
-            }
-            else if (winningRedCount == 5 && winningBlue)
-            {
-                _mySuperLottoNumber.awardType = AwardType.ThreeAward;
-            }
-            else if (winningRedCount == 6 && !winningBlue)
-            {
-                _mySuperLottoNumber.awardType = AwardType.TwoAward;
-            }
-            else if (winningRedCount == 6 && winningBlue)
-            {
-                _mySuperLottoNumber.awardType = AwardType.OneAward;
+                _mySuperLottoNumber.maxBlueWinPrize[0] = _publicSuperLottoNumber.blueBalls[0];
             }
 
+            int blueWinPrizesIndex = 0;
+            //比较蓝球拖中的数量
+            for (int i = 0; i < _publicSuperLottoNumber.blueBalls.Length; i++)
+            {
+                if (_mySuperLottoNumber.blueBallTuos.Contains(_publicSuperLottoNumber.blueBalls[i]))
+                {
+                    winBlueTuoCount++;
+                    //记录中奖的红球胆号码
+                    _mySuperLottoNumber.maxBlueWinPrize[blueWinPrizesIndex++] = _publicSuperLottoNumber.blueBalls[i];
+                }
+            }
+
+            //中的红球总和
+            int winRedTotalCount = winRedDanCount + winRedTuoCount;
+            //中的蓝球总和
+            int winBlueTotalCount = winBlueDanCount + winBlueTuoCount;
+            //设置该奖的最高奖等级
+            SettingSuperLottoAwardLevel(_mySuperLottoNumber, winRedTotalCount, winBlueTotalCount);
+            //若中奖了统计该注号码各奖的金额
             if (_mySuperLottoNumber.awardType != AwardType.NotAward)
             {
-                CalculateDantuoWinningAmount(_mySuperLottoNumber,
-                    _mySuperLottoNumber.redBallDanCount, _mySuperLottoNumber.redBallTuoCount, _mySuperLottoNumber.blueBallDanCount,
-                    winningRedCount > 0 ? winningRedCount - winningRedTuoCount : 0, winningRedTuoCount, winningBlue ? 1 : 0);
+                CalculateDantuoWinningAmount(
+                    _mySuperLottoNumber,
+                    _mySuperLottoNumber.redBallDanCount,
+                    _mySuperLottoNumber.redBallTuoCount,
+                    _mySuperLottoNumber.blueBallDanCount,
+                    _mySuperLottoNumber.blueBallTuoCount,
+                    winRedDanCount,
+                    winRedTuoCount,
+                    winBlueDanCount,
+                    winBlueTuoCount);
             }
         }
 
@@ -527,82 +582,56 @@ namespace SuperLotto.Model
         /// 统计胆拖号码中奖注数
         /// </summary>
         /// <param name="_mySuperLottoNumber">我的胆拖号码</param>
-        /// <param name="redDa">红色球胆总数量</param>
-        /// <param name="redTA">红色球拖总数量</param>
-        /// <param name="blueA">蓝色球数量</param>
-        /// <param name="redDB">红色球胆的中奖个数</param>
-        /// <param name="redTB">红色球拖的中奖个数</param>
-        /// <param name="blueB">蓝色球中奖个数</param>
+        /// <param name="redDanCount">红球胆总数量</param>
+        /// <param name="redTuoCount">红球拖总数量</param>
+        /// <param name="blueDanCount">蓝球胆总数量</param>
+        /// <param name="blueTuoCount">蓝球拖总数量</param>
+        /// <param name="winRedDanCount">中红球胆的数量</param>
+        /// <param name="winRedTuoCount">中红球拖的数量</param>
+        /// <param name="winBlueDanCount">中蓝球球胆的数量</param>
+        /// <param name="winBlueTuoCount">中蓝球拖的数量</param>
         /// <returns></returns>
-        public void CalculateDantuoWinningAmount(DantuoSuperLottoNumber _mySuperLottoNumber, int redDa, int RedTa, int blueA, int redDb, int redTb, int blueB)
+        public void CalculateDantuoWinningAmount(DantuoSuperLottoNumber _mySuperLottoNumber,
+            int redDanCount, int redTuoCount, int blueDanCount, int blueTuoCount,
+            int winRedDanCount, int winRedTuoCount, int winBlueDanCount, int winBlueTuoCount)
         {
-            var v = redTb <= 6 - redDa ? redTb : 6 - redDa;
-            int[] t = new int[v + 1];
 
-            for (var i = 0; i <= v; i++)
+            var thatRed = winRedTuoCount <= 5 - redDanCount ? winRedTuoCount : 5 - redDanCount;
+            var thatBlue = winBlueTuoCount <= 2 - blueDanCount ? winBlueTuoCount : 2 - blueDanCount;
+
+            int[] redCond = new int[thatRed + 1];
+            int[] blueCond = new int[thatBlue + 1];
+
+            for (var i = 0; i <= thatRed; i++)
+                redCond[i] = winRedDanCount + i;
+
+            for (var i = 0; i <= thatBlue; i++)
+                blueCond[i] = winBlueDanCount + i;
+
+            int rankRes = 0;
+            int[] awardResults = new int[9];
+
+            for (var i = 0; i <= thatRed; i++)
             {
-                t[i] = redDb + i;
-            }
-
-            int q;
-            int[] aResult = new int[6];
-
-            if (blueB == 0)
-            {
-                for (var i = 0; i <= v; i++)
+                for (var v = 0; v <= thatBlue; v++)
                 {
-                    q = Rank(t[i], 0);
-                    if (q != -1)
+                    rankRes = Rank9x(redCond[i], blueCond[v]);
+                    if (rankRes != -1)
                     {
-                        aResult[q] += Ccombo(RedTa - redTb, 6 - redDa - i) * blueA * Ccombo(redTb, i);
+                        awardResults[rankRes] += Ccombo(redTuoCount - winRedTuoCount, 5 - redDanCount - i)
+                            * Ccombo(winRedTuoCount, i)
+                            * Ccombo(blueTuoCount - winBlueTuoCount, 2 - blueDanCount - v)
+                            * Ccombo(winBlueTuoCount, v);
                     }
                 }
             }
-            if (blueB == 1)
-            {
-                for (var i = 0; i <= v; i++)
-                {
-                    q = Rank(t[i], 0);
-                    if (q != -1)
-                    {
-                        aResult[q] += Ccombo(RedTa - redTb, 6 - redDa - i) * (blueA - 1) * Ccombo(redTb, i);
-                    }
-                    q = Rank(t[i], 1);
-                    aResult[q] += Ccombo(RedTa - redTb, 6 - redDa - i) * Ccombo(redTb, i);
-                }
-            }
 
-            if (_mySuperLottoNumber.awardType == AwardType.OneAward)
-            {
-                _mySuperLottoNumber.oneAwardTotalZhu = aResult[0];
-            }
-
-            if (_mySuperLottoNumber.awardType >= AwardType.TwoAward)
-            {
-                _mySuperLottoNumber.twoAwardTotalZhu = aResult[1];
-            }
-
-            if (_mySuperLottoNumber.awardType >= AwardType.ThreeAward)
-            {
-                _mySuperLottoNumber.threeAwardTotalZhu = aResult[2];
-            }
-
-            if (_mySuperLottoNumber.awardType >= AwardType.FourAward)
-            {
-                _mySuperLottoNumber.fourAwardTotalZhu = aResult[3];
-            }
-
-            if (_mySuperLottoNumber.awardType >= AwardType.FiveAward)
-            {
-                _mySuperLottoNumber.fiveAwardTotalZhu = aResult[4];
-            }
-
-            if (_mySuperLottoNumber.awardType >= AwardType.SixAward)
-            {
-                _mySuperLottoNumber.sixAwardTotalZhu = aResult[5];
-            }
+            SettingDanTuoWinningCount(_mySuperLottoNumber, awardResults);
         }
 
+        /// <summary>
+        /// 计算排列组合
+        /// </summary>
         public static int Combo(int n1, int n2)
         {
             int h, f;

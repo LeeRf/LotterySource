@@ -480,10 +480,10 @@ namespace SuperLotto.Model
                 eightAwardTotalZhu * (long)AwardType.EightAward +
                 nineAwardTotalZhu * (long)AwardType.NineAward;
 
-            long twoWward = (long)(Config.Setting.GetTwoAward() * 0.8) * twoAwardTotalZhu;
+            long twoAward = (long)(Config.Setting.GetTwoAward() * 0.8) * twoAwardTotalZhu;
             long oneAward = (long)(Config.Setting.GetOneAward() * 0.8) * oneAwardTotalZhu;
 
-            return (oneAward + twoWward + otherAward) * multiple;
+            return (oneAward + twoAward + otherAward) * multiple;
         }
 
         /// <summary>

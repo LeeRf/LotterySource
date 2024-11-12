@@ -471,9 +471,15 @@ namespace DoubleBalls.Model
 
             if (_myDoubleBallNumber.awardType != AwardType.NotAward)
             {
-                CalculateDantuoWinningAmount(_myDoubleBallNumber, 
-                    _myDoubleBallNumber.redBallDanCount, _myDoubleBallNumber.redBallTuoCount, _myDoubleBallNumber.blueBallCount,
-                    winningRedCount > 0 ? winningRedCount - winningRedTuoCount : 0, winningRedTuoCount, winningBlue ? 1 : 0);
+                CalculateDantuoWinningAmount(
+                    _myDoubleBallNumber,
+                    _myDoubleBallNumber.redBallDanCount,
+                    _myDoubleBallNumber.redBallTuoCount,
+                    _myDoubleBallNumber.blueBallCount,
+                    winningRedCount > 0 ? winningRedCount - winningRedTuoCount : 0,
+                    winningRedTuoCount,
+                    winningBlue ? 1 : 0
+                 );
             }
         }
 
@@ -483,7 +489,7 @@ namespace DoubleBalls.Model
         /// <param name="_myDoubleBallNumber">我的胆拖号码</param>
         /// <param name="redDa">红色球胆总数量</param>
         /// <param name="redTA">红色球拖总数量</param>
-        /// <param name="blueA">蓝色球数量</param>
+        /// <param name="blueA">蓝色球总数量</param>
         /// <param name="redDB">红色球胆的中奖个数</param>
         /// <param name="redTB">红色球拖的中奖个数</param>
         /// <param name="blueB">蓝色球中奖个数</param>

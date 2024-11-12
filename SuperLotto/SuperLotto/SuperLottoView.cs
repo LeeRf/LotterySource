@@ -2373,13 +2373,17 @@ namespace SuperLotto
         /// </summary>
         public Color _BlueColorTuo = Color.DarkTurquoise;
         /// <summary>
-        /// 胆拖号、拖未中奖的颜色
+        /// 红拖未中奖的颜色
         /// </summary>
         private Color _NotRedTuoColor = Color.PeachPuff;
         /// <summary>
-        /// 复试蓝色球未中奖颜色
+        /// 复试蓝未中奖颜色
         /// </summary>
-        private Color _NotLotteryComplexBlueColor = Color.PowderBlue;
+        private Color _NotComplexBlueColor = Color.PowderBlue;
+        /// <summary>
+        /// 蓝拖未中奖颜色
+        /// </summary>
+        private Color _NotBlueTuoColor = Color.LightGray;
 
         /// <summary>
         /// 对中奖号码或者未中奖号码控件进行上色和失色处理
@@ -2460,7 +2464,7 @@ namespace SuperLotto
                         if (!ballColorType.Equals("No"))
                         {
                             bool isRed = ballColorType.IndexOf("Red") != -1;
-                            label.ForeColor = isRed ? _NotLotteryColor : _NotLotteryComplexBlueColor;
+                            label.ForeColor = isRed ? _NotLotteryColor : _NotComplexBlueColor;
                         }
                     }
                     else if (myNumber.awardType != AwardType.NotAward)
@@ -2472,7 +2476,7 @@ namespace SuperLotto
 
                         if (ballColorType.IndexOf("Blue") != -1)
                         {
-                            SettingBlueColor(publicDoubleNumber, label, _BlueBallColor, _NotLotteryComplexBlueColor);
+                            SettingBlueColor(publicDoubleNumber, label, _BlueBallColor, _NotComplexBlueColor);
                         }
                     }
                 }
@@ -2484,52 +2488,55 @@ namespace SuperLotto
         /// </summary>
         private void DrawingDantuoColorLotteryNumber(Panel superLottoNumber, SuperLottos myNumber, SimplexSuperLottoNumber publicDoubleNumber)
         {
-            //拖号理应上色的数量
-            int tuoShouldCount = 0;
-            //拖号已经上色的数量
-            int tuoAlreadyCount = 0;
+            //红拖号理应上色的数量
+            int redTuoShouldCount = 0;
+            //红拖号已经上色的数量
+            int redTuoAlreadyCount = 0;
+            //蓝拖号理应上色的数量
+            int blueTuoShouldCount = 0;
+            //蓝拖号已经上色的数量
+            int blueTuoAlreadyCount = 0;
 
             if (CardInterface.SelectedIndex == 3)
             {
-                tuoShouldCount = 6 - (myNumber as DantuoSuperLottoNumber).redBallDanCount;
+                redTuoShouldCount = 5 - (myNumber as DantuoSuperLottoNumber).redBallDanCount;
+                blueTuoShouldCount = 2 - (myNumber as DantuoSuperLottoNumber).blueBallDanCount;
             }
 
             foreach (Control control in superLottoNumber.Controls)
             {
                 if (control is Label label)
                 {
-                    string ballColorType = label.Tag.ToString();
-                    bool isRedTuo = ballColorType.Equals("TRed");
-
+                    string ballType = label.Tag.ToString();
                     //未中奖情况下
                     if (myNumber.awardType == AwardType.NotAward)
                     {
-                        if (!ballColorType.Equals("No"))
+                        if (!ballType.Equals("No"))
                         {
-                            label.ForeColor = GetNotWinDantuoColorType(ballColorType);
+                            label.ForeColor = GetNotWinDantuoColorType(ballType);
                         }
                     }
                     //中奖情况下
                     else if (myNumber.awardType != AwardType.NotAward)
                     {
-                        //红球胆拖号中奖情况
-                        if (ballColorType.IndexOf("Red") != -1)
+                        //红球胆拖号绘色情况
+                        if (ballType.IndexOf("Red") != -1)
                         {
-                            #region 胆拖号的颜色特殊逻辑
+                            #region 红球胆拖号的颜色特殊逻辑
 
                             int ballValue = int.Parse(label.Text);
+                            bool isRedTuo = ballType.Equals("TRed");
+
                             if (publicDoubleNumber.redBalls.Contains(ballValue))
                             {
                                 //拖号
                                 if (isRedTuo)
                                 {
-                                    tuoAlreadyCount++;
+                                    redTuoAlreadyCount++;
                                     Color dantuoColor = _NotRedTuoColor;
 
-                                    if (tuoAlreadyCount <= tuoShouldCount)
-                                    {
+                                    if (redTuoAlreadyCount <= redTuoShouldCount)
                                         dantuoColor = _RedColorTuo;
-                                    }
 
                                     label.ForeColor = dantuoColor;
                                 }
@@ -2546,11 +2553,39 @@ namespace SuperLotto
 
                             #endregion
                         }
-
-                        //蓝球中奖情况
-                        else if (ballColorType.IndexOf("Blue") != -1)
+                        //蓝球胆拖号绘色情况
+                        else if (ballType.IndexOf("Blue") != -1)
                         {
-                            SettingBlueColor(publicDoubleNumber, label, _BlueBallColor, _NotLotteryComplexBlueColor);
+                            #region 蓝球胆拖号的颜色特殊逻辑
+
+                            int ballValue = int.Parse(label.Text);
+                            bool isBlueTuo = ballType.Equals("TBlue");
+
+                            if (publicDoubleNumber.blueBalls.Contains(ballValue))
+                            {
+                                //拖号
+                                if (isBlueTuo)
+                                {
+                                    blueTuoAlreadyCount++;
+                                    Color dantuoColor = _NotBlueTuoColor;
+
+                                    if (blueTuoAlreadyCount <= blueTuoShouldCount)
+                                        dantuoColor = _BlueColorTuo;
+
+                                    label.ForeColor = dantuoColor;
+                                }
+                                //胆号
+                                else
+                                {
+                                    label.ForeColor = _BlueBallColor;
+                                }
+                            }
+                            else
+                            {
+                                label.ForeColor = isBlueTuo ? _NotBlueTuoColor : _NotComplexBlueColor;
+                            }
+
+                            #endregion
                         }
                     }
                 }
@@ -2566,9 +2601,10 @@ namespace SuperLotto
         {
             switch (ballColorType)
             {
-                case "Red": return _NotLotteryColor;
+                case "DRed": return _NotLotteryColor;
                 case "TRed": return _NotRedTuoColor;
-                case "Blue": return _NotLotteryComplexBlueColor;
+                case "DBlue": return _NotComplexBlueColor;
+                case "TBlue": return _NotBlueTuoColor;
             }
             return _NotLotteryColor;
         }
@@ -3735,7 +3771,7 @@ namespace SuperLotto
 
             SetSuperLottoInfo(_DantuoHelper.oneselfLabelNo,
                 _DantuoSuperLottoNumber.redBallDanCount + "-" +
-                _DantuoSuperLottoNumber.redBallTuoCount + "-" + _DantuoSuperLottoNumber.blueBallDanCount);
+                _DantuoSuperLottoNumber.redBallTuoCount + "-" + _DantuoSuperLottoNumber.blueBallDanCount + "-" + _DantuoSuperLottoNumber.blueBallTuoCount);
 
             _OneselfDantuo.ResetSuperLottoNumber();
             ResetDantuoVariate();
@@ -3907,7 +3943,7 @@ namespace SuperLotto
             Label serial = AddSerialFirstRedBall(dantuoNumber, _DantuoHelper);
 
             SetSuperLottoInfo(serial,
-                dantuoNumber.redBallDanCount + "-" + dantuoNumber.redBallTuoCount + "-" + dantuoNumber.blueBallDanCount);
+                dantuoNumber.redBallDanCount + "-" + dantuoNumber.redBallTuoCount + "-" + dantuoNumber.blueBallDanCount + "-" + dantuoNumber.blueBallTuoCount);
 
             AddSuperLottosLabel(1, 
                 dantuoNumber.redBallDanCount, dantuoNumber.redBalls, lblRedBallDan, _DantuoHelper);
@@ -3936,10 +3972,12 @@ namespace SuperLotto
             randomNo.Text = superLotto.serialNumber + ">";
             CopyLabelStyle(lblRandomNo, randomNo);
 
+            bool isComplex = superLotto is ComplexSuperLottoNumber;
+
             //生成第一个号码
             Label ball = new Label();
             ball.Text = FormatNumber(superLotto.redBalls[0], 2);
-            CopyLabelStyle(lblComplexRed, ball);
+            CopyLabelStyle(isComplex ? lblComplexRed : lblRedBallDan, ball);
 
             _OH.oneselfPanel.Controls.Add(randomNo);
             _OH.oneselfPanel.Controls.Add(ball);

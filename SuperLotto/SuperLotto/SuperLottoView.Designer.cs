@@ -3623,7 +3623,7 @@
             this.leeLabel12.ForeColor = System.Drawing.Color.Black;
             this.leeLabel12.Location = new System.Drawing.Point(26, 78);
             this.leeLabel12.Name = "leeLabel12";
-            this.leeLabel12.Size = new System.Drawing.Size(664, 408);
+            this.leeLabel12.Size = new System.Drawing.Size(664, 493);
             this.leeLabel12.TabIndex = 596;
             this.leeLabel12.Text = resources.GetString("leeLabel12.Text");
             // 
@@ -4571,7 +4571,7 @@
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(305, 17);
             this.lblTitle.TabIndex = 619;
-            this.lblTitle.Text = "中国体育彩票 超级大乐透概率可视化模拟软件  V1.0.0.0";
+            this.lblTitle.Text = "中国体育彩票 超级大乐透概率可视化模拟软件  V1.0.0.4";
             // 
             // lblMin
             // 
