@@ -10,7 +10,7 @@ namespace SuperLotto.Model
     /// <summary>
     /// 复式兼单式大乐透号码类
     /// </summary>
-    public class ComplexSuperLottoNumber : SuperLottos
+    public class ComplexSuperLottoNumber : ComplexNumber
     {
         /// <summary>
         /// 红色球的数量
@@ -20,48 +20,6 @@ namespace SuperLotto.Model
         /// 蓝色球的数量
         /// </summary>
         public int blueBallCount { get; set; }
-
-        /// <summary>
-        /// 初始值(用于排序不至于把0值排序到最前面)
-        /// </summary>
-        public int _INITVALUE { get; } = 50;
-
-        /// <summary>
-        /// 一等奖中奖注数
-        /// </summary>
-        public int oneAwardTotalZhu { get; set; }
-        /// <summary>
-        /// 二等奖中奖注数
-        /// </summary>
-        public int twoAwardTotalZhu { get; set; }
-        /// <summary>
-        /// 三等奖中奖注数
-        /// </summary>
-        public int threeAwardTotalZhu { get; set; }
-        /// <summary>
-        /// 四等奖中奖注数
-        /// </summary>
-        public int fourAwardTotalZhu { get; set; }
-        /// <summary>
-        /// 五等奖中奖注数
-        /// </summary>
-        public int fiveAwardTotalZhu { get; set; }
-        /// <summary>
-        /// 六等奖中奖注数
-        /// </summary>
-        public int sixAwardTotalZhu { get; set; }
-        /// <summary>
-        /// 七等奖中奖注数
-        /// </summary>
-        public int sevenAwardTotalZhu { get; set; }
-        /// <summary>
-        /// 八等奖中奖注数
-        /// </summary>
-        public int eightAwardTotalZhu { get; set; }
-        /// <summary>
-        /// 九等奖中奖注数
-        /// </summary>
-        public int nineAwardTotalZhu { get; set; }
         /// <summary>
         /// 记录该号码最高奖红色球中奖号码
         /// </summary>
@@ -247,24 +205,21 @@ namespace SuperLotto.Model
         {
             for (int i = 0; i < maxBalls.Length; i++)
             {
-                if (maxBalls[i] == 0)
-                {
-                    for (int j = 0; j < ballsType.Length; j++)
-                        if (!maxBalls.Contains(ballsType[j]))
-                        {
-                            maxBalls[i] = ballsType[j];
-                            break;
-                        }
-                }
+                if (maxBalls[i] != 0) continue;
+                for (int j = 0; j < ballsType.Length; j++)
+                    if (!maxBalls.Contains(ballsType[j]))
+                    {
+                        maxBalls[i] = ballsType[j];
+                        break;
+                    }
             }
-
             Array.Sort(maxBalls);
         }
 
         /// <summary>
         /// 是否是单注号码
         /// </summary>
-        public bool IsSimplex() => redBallCount == 5 && blueBallCount == 2;
+        public override bool IsSimplex() => redBallCount == 5 && blueBallCount == 2;
 
         /// <summary>
         /// 判断自选大乐透号码是否已经成号
@@ -362,16 +317,27 @@ namespace SuperLotto.Model
         }
 
         /// <summary>
-        /// 复式大乐透的内容到单式大乐透中
+        /// 复制左边大乐透的最高奖到右边对象中
         /// </summary>
         /// <param name="sdbn">单式大乐透类</param>
-        public override void CopyLeftToRightDataValue(SimplexSuperLottoNumber sdbn)
+        public override void CopyLeftToRightDataOfMaxAward(SimplexSuperLottoNumber sdbn)
         {
             SettingMaxSuperLottoNumber();
 
             sdbn.awardType = awardType;
             maxRedWinPrizes.CopyTo(sdbn.redBalls, 0);
             maxBlueWinPrize.CopyTo(sdbn.blueBalls, 0);
+        }
+
+        /// <summary>
+        /// 根据奖的等级复制左边大乐透号码到右边对象
+        /// </summary>
+        /// <param name="sdbn"></param>
+        /// <param name="awardType"></param>
+        public override void CopyLeftToRightBy(SimplexSuperLottoNumber sdbn, AwardType awardType)
+        {
+            //TODO: 该方法是否可实现有待探讨暂时先留着，暂用 CopyLeftToRightDataOfMaxAward 方法
+            this.CopyLeftToRightDataOfMaxAward(sdbn);
         }
 
         /// <summary>

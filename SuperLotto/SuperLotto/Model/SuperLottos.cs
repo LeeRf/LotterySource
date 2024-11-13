@@ -30,7 +30,11 @@ namespace SuperLotto.Model
         /// </summary>
         public const int REDCOUNT = 5;
         /// <summary>
-        /// 该注中奖(最高奖)情况
+        /// 初始值(用于排序不至于把0值排序到最前面)
+        /// </summary>
+        public static int _INITVALUE { get; } = 50;
+        /// <summary>
+        /// 该注中奖类型(最高奖)
         /// </summary>
         public AwardType awardType { get; set; }
         /// <summary>
@@ -50,6 +54,35 @@ namespace SuperLotto.Model
         /// </summary>
         /// <returns></returns>
         public virtual bool isBallEmpty() => throw new MissingMethodException();
+
+        /// <summary>
+        /// 是否是单式号码
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="MissingMethodException"></exception>
+        public virtual bool IsSimplex() => throw new MissingMethodException();
+
+        /// <summary>
+        /// 是否为复试号码
+        /// </summary>
+        /// <returns></returns>
+        public virtual bool isComplex() => !IsSimplex();
+
+        /// <summary>
+        /// 注意：根据获奖类型取得该类型的注数
+        /// </summary>
+        /// <param name="_myNumber"></param>
+        /// <returns></returns>
+        /// <exception cref="MissingMethodException"></exception>
+        public virtual int getWinCount() => throw new MissingMethodException();
+
+        /// <summary>
+        /// 注意：根据该奖的等级判断是否包含中奖注数
+        /// </summary>
+        /// <param name="_myNumber"></param>
+        /// <returns></returns>
+        /// <exception cref="MissingMethodException"></exception>
+        public virtual bool hasWinCount() => throw new MissingMethodException();
 
         /// <summary>
         /// 号码是否成型
@@ -90,8 +123,13 @@ namespace SuperLotto.Model
         public virtual void ComparisonSuperLottoNumber(SuperLottoTool dbt, SimplexSuperLottoNumber sdbn) { }
 
         /// <summary>
-        /// 复试该大乐透的值
+        /// 复制左边大乐透的最高奖到右边对象中
         /// </summary>
-        public virtual void CopyLeftToRightDataValue(SimplexSuperLottoNumber sdbn) => throw new MissingMethodException();
+        public virtual void CopyLeftToRightDataOfMaxAward(SimplexSuperLottoNumber sdbn) => throw new MissingMethodException();
+
+        /// <summary>
+        /// 根据中奖等级筛选复制左边大乐透的最高奖到右边对象中
+        /// </summary>
+        public virtual void CopyLeftToRightBy(SimplexSuperLottoNumber sdbn, AwardType awardType) => throw new MissingMethodException();
     }
 }

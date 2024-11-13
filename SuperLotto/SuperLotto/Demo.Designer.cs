@@ -131,16 +131,117 @@
             this.leeLabel71 = new SuperLotto.Controls.LeeLabel();
             this.leeLabel73 = new SuperLotto.Controls.LeeLabel();
             this.leeLabel74 = new SuperLotto.Controls.LeeLabel();
-            this.linkLabel5 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel6 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.leeLabel11 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel20 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel88 = new SuperLotto.Controls.LeeLabel();
+            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel7 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel8 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel9 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel10 = new System.Windows.Forms.LinkLabel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.leeLabel33 = new SuperLotto.Controls.LeeLabel();
             this.leeLabel38 = new SuperLotto.Controls.LeeLabel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.leeLabel39 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel89 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel90 = new SuperLotto.Controls.LeeLabel();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.leeLabel91 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel92 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel93 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel94 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel95 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel96 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel97 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel98 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel99 = new SuperLotto.Controls.LeeLabel();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.leeLabel100 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel101 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel102 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel103 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel104 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel105 = new SuperLotto.Controls.LeeLabel();
+            this.label20 = new System.Windows.Forms.Label();
+            this.leeLabel106 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel107 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel108 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel109 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel110 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel111 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel112 = new SuperLotto.Controls.LeeLabel();
+            this.label21 = new System.Windows.Forms.Label();
+            this.leeLabel113 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel114 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel115 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel116 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel117 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel118 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel119 = new SuperLotto.Controls.LeeLabel();
+            this.label22 = new System.Windows.Forms.Label();
+            this.leeLabel120 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel121 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel122 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel123 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel124 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel125 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel126 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel127 = new SuperLotto.Controls.LeeLabel();
+            this.label23 = new System.Windows.Forms.Label();
+            this.leeLabel128 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel129 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel130 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel131 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel132 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel133 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel134 = new SuperLotto.Controls.LeeLabel();
+            this.label24 = new System.Windows.Forms.Label();
+            this.leeLabel135 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel136 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel137 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel138 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel139 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel140 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel141 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel142 = new SuperLotto.Controls.LeeLabel();
+            this.label25 = new System.Windows.Forms.Label();
+            this.leeLabel143 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel144 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel145 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel146 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel147 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel148 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel149 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel150 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel151 = new SuperLotto.Controls.LeeLabel();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.leeLabel152 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel153 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel154 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel155 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel156 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel157 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel158 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel159 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel160 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel161 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel162 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel163 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel164 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel165 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel166 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel167 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel168 = new SuperLotto.Controls.LeeLabel();
+            this.leeLabel169 = new SuperLotto.Controls.LeeLabel();
             ((System.ComponentModel.ISupportInitialize)(this.picSuperLotto)).BeginInit();
             this.panLotteryRules.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblClose
@@ -151,7 +252,7 @@
             this.lblClose.EnterColor = System.Drawing.Color.Red;
             this.lblClose.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblClose.ForeColor = System.Drawing.Color.DarkSalmon;
-            this.lblClose.Location = new System.Drawing.Point(578, 9);
+            this.lblClose.Location = new System.Drawing.Point(687, 9);
             this.lblClose.Name = "lblClose";
             this.lblClose.Size = new System.Drawing.Size(41, 17);
             this.lblClose.TabIndex = 624;
@@ -1722,147 +1823,1701 @@
             this.leeLabel74.Text = "●";
             this.leeLabel74.Visible = false;
             // 
-            // linkLabel5
+            // leeLabel11
             // 
-            this.linkLabel5.ActiveLinkColor = System.Drawing.Color.OrangeRed;
-            this.linkLabel5.AutoSize = true;
-            this.linkLabel5.BackColor = System.Drawing.Color.White;
-            this.linkLabel5.DisabledLinkColor = System.Drawing.Color.OrangeRed;
-            this.linkLabel5.ForeColor = System.Drawing.Color.OrangeRed;
-            this.linkLabel5.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabel5.LinkColor = System.Drawing.Color.OrangeRed;
-            this.linkLabel5.Location = new System.Drawing.Point(446, 11);
-            this.linkLabel5.Name = "linkLabel5";
-            this.linkLabel5.Size = new System.Drawing.Size(17, 12);
-            this.linkLabel5.TabIndex = 653;
-            this.linkLabel5.TabStop = true;
-            this.linkLabel5.Text = "●";
-            this.linkLabel5.VisitedLinkColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel11.AutoSize = true;
+            this.leeLabel11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel11.EnterColor = System.Drawing.Color.Black;
+            this.leeLabel11.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel11.ForeColor = System.Drawing.Color.Gray;
+            this.leeLabel11.Location = new System.Drawing.Point(512, 358);
+            this.leeLabel11.Name = "leeLabel11";
+            this.leeLabel11.Size = new System.Drawing.Size(20, 17);
+            this.leeLabel11.TabIndex = 698;
+            this.leeLabel11.Tag = "0";
+            this.leeLabel11.Text = "元";
             // 
-            // linkLabel6
+            // leeLabel20
             // 
-            this.linkLabel6.ActiveLinkColor = System.Drawing.Color.OrangeRed;
-            this.linkLabel6.AutoSize = true;
-            this.linkLabel6.BackColor = System.Drawing.Color.White;
-            this.linkLabel6.DisabledLinkColor = System.Drawing.Color.OrangeRed;
-            this.linkLabel6.ForeColor = System.Drawing.Color.OrangeRed;
-            this.linkLabel6.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabel6.LinkColor = System.Drawing.Color.OrangeRed;
-            this.linkLabel6.Location = new System.Drawing.Point(431, 11);
-            this.linkLabel6.Name = "linkLabel6";
-            this.linkLabel6.Size = new System.Drawing.Size(17, 12);
-            this.linkLabel6.TabIndex = 652;
-            this.linkLabel6.TabStop = true;
-            this.linkLabel6.Text = "●";
-            this.linkLabel6.VisitedLinkColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel20.AutoSize = true;
+            this.leeLabel20.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel20.EnterColor = System.Drawing.Color.Black;
+            this.leeLabel20.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel20.ForeColor = System.Drawing.Color.Gray;
+            this.leeLabel20.Location = new System.Drawing.Point(337, 358);
+            this.leeLabel20.Name = "leeLabel20";
+            this.leeLabel20.Size = new System.Drawing.Size(44, 17);
+            this.leeLabel20.TabIndex = 696;
+            this.leeLabel20.Tag = "0";
+            this.leeLabel20.Text = "一等奖";
             // 
-            // linkLabel3
+            // leeLabel88
             // 
-            this.linkLabel3.ActiveLinkColor = System.Drawing.Color.DodgerBlue;
-            this.linkLabel3.AutoSize = true;
-            this.linkLabel3.BackColor = System.Drawing.Color.White;
-            this.linkLabel3.DisabledLinkColor = System.Drawing.Color.DodgerBlue;
-            this.linkLabel3.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.linkLabel3.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabel3.LinkColor = System.Drawing.Color.DodgerBlue;
-            this.linkLabel3.Location = new System.Drawing.Point(416, 11);
-            this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(17, 12);
-            this.linkLabel3.TabIndex = 651;
-            this.linkLabel3.TabStop = true;
-            this.linkLabel3.Text = "●";
-            this.linkLabel3.VisitedLinkColor = System.Drawing.Color.DodgerBlue;
+            this.leeLabel88.AutoSize = true;
+            this.leeLabel88.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel88.EnterColor = System.Drawing.Color.Black;
+            this.leeLabel88.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel88.ForeColor = System.Drawing.Color.Gray;
+            this.leeLabel88.Location = new System.Drawing.Point(470, 358);
+            this.leeLabel88.Name = "leeLabel88";
+            this.leeLabel88.Size = new System.Drawing.Size(43, 17);
+            this.leeLabel88.TabIndex = 697;
+            this.leeLabel88.Tag = "0";
+            this.leeLabel88.Text = "10000";
             // 
-            // linkLabel2
+            // linkLabel4
             // 
-            this.linkLabel2.ActiveLinkColor = System.Drawing.Color.DodgerBlue;
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.BackColor = System.Drawing.Color.White;
-            this.linkLabel2.DisabledLinkColor = System.Drawing.Color.DodgerBlue;
-            this.linkLabel2.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.linkLabel2.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabel2.LinkColor = System.Drawing.Color.DodgerBlue;
-            this.linkLabel2.Location = new System.Drawing.Point(401, 11);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(17, 12);
-            this.linkLabel2.TabIndex = 650;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "●";
-            this.linkLabel2.VisitedLinkColor = System.Drawing.Color.DodgerBlue;
+            this.linkLabel4.ActiveLinkColor = System.Drawing.Color.OrangeRed;
+            this.linkLabel4.AutoSize = true;
+            this.linkLabel4.BackColor = System.Drawing.Color.White;
+            this.linkLabel4.DisabledLinkColor = System.Drawing.Color.OrangeRed;
+            this.linkLabel4.ForeColor = System.Drawing.Color.OrangeRed;
+            this.linkLabel4.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabel4.LinkColor = System.Drawing.Color.OrangeRed;
+            this.linkLabel4.Location = new System.Drawing.Point(446, 360);
+            this.linkLabel4.Name = "linkLabel4";
+            this.linkLabel4.Size = new System.Drawing.Size(17, 12);
+            this.linkLabel4.TabIndex = 695;
+            this.linkLabel4.TabStop = true;
+            this.linkLabel4.Text = "●";
+            this.linkLabel4.VisitedLinkColor = System.Drawing.Color.OrangeRed;
             // 
-            // linkLabel1
+            // linkLabel7
             // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.DodgerBlue;
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.BackColor = System.Drawing.Color.White;
-            this.linkLabel1.DisabledLinkColor = System.Drawing.Color.DodgerBlue;
-            this.linkLabel1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabel1.LinkColor = System.Drawing.Color.DodgerBlue;
-            this.linkLabel1.Location = new System.Drawing.Point(386, 11);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(17, 12);
-            this.linkLabel1.TabIndex = 649;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "●";
-            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.DodgerBlue;
+            this.linkLabel7.ActiveLinkColor = System.Drawing.Color.OrangeRed;
+            this.linkLabel7.AutoSize = true;
+            this.linkLabel7.BackColor = System.Drawing.Color.White;
+            this.linkLabel7.DisabledLinkColor = System.Drawing.Color.OrangeRed;
+            this.linkLabel7.ForeColor = System.Drawing.Color.OrangeRed;
+            this.linkLabel7.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabel7.LinkColor = System.Drawing.Color.OrangeRed;
+            this.linkLabel7.Location = new System.Drawing.Point(431, 360);
+            this.linkLabel7.Name = "linkLabel7";
+            this.linkLabel7.Size = new System.Drawing.Size(17, 12);
+            this.linkLabel7.TabIndex = 694;
+            this.linkLabel7.TabStop = true;
+            this.linkLabel7.Text = "●";
+            this.linkLabel7.VisitedLinkColor = System.Drawing.Color.OrangeRed;
+            // 
+            // linkLabel8
+            // 
+            this.linkLabel8.ActiveLinkColor = System.Drawing.Color.DodgerBlue;
+            this.linkLabel8.AutoSize = true;
+            this.linkLabel8.BackColor = System.Drawing.Color.White;
+            this.linkLabel8.DisabledLinkColor = System.Drawing.Color.DodgerBlue;
+            this.linkLabel8.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.linkLabel8.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabel8.LinkColor = System.Drawing.Color.DodgerBlue;
+            this.linkLabel8.Location = new System.Drawing.Point(416, 360);
+            this.linkLabel8.Name = "linkLabel8";
+            this.linkLabel8.Size = new System.Drawing.Size(17, 12);
+            this.linkLabel8.TabIndex = 693;
+            this.linkLabel8.TabStop = true;
+            this.linkLabel8.Text = "●";
+            this.linkLabel8.VisitedLinkColor = System.Drawing.Color.DodgerBlue;
+            // 
+            // linkLabel9
+            // 
+            this.linkLabel9.ActiveLinkColor = System.Drawing.Color.DodgerBlue;
+            this.linkLabel9.AutoSize = true;
+            this.linkLabel9.BackColor = System.Drawing.Color.White;
+            this.linkLabel9.DisabledLinkColor = System.Drawing.Color.DodgerBlue;
+            this.linkLabel9.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.linkLabel9.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabel9.LinkColor = System.Drawing.Color.DodgerBlue;
+            this.linkLabel9.Location = new System.Drawing.Point(401, 360);
+            this.linkLabel9.Name = "linkLabel9";
+            this.linkLabel9.Size = new System.Drawing.Size(17, 12);
+            this.linkLabel9.TabIndex = 692;
+            this.linkLabel9.TabStop = true;
+            this.linkLabel9.Text = "●";
+            this.linkLabel9.VisitedLinkColor = System.Drawing.Color.DodgerBlue;
+            // 
+            // linkLabel10
+            // 
+            this.linkLabel10.ActiveLinkColor = System.Drawing.Color.DodgerBlue;
+            this.linkLabel10.AutoSize = true;
+            this.linkLabel10.BackColor = System.Drawing.Color.White;
+            this.linkLabel10.DisabledLinkColor = System.Drawing.Color.DodgerBlue;
+            this.linkLabel10.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.linkLabel10.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabel10.LinkColor = System.Drawing.Color.DodgerBlue;
+            this.linkLabel10.Location = new System.Drawing.Point(386, 360);
+            this.linkLabel10.Name = "linkLabel10";
+            this.linkLabel10.Size = new System.Drawing.Size(17, 12);
+            this.linkLabel10.TabIndex = 691;
+            this.linkLabel10.TabStop = true;
+            this.linkLabel10.Text = "●";
+            this.linkLabel10.VisitedLinkColor = System.Drawing.Color.DodgerBlue;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.leeLabel33);
+            this.panel1.Controls.Add(this.leeLabel38);
+            this.panel1.Controls.Add(this.label14);
+            this.panel1.Controls.Add(this.label15);
+            this.panel1.Controls.Add(this.leeLabel39);
+            this.panel1.Controls.Add(this.leeLabel89);
+            this.panel1.Controls.Add(this.leeLabel90);
+            this.panel1.Controls.Add(this.label16);
+            this.panel1.Controls.Add(this.label17);
+            this.panel1.Controls.Add(this.leeLabel91);
+            this.panel1.Controls.Add(this.leeLabel92);
+            this.panel1.Controls.Add(this.leeLabel93);
+            this.panel1.Controls.Add(this.leeLabel94);
+            this.panel1.Controls.Add(this.leeLabel95);
+            this.panel1.Controls.Add(this.leeLabel96);
+            this.panel1.Controls.Add(this.leeLabel97);
+            this.panel1.Controls.Add(this.leeLabel98);
+            this.panel1.Controls.Add(this.leeLabel99);
+            this.panel1.Controls.Add(this.label18);
+            this.panel1.Controls.Add(this.label19);
+            this.panel1.Controls.Add(this.leeLabel100);
+            this.panel1.Controls.Add(this.leeLabel101);
+            this.panel1.Controls.Add(this.leeLabel102);
+            this.panel1.Controls.Add(this.leeLabel103);
+            this.panel1.Controls.Add(this.leeLabel104);
+            this.panel1.Controls.Add(this.leeLabel105);
+            this.panel1.Controls.Add(this.label20);
+            this.panel1.Controls.Add(this.leeLabel106);
+            this.panel1.Controls.Add(this.leeLabel107);
+            this.panel1.Controls.Add(this.leeLabel108);
+            this.panel1.Controls.Add(this.leeLabel109);
+            this.panel1.Controls.Add(this.leeLabel110);
+            this.panel1.Controls.Add(this.leeLabel111);
+            this.panel1.Controls.Add(this.leeLabel112);
+            this.panel1.Controls.Add(this.label21);
+            this.panel1.Controls.Add(this.leeLabel113);
+            this.panel1.Controls.Add(this.leeLabel114);
+            this.panel1.Controls.Add(this.leeLabel115);
+            this.panel1.Controls.Add(this.leeLabel116);
+            this.panel1.Controls.Add(this.leeLabel117);
+            this.panel1.Controls.Add(this.leeLabel118);
+            this.panel1.Controls.Add(this.leeLabel119);
+            this.panel1.Controls.Add(this.label22);
+            this.panel1.Controls.Add(this.leeLabel120);
+            this.panel1.Controls.Add(this.leeLabel121);
+            this.panel1.Controls.Add(this.leeLabel122);
+            this.panel1.Controls.Add(this.leeLabel123);
+            this.panel1.Controls.Add(this.leeLabel124);
+            this.panel1.Controls.Add(this.leeLabel125);
+            this.panel1.Controls.Add(this.leeLabel126);
+            this.panel1.Controls.Add(this.leeLabel127);
+            this.panel1.Controls.Add(this.label23);
+            this.panel1.Controls.Add(this.leeLabel128);
+            this.panel1.Controls.Add(this.leeLabel129);
+            this.panel1.Controls.Add(this.leeLabel130);
+            this.panel1.Controls.Add(this.leeLabel131);
+            this.panel1.Controls.Add(this.leeLabel132);
+            this.panel1.Controls.Add(this.leeLabel133);
+            this.panel1.Controls.Add(this.leeLabel134);
+            this.panel1.Controls.Add(this.label24);
+            this.panel1.Controls.Add(this.leeLabel135);
+            this.panel1.Controls.Add(this.leeLabel136);
+            this.panel1.Controls.Add(this.leeLabel137);
+            this.panel1.Controls.Add(this.leeLabel138);
+            this.panel1.Controls.Add(this.leeLabel139);
+            this.panel1.Controls.Add(this.leeLabel140);
+            this.panel1.Controls.Add(this.leeLabel141);
+            this.panel1.Controls.Add(this.leeLabel142);
+            this.panel1.Controls.Add(this.label25);
+            this.panel1.Controls.Add(this.leeLabel143);
+            this.panel1.Controls.Add(this.leeLabel144);
+            this.panel1.Controls.Add(this.leeLabel145);
+            this.panel1.Controls.Add(this.leeLabel146);
+            this.panel1.Controls.Add(this.leeLabel147);
+            this.panel1.Controls.Add(this.leeLabel148);
+            this.panel1.Controls.Add(this.leeLabel149);
+            this.panel1.Controls.Add(this.leeLabel150);
+            this.panel1.Controls.Add(this.leeLabel151);
+            this.panel1.Controls.Add(this.label26);
+            this.panel1.Controls.Add(this.label27);
+            this.panel1.Controls.Add(this.label28);
+            this.panel1.Controls.Add(this.leeLabel152);
+            this.panel1.Controls.Add(this.leeLabel153);
+            this.panel1.Controls.Add(this.leeLabel154);
+            this.panel1.Controls.Add(this.leeLabel155);
+            this.panel1.Controls.Add(this.leeLabel156);
+            this.panel1.Controls.Add(this.leeLabel157);
+            this.panel1.Controls.Add(this.leeLabel158);
+            this.panel1.Controls.Add(this.leeLabel159);
+            this.panel1.Controls.Add(this.leeLabel160);
+            this.panel1.Controls.Add(this.leeLabel161);
+            this.panel1.Controls.Add(this.leeLabel162);
+            this.panel1.Controls.Add(this.leeLabel163);
+            this.panel1.Controls.Add(this.leeLabel164);
+            this.panel1.Controls.Add(this.leeLabel165);
+            this.panel1.Controls.Add(this.leeLabel166);
+            this.panel1.Controls.Add(this.leeLabel167);
+            this.panel1.Controls.Add(this.leeLabel168);
+            this.panel1.Controls.Add(this.leeLabel169);
+            this.panel1.Location = new System.Drawing.Point(340, 5);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(314, 340);
+            this.panel1.TabIndex = 754;
             // 
             // leeLabel33
             // 
-            this.leeLabel33.AutoSize = true;
+            this.leeLabel33.BackColor = System.Drawing.Color.Transparent;
             this.leeLabel33.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.leeLabel33.EnterColor = System.Drawing.Color.Black;
-            this.leeLabel33.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.leeLabel33.ForeColor = System.Drawing.Color.Gray;
-            this.leeLabel33.Location = new System.Drawing.Point(337, 9);
+            this.leeLabel33.EnterColor = System.Drawing.Color.DodgerBlue;
+            this.leeLabel33.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel33.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.leeLabel33.Location = new System.Drawing.Point(213, 279);
             this.leeLabel33.Name = "leeLabel33";
-            this.leeLabel33.Size = new System.Drawing.Size(44, 17);
-            this.leeLabel33.TabIndex = 689;
+            this.leeLabel33.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel33.TabIndex = 751;
             this.leeLabel33.Tag = "0";
-            this.leeLabel33.Text = "一等奖";
+            this.leeLabel33.Text = "●";
+            this.leeLabel33.Visible = false;
             // 
             // leeLabel38
             // 
-            this.leeLabel38.AutoSize = true;
+            this.leeLabel38.BackColor = System.Drawing.Color.Transparent;
             this.leeLabel38.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.leeLabel38.EnterColor = System.Drawing.Color.Black;
-            this.leeLabel38.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.leeLabel38.ForeColor = System.Drawing.Color.Gray;
-            this.leeLabel38.Location = new System.Drawing.Point(512, 9);
+            this.leeLabel38.EnterColor = System.Drawing.Color.DodgerBlue;
+            this.leeLabel38.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel38.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.leeLabel38.Location = new System.Drawing.Point(226, 279);
             this.leeLabel38.Name = "leeLabel38";
-            this.leeLabel38.Size = new System.Drawing.Size(20, 17);
-            this.leeLabel38.TabIndex = 690;
+            this.leeLabel38.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel38.TabIndex = 752;
             this.leeLabel38.Tag = "0";
-            this.leeLabel38.Text = "元";
+            this.leeLabel38.Text = "●";
+            this.leeLabel38.Visible = false;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Gainsboro;
+            this.label14.Cursor = System.Windows.Forms.Cursors.SizeAll;
+            this.label14.Enabled = false;
+            this.label14.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label14.Location = new System.Drawing.Point(162, 289);
+            this.label14.MaximumSize = new System.Drawing.Size(1, 810);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(1, 12);
+            this.label14.TabIndex = 743;
+            this.label14.Text = "|";
+            this.label14.Visible = false;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Gainsboro;
+            this.label15.Cursor = System.Windows.Forms.Cursors.SizeAll;
+            this.label15.Enabled = false;
+            this.label15.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label15.Location = new System.Drawing.Point(212, 289);
+            this.label15.MaximumSize = new System.Drawing.Size(1, 810);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(1, 12);
+            this.label15.TabIndex = 753;
+            this.label15.Text = "|";
+            this.label15.Visible = false;
             // 
             // leeLabel39
             // 
-            this.leeLabel39.AutoSize = true;
+            this.leeLabel39.BackColor = System.Drawing.Color.Transparent;
             this.leeLabel39.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.leeLabel39.EnterColor = System.Drawing.Color.Black;
-            this.leeLabel39.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.leeLabel39.ForeColor = System.Drawing.Color.Gray;
-            this.leeLabel39.Location = new System.Drawing.Point(470, 9);
+            this.leeLabel39.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel39.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel39.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel39.Location = new System.Drawing.Point(163, 279);
             this.leeLabel39.Name = "leeLabel39";
-            this.leeLabel39.Size = new System.Drawing.Size(43, 17);
-            this.leeLabel39.TabIndex = 689;
+            this.leeLabel39.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel39.TabIndex = 745;
             this.leeLabel39.Tag = "0";
-            this.leeLabel39.Text = "10000";
+            this.leeLabel39.Text = "●";
+            this.leeLabel39.Visible = false;
+            // 
+            // leeLabel89
+            // 
+            this.leeLabel89.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel89.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel89.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel89.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel89.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel89.Location = new System.Drawing.Point(176, 279);
+            this.leeLabel89.Name = "leeLabel89";
+            this.leeLabel89.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel89.TabIndex = 746;
+            this.leeLabel89.Tag = "0";
+            this.leeLabel89.Text = "●";
+            this.leeLabel89.Visible = false;
+            // 
+            // leeLabel90
+            // 
+            this.leeLabel90.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel90.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel90.EnterColor = System.Drawing.Color.DodgerBlue;
+            this.leeLabel90.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel90.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.leeLabel90.Location = new System.Drawing.Point(189, 279);
+            this.leeLabel90.Name = "leeLabel90";
+            this.leeLabel90.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel90.TabIndex = 748;
+            this.leeLabel90.Tag = "0";
+            this.leeLabel90.Text = "●";
+            this.leeLabel90.Visible = false;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Gainsboro;
+            this.label16.Cursor = System.Windows.Forms.Cursors.SizeAll;
+            this.label16.Enabled = false;
+            this.label16.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label16.Location = new System.Drawing.Point(110, 289);
+            this.label16.MaximumSize = new System.Drawing.Size(1, 810);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(1, 12);
+            this.label16.TabIndex = 730;
+            this.label16.Text = "|";
+            this.label16.Visible = false;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label17.Cursor = System.Windows.Forms.Cursors.SizeAll;
+            this.label17.Enabled = false;
+            this.label17.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label17.Location = new System.Drawing.Point(12, 311);
+            this.label17.MaximumSize = new System.Drawing.Size(0, 1);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(293, 1);
+            this.label17.TabIndex = 737;
+            this.label17.Text = "________________________________________________";
+            // 
+            // leeLabel91
+            // 
+            this.leeLabel91.AutoSize = true;
+            this.leeLabel91.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel91.EnterColor = System.Drawing.Color.Black;
+            this.leeLabel91.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel91.ForeColor = System.Drawing.Color.Gray;
+            this.leeLabel91.Location = new System.Drawing.Point(285, 286);
+            this.leeLabel91.Name = "leeLabel91";
+            this.leeLabel91.Size = new System.Drawing.Size(20, 17);
+            this.leeLabel91.TabIndex = 736;
+            this.leeLabel91.Tag = "0";
+            this.leeLabel91.Text = "元";
+            // 
+            // leeLabel92
+            // 
+            this.leeLabel92.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel92.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel92.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel92.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel92.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel92.Location = new System.Drawing.Point(60, 279);
+            this.leeLabel92.Name = "leeLabel92";
+            this.leeLabel92.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel92.TabIndex = 733;
+            this.leeLabel92.Tag = "0";
+            this.leeLabel92.Text = "●";
+            this.leeLabel92.Visible = false;
+            // 
+            // leeLabel93
+            // 
+            this.leeLabel93.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel93.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel93.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel93.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel93.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel93.Location = new System.Drawing.Point(73, 279);
+            this.leeLabel93.Name = "leeLabel93";
+            this.leeLabel93.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel93.TabIndex = 734;
+            this.leeLabel93.Tag = "0";
+            this.leeLabel93.Text = "●";
+            this.leeLabel93.Visible = false;
+            // 
+            // leeLabel94
+            // 
+            this.leeLabel94.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel94.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel94.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel94.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel94.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel94.Location = new System.Drawing.Point(86, 279);
+            this.leeLabel94.Name = "leeLabel94";
+            this.leeLabel94.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel94.TabIndex = 735;
+            this.leeLabel94.Tag = "0";
+            this.leeLabel94.Text = "●";
+            this.leeLabel94.Visible = false;
+            // 
+            // leeLabel95
+            // 
+            this.leeLabel95.AutoSize = true;
+            this.leeLabel95.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel95.EnterColor = System.Drawing.Color.Black;
+            this.leeLabel95.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel95.ForeColor = System.Drawing.Color.Gray;
+            this.leeLabel95.Location = new System.Drawing.Point(10, 286);
+            this.leeLabel95.Name = "leeLabel95";
+            this.leeLabel95.Size = new System.Drawing.Size(44, 17);
+            this.leeLabel95.TabIndex = 731;
+            this.leeLabel95.Tag = "0";
+            this.leeLabel95.Text = "九等奖";
+            // 
+            // leeLabel96
+            // 
+            this.leeLabel96.AutoSize = true;
+            this.leeLabel96.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel96.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel96.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel96.ForeColor = System.Drawing.Color.Gray;
+            this.leeLabel96.Location = new System.Drawing.Point(271, 286);
+            this.leeLabel96.Name = "leeLabel96";
+            this.leeLabel96.Size = new System.Drawing.Size(15, 17);
+            this.leeLabel96.TabIndex = 732;
+            this.leeLabel96.Tag = "0";
+            this.leeLabel96.Text = "5";
+            // 
+            // leeLabel97
+            // 
+            this.leeLabel97.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel97.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel97.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel97.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel97.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel97.Location = new System.Drawing.Point(111, 279);
+            this.leeLabel97.Name = "leeLabel97";
+            this.leeLabel97.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel97.TabIndex = 739;
+            this.leeLabel97.Tag = "0";
+            this.leeLabel97.Text = "●";
+            this.leeLabel97.Visible = false;
+            // 
+            // leeLabel98
+            // 
+            this.leeLabel98.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel98.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel98.EnterColor = System.Drawing.Color.DodgerBlue;
+            this.leeLabel98.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel98.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.leeLabel98.Location = new System.Drawing.Point(124, 279);
+            this.leeLabel98.Name = "leeLabel98";
+            this.leeLabel98.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel98.TabIndex = 741;
+            this.leeLabel98.Tag = "0";
+            this.leeLabel98.Text = "●";
+            this.leeLabel98.Visible = false;
+            // 
+            // leeLabel99
+            // 
+            this.leeLabel99.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel99.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel99.EnterColor = System.Drawing.Color.DodgerBlue;
+            this.leeLabel99.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel99.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.leeLabel99.Location = new System.Drawing.Point(137, 279);
+            this.leeLabel99.Name = "leeLabel99";
+            this.leeLabel99.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel99.TabIndex = 742;
+            this.leeLabel99.Tag = "0";
+            this.leeLabel99.Text = "●";
+            this.leeLabel99.Visible = false;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Gainsboro;
+            this.label18.Cursor = System.Windows.Forms.Cursors.SizeAll;
+            this.label18.Enabled = false;
+            this.label18.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label18.Location = new System.Drawing.Point(123, 254);
+            this.label18.MaximumSize = new System.Drawing.Size(1, 810);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(1, 12);
+            this.label18.TabIndex = 691;
+            this.label18.Text = "|";
+            this.label18.Visible = false;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label19.Cursor = System.Windows.Forms.Cursors.SizeAll;
+            this.label19.Enabled = false;
+            this.label19.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label19.Location = new System.Drawing.Point(12, 276);
+            this.label19.MaximumSize = new System.Drawing.Size(0, 1);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(293, 1);
+            this.label19.TabIndex = 723;
+            this.label19.Text = "________________________________________________";
+            // 
+            // leeLabel100
+            // 
+            this.leeLabel100.AutoSize = true;
+            this.leeLabel100.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel100.EnterColor = System.Drawing.Color.Black;
+            this.leeLabel100.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel100.ForeColor = System.Drawing.Color.Gray;
+            this.leeLabel100.Location = new System.Drawing.Point(285, 251);
+            this.leeLabel100.Name = "leeLabel100";
+            this.leeLabel100.Size = new System.Drawing.Size(20, 17);
+            this.leeLabel100.TabIndex = 722;
+            this.leeLabel100.Tag = "0";
+            this.leeLabel100.Text = "元";
+            // 
+            // leeLabel101
+            // 
+            this.leeLabel101.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel101.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel101.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel101.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel101.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel101.Location = new System.Drawing.Point(60, 244);
+            this.leeLabel101.Name = "leeLabel101";
+            this.leeLabel101.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel101.TabIndex = 718;
+            this.leeLabel101.Tag = "0";
+            this.leeLabel101.Text = "●";
+            this.leeLabel101.Visible = false;
+            // 
+            // leeLabel102
+            // 
+            this.leeLabel102.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel102.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel102.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel102.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel102.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel102.Location = new System.Drawing.Point(73, 244);
+            this.leeLabel102.Name = "leeLabel102";
+            this.leeLabel102.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel102.TabIndex = 719;
+            this.leeLabel102.Tag = "0";
+            this.leeLabel102.Text = "●";
+            this.leeLabel102.Visible = false;
+            // 
+            // leeLabel103
+            // 
+            this.leeLabel103.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel103.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel103.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel103.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel103.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel103.Location = new System.Drawing.Point(86, 244);
+            this.leeLabel103.Name = "leeLabel103";
+            this.leeLabel103.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel103.TabIndex = 720;
+            this.leeLabel103.Tag = "0";
+            this.leeLabel103.Text = "●";
+            this.leeLabel103.Visible = false;
+            // 
+            // leeLabel104
+            // 
+            this.leeLabel104.AutoSize = true;
+            this.leeLabel104.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel104.EnterColor = System.Drawing.Color.Black;
+            this.leeLabel104.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel104.ForeColor = System.Drawing.Color.Gray;
+            this.leeLabel104.Location = new System.Drawing.Point(10, 251);
+            this.leeLabel104.Name = "leeLabel104";
+            this.leeLabel104.Size = new System.Drawing.Size(44, 17);
+            this.leeLabel104.TabIndex = 716;
+            this.leeLabel104.Tag = "0";
+            this.leeLabel104.Text = "八等奖";
+            // 
+            // leeLabel105
+            // 
+            this.leeLabel105.AutoSize = true;
+            this.leeLabel105.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel105.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel105.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel105.ForeColor = System.Drawing.Color.Gray;
+            this.leeLabel105.Location = new System.Drawing.Point(264, 251);
+            this.leeLabel105.Name = "leeLabel105";
+            this.leeLabel105.Size = new System.Drawing.Size(22, 17);
+            this.leeLabel105.TabIndex = 717;
+            this.leeLabel105.Tag = "0";
+            this.leeLabel105.Text = "15";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label20.Cursor = System.Windows.Forms.Cursors.SizeAll;
+            this.label20.Enabled = false;
+            this.label20.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label20.Location = new System.Drawing.Point(12, 242);
+            this.label20.MaximumSize = new System.Drawing.Size(0, 1);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(293, 1);
+            this.label20.TabIndex = 715;
+            this.label20.Text = "________________________________________________";
+            // 
+            // leeLabel106
+            // 
+            this.leeLabel106.AutoSize = true;
+            this.leeLabel106.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel106.EnterColor = System.Drawing.Color.Black;
+            this.leeLabel106.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel106.ForeColor = System.Drawing.Color.Gray;
+            this.leeLabel106.Location = new System.Drawing.Point(285, 217);
+            this.leeLabel106.Name = "leeLabel106";
+            this.leeLabel106.Size = new System.Drawing.Size(20, 17);
+            this.leeLabel106.TabIndex = 714;
+            this.leeLabel106.Tag = "0";
+            this.leeLabel106.Text = "元";
+            // 
+            // leeLabel107
+            // 
+            this.leeLabel107.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel107.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel107.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel107.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel107.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel107.Location = new System.Drawing.Point(60, 210);
+            this.leeLabel107.Name = "leeLabel107";
+            this.leeLabel107.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel107.TabIndex = 710;
+            this.leeLabel107.Tag = "0";
+            this.leeLabel107.Text = "●";
+            this.leeLabel107.Visible = false;
+            // 
+            // leeLabel108
+            // 
+            this.leeLabel108.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel108.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel108.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel108.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel108.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel108.Location = new System.Drawing.Point(73, 210);
+            this.leeLabel108.Name = "leeLabel108";
+            this.leeLabel108.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel108.TabIndex = 711;
+            this.leeLabel108.Tag = "0";
+            this.leeLabel108.Text = "●";
+            this.leeLabel108.Visible = false;
+            // 
+            // leeLabel109
+            // 
+            this.leeLabel109.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel109.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel109.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel109.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel109.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel109.Location = new System.Drawing.Point(86, 210);
+            this.leeLabel109.Name = "leeLabel109";
+            this.leeLabel109.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel109.TabIndex = 712;
+            this.leeLabel109.Tag = "0";
+            this.leeLabel109.Text = "●";
+            this.leeLabel109.Visible = false;
+            // 
+            // leeLabel110
+            // 
+            this.leeLabel110.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel110.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel110.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel110.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel110.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel110.Location = new System.Drawing.Point(99, 210);
+            this.leeLabel110.Name = "leeLabel110";
+            this.leeLabel110.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel110.TabIndex = 713;
+            this.leeLabel110.Tag = "0";
+            this.leeLabel110.Text = "●";
+            this.leeLabel110.Visible = false;
+            // 
+            // leeLabel111
+            // 
+            this.leeLabel111.AutoSize = true;
+            this.leeLabel111.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel111.EnterColor = System.Drawing.Color.Black;
+            this.leeLabel111.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel111.ForeColor = System.Drawing.Color.Gray;
+            this.leeLabel111.Location = new System.Drawing.Point(10, 217);
+            this.leeLabel111.Name = "leeLabel111";
+            this.leeLabel111.Size = new System.Drawing.Size(44, 17);
+            this.leeLabel111.TabIndex = 708;
+            this.leeLabel111.Tag = "0";
+            this.leeLabel111.Text = "七等奖";
+            // 
+            // leeLabel112
+            // 
+            this.leeLabel112.AutoSize = true;
+            this.leeLabel112.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel112.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel112.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel112.ForeColor = System.Drawing.Color.Gray;
+            this.leeLabel112.Location = new System.Drawing.Point(257, 217);
+            this.leeLabel112.Name = "leeLabel112";
+            this.leeLabel112.Size = new System.Drawing.Size(29, 17);
+            this.leeLabel112.TabIndex = 709;
+            this.leeLabel112.Tag = "0";
+            this.leeLabel112.Text = "100";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label21.Cursor = System.Windows.Forms.Cursors.SizeAll;
+            this.label21.Enabled = false;
+            this.label21.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label21.Location = new System.Drawing.Point(12, 208);
+            this.label21.MaximumSize = new System.Drawing.Size(0, 1);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(293, 1);
+            this.label21.TabIndex = 705;
+            this.label21.Text = "________________________________________________";
+            // 
+            // leeLabel113
+            // 
+            this.leeLabel113.AutoSize = true;
+            this.leeLabel113.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel113.EnterColor = System.Drawing.Color.Black;
+            this.leeLabel113.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel113.ForeColor = System.Drawing.Color.Gray;
+            this.leeLabel113.Location = new System.Drawing.Point(285, 183);
+            this.leeLabel113.Name = "leeLabel113";
+            this.leeLabel113.Size = new System.Drawing.Size(20, 17);
+            this.leeLabel113.TabIndex = 704;
+            this.leeLabel113.Tag = "0";
+            this.leeLabel113.Text = "元";
+            // 
+            // leeLabel114
+            // 
+            this.leeLabel114.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel114.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel114.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel114.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel114.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel114.Location = new System.Drawing.Point(60, 176);
+            this.leeLabel114.Name = "leeLabel114";
+            this.leeLabel114.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel114.TabIndex = 700;
+            this.leeLabel114.Tag = "0";
+            this.leeLabel114.Text = "●";
+            this.leeLabel114.Visible = false;
+            // 
+            // leeLabel115
+            // 
+            this.leeLabel115.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel115.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel115.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel115.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel115.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel115.Location = new System.Drawing.Point(73, 176);
+            this.leeLabel115.Name = "leeLabel115";
+            this.leeLabel115.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel115.TabIndex = 701;
+            this.leeLabel115.Tag = "0";
+            this.leeLabel115.Text = "●";
+            this.leeLabel115.Visible = false;
+            // 
+            // leeLabel116
+            // 
+            this.leeLabel116.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel116.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel116.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel116.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel116.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel116.Location = new System.Drawing.Point(86, 176);
+            this.leeLabel116.Name = "leeLabel116";
+            this.leeLabel116.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel116.TabIndex = 702;
+            this.leeLabel116.Tag = "0";
+            this.leeLabel116.Text = "●";
+            this.leeLabel116.Visible = false;
+            // 
+            // leeLabel117
+            // 
+            this.leeLabel117.AutoSize = true;
+            this.leeLabel117.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel117.EnterColor = System.Drawing.Color.Black;
+            this.leeLabel117.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel117.ForeColor = System.Drawing.Color.Gray;
+            this.leeLabel117.Location = new System.Drawing.Point(10, 183);
+            this.leeLabel117.Name = "leeLabel117";
+            this.leeLabel117.Size = new System.Drawing.Size(44, 17);
+            this.leeLabel117.TabIndex = 698;
+            this.leeLabel117.Tag = "0";
+            this.leeLabel117.Text = "六等奖";
+            // 
+            // leeLabel118
+            // 
+            this.leeLabel118.AutoSize = true;
+            this.leeLabel118.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel118.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel118.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel118.ForeColor = System.Drawing.Color.Gray;
+            this.leeLabel118.Location = new System.Drawing.Point(257, 183);
+            this.leeLabel118.Name = "leeLabel118";
+            this.leeLabel118.Size = new System.Drawing.Size(29, 17);
+            this.leeLabel118.TabIndex = 699;
+            this.leeLabel118.Tag = "0";
+            this.leeLabel118.Text = "200";
+            // 
+            // leeLabel119
+            // 
+            this.leeLabel119.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel119.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel119.EnterColor = System.Drawing.Color.DodgerBlue;
+            this.leeLabel119.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel119.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.leeLabel119.Location = new System.Drawing.Point(100, 176);
+            this.leeLabel119.Name = "leeLabel119";
+            this.leeLabel119.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel119.TabIndex = 706;
+            this.leeLabel119.Tag = "0";
+            this.leeLabel119.Text = "●";
+            this.leeLabel119.Visible = false;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label22.Cursor = System.Windows.Forms.Cursors.SizeAll;
+            this.label22.Enabled = false;
+            this.label22.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label22.Location = new System.Drawing.Point(12, 174);
+            this.label22.MaximumSize = new System.Drawing.Size(0, 1);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(293, 1);
+            this.label22.TabIndex = 696;
+            this.label22.Text = "________________________________________________";
+            // 
+            // leeLabel120
+            // 
+            this.leeLabel120.AutoSize = true;
+            this.leeLabel120.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel120.EnterColor = System.Drawing.Color.Black;
+            this.leeLabel120.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel120.ForeColor = System.Drawing.Color.Gray;
+            this.leeLabel120.Location = new System.Drawing.Point(285, 149);
+            this.leeLabel120.Name = "leeLabel120";
+            this.leeLabel120.Size = new System.Drawing.Size(20, 17);
+            this.leeLabel120.TabIndex = 695;
+            this.leeLabel120.Tag = "0";
+            this.leeLabel120.Text = "元";
+            // 
+            // leeLabel121
+            // 
+            this.leeLabel121.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel121.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel121.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel121.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel121.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel121.Location = new System.Drawing.Point(60, 142);
+            this.leeLabel121.Name = "leeLabel121";
+            this.leeLabel121.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel121.TabIndex = 691;
+            this.leeLabel121.Tag = "0";
+            this.leeLabel121.Text = "●";
+            this.leeLabel121.Visible = false;
+            // 
+            // leeLabel122
+            // 
+            this.leeLabel122.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel122.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel122.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel122.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel122.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel122.Location = new System.Drawing.Point(73, 142);
+            this.leeLabel122.Name = "leeLabel122";
+            this.leeLabel122.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel122.TabIndex = 692;
+            this.leeLabel122.Tag = "0";
+            this.leeLabel122.Text = "●";
+            this.leeLabel122.Visible = false;
+            // 
+            // leeLabel123
+            // 
+            this.leeLabel123.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel123.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel123.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel123.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel123.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel123.Location = new System.Drawing.Point(86, 142);
+            this.leeLabel123.Name = "leeLabel123";
+            this.leeLabel123.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel123.TabIndex = 693;
+            this.leeLabel123.Tag = "0";
+            this.leeLabel123.Text = "●";
+            this.leeLabel123.Visible = false;
+            // 
+            // leeLabel124
+            // 
+            this.leeLabel124.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel124.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel124.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel124.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel124.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel124.Location = new System.Drawing.Point(99, 142);
+            this.leeLabel124.Name = "leeLabel124";
+            this.leeLabel124.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel124.TabIndex = 694;
+            this.leeLabel124.Tag = "0";
+            this.leeLabel124.Text = "●";
+            this.leeLabel124.Visible = false;
+            // 
+            // leeLabel125
+            // 
+            this.leeLabel125.AutoSize = true;
+            this.leeLabel125.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel125.EnterColor = System.Drawing.Color.Black;
+            this.leeLabel125.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel125.ForeColor = System.Drawing.Color.Gray;
+            this.leeLabel125.Location = new System.Drawing.Point(10, 149);
+            this.leeLabel125.Name = "leeLabel125";
+            this.leeLabel125.Size = new System.Drawing.Size(44, 17);
+            this.leeLabel125.TabIndex = 689;
+            this.leeLabel125.Tag = "0";
+            this.leeLabel125.Text = "五等奖";
+            // 
+            // leeLabel126
+            // 
+            this.leeLabel126.AutoSize = true;
+            this.leeLabel126.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel126.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel126.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel126.ForeColor = System.Drawing.Color.Gray;
+            this.leeLabel126.Location = new System.Drawing.Point(257, 149);
+            this.leeLabel126.Name = "leeLabel126";
+            this.leeLabel126.Size = new System.Drawing.Size(29, 17);
+            this.leeLabel126.TabIndex = 690;
+            this.leeLabel126.Tag = "0";
+            this.leeLabel126.Text = "300";
+            // 
+            // leeLabel127
+            // 
+            this.leeLabel127.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel127.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel127.EnterColor = System.Drawing.Color.DodgerBlue;
+            this.leeLabel127.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel127.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.leeLabel127.Location = new System.Drawing.Point(112, 142);
+            this.leeLabel127.Name = "leeLabel127";
+            this.leeLabel127.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel127.TabIndex = 697;
+            this.leeLabel127.Tag = "0";
+            this.leeLabel127.Text = "●";
+            this.leeLabel127.Visible = false;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label23.Cursor = System.Windows.Forms.Cursors.SizeAll;
+            this.label23.Enabled = false;
+            this.label23.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label23.Location = new System.Drawing.Point(12, 140);
+            this.label23.MaximumSize = new System.Drawing.Size(0, 1);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(293, 1);
+            this.label23.TabIndex = 686;
+            this.label23.Text = "________________________________________________";
+            // 
+            // leeLabel128
+            // 
+            this.leeLabel128.AutoSize = true;
+            this.leeLabel128.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel128.EnterColor = System.Drawing.Color.Black;
+            this.leeLabel128.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel128.ForeColor = System.Drawing.Color.Gray;
+            this.leeLabel128.Location = new System.Drawing.Point(285, 115);
+            this.leeLabel128.Name = "leeLabel128";
+            this.leeLabel128.Size = new System.Drawing.Size(20, 17);
+            this.leeLabel128.TabIndex = 685;
+            this.leeLabel128.Tag = "0";
+            this.leeLabel128.Text = "元";
+            // 
+            // leeLabel129
+            // 
+            this.leeLabel129.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel129.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel129.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel129.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel129.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel129.Location = new System.Drawing.Point(60, 108);
+            this.leeLabel129.Name = "leeLabel129";
+            this.leeLabel129.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel129.TabIndex = 680;
+            this.leeLabel129.Tag = "0";
+            this.leeLabel129.Text = "●";
+            this.leeLabel129.Visible = false;
+            // 
+            // leeLabel130
+            // 
+            this.leeLabel130.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel130.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel130.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel130.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel130.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel130.Location = new System.Drawing.Point(73, 108);
+            this.leeLabel130.Name = "leeLabel130";
+            this.leeLabel130.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel130.TabIndex = 681;
+            this.leeLabel130.Tag = "0";
+            this.leeLabel130.Text = "●";
+            this.leeLabel130.Visible = false;
+            // 
+            // leeLabel131
+            // 
+            this.leeLabel131.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel131.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel131.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel131.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel131.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel131.Location = new System.Drawing.Point(86, 108);
+            this.leeLabel131.Name = "leeLabel131";
+            this.leeLabel131.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel131.TabIndex = 682;
+            this.leeLabel131.Tag = "0";
+            this.leeLabel131.Text = "●";
+            this.leeLabel131.Visible = false;
+            // 
+            // leeLabel132
+            // 
+            this.leeLabel132.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel132.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel132.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel132.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel132.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel132.Location = new System.Drawing.Point(99, 108);
+            this.leeLabel132.Name = "leeLabel132";
+            this.leeLabel132.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel132.TabIndex = 683;
+            this.leeLabel132.Tag = "0";
+            this.leeLabel132.Text = "●";
+            this.leeLabel132.Visible = false;
+            // 
+            // leeLabel133
+            // 
+            this.leeLabel133.AutoSize = true;
+            this.leeLabel133.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel133.EnterColor = System.Drawing.Color.Black;
+            this.leeLabel133.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel133.ForeColor = System.Drawing.Color.Gray;
+            this.leeLabel133.Location = new System.Drawing.Point(10, 115);
+            this.leeLabel133.Name = "leeLabel133";
+            this.leeLabel133.Size = new System.Drawing.Size(44, 17);
+            this.leeLabel133.TabIndex = 678;
+            this.leeLabel133.Tag = "0";
+            this.leeLabel133.Text = "四等奖";
+            // 
+            // leeLabel134
+            // 
+            this.leeLabel134.AutoSize = true;
+            this.leeLabel134.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel134.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel134.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel134.ForeColor = System.Drawing.Color.Gray;
+            this.leeLabel134.Location = new System.Drawing.Point(250, 115);
+            this.leeLabel134.Name = "leeLabel134";
+            this.leeLabel134.Size = new System.Drawing.Size(36, 17);
+            this.leeLabel134.TabIndex = 679;
+            this.leeLabel134.Tag = "0";
+            this.leeLabel134.Text = "3000";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label24.Cursor = System.Windows.Forms.Cursors.SizeAll;
+            this.label24.Enabled = false;
+            this.label24.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label24.Location = new System.Drawing.Point(12, 106);
+            this.label24.MaximumSize = new System.Drawing.Size(0, 1);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(293, 1);
+            this.label24.TabIndex = 677;
+            this.label24.Text = "________________________________________________";
+            // 
+            // leeLabel135
+            // 
+            this.leeLabel135.AutoSize = true;
+            this.leeLabel135.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel135.EnterColor = System.Drawing.Color.Black;
+            this.leeLabel135.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel135.ForeColor = System.Drawing.Color.Gray;
+            this.leeLabel135.Location = new System.Drawing.Point(285, 80);
+            this.leeLabel135.Name = "leeLabel135";
+            this.leeLabel135.Size = new System.Drawing.Size(20, 17);
+            this.leeLabel135.TabIndex = 676;
+            this.leeLabel135.Tag = "0";
+            this.leeLabel135.Text = "元";
+            // 
+            // leeLabel136
+            // 
+            this.leeLabel136.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel136.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel136.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel136.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel136.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel136.Location = new System.Drawing.Point(60, 73);
+            this.leeLabel136.Name = "leeLabel136";
+            this.leeLabel136.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel136.TabIndex = 670;
+            this.leeLabel136.Tag = "0";
+            this.leeLabel136.Text = "●";
+            this.leeLabel136.Visible = false;
+            // 
+            // leeLabel137
+            // 
+            this.leeLabel137.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel137.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel137.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel137.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel137.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel137.Location = new System.Drawing.Point(73, 73);
+            this.leeLabel137.Name = "leeLabel137";
+            this.leeLabel137.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel137.TabIndex = 672;
+            this.leeLabel137.Tag = "0";
+            this.leeLabel137.Text = "●";
+            this.leeLabel137.Visible = false;
+            // 
+            // leeLabel138
+            // 
+            this.leeLabel138.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel138.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel138.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel138.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel138.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel138.Location = new System.Drawing.Point(86, 73);
+            this.leeLabel138.Name = "leeLabel138";
+            this.leeLabel138.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel138.TabIndex = 673;
+            this.leeLabel138.Tag = "0";
+            this.leeLabel138.Text = "●";
+            this.leeLabel138.Visible = false;
+            // 
+            // leeLabel139
+            // 
+            this.leeLabel139.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel139.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel139.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel139.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel139.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel139.Location = new System.Drawing.Point(99, 73);
+            this.leeLabel139.Name = "leeLabel139";
+            this.leeLabel139.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel139.TabIndex = 674;
+            this.leeLabel139.Tag = "0";
+            this.leeLabel139.Text = "●";
+            this.leeLabel139.Visible = false;
+            // 
+            // leeLabel140
+            // 
+            this.leeLabel140.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel140.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel140.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel140.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel140.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel140.Location = new System.Drawing.Point(112, 73);
+            this.leeLabel140.Name = "leeLabel140";
+            this.leeLabel140.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel140.TabIndex = 675;
+            this.leeLabel140.Tag = "0";
+            this.leeLabel140.Text = "●";
+            this.leeLabel140.Visible = false;
+            // 
+            // leeLabel141
+            // 
+            this.leeLabel141.AutoSize = true;
+            this.leeLabel141.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel141.EnterColor = System.Drawing.Color.Black;
+            this.leeLabel141.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel141.ForeColor = System.Drawing.Color.Gray;
+            this.leeLabel141.Location = new System.Drawing.Point(10, 80);
+            this.leeLabel141.Name = "leeLabel141";
+            this.leeLabel141.Size = new System.Drawing.Size(44, 17);
+            this.leeLabel141.TabIndex = 668;
+            this.leeLabel141.Tag = "0";
+            this.leeLabel141.Text = "三等奖";
+            // 
+            // leeLabel142
+            // 
+            this.leeLabel142.AutoSize = true;
+            this.leeLabel142.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel142.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel142.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel142.ForeColor = System.Drawing.Color.Gray;
+            this.leeLabel142.Location = new System.Drawing.Point(243, 80);
+            this.leeLabel142.Name = "leeLabel142";
+            this.leeLabel142.Size = new System.Drawing.Size(43, 17);
+            this.leeLabel142.TabIndex = 669;
+            this.leeLabel142.Tag = "0";
+            this.leeLabel142.Text = "10000";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label25.Cursor = System.Windows.Forms.Cursors.SizeAll;
+            this.label25.Enabled = false;
+            this.label25.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label25.Location = new System.Drawing.Point(12, 71);
+            this.label25.MaximumSize = new System.Drawing.Size(0, 1);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(293, 1);
+            this.label25.TabIndex = 667;
+            this.label25.Text = "________________________________________________";
+            // 
+            // leeLabel143
+            // 
+            this.leeLabel143.AutoSize = true;
+            this.leeLabel143.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel143.EnterColor = System.Drawing.Color.Black;
+            this.leeLabel143.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel143.ForeColor = System.Drawing.Color.Gray;
+            this.leeLabel143.Location = new System.Drawing.Point(285, 45);
+            this.leeLabel143.Name = "leeLabel143";
+            this.leeLabel143.Size = new System.Drawing.Size(20, 17);
+            this.leeLabel143.TabIndex = 666;
+            this.leeLabel143.Tag = "0";
+            this.leeLabel143.Text = "元";
+            // 
+            // leeLabel144
+            // 
+            this.leeLabel144.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel144.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel144.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel144.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel144.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel144.Location = new System.Drawing.Point(60, 38);
+            this.leeLabel144.Name = "leeLabel144";
+            this.leeLabel144.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel144.TabIndex = 659;
+            this.leeLabel144.Tag = "0";
+            this.leeLabel144.Text = "●";
+            this.leeLabel144.Visible = false;
+            // 
+            // leeLabel145
+            // 
+            this.leeLabel145.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel145.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel145.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel145.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel145.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel145.Location = new System.Drawing.Point(73, 38);
+            this.leeLabel145.Name = "leeLabel145";
+            this.leeLabel145.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel145.TabIndex = 661;
+            this.leeLabel145.Tag = "0";
+            this.leeLabel145.Text = "●";
+            this.leeLabel145.Visible = false;
+            // 
+            // leeLabel146
+            // 
+            this.leeLabel146.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel146.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel146.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel146.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel146.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel146.Location = new System.Drawing.Point(86, 38);
+            this.leeLabel146.Name = "leeLabel146";
+            this.leeLabel146.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel146.TabIndex = 662;
+            this.leeLabel146.Tag = "0";
+            this.leeLabel146.Text = "●";
+            this.leeLabel146.Visible = false;
+            // 
+            // leeLabel147
+            // 
+            this.leeLabel147.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel147.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel147.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel147.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel147.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel147.Location = new System.Drawing.Point(99, 38);
+            this.leeLabel147.Name = "leeLabel147";
+            this.leeLabel147.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel147.TabIndex = 663;
+            this.leeLabel147.Tag = "0";
+            this.leeLabel147.Text = "●";
+            this.leeLabel147.Visible = false;
+            // 
+            // leeLabel148
+            // 
+            this.leeLabel148.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel148.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel148.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel148.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel148.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel148.Location = new System.Drawing.Point(112, 38);
+            this.leeLabel148.Name = "leeLabel148";
+            this.leeLabel148.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel148.TabIndex = 664;
+            this.leeLabel148.Tag = "0";
+            this.leeLabel148.Text = "●";
+            this.leeLabel148.Visible = false;
+            // 
+            // leeLabel149
+            // 
+            this.leeLabel149.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel149.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel149.EnterColor = System.Drawing.Color.DodgerBlue;
+            this.leeLabel149.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel149.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.leeLabel149.Location = new System.Drawing.Point(125, 38);
+            this.leeLabel149.Name = "leeLabel149";
+            this.leeLabel149.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel149.TabIndex = 660;
+            this.leeLabel149.Tag = "0";
+            this.leeLabel149.Text = "●";
+            this.leeLabel149.Visible = false;
+            // 
+            // leeLabel150
+            // 
+            this.leeLabel150.AutoSize = true;
+            this.leeLabel150.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel150.EnterColor = System.Drawing.Color.Black;
+            this.leeLabel150.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel150.ForeColor = System.Drawing.Color.Gray;
+            this.leeLabel150.Location = new System.Drawing.Point(10, 45);
+            this.leeLabel150.Name = "leeLabel150";
+            this.leeLabel150.Size = new System.Drawing.Size(44, 17);
+            this.leeLabel150.TabIndex = 657;
+            this.leeLabel150.Tag = "0";
+            this.leeLabel150.Text = "二等奖";
+            // 
+            // leeLabel151
+            // 
+            this.leeLabel151.AutoSize = true;
+            this.leeLabel151.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel151.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel151.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel151.ForeColor = System.Drawing.Color.Gray;
+            this.leeLabel151.Location = new System.Drawing.Point(236, 45);
+            this.leeLabel151.Name = "leeLabel151";
+            this.leeLabel151.Size = new System.Drawing.Size(50, 17);
+            this.leeLabel151.TabIndex = 658;
+            this.leeLabel151.Tag = "0";
+            this.leeLabel151.Text = "300000";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.BackColor = System.Drawing.Color.PeachPuff;
+            this.label26.Cursor = System.Windows.Forms.Cursors.SizeAll;
+            this.label26.Enabled = false;
+            this.label26.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label26.Location = new System.Drawing.Point(10, 4);
+            this.label26.MaximumSize = new System.Drawing.Size(0, 1);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(293, 1);
+            this.label26.TabIndex = 656;
+            this.label26.Text = "________________________________________________";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.BackColor = System.Drawing.Color.PeachPuff;
+            this.label27.Cursor = System.Windows.Forms.Cursors.SizeAll;
+            this.label27.Enabled = false;
+            this.label27.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label27.Location = new System.Drawing.Point(10, 2);
+            this.label27.MaximumSize = new System.Drawing.Size(0, 1);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(293, 1);
+            this.label27.TabIndex = 655;
+            this.label27.Text = "________________________________________________";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label28.Cursor = System.Windows.Forms.Cursors.SizeAll;
+            this.label28.Enabled = false;
+            this.label28.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label28.Location = new System.Drawing.Point(11, 36);
+            this.label28.MaximumSize = new System.Drawing.Size(0, 1);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(293, 1);
+            this.label28.TabIndex = 654;
+            this.label28.Text = "________________________________________________";
+            // 
+            // leeLabel152
+            // 
+            this.leeLabel152.AutoSize = true;
+            this.leeLabel152.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel152.EnterColor = System.Drawing.Color.Black;
+            this.leeLabel152.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel152.ForeColor = System.Drawing.Color.Gray;
+            this.leeLabel152.Location = new System.Drawing.Point(284, 11);
+            this.leeLabel152.Name = "leeLabel152";
+            this.leeLabel152.Size = new System.Drawing.Size(20, 17);
+            this.leeLabel152.TabIndex = 651;
+            this.leeLabel152.Tag = "0";
+            this.leeLabel152.Text = "元";
+            // 
+            // leeLabel153
+            // 
+            this.leeLabel153.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel153.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel153.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel153.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel153.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel153.Location = new System.Drawing.Point(59, 4);
+            this.leeLabel153.Name = "leeLabel153";
+            this.leeLabel153.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel153.TabIndex = 644;
+            this.leeLabel153.Tag = "0";
+            this.leeLabel153.Text = "●";
+            this.leeLabel153.Visible = false;
+            // 
+            // leeLabel154
+            // 
+            this.leeLabel154.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel154.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel154.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel154.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel154.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel154.Location = new System.Drawing.Point(72, 4);
+            this.leeLabel154.Name = "leeLabel154";
+            this.leeLabel154.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel154.TabIndex = 646;
+            this.leeLabel154.Tag = "0";
+            this.leeLabel154.Text = "●";
+            this.leeLabel154.Visible = false;
+            // 
+            // leeLabel155
+            // 
+            this.leeLabel155.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel155.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel155.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel155.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel155.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel155.Location = new System.Drawing.Point(85, 4);
+            this.leeLabel155.Name = "leeLabel155";
+            this.leeLabel155.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel155.TabIndex = 647;
+            this.leeLabel155.Tag = "0";
+            this.leeLabel155.Text = "●";
+            this.leeLabel155.Visible = false;
+            // 
+            // leeLabel156
+            // 
+            this.leeLabel156.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel156.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel156.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel156.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel156.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel156.Location = new System.Drawing.Point(98, 4);
+            this.leeLabel156.Name = "leeLabel156";
+            this.leeLabel156.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel156.TabIndex = 648;
+            this.leeLabel156.Tag = "0";
+            this.leeLabel156.Text = "●";
+            this.leeLabel156.Visible = false;
+            // 
+            // leeLabel157
+            // 
+            this.leeLabel157.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel157.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel157.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel157.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel157.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel157.Location = new System.Drawing.Point(111, 4);
+            this.leeLabel157.Name = "leeLabel157";
+            this.leeLabel157.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel157.TabIndex = 649;
+            this.leeLabel157.Tag = "0";
+            this.leeLabel157.Text = "●";
+            this.leeLabel157.Visible = false;
+            // 
+            // leeLabel158
+            // 
+            this.leeLabel158.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel158.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel158.EnterColor = System.Drawing.Color.DodgerBlue;
+            this.leeLabel158.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel158.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.leeLabel158.Location = new System.Drawing.Point(124, 4);
+            this.leeLabel158.Name = "leeLabel158";
+            this.leeLabel158.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel158.TabIndex = 645;
+            this.leeLabel158.Tag = "0";
+            this.leeLabel158.Text = "●";
+            this.leeLabel158.Visible = false;
+            // 
+            // leeLabel159
+            // 
+            this.leeLabel159.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel159.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel159.EnterColor = System.Drawing.Color.DodgerBlue;
+            this.leeLabel159.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel159.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.leeLabel159.Location = new System.Drawing.Point(137, 4);
+            this.leeLabel159.Name = "leeLabel159";
+            this.leeLabel159.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel159.TabIndex = 650;
+            this.leeLabel159.Tag = "0";
+            this.leeLabel159.Text = "●";
+            this.leeLabel159.Visible = false;
+            // 
+            // leeLabel160
+            // 
+            this.leeLabel160.AutoSize = true;
+            this.leeLabel160.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel160.EnterColor = System.Drawing.Color.Black;
+            this.leeLabel160.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel160.ForeColor = System.Drawing.Color.Gray;
+            this.leeLabel160.Location = new System.Drawing.Point(9, 11);
+            this.leeLabel160.Name = "leeLabel160";
+            this.leeLabel160.Size = new System.Drawing.Size(44, 17);
+            this.leeLabel160.TabIndex = 633;
+            this.leeLabel160.Tag = "0";
+            this.leeLabel160.Text = "一等奖";
+            // 
+            // leeLabel161
+            // 
+            this.leeLabel161.AutoSize = true;
+            this.leeLabel161.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel161.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel161.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel161.ForeColor = System.Drawing.Color.Gray;
+            this.leeLabel161.Location = new System.Drawing.Point(221, 11);
+            this.leeLabel161.Name = "leeLabel161";
+            this.leeLabel161.Size = new System.Drawing.Size(64, 17);
+            this.leeLabel161.TabIndex = 637;
+            this.leeLabel161.Tag = "0";
+            this.leeLabel161.Text = "10000000";
+            // 
+            // leeLabel162
+            // 
+            this.leeLabel162.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel162.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel162.EnterColor = System.Drawing.Color.DodgerBlue;
+            this.leeLabel162.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel162.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.leeLabel162.Location = new System.Drawing.Point(112, 108);
+            this.leeLabel162.Name = "leeLabel162";
+            this.leeLabel162.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel162.TabIndex = 687;
+            this.leeLabel162.Tag = "0";
+            this.leeLabel162.Text = "●";
+            this.leeLabel162.Visible = false;
+            // 
+            // leeLabel163
+            // 
+            this.leeLabel163.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel163.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel163.EnterColor = System.Drawing.Color.DodgerBlue;
+            this.leeLabel163.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel163.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.leeLabel163.Location = new System.Drawing.Point(125, 108);
+            this.leeLabel163.Name = "leeLabel163";
+            this.leeLabel163.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel163.TabIndex = 688;
+            this.leeLabel163.Tag = "0";
+            this.leeLabel163.Text = "●";
+            this.leeLabel163.Visible = false;
+            // 
+            // leeLabel164
+            // 
+            this.leeLabel164.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel164.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel164.EnterColor = System.Drawing.Color.DodgerBlue;
+            this.leeLabel164.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel164.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.leeLabel164.Location = new System.Drawing.Point(113, 176);
+            this.leeLabel164.Name = "leeLabel164";
+            this.leeLabel164.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel164.TabIndex = 707;
+            this.leeLabel164.Tag = "0";
+            this.leeLabel164.Text = "●";
+            this.leeLabel164.Visible = false;
+            // 
+            // leeLabel165
+            // 
+            this.leeLabel165.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel165.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel165.EnterColor = System.Drawing.Color.DodgerBlue;
+            this.leeLabel165.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel165.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.leeLabel165.Location = new System.Drawing.Point(99, 244);
+            this.leeLabel165.Name = "leeLabel165";
+            this.leeLabel165.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel165.TabIndex = 724;
+            this.leeLabel165.Tag = "0";
+            this.leeLabel165.Text = "●";
+            this.leeLabel165.Visible = false;
+            // 
+            // leeLabel166
+            // 
+            this.leeLabel166.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel166.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel166.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel166.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel166.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel166.Location = new System.Drawing.Point(124, 244);
+            this.leeLabel166.Name = "leeLabel166";
+            this.leeLabel166.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel166.TabIndex = 725;
+            this.leeLabel166.Tag = "0";
+            this.leeLabel166.Text = "●";
+            this.leeLabel166.Visible = false;
+            // 
+            // leeLabel167
+            // 
+            this.leeLabel167.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel167.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel167.EnterColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel167.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel167.ForeColor = System.Drawing.Color.OrangeRed;
+            this.leeLabel167.Location = new System.Drawing.Point(137, 244);
+            this.leeLabel167.Name = "leeLabel167";
+            this.leeLabel167.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel167.TabIndex = 726;
+            this.leeLabel167.Tag = "0";
+            this.leeLabel167.Text = "●";
+            this.leeLabel167.Visible = false;
+            // 
+            // leeLabel168
+            // 
+            this.leeLabel168.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel168.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel168.EnterColor = System.Drawing.Color.DodgerBlue;
+            this.leeLabel168.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel168.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.leeLabel168.Location = new System.Drawing.Point(151, 244);
+            this.leeLabel168.Name = "leeLabel168";
+            this.leeLabel168.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel168.TabIndex = 728;
+            this.leeLabel168.Tag = "0";
+            this.leeLabel168.Text = "●";
+            this.leeLabel168.Visible = false;
+            // 
+            // leeLabel169
+            // 
+            this.leeLabel169.BackColor = System.Drawing.Color.Transparent;
+            this.leeLabel169.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.leeLabel169.EnterColor = System.Drawing.Color.DodgerBlue;
+            this.leeLabel169.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.leeLabel169.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.leeLabel169.Location = new System.Drawing.Point(164, 244);
+            this.leeLabel169.Name = "leeLabel169";
+            this.leeLabel169.Size = new System.Drawing.Size(18, 21);
+            this.leeLabel169.TabIndex = 729;
+            this.leeLabel169.Tag = "0";
+            this.leeLabel169.Text = "●";
+            this.leeLabel169.Visible = false;
             // 
             // Demo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(630, 739);
-            this.Controls.Add(this.leeLabel38);
-            this.Controls.Add(this.leeLabel33);
-            this.Controls.Add(this.leeLabel39);
-            this.Controls.Add(this.linkLabel5);
-            this.Controls.Add(this.linkLabel6);
-            this.Controls.Add(this.linkLabel3);
-            this.Controls.Add(this.linkLabel2);
-            this.Controls.Add(this.linkLabel1);
+            this.ClientSize = new System.Drawing.Size(739, 739);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.leeLabel11);
+            this.Controls.Add(this.leeLabel20);
+            this.Controls.Add(this.leeLabel88);
+            this.Controls.Add(this.linkLabel4);
+            this.Controls.Add(this.linkLabel7);
+            this.Controls.Add(this.linkLabel8);
+            this.Controls.Add(this.linkLabel9);
+            this.Controls.Add(this.linkLabel10);
             this.Controls.Add(this.panLotteryRules);
             this.Controls.Add(this.picSuperLotto);
             this.Controls.Add(this.lblClose);
@@ -1872,6 +3527,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.picSuperLotto)).EndInit();
             this.panLotteryRules.ResumeLayout(false);
             this.panLotteryRules.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1884,11 +3541,6 @@
         private System.Windows.Forms.Panel panLotteryRules;
         private Controls.LeeLabel leeLabel7;
         private Controls.LeeLabel lblOneBonus;
-        private System.Windows.Forms.LinkLabel linkLabel5;
-        private System.Windows.Forms.LinkLabel linkLabel6;
-        private System.Windows.Forms.LinkLabel linkLabel3;
-        private System.Windows.Forms.LinkLabel linkLabel2;
-        private System.Windows.Forms.LinkLabel linkLabel1;
         private Controls.LeeLabel leeLabel1;
         private Controls.LeeLabel leeLabel2;
         private Controls.LeeLabel leeLabel3;
@@ -1929,9 +3581,6 @@
         private Controls.LeeLabel leeLabel35;
         private Controls.LeeLabel leeLabel36;
         private Controls.LeeLabel leeLabel37;
-        private Controls.LeeLabel leeLabel33;
-        private Controls.LeeLabel leeLabel38;
-        private Controls.LeeLabel leeLabel39;
         private System.Windows.Forms.Label label6;
         private Controls.LeeLabel leeLabel40;
         private Controls.LeeLabel leeLabel41;
@@ -1989,5 +3638,113 @@
         private Controls.LeeLabel leeLabel80;
         private Controls.LeeLabel leeLabel86;
         private System.Windows.Forms.Label label13;
+        private Controls.LeeLabel leeLabel11;
+        private Controls.LeeLabel leeLabel20;
+        private Controls.LeeLabel leeLabel88;
+        private System.Windows.Forms.LinkLabel linkLabel4;
+        private System.Windows.Forms.LinkLabel linkLabel7;
+        private System.Windows.Forms.LinkLabel linkLabel8;
+        private System.Windows.Forms.LinkLabel linkLabel9;
+        private System.Windows.Forms.LinkLabel linkLabel10;
+        private System.Windows.Forms.Panel panel1;
+        private Controls.LeeLabel leeLabel33;
+        private Controls.LeeLabel leeLabel38;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private Controls.LeeLabel leeLabel39;
+        private Controls.LeeLabel leeLabel89;
+        private Controls.LeeLabel leeLabel90;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private Controls.LeeLabel leeLabel91;
+        private Controls.LeeLabel leeLabel92;
+        private Controls.LeeLabel leeLabel93;
+        private Controls.LeeLabel leeLabel94;
+        private Controls.LeeLabel leeLabel95;
+        private Controls.LeeLabel leeLabel96;
+        private Controls.LeeLabel leeLabel97;
+        private Controls.LeeLabel leeLabel98;
+        private Controls.LeeLabel leeLabel99;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private Controls.LeeLabel leeLabel100;
+        private Controls.LeeLabel leeLabel101;
+        private Controls.LeeLabel leeLabel102;
+        private Controls.LeeLabel leeLabel103;
+        private Controls.LeeLabel leeLabel104;
+        private Controls.LeeLabel leeLabel105;
+        private System.Windows.Forms.Label label20;
+        private Controls.LeeLabel leeLabel106;
+        private Controls.LeeLabel leeLabel107;
+        private Controls.LeeLabel leeLabel108;
+        private Controls.LeeLabel leeLabel109;
+        private Controls.LeeLabel leeLabel110;
+        private Controls.LeeLabel leeLabel111;
+        private Controls.LeeLabel leeLabel112;
+        private System.Windows.Forms.Label label21;
+        private Controls.LeeLabel leeLabel113;
+        private Controls.LeeLabel leeLabel114;
+        private Controls.LeeLabel leeLabel115;
+        private Controls.LeeLabel leeLabel116;
+        private Controls.LeeLabel leeLabel117;
+        private Controls.LeeLabel leeLabel118;
+        private Controls.LeeLabel leeLabel119;
+        private System.Windows.Forms.Label label22;
+        private Controls.LeeLabel leeLabel120;
+        private Controls.LeeLabel leeLabel121;
+        private Controls.LeeLabel leeLabel122;
+        private Controls.LeeLabel leeLabel123;
+        private Controls.LeeLabel leeLabel124;
+        private Controls.LeeLabel leeLabel125;
+        private Controls.LeeLabel leeLabel126;
+        private Controls.LeeLabel leeLabel127;
+        private System.Windows.Forms.Label label23;
+        private Controls.LeeLabel leeLabel128;
+        private Controls.LeeLabel leeLabel129;
+        private Controls.LeeLabel leeLabel130;
+        private Controls.LeeLabel leeLabel131;
+        private Controls.LeeLabel leeLabel132;
+        private Controls.LeeLabel leeLabel133;
+        private Controls.LeeLabel leeLabel134;
+        private System.Windows.Forms.Label label24;
+        private Controls.LeeLabel leeLabel135;
+        private Controls.LeeLabel leeLabel136;
+        private Controls.LeeLabel leeLabel137;
+        private Controls.LeeLabel leeLabel138;
+        private Controls.LeeLabel leeLabel139;
+        private Controls.LeeLabel leeLabel140;
+        private Controls.LeeLabel leeLabel141;
+        private Controls.LeeLabel leeLabel142;
+        private System.Windows.Forms.Label label25;
+        private Controls.LeeLabel leeLabel143;
+        private Controls.LeeLabel leeLabel144;
+        private Controls.LeeLabel leeLabel145;
+        private Controls.LeeLabel leeLabel146;
+        private Controls.LeeLabel leeLabel147;
+        private Controls.LeeLabel leeLabel148;
+        private Controls.LeeLabel leeLabel149;
+        private Controls.LeeLabel leeLabel150;
+        private Controls.LeeLabel leeLabel151;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        private Controls.LeeLabel leeLabel152;
+        private Controls.LeeLabel leeLabel153;
+        private Controls.LeeLabel leeLabel154;
+        private Controls.LeeLabel leeLabel155;
+        private Controls.LeeLabel leeLabel156;
+        private Controls.LeeLabel leeLabel157;
+        private Controls.LeeLabel leeLabel158;
+        private Controls.LeeLabel leeLabel159;
+        private Controls.LeeLabel leeLabel160;
+        private Controls.LeeLabel leeLabel161;
+        private Controls.LeeLabel leeLabel162;
+        private Controls.LeeLabel leeLabel163;
+        private Controls.LeeLabel leeLabel164;
+        private Controls.LeeLabel leeLabel165;
+        private Controls.LeeLabel leeLabel166;
+        private Controls.LeeLabel leeLabel167;
+        private Controls.LeeLabel leeLabel168;
+        private Controls.LeeLabel leeLabel169;
     }
 }

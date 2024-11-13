@@ -91,6 +91,7 @@
     <Compile Include="LotteryHistory.Designer.cs">
       <DependentUpon>LotteryHistory.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\ComplexNumber.cs" />
     <Compile Include="Model\ComplexSuperLottoNumber.cs">
       <CustomToolNamespace>SuperLotto.Model</CustomToolNamespace>
     </Compile>

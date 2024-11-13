@@ -35,6 +35,8 @@ namespace SuperLotto.Model
             blueBalls = new int[2];
         }
 
+        public override bool IsSimplex() => true;
+
         /// <summary>
         /// 获取单式号的中奖注数
         /// </summary>
@@ -119,7 +121,7 @@ namespace SuperLotto.Model
         /// 将左边的大乐透的内容复制到右边的大乐透中
         /// </summary>
         /// <param name="sdbn">单式大乐透类</param>
-        public override void CopyLeftToRightDataValue(SimplexSuperLottoNumber sdbn)
+        public override void CopyLeftToRightDataOfMaxAward(SimplexSuperLottoNumber sdbn)
         {
             sdbn.awardType = awardType;
             redBalls.CopyTo(sdbn.redBalls, 0);
@@ -135,6 +137,16 @@ namespace SuperLotto.Model
         {
             base.ComparisonSuperLottoNumber(dbt, sdbn);
             dbt.ComparisonSimplexSuperLottoNumber(this, sdbn);
+        }
+
+        /// <summary>
+        /// 单式号的 Copy 逻辑不变
+        /// </summary>
+        /// <param name="sdbn"></param>
+        /// <param name="awardType"></param>
+        public override void CopyLeftToRightBy(SimplexSuperLottoNumber sdbn, AwardType awardType)
+        {
+            base.CopyLeftToRightDataOfMaxAward(sdbn);
         }
     }
 }

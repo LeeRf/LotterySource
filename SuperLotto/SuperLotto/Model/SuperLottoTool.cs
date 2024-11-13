@@ -514,7 +514,7 @@ namespace SuperLotto.Model
                 }
             }
 
-            int pickTuoCount = 5 - _mySuperLottoNumber.redBallDanCount;
+            int pickRedTuoCount = 5 - _mySuperLottoNumber.redBallDanCount;
 
             //比较红球拖中的数量
             for (int i = 0; i < _publicSuperLottoNumber.redBalls.Length; i++)
@@ -525,34 +525,35 @@ namespace SuperLotto.Model
                     //记录中奖的红球拖号码
                     _mySuperLottoNumber.maxRedWinPrizes[redWinPrizesIndex++] = _publicSuperLottoNumber.redBalls[i];
 
-                    if (winRedTuoCount >= pickTuoCount)
+                    if (winRedTuoCount >= pickRedTuoCount)
                     {
                         break;
                     }
                 }
             }
 
+            int blueWinPrizesIndex = 0;
+            int pickBlueTuoCount = 2 - _mySuperLottoNumber.blueBallDanCount;
 
-            /**
-             * TODO: Bug -> 比对篮球胆拖逻辑有误
-             */
-            //比较篮球胆中的数量(胆最多为1个)
             winBlueDanCount = _mySuperLottoNumber.blueBalls.Contains(_publicSuperLottoNumber.blueBalls[0]) ? 1 : 0;
 
             if (winBlueDanCount > 0)
             {
-                _mySuperLottoNumber.maxBlueWinPrize[0] = _publicSuperLottoNumber.blueBalls[0];
+                _mySuperLottoNumber.maxBlueWinPrize[blueWinPrizesIndex++] = _publicSuperLottoNumber.blueBalls[0];
             }
-
-            int blueWinPrizesIndex = 0;
+            
             //比较蓝球拖中的数量
             for (int i = 0; i < _publicSuperLottoNumber.blueBalls.Length; i++)
             {
                 if (_mySuperLottoNumber.blueBallTuos.Contains(_publicSuperLottoNumber.blueBalls[i]))
                 {
                     winBlueTuoCount++;
-                    //记录中奖的红球胆号码
                     _mySuperLottoNumber.maxBlueWinPrize[blueWinPrizesIndex++] = _publicSuperLottoNumber.blueBalls[i];
+
+                    if (winBlueTuoCount >= pickBlueTuoCount)
+                    {
+                        break;
+                    }
                 }
             }
 

@@ -4,13 +4,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace SuperLotto.Model
 {
     /// <summary>
     /// 大乐透胆拖号类
     /// </summary>
-    public class DantuoSuperLottoNumber : SuperLottos
+    public class DantuoSuperLottoNumber : ComplexNumber
     {
         /// <summary>
         /// 大乐透红球拖号码
@@ -20,7 +21,14 @@ namespace SuperLotto.Model
         /// 大乐透蓝球拖号码
         /// </summary>
         public int[] blueBallTuos { get; set; }
-
+        /// <summary>
+        /// 记录该号码最高奖红色球中奖号码
+        /// </summary>
+        public int[] maxRedWinPrizes { get; set; }
+        /// <summary>
+        /// 记录该号码最高奖蓝色球中奖号码
+        /// </summary>
+        public int[] maxBlueWinPrize { get; set; }
         /// <summary>
         /// 红色球胆号的数量
         /// </summary>
@@ -37,57 +45,6 @@ namespace SuperLotto.Model
         /// 蓝色球拖号得数量
         /// </summary>
         public int blueBallTuoCount { get; set; }
-
-        /// <summary>
-        /// 初始值(用于排序不至于把0值排序到最前面)
-        /// </summary>
-        public int _INITVALUE { get; } = 50;
-
-        /// <summary>
-        /// 一等奖中奖注数
-        /// </summary>
-        public int oneAwardTotalZhu { get; set; }
-        /// <summary>
-        /// 二等奖中奖注数
-        /// </summary>
-        public int twoAwardTotalZhu { get; set; }
-        /// <summary>
-        /// 三等奖中奖注数
-        /// </summary>
-        public int threeAwardTotalZhu { get; set; }
-        /// <summary>
-        /// 四等奖中奖注数
-        /// </summary>
-        public int fourAwardTotalZhu { get; set; }
-        /// <summary>
-        /// 五等奖中奖注数
-        /// </summary>
-        public int fiveAwardTotalZhu { get; set; }
-        /// <summary>
-        /// 六等奖中奖注数
-        /// </summary>
-        public int sixAwardTotalZhu { get; set; }
-        /// <summary>
-        /// 七等奖中奖注数
-        /// </summary>
-        public int sevenAwardTotalZhu { get; set; }
-        /// <summary>
-        /// 八等奖中奖注数
-        /// </summary>
-        public int eightAwardTotalZhu { get; set; }
-        /// <summary>
-        /// 九等奖中奖注数
-        /// </summary>
-        public int nineAwardTotalZhu { get; set; }
-
-        /// <summary>
-        /// 记录该号码最高奖红色球中奖号码
-        /// </summary>
-        public int[] maxRedWinPrizes { get; set; }
-        /// <summary>
-        /// 记录该号码最高奖蓝色球中奖号码
-        /// </summary>
-        public int[] maxBlueWinPrize { get; set; }
 
         /**
          * 胆拖
@@ -351,52 +308,55 @@ namespace SuperLotto.Model
         {
             if (IsSimplex())
             {
-                int useIndex = 0;
+                //设置红球
+                int useRedIndex = 0;
                 for (int i = 0; i < redBallDanCount; i++)
-                    maxRedWinPrizes[useIndex++] = redBalls[i];
+                    maxRedWinPrizes[useRedIndex++] = redBalls[i];
 
-                int surplusCount = 6 - redBallDanCount;
-                for (int i = 0; i < surplusCount; i++)
-                    maxRedWinPrizes[useIndex++] = redBallTuos[i];
+                int redSurplusCount = 5 - redBallDanCount;
+                for (int i = 0; i < redSurplusCount; i++)
+                    maxRedWinPrizes[useRedIndex++] = redBallTuos[i];
 
-                //TODO: 暂时这么写、记得改 原版 maxBlueWinPrize = blueBalls[0];
-                blueBalls.CopyTo(maxBlueWinPrize, 0);
+                //设置篮球
+                int useBlueIndex = 0;
+                for (int i = 0; i < blueBallDanCount; i++)
+                    maxBlueWinPrize[useBlueIndex++] = blueBalls[i];
+
+                int blueSurplusCount = 2 - blueBallDanCount;
+                for (int i = 0; i < blueSurplusCount; i++)
+                    maxBlueWinPrize[useBlueIndex++] = blueBallTuos[i];
             }
             else
             {
-                List<int> mergeRedBalls = new List<int>();
-
-                for (int i = 0; i < redBallDanCount; i++)
-                {
-                    if (!maxRedWinPrizes.Contains(redBalls[i])) mergeRedBalls.Add(redBalls[i]);
-                }
-
-                for (int i = 0; i < redBallTuoCount; i++)
-                {
-                    if (!maxRedWinPrizes.Contains(redBallTuos[i])) mergeRedBalls.Add(redBallTuos[i]);
-                }
-
-                int mergeRedIndex = 0;
-
-                for (int i = 0; i < maxRedWinPrizes.Length; i++)
-                {
-                    if (maxRedWinPrizes[i] == 0)
-                    {
-                        maxRedWinPrizes[i] = mergeRedBalls[mergeRedIndex++];
-                    }
-                }
-
-                //TODO: 需改进 -> 原版 maxBlueWinPrize == 0
-                if (maxBlueWinPrize[0] == 0) blueBalls.CopyTo(maxBlueWinPrize, 0);
+                SetMaxWinPrizesNumber(maxRedWinPrizes, redBalls);
+                SetMaxWinPrizesNumber(maxRedWinPrizes, redBallTuos);
+                SetMaxWinPrizesNumber(maxBlueWinPrize, blueBalls);
+                SetMaxWinPrizesNumber(maxBlueWinPrize, blueBallTuos);
             }
 
             Array.Sort(maxRedWinPrizes);
         }
 
+        private void SetMaxWinPrizesNumber(int[] maxWinPrizes, int[] ballValues)
+        {
+            for (int i = 0; i < maxWinPrizes.Length; i++)
+            {
+                if (maxWinPrizes[i] != 0) continue;
+                for (int j = 0; j < ballValues.Length; j++)
+                    if (!maxWinPrizes.Contains(ballValues[j]) && ballValues[j] != _INITVALUE)
+                    {
+                        maxWinPrizes[i] = ballValues[j];
+                        break;
+                    }
+            }
+
+            Array.Sort(maxWinPrizes);
+        }
+
         /// <summary>
         /// 是否是单注号码
         /// </summary>
-        public bool IsSimplex() => (redBallDanCount + redBallTuoCount) == 5 && (blueBallDanCount + blueBallTuoCount) == 2;
+        public override bool IsSimplex() => (redBallDanCount + redBallTuoCount) == 5 && (blueBallDanCount + blueBallTuoCount) == 2;
 
         /// <summary>
         /// 判断自选大乐透号码是否已经成号
@@ -435,16 +395,27 @@ namespace SuperLotto.Model
         public override bool isBallEmpty() => redBallDanCount == 0 && redBallTuoCount == 0 && blueBallDanCount == 0 && blueBallTuoCount == 0;
 
         /// <summary>
-        /// 胆拖大乐透的内容复制到单式大乐透中
+        /// 复制左边大乐透的最高奖到右边对象中
         /// </summary>
         /// <param name="sdbn">单式大乐透类</param>
-        public override void CopyLeftToRightDataValue(SimplexSuperLottoNumber sdbn)
+        public override void CopyLeftToRightDataOfMaxAward(SimplexSuperLottoNumber sdbn)
         {
             SettingMaxSuperLottoNumber();
 
             sdbn.awardType = awardType;
             sdbn.blueBalls = maxBlueWinPrize;
             maxRedWinPrizes.CopyTo(sdbn.redBalls, 0);
+        }
+
+        /// <summary>
+        /// 根据奖的等级复制左边大乐透号码到右边对象
+        /// </summary>
+        /// <param name="sdbn"></param>
+        /// <param name="awardType"></param>
+        public override void CopyLeftToRightBy(SimplexSuperLottoNumber sdbn, AwardType awardType)
+        {
+            //TODO: 该方法是否可实现有待探讨暂时先留着，暂用 CopyLeftToRightDataOfMaxAward 方法
+            this.CopyLeftToRightDataOfMaxAward(sdbn);
         }
 
         /// <summary>

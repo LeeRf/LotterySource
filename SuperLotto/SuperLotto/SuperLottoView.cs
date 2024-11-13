@@ -270,7 +270,7 @@ namespace SuperLotto
             if ((int)_thisTimeMaxNumber.awardType > (int)_historyMaxSuperLottoNumber.awardType)
             {
                 _appearMaxNumber = true;
-                _thisTimeMaxNumber.CopyLeftToRightDataValue(_historyMaxSuperLottoNumber);
+                _thisTimeMaxNumber.CopyLeftToRightDataOfMaxAward(_historyMaxSuperLottoNumber);
             }
 
             //刷新和展示本期数据分析的内容
@@ -317,7 +317,7 @@ namespace SuperLotto
                 {
                     _appearLoopMaxNumber = true;
 
-                    mySuperLottoNumber.CopyLeftToRightDataValue(_maxLoopSuperLottoNumber);
+                    mySuperLottoNumber.CopyLeftToRightDataOfMaxAward(_maxLoopSuperLottoNumber);
                 }
             }
 
@@ -521,7 +521,7 @@ namespace SuperLotto
             #region 本期我的消费金额和购买注数来源页
 
             bool exitLoop = false;
-            int redCount = 0, redTuoCount = 0, blueCount = 0;
+            int redCount = 0, redTuoCount = 0, blueCount = 0, blueTuoCount = 0;
 
             long periodCount = 0;
             long startPeriod = ParseTagValueToLong(lblSuperLottoPeriods);
@@ -530,7 +530,7 @@ namespace SuperLotto
             LeeLabel lblthisTimeMoney = null, lblConsumeZhu = null;
 
             AcquireThisTimeMoneyZhu(selectIndex, ref lblthisTimeMoney, ref lblConsumeZhu);
-            DecideMyRandomDataSource(isCreateMyRandomNumber, selectIndex, ref redCount, ref redTuoCount, ref blueCount);
+            DecideMyRandomDataSource(isCreateMyRandomNumber, selectIndex, ref redCount, ref redTuoCount, ref blueCount, ref blueTuoCount);
 
             #endregion
 
@@ -575,7 +575,7 @@ namespace SuperLotto
                 if (isCreateMyRandomNumber)
                 {
                     _mySuperLottoList = RegenMySuperLottoRandomNumber(
-                        redCount, redTuoCount, blueCount, selectIndex, ref thisTimeMonetary, ref thisTimeBuyTotalZhu);
+                        redCount, redTuoCount, blueCount, blueTuoCount, selectIndex, ref thisTimeMonetary, ref thisTimeBuyTotalZhu);
                 }
 
                 #endregion
@@ -616,15 +616,15 @@ namespace SuperLotto
                 {
                     _appearMaxNumber = true;
 
-                    _thisTimeMaxRandomNumber.CopyLeftToRightDataValue(_historyMaxSuperLottoNumber);
-                    if (isCreateMyRandomNumber) _publicSuperLottoToo.CopyLeftToRightDataValue(_historyMaxPublicSuperLottoNumber);
+                    _thisTimeMaxRandomNumber.CopyLeftToRightDataOfMaxAward(_historyMaxSuperLottoNumber);
+                    if (isCreateMyRandomNumber) _publicSuperLottoToo.CopyLeftToRightDataOfMaxAward(_historyMaxPublicSuperLottoNumber);
                 }
 
                 if ((int)_thisTimeMaxRandomNumber.awardType > (int)_maxLoopSuperLottoNumber.awardType)
                 {
                     _appearLoopMaxNumber = true;
-                    _thisTimeMaxRandomNumber.CopyLeftToRightDataValue(_maxLoopSuperLottoNumber);
-                    if (isCreateMyRandomNumber) _publicSuperLottoToo.CopyLeftToRightDataValue(_maxLoopLotterySuperLottoNumber);
+                    _thisTimeMaxRandomNumber.CopyLeftToRightDataOfMaxAward(_maxLoopSuperLottoNumber);
+                    if (isCreateMyRandomNumber) _publicSuperLottoToo.CopyLeftToRightDataOfMaxAward(_maxLoopLotterySuperLottoNumber);
                 }
 
                 #endregion
@@ -790,7 +790,7 @@ namespace SuperLotto
         /// <summary>
         /// 开奖前随机重新生成我的大乐透号码
         /// </summary>
-        private List<SuperLottos> RegenMySuperLottoRandomNumber(int redCount, int redTuoCount, int blueCount, int selectIndex, ref long thisTimeMonetary, ref long thisTimeBuyTotalZhu)
+        private List<SuperLottos> RegenMySuperLottoRandomNumber(int redCount, int redTuoCount, int blueCount, int blueTuoCount, int selectIndex, ref long thisTimeMonetary, ref long thisTimeBuyTotalZhu)
         {
             if (selectIndex == 1)
             {
@@ -851,14 +851,14 @@ namespace SuperLotto
 
                 for (int i = 0; i < _randomSuperLottoCount; i++)
                 {
-                    CreateDantuoRandomCombination(ref redCount, ref redTuoCount, ref blueCount,/*TODO:篮球托码，这里先暂时用胆码*/ref blueCount);
+                    CreateDantuoRandomCombination(ref redCount, ref redTuoCount, ref blueCount, ref blueTuoCount);
 
                     //动态调整生成的注数
-                    DynamicAmendMaxDantuoTotalZhu(ref redCount, ref redTuoCount, ref blueCount, /*TODO:篮球托码，这里先暂时用胆码*/ref blueCount, ref buyTotalZhu);
+                    DynamicAmendMaxDantuoTotalZhu(ref redCount, ref redTuoCount, ref blueCount, ref blueTuoCount, ref buyTotalZhu);
 
                     if (buyTotalZhu <= _MaxOneselfSuperLottoTotalZhu)
                     {
-                        DantuoSuperLottoNumber cdbn = _superLottoToo.GetDantuoSuperLottoNumber(redCount, redTuoCount, blueCount, /*TODO:篮球托码，这里先暂时用胆码*/blueCount);
+                        DantuoSuperLottoNumber cdbn = _superLottoToo.GetDantuoSuperLottoNumber(redCount, redTuoCount, blueCount, blueTuoCount);
 
                         thisTimeBuyTotalZhu += cdbn.GetSuperLottoCombination();
                         thisTimeMonetary += cdbn.GetSuperLottoCombination() * 2 * int.Parse(cmbMultiple.Text);
@@ -938,7 +938,7 @@ namespace SuperLotto
         /// <summary>
         /// 随机摇奖前我的随机号码数据来源页准备
         /// </summary>
-        private void DecideMyRandomDataSource(bool isCreateMyRandomNumber, int selectIndex, ref int redCount, ref int redTuoCount, ref int blueCount)
+        private void DecideMyRandomDataSource(bool isCreateMyRandomNumber, int selectIndex, ref int redCount, ref int redTuoCount, ref int blueCount, ref int blueTuoCount)
         {
             if (isCreateMyRandomNumber)
             {
@@ -958,7 +958,7 @@ namespace SuperLotto
                 }
                 else if (selectIndex == 3)
                 {
-                    ParseDantuoCombination(ref redCount, ref redTuoCount, ref blueCount, /*TODO:篮球托码，这里先暂时用胆码*/ref blueCount);
+                    ParseDantuoCombination(ref redCount, ref redTuoCount, ref blueCount, ref blueTuoCount);
                 }
             }
         }
@@ -966,114 +966,127 @@ namespace SuperLotto
         /// <summary>
         /// 统计循环摇奖期间开出的各个奖的数量
         /// </summary>
-        /// <param name="_mySuperLottoNumber">我的大乐透号码</param>
+        /// <param name="_myNumber">我的大乐透号码</param>
         /// <param name="loopDataSummarizing">循环摇奖数据汇总类</param>
         /// <param name="loopDataAnalyse">循环摇奖展示窗体</param>
-        private void StatisticsLoopLotteryAwardCount(SuperLottos _mySuperLottoNumber, LoopDataSummarizing loopDataSummarizing, LoopDataAnalyse loopDataAnalyse)
+        private void StatisticsLoopLotteryAwardCount(SuperLottos _myNumber, LoopDataSummarizing loopDataSummarizing, LoopDataAnalyse loopDataAnalyse)
         {
-            _mySuperLottoNumber.SettingAwardTypeTotalZhu(loopDataSummarizing);
+            _myNumber.SettingAwardTypeTotalZhu(loopDataSummarizing);
 
-            if (_mySuperLottoNumber.awardType == AwardType.NineAward)
+            if (_myNumber.awardType == AwardType.NineAward)
             {
-                if (loopDataSummarizing.NinePrizeSimplexSuperLotto == null)
+                //bool isMaxAward = _myNumber.awardType == AwardType.NineAward;
+                /**
+                 * 两种情况放行(前提：该奖未被记录)：
+                 *   -> 该号码为单式且为最高奖
+                 *   -> 该号码为复式且该奖有中奖注数
+                 *   以上两种条件满足其一即可
+                 * 说明：上述条件为解决单个大复试号码在循环摇奖的情况下，循环摇奖窗口数据统计只显示了该注号码的最高奖，
+                 *      剩余的小奖的号码未囊括展示的情况，虽然未影响数据的统计。但是是否实现该方法有待商讨，因为过于麻烦以及实现后带来的附加问题等等, 所以条件暂时注释、新增 CopyLeftToRightBy 方法暂未实现
+                 */
+                if (loopDataSummarizing.NinePrizeSimplexSuperLotto == null /*&& ((_myNumber.IsSimplex() && isMaxAward) || (_myNumber.isComplex() && _myNumber.hasWinCount()))*/)
                 {
                     loopDataAnalyse._LotterySuperLottoNumbers[8] = new SimplexSuperLottoNumber();
                     loopDataSummarizing.NinePrizeSimplexSuperLotto = new SimplexSuperLottoNumber();
 
-                    _publicSuperLottoToo.CopyLeftToRightDataValue(loopDataAnalyse._LotterySuperLottoNumbers[8]);
-                    _mySuperLottoNumber.CopyLeftToRightDataValue(loopDataSummarizing.NinePrizeSimplexSuperLotto);
+                    _publicSuperLottoToo.CopyLeftToRightDataOfMaxAward(loopDataAnalyse._LotterySuperLottoNumbers[8]);
+                    _myNumber.CopyLeftToRightBy(loopDataSummarizing.NinePrizeSimplexSuperLotto, AwardType.NineAward);
                 }
             }
-            else if (_mySuperLottoNumber.awardType == AwardType.EightAward)
+            else if (_myNumber.awardType == AwardType.EightAward)
             {
-                if (loopDataSummarizing.EightPrizeSimplexSuperLotto == null)
+                //bool isMaxAward = _myNumber.awardType == AwardType.EightAward;
+                if (loopDataSummarizing.EightPrizeSimplexSuperLotto == null /*&& ((_myNumber.IsSimplex() && isMaxAward) || (_myNumber.isComplex() && _myNumber.hasWinCount()))*/)
                 {
                     loopDataAnalyse._LotterySuperLottoNumbers[7] = new SimplexSuperLottoNumber();
                     loopDataSummarizing.EightPrizeSimplexSuperLotto = new SimplexSuperLottoNumber();
 
-                    _publicSuperLottoToo.CopyLeftToRightDataValue(loopDataAnalyse._LotterySuperLottoNumbers[7]);
-                    _mySuperLottoNumber.CopyLeftToRightDataValue(loopDataSummarizing.EightPrizeSimplexSuperLotto);
+                    _publicSuperLottoToo.CopyLeftToRightDataOfMaxAward(loopDataAnalyse._LotterySuperLottoNumbers[7]);
+                    _myNumber.CopyLeftToRightBy(loopDataSummarizing.EightPrizeSimplexSuperLotto, AwardType.EightAward);
                 }
             }
-            else if (_mySuperLottoNumber.awardType == AwardType.SevenAward)
+            else if (_myNumber.awardType == AwardType.SevenAward)
             {
-                if (loopDataSummarizing.SevenPrizeSimplexSuperLotto == null)
+                //bool isMaxAward = _myNumber.awardType == AwardType.SevenAward;
+                if (loopDataSummarizing.SevenPrizeSimplexSuperLotto == null /*&& ((_myNumber.IsSimplex() && isMaxAward) || (_myNumber.isComplex() && _myNumber.hasWinCount()))*/)
                 {
                     loopDataAnalyse._LotterySuperLottoNumbers[6] = new SimplexSuperLottoNumber();
                     loopDataSummarizing.SevenPrizeSimplexSuperLotto = new SimplexSuperLottoNumber();
 
-                    _publicSuperLottoToo.CopyLeftToRightDataValue(loopDataAnalyse._LotterySuperLottoNumbers[6]);
-                    _mySuperLottoNumber.CopyLeftToRightDataValue(loopDataSummarizing.SevenPrizeSimplexSuperLotto);
+                    _publicSuperLottoToo.CopyLeftToRightDataOfMaxAward(loopDataAnalyse._LotterySuperLottoNumbers[6]);
+                    _myNumber.CopyLeftToRightBy(loopDataSummarizing.SevenPrizeSimplexSuperLotto, AwardType.SevenAward);
                 }
             }
-            else if (_mySuperLottoNumber.awardType == AwardType.SixAward)
+            else if (_myNumber.awardType == AwardType.SixAward)
             {
-                if (loopDataSummarizing.SixPrizeSimplexSuperLotto == null)
+                //bool isMaxAward = _myNumber.awardType == AwardType.SixAward;
+                if (loopDataSummarizing.SixPrizeSimplexSuperLotto == null /*&& ((_myNumber.IsSimplex() && isMaxAward) || (_myNumber.isComplex() && _myNumber.hasWinCount()))*/)
                 {
                     loopDataAnalyse._LotterySuperLottoNumbers[5] = new SimplexSuperLottoNumber();
                     loopDataSummarizing.SixPrizeSimplexSuperLotto = new SimplexSuperLottoNumber();
 
-                    _publicSuperLottoToo.CopyLeftToRightDataValue(loopDataAnalyse._LotterySuperLottoNumbers[5]);
-                    _mySuperLottoNumber.CopyLeftToRightDataValue(loopDataSummarizing.SixPrizeSimplexSuperLotto);
+                    _publicSuperLottoToo.CopyLeftToRightDataOfMaxAward(loopDataAnalyse._LotterySuperLottoNumbers[5]);
+                    _myNumber.CopyLeftToRightBy(loopDataSummarizing.SixPrizeSimplexSuperLotto, AwardType.SixAward);
                 }
             }
-            else if (_mySuperLottoNumber.awardType == AwardType.FiveAward)
+            else if (_myNumber.awardType == AwardType.FiveAward)
             {
-                if (loopDataSummarizing.FivePrizeSimplexSuperLotto == null)
+                //bool isMaxAward = _myNumber.awardType == AwardType.FiveAward;
+                if (loopDataSummarizing.FivePrizeSimplexSuperLotto == null /*&& ((_myNumber.IsSimplex() && isMaxAward) || (_myNumber.isComplex() && _myNumber.hasWinCount()))*/)
                 {
                     loopDataAnalyse._LotterySuperLottoNumbers[4] = new SimplexSuperLottoNumber();
                     loopDataSummarizing.FivePrizeSimplexSuperLotto = new SimplexSuperLottoNumber();
 
-                    _publicSuperLottoToo.CopyLeftToRightDataValue(loopDataAnalyse._LotterySuperLottoNumbers[4]);
-                    _mySuperLottoNumber.CopyLeftToRightDataValue(loopDataSummarizing.FivePrizeSimplexSuperLotto);
+                    _publicSuperLottoToo.CopyLeftToRightDataOfMaxAward(loopDataAnalyse._LotterySuperLottoNumbers[4]);
+                    _myNumber.CopyLeftToRightBy(loopDataSummarizing.FivePrizeSimplexSuperLotto, AwardType.FiveAward);
                 }
             }
-
-            else if (_mySuperLottoNumber.awardType == AwardType.FourAward)
+            else if (_myNumber.awardType == AwardType.FourAward)
             {
-                if (loopDataSummarizing.FourPrizeSimplexSuperLotto == null)
+                //bool isMaxAward = _myNumber.awardType == AwardType.FourAward;
+                if (loopDataSummarizing.FourPrizeSimplexSuperLotto == null /*&& ((_myNumber.IsSimplex() && isMaxAward) || (_myNumber.isComplex() && _myNumber.hasWinCount()))*/)
                 {
                     loopDataAnalyse._LotterySuperLottoNumbers[3] = new SimplexSuperLottoNumber();
                     loopDataSummarizing.FourPrizeSimplexSuperLotto = new SimplexSuperLottoNumber();
 
-                    _publicSuperLottoToo.CopyLeftToRightDataValue(loopDataAnalyse._LotterySuperLottoNumbers[3]);
-                    _mySuperLottoNumber.CopyLeftToRightDataValue(loopDataSummarizing.FourPrizeSimplexSuperLotto);
+                    _publicSuperLottoToo.CopyLeftToRightDataOfMaxAward(loopDataAnalyse._LotterySuperLottoNumbers[3]);
+                    _myNumber.CopyLeftToRightBy(loopDataSummarizing.FourPrizeSimplexSuperLotto, AwardType.FourAward);
                 }
             }
-
-            else if (_mySuperLottoNumber.awardType == AwardType.ThreeAward)
+            else if (_myNumber.awardType == AwardType.ThreeAward)
             {
-                if (loopDataSummarizing.ThreePrizeSimplexSuperLotto == null)
+                //bool isMaxAward = _myNumber.awardType == AwardType.ThreeAward;
+                if (loopDataSummarizing.ThreePrizeSimplexSuperLotto == null /*&& ((_myNumber.IsSimplex() && isMaxAward) || (_myNumber.isComplex() && _myNumber.hasWinCount()))*/)
                 {
                     loopDataAnalyse._LotterySuperLottoNumbers[2] = new SimplexSuperLottoNumber();
                     loopDataSummarizing.ThreePrizeSimplexSuperLotto = new SimplexSuperLottoNumber();
 
-                    _publicSuperLottoToo.CopyLeftToRightDataValue(loopDataAnalyse._LotterySuperLottoNumbers[2]);
-                    _mySuperLottoNumber.CopyLeftToRightDataValue(loopDataSummarizing.ThreePrizeSimplexSuperLotto);
+                    _publicSuperLottoToo.CopyLeftToRightDataOfMaxAward(loopDataAnalyse._LotterySuperLottoNumbers[2]);
+                    _myNumber.CopyLeftToRightBy(loopDataSummarizing.ThreePrizeSimplexSuperLotto, AwardType.ThreeAward);
                 }
             }
-
-            else if (_mySuperLottoNumber.awardType == AwardType.TwoAward)
+            else if (_myNumber.awardType == AwardType.TwoAward)
             {
-                if (loopDataSummarizing.TwoPrizeSimplexSuperLotto == null)
+                //bool isMaxAward = _myNumber.awardType == AwardType.TwoAward;
+                if (loopDataSummarizing.TwoPrizeSimplexSuperLotto == null /*&& ((_myNumber.IsSimplex() && isMaxAward) || (_myNumber.isComplex() && _myNumber.hasWinCount()))*/)
                 {
                     loopDataAnalyse._LotterySuperLottoNumbers[1] = new SimplexSuperLottoNumber();
                     loopDataSummarizing.TwoPrizeSimplexSuperLotto = new SimplexSuperLottoNumber();
 
-                    _publicSuperLottoToo.CopyLeftToRightDataValue(loopDataAnalyse._LotterySuperLottoNumbers[1]);
-                    _mySuperLottoNumber.CopyLeftToRightDataValue(loopDataSummarizing.TwoPrizeSimplexSuperLotto);
+                    _publicSuperLottoToo.CopyLeftToRightDataOfMaxAward(loopDataAnalyse._LotterySuperLottoNumbers[1]);
+                    _myNumber.CopyLeftToRightBy(loopDataSummarizing.TwoPrizeSimplexSuperLotto, AwardType.TwoAward);
                 }
             }
-
-            else if (_mySuperLottoNumber.awardType == AwardType.OneAward)
+            else if (_myNumber.awardType == AwardType.OneAward)
             {
-                if (loopDataSummarizing.OnePrizeSimplexSuperLotto == null)
+                //bool isMaxAward = _myNumber.awardType == AwardType.OneAward;
+                if (loopDataSummarizing.OnePrizeSimplexSuperLotto == null /*&& ((_myNumber.IsSimplex() && isMaxAward) || (_myNumber.isComplex() && _myNumber.hasWinCount()))*/)
                 {
                     loopDataAnalyse._LotterySuperLottoNumbers[0] = new SimplexSuperLottoNumber();
                     loopDataSummarizing.OnePrizeSimplexSuperLotto = new SimplexSuperLottoNumber();
 
-                    _publicSuperLottoToo.CopyLeftToRightDataValue(loopDataAnalyse._LotterySuperLottoNumbers[0]);
-                    _mySuperLottoNumber.CopyLeftToRightDataValue(loopDataSummarizing.OnePrizeSimplexSuperLotto);
+                    _publicSuperLottoToo.CopyLeftToRightDataOfMaxAward(loopDataAnalyse._LotterySuperLottoNumbers[0]);
+                    _myNumber.CopyLeftToRightBy(loopDataSummarizing.OnePrizeSimplexSuperLotto, AwardType.OneAward);
                 }
             }
         }

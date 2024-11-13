@@ -421,6 +421,7 @@
             this.leeLabel93 = new SuperLotto.Controls.LeeLabel();
             this.leeLabel94 = new SuperLotto.Controls.LeeLabel();
             this.leeLabel95 = new SuperLotto.Controls.LeeLabel();
+            this.ErrorLog = new System.Windows.Forms.TabPage();
             this.DanTuoPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -614,7 +615,7 @@
             this.DanTuoPage.Padding = new System.Windows.Forms.Padding(3);
             this.DanTuoPage.Size = new System.Drawing.Size(832, 638);
             this.DanTuoPage.TabIndex = 3;
-            this.DanTuoPage.Text = "自选-胆拖";
+            this.DanTuoPage.Text = "自选~胆拖";
             // 
             // pictureBox10
             // 
@@ -1641,6 +1642,7 @@
             this.CardInterface.Controls.Add(this.OneselfPage);
             this.CardInterface.Controls.Add(this.DanTuoPage);
             this.CardInterface.Controls.Add(this.SettingPage);
+            this.CardInterface.Controls.Add(this.ErrorLog);
             this.CardInterface.Controls.Add(this.updateInfo);
             this.CardInterface.Controls.Add(this.AboutMePage);
             this.CardInterface.Depth = 0;
@@ -2348,7 +2350,7 @@
             this.OneselfPage.Padding = new System.Windows.Forms.Padding(3);
             this.OneselfPage.Size = new System.Drawing.Size(832, 638);
             this.OneselfPage.TabIndex = 1;
-            this.OneselfPage.Text = "自选-复式";
+            this.OneselfPage.Text = "自选~复式";
             // 
             // pictureBox22
             // 
@@ -2887,7 +2889,7 @@
             this.SettingPage.Padding = new System.Windows.Forms.Padding(3);
             this.SettingPage.Size = new System.Drawing.Size(832, 638);
             this.SettingPage.TabIndex = 7;
-            this.SettingPage.Text = "软件设置";
+            this.SettingPage.Text = "设置";
             // 
             // leeLabel2
             // 
@@ -2898,10 +2900,10 @@
             this.leeLabel2.ForeColor = System.Drawing.Color.DarkGray;
             this.leeLabel2.Location = new System.Drawing.Point(239, 587);
             this.leeLabel2.Name = "leeLabel2";
-            this.leeLabel2.Size = new System.Drawing.Size(130, 17);
+            this.leeLabel2.Size = new System.Drawing.Size(123, 17);
             this.leeLabel2.TabIndex = 660;
             this.leeLabel2.Tag = "0";
-            this.leeLabel2.Text = "应在 10 ~ 15600 之间";
+            this.leeLabel2.Text = "应在 1 ~ 15600 之间";
             // 
             // label71
             // 
@@ -2924,7 +2926,7 @@
             0,
             0});
             this.nudCustomizePeriods.Minimum = new decimal(new int[] {
-            10,
+            1,
             0,
             0,
             0});
@@ -6030,7 +6032,7 @@
             // 
             this.leeLabel38.BackColor = System.Drawing.Color.Transparent;
             this.leeLabel38.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.leeLabel38.EnterColor = System.Drawing.Color.DodgerBlue;
+            this.leeLabel38.EnterColor = System.Drawing.Color.OrangeRed;
             this.leeLabel38.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.leeLabel38.ForeColor = System.Drawing.Color.DodgerBlue;
             this.leeLabel38.Location = new System.Drawing.Point(59, 4);
@@ -6045,7 +6047,7 @@
             // 
             this.leeLabel39.BackColor = System.Drawing.Color.Transparent;
             this.leeLabel39.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.leeLabel39.EnterColor = System.Drawing.Color.DodgerBlue;
+            this.leeLabel39.EnterColor = System.Drawing.Color.OrangeRed;
             this.leeLabel39.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.leeLabel39.ForeColor = System.Drawing.Color.DodgerBlue;
             this.leeLabel39.Location = new System.Drawing.Point(72, 4);
@@ -6060,7 +6062,7 @@
             // 
             this.leeLabel52.BackColor = System.Drawing.Color.Transparent;
             this.leeLabel52.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.leeLabel52.EnterColor = System.Drawing.Color.DodgerBlue;
+            this.leeLabel52.EnterColor = System.Drawing.Color.OrangeRed;
             this.leeLabel52.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.leeLabel52.ForeColor = System.Drawing.Color.DodgerBlue;
             this.leeLabel52.Location = new System.Drawing.Point(85, 4);
@@ -6075,7 +6077,7 @@
             // 
             this.leeLabel67.BackColor = System.Drawing.Color.Transparent;
             this.leeLabel67.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.leeLabel67.EnterColor = System.Drawing.Color.DodgerBlue;
+            this.leeLabel67.EnterColor = System.Drawing.Color.OrangeRed;
             this.leeLabel67.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.leeLabel67.ForeColor = System.Drawing.Color.DodgerBlue;
             this.leeLabel67.Location = new System.Drawing.Point(98, 4);
@@ -6090,7 +6092,7 @@
             // 
             this.leeLabel70.BackColor = System.Drawing.Color.Transparent;
             this.leeLabel70.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.leeLabel70.EnterColor = System.Drawing.Color.DodgerBlue;
+            this.leeLabel70.EnterColor = System.Drawing.Color.OrangeRed;
             this.leeLabel70.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.leeLabel70.ForeColor = System.Drawing.Color.DodgerBlue;
             this.leeLabel70.Location = new System.Drawing.Point(111, 4);
@@ -6278,6 +6280,15 @@
             this.leeLabel95.Tag = "0";
             this.leeLabel95.Text = "●";
             this.leeLabel95.Visible = false;
+            // 
+            // ErrorLog
+            // 
+            this.ErrorLog.BackColor = System.Drawing.Color.White;
+            this.ErrorLog.Location = new System.Drawing.Point(4, 26);
+            this.ErrorLog.Name = "ErrorLog";
+            this.ErrorLog.Size = new System.Drawing.Size(832, 638);
+            this.ErrorLog.TabIndex = 9;
+            this.ErrorLog.Text = "崩溃日志";
             // 
             // SuperLottoView
             // 
@@ -6847,6 +6858,7 @@
         private System.Windows.Forms.PictureBox pictureBox23;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.TabPage ErrorLog;
     }
 }
 

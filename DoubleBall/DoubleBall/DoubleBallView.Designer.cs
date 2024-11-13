@@ -2824,10 +2824,10 @@
             this.leeLabel2.ForeColor = System.Drawing.Color.DarkGray;
             this.leeLabel2.Location = new System.Drawing.Point(239, 587);
             this.leeLabel2.Name = "leeLabel2";
-            this.leeLabel2.Size = new System.Drawing.Size(130, 17);
+            this.leeLabel2.Size = new System.Drawing.Size(123, 17);
             this.leeLabel2.TabIndex = 660;
             this.leeLabel2.Tag = "0";
-            this.leeLabel2.Text = "应在 10 ~ 15600 之间";
+            this.leeLabel2.Text = "应在 1 ~ 15600 之间";
             // 
             // label71
             // 
@@ -2850,7 +2850,7 @@
             0,
             0});
             this.nudCustomizePeriods.Minimum = new decimal(new int[] {
-            10,
+            1,
             0,
             0,
             0});
