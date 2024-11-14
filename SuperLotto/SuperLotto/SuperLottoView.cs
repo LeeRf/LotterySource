@@ -22,6 +22,7 @@ namespace SuperLotto
 
     public partial class SuperLottoView : SkinMain
     {
+        private Point _mPoint;
         /// <summary>
         /// 大乐透类工具类
         /// </summary>
@@ -43,7 +44,6 @@ namespace SuperLotto
         ///    [用于随机五年、十年摇奖后对我的最高奖中奖号进行中奖上色]
         /// </summary>
         private SimplexSuperLottoNumber _historyMaxPublicSuperLottoNumber;
-
         /// <summary>
         /// 当机选大乐透达到该数量时、排序用动画来过渡
         /// </summary>
@@ -112,10 +112,13 @@ namespace SuperLotto
             _redBallLabelStyles[4] = lblRedBallE;
             _redBallLabelStyles[5] = lblBlueBallA;
 
+            panTop.MouseMove += (se, ev) => OffSetIt(ev);
+            panTop.MouseDown += (se, ev) => { _mPoint.X = ev.X; _mPoint.Y = ev.Y; };
+
             #endregion
 
             #region Initialize the new instance
-            
+
             LoadSettingApply();
 
             ExitLoopWaitEvent += ExitThatLoop;
@@ -147,6 +150,7 @@ namespace SuperLotto
 
             #region Shown Event
 
+            isLoad = false;
             lblDate.Text = DateTime.Now.ToString("yyyy.MM.dd");
 
             Shown += (o, args) =>
@@ -168,9 +172,26 @@ namespace SuperLotto
                 {
                     if (!item.Visible) item.Visible = true;
                 }
+
+                LoopDataAnalyse.SetWindowRegion(panBody, 50);
             };
 
+            this.BackColor = Color.FromArgb(-2892833);
             #endregion
+        }
+
+        /// <summary>
+        /// 鼠标移动方法
+        /// </summary>
+        /// <param name="ev"></param>
+        private void OffSetIt(MouseEventArgs ev)
+        {
+            if (ev.Button == MouseButtons.Left)
+            {
+                Point myPosition = MousePosition;
+                myPosition.Offset(-_mPoint.X, -_mPoint.Y);
+                Location = myPosition;
+            }
         }
 
         /// <summary>
@@ -1309,16 +1330,16 @@ namespace SuperLotto
             lblLoopPeriods.Text = string.Format(Info.LotteryPeriodsCountMessage, "零", FormatNumber(0, 5));
 
             lblLoopWinTotalZhu.Tag = 0;
-            lblLoopWinTotalZhu.Text = string.Format(Info.LotteryPeriodsCountMessage, "零", FormatNumber(0, 5));
+            lblLoopWinTotalZhu.Text = string.Format(Info.LotteryZhuCountMessage, "零", FormatNumber(0, 5));
 
             lblLoopBuyTotalZhu.Tag = 0;
             lblLoopBuyTotalZhu.Text = string.Format(Info.LotteryZhuCountMessage, "零", FormatNumber(0, 5));
 
             lblLoopWinAwardTotalMoney.Tag = 0;
-            lblLoopWinAwardTotalMoney.Text = string.Format(Info.LotteryPeriodsCountMessage, "零", FormatNumber(0, 5));
+            lblLoopWinAwardTotalMoney.Text = string.Format(Info.LotteryMoneyConutMessage, "零", FormatNumber(0, 5));
 
             lblLoopBuyTotalMoney.Tag = 0;
-            lblLoopBuyTotalMoney.Text = string.Format(Info.LotteryPeriodsCountMessage, "零", FormatNumber(0, 5));
+            lblLoopBuyTotalMoney.Text = string.Format(Info.LotteryMoneyConutMessage, "零", FormatNumber(0, 5));
 
             _appearLoopMaxNumber = false;
             _maxLoopSuperLottoNumber = new SimplexSuperLottoNumber(AwardType.NotAward);
@@ -4907,6 +4928,17 @@ namespace SuperLotto
         {
             ExtendLabel link = sender as ExtendLabel;
             Process.Start(link.Text);
+        }
+
+        //窗体 Load 时不要触发圆角设置
+        bool isLoad = true;
+        private void SuperLottoView_SizeChanged(object sender, EventArgs e)
+        {
+            if (!isLoad)
+            {
+                //窗体大小变化时重新应用圆角
+                LoopDataAnalyse.SetWindowRegion(panBody, 50);
+            }
         }
 
         private int ParseTagValueToInt(Control control) => int.Parse(control.Tag.ToString());

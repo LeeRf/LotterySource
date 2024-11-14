@@ -14,7 +14,7 @@ namespace SuperLotto
 
         public static int colorIndex = 0;
         //深蓝、灰色、天空蓝、水彩粉
-        public static int[] colorArgb = { -2892833 , -1382941, -2232323, -270873 };
+        public static int[] colorArgb = { -2892833, -1382941, -2232323, -270873 };
         
         private LoopDataSummarizing _loopDataSummarizing;
         /// <summary>

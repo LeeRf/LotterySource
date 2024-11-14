@@ -1200,16 +1200,16 @@ namespace DoubleBalls
             lblLoopPeriods.Text = string.Format(Info.LotteryPeriodsCountMessage, "零", FormatNumber(0, 5));
 
             lblLoopWinTotalZhu.Tag = 0;
-            lblLoopWinTotalZhu.Text = string.Format(Info.LotteryPeriodsCountMessage, "零", FormatNumber(0, 5));
+            lblLoopWinTotalZhu.Text = string.Format(Info.LotteryZhuCountMessage, "零", FormatNumber(0, 5));
 
             lblLoopBuyTotalZhu.Tag = 0;
             lblLoopBuyTotalZhu.Text = string.Format(Info.LotteryZhuCountMessage, "零", FormatNumber(0, 5));
 
             lblLoopWinAwardTotalMoney.Tag = 0;
-            lblLoopWinAwardTotalMoney.Text = string.Format(Info.LotteryPeriodsCountMessage, "零", FormatNumber(0, 5));
+            lblLoopWinAwardTotalMoney.Text = string.Format(Info.LotteryMoneyConutMessage, "零", FormatNumber(0, 5));
 
             lblLoopBuyTotalMoney.Tag = 0;
-            lblLoopBuyTotalMoney.Text = string.Format(Info.LotteryPeriodsCountMessage, "零", FormatNumber(0, 5));
+            lblLoopBuyTotalMoney.Text = string.Format(Info.LotteryMoneyConutMessage, "零", FormatNumber(0, 5));
 
             _appearLoopMaxNumber = false;
             _maxLoopDoubleBallNumber = new SimplexDoubleBallNumber(AwardType.NotAward);
