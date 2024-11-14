@@ -263,6 +263,7 @@
   <ItemGroup>
     <Content Include="Other\DLL\e_sqlite3.dll" />
     <Content Include="Other\DLL\MaterialSkin.dll" />
+    <None Include="Resources\use_skin.png" />
     <None Include="Resources\logo.png" />
     <None Include="Resources\stop1.png" />
     <None Include="Resources\buy1.png" />

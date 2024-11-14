@@ -24,6 +24,10 @@ namespace SuperLotto
     {
         private Point _mPoint;
         /// <summary>
+        /// 柔和颜色透明度
+        /// </summary>
+        public const float undertint = 0.45f;
+        /// <summary>
         /// 大乐透类工具类
         /// </summary>
         public SuperLottoTool _superLottoToo;
@@ -120,6 +124,7 @@ namespace SuperLotto
             #region Initialize the new instance
 
             LoadSettingApply();
+            LoadDefaultColor();
 
             ExitLoopWaitEvent += ExitThatLoop;
 
@@ -176,7 +181,8 @@ namespace SuperLotto
                 LoopDataAnalyse.SetWindowRegion(panBody, 50);
             };
 
-            this.BackColor = Color.FromArgb(-2892833);
+            this.BackColor = Color.FromArgb(Config.Setting.BackColorArgb);
+
             #endregion
         }
 
@@ -4502,6 +4508,8 @@ namespace SuperLotto
 
                 btnCustomizeRunLotterys.Tag = 156;
                 btnRondomCustomize.Tag = 156;
+                this.BackColor = Color.White;
+                picUseIt.Visible = false;
 
                 Info.ShowInfoMessage(Info.RestoreDefaultSetting);
             }
@@ -4567,6 +4575,7 @@ namespace SuperLotto
             btnRondomCustomize.Tag = setting.CustomizePeriods;
 
             setting.LoopStopCondition = cmbStopCondition.SelectedIndex;
+            setting.BackColorArgb = Config.Setting.BackColorArgb;
             setting.ZhuMultiple = cmbMultiple.SelectedIndex;
             setting.AgreeDeclaration = true;
 
@@ -4825,6 +4834,78 @@ namespace SuperLotto
                 }
 
                 _DantuoTipInfo.SetToolTip(trol, text);
+            }
+        }
+
+        /// <summary>
+        /// 单击改变皮肤事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void lblSkin1_Click(object sender, EventArgs e)
+        {
+            ExtendLabel colorLabel = sender as ExtendLabel;
+            this.BackColor = colorLabel.BackColor;
+
+            picUseIt.Visible = true;
+            colorLabel.removePicture();
+            colorLabel.Controls.Add(picUseIt);
+
+            Config.Setting.BackColorArgb = colorLabel.BackColor.ToArgb();
+            Config.Setting.SaveSetting();
+        }
+
+        private void lblDefaultSkin_Click(object sender, EventArgs e)
+        {
+            picUseIt.Visible = false;
+            this.BackColor = Color.White;
+            Config.Setting.BackColorArgb = -1;
+            Config.Setting.SaveSetting();
+        }
+
+        private void LoadDefaultColor()
+        {
+            ExtendLabel useThat = null;
+            int backColor = Config.Setting.BackColorArgb;
+            //深蓝色
+            this.lblSkin1.BackColor = Color.FromArgb(-2892833);
+            if (backColor == -2892833) useThat = lblSkin1;
+
+            //星空灰
+            this.lblSkin2.BackColor = Color.FromArgb(-1382941);
+            if (backColor == -1382941) useThat = lblSkin2;
+
+            //天空蓝
+            this.lblSkin3.BackColor = Color.FromArgb(-12094);
+            if (backColor == -12094) useThat = lblSkin3;
+
+            //水彩粉
+            this.lblSkin4.BackColor = Color.FromArgb(-270873);
+            if (backColor == -270873) useThat = lblSkin4;
+
+            //活力橙
+            this.lblSkin5.BackColor = Color.FromArgb(-4594978);
+            if (backColor == -4594978) useThat = lblSkin5;
+
+            this.lblSkin6.BackColor = Color.FromArgb(-2101555);
+            if (backColor == -2101555) useThat = lblSkin6;
+
+            this.lblSkin7.BackColor = Color.FromArgb(-1123343);
+            if (backColor == -1123343) useThat = lblSkin7;
+
+            this.lblSkin8.BackColor = Color.FromArgb(-2436916);
+            if (backColor == -2436916) useThat = lblSkin8;
+
+            this.lblSkin9.BackColor = Color.FromArgb(-2822677);
+            if (backColor == -2822677) useThat = lblSkin9;
+
+            this.lblSkin10.BackColor = Color.FromArgb(-2756355);
+            if (backColor == -2756355) useThat = lblSkin10;
+
+            if (useThat != null)
+            {
+                picUseIt.Visible = true;
+                useThat.Controls.Add(picUseIt);
             }
         }
 

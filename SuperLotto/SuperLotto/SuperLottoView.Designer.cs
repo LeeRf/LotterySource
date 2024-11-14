@@ -37,8 +37,6 @@
             this.label23 = new System.Windows.Forms.Label();
             this.cmbStopCondition = new System.Windows.Forms.ComboBox();
             this.DanTuoPage = new System.Windows.Forms.TabPage();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.lblTuoBlueTitle = new System.Windows.Forms.Label();
             this.cmbBlueTuoCount = new System.Windows.Forms.ComboBox();
             this.lblDanBlueTitle = new System.Windows.Forms.Label();
@@ -62,7 +60,6 @@
             this.flpDantuoNumber = new System.Windows.Forms.FlowLayoutPanel();
             this.panDantuoStyle = new System.Windows.Forms.Panel();
             this.lblBlueBallTuo = new SuperLotto.Controls.LeeLabel();
-            this.picDantuoAccomplish = new System.Windows.Forms.PictureBox();
             this.lblRedBallTuo = new SuperLotto.Controls.LeeLabel();
             this.lblBlueBallDan = new SuperLotto.Controls.LeeLabel();
             this.lblRedBallDan = new SuperLotto.Controls.LeeLabel();
@@ -76,11 +73,6 @@
             this.label67 = new System.Windows.Forms.Label();
             this.label68 = new System.Windows.Forms.Label();
             this.label69 = new System.Windows.Forms.Label();
-            this.pictureBox27 = new System.Windows.Forms.PictureBox();
-            this.picDantuoBlue = new System.Windows.Forms.PictureBox();
-            this.pictureBox24 = new System.Windows.Forms.PictureBox();
-            this.picDantuoRed = new System.Windows.Forms.PictureBox();
-            this.pictureBox26 = new System.Windows.Forms.PictureBox();
             this.ExplainPage = new System.Windows.Forms.TabPage();
             this.SoftwareExplain = new System.Windows.Forms.RichTextBox();
             this.AboutMePage = new System.Windows.Forms.TabPage();
@@ -99,11 +91,6 @@
             this.extendLabel1 = new SuperLotto.Controls.ExtendLabel();
             this.label49 = new System.Windows.Forms.Label();
             this.leeLabel11 = new SuperLotto.Controls.LeeLabel();
-            this.pictureBox30 = new System.Windows.Forms.PictureBox();
-            this.pictureBox29 = new System.Windows.Forms.PictureBox();
-            this.pictureBox28 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.picHand = new System.Windows.Forms.PictureBox();
             this.label15 = new System.Windows.Forms.Label();
             this.lblLengthways = new System.Windows.Forms.Label();
             this.btnInfiniteRondomLoopYear = new MaterialSkin.Controls.MaterialFlatButton();
@@ -115,7 +102,6 @@
             this.btnResetRandomNo = new MaterialSkin.Controls.MaterialFlatButton();
             this.label1 = new System.Windows.Forms.Label();
             this.panOrderRandom = new System.Windows.Forms.Panel();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.rbRandomOrderByRed = new System.Windows.Forms.RadioButton();
             this.rbRandomOrderByNull = new System.Windows.Forms.RadioButton();
@@ -132,7 +118,6 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.panRandomFilter = new System.Windows.Forms.Panel();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.cmbRandomViewFilter = new System.Windows.Forms.ComboBox();
             this.rbCopyStyle = new System.Windows.Forms.RadioButton();
@@ -145,7 +130,6 @@
             this.label35 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.lblRandom50 = new SuperLotto.Controls.LeeLabel();
             this.lblRandom20 = new SuperLotto.Controls.LeeLabel();
             this.lblRandomMonetary = new SuperLotto.Controls.LeeLabel();
@@ -153,13 +137,7 @@
             this.lblRandom10 = new SuperLotto.Controls.LeeLabel();
             this.lblRandom5 = new SuperLotto.Controls.LeeLabel();
             this.lblRandom1 = new SuperLotto.Controls.LeeLabel();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.picMenuWork = new System.Windows.Forms.PictureBox();
             this.OneselfPage = new System.Windows.Forms.TabPage();
-            this.pictureBox22 = new System.Windows.Forms.PictureBox();
-            this.pictureBox23 = new System.Windows.Forms.PictureBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -179,7 +157,6 @@
             this.panComplexStyle = new System.Windows.Forms.Panel();
             this.lblComplexBlue = new SuperLotto.Controls.LeeLabel();
             this.lblComplexRed = new SuperLotto.Controls.LeeLabel();
-            this.picComplexAccomplish = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
             this.panComplexStatistics = new System.Windows.Forms.Panel();
             this.lblComplexBerperiods = new System.Windows.Forms.Label();
@@ -190,11 +167,19 @@
             this.label53 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.picScheme = new System.Windows.Forms.PictureBox();
             this.SettingPage = new System.Windows.Forms.TabPage();
+            this.lblDefaultSkin = new SuperLotto.Controls.ExtendLabel();
+            this.label87 = new System.Windows.Forms.Label();
+            this.lblSkin9 = new SuperLotto.Controls.ExtendLabel();
+            this.lblSkin8 = new SuperLotto.Controls.ExtendLabel();
+            this.lblSkin7 = new SuperLotto.Controls.ExtendLabel();
+            this.lblSkin6 = new SuperLotto.Controls.ExtendLabel();
+            this.lblSkin5 = new SuperLotto.Controls.ExtendLabel();
+            this.lblSkin4 = new SuperLotto.Controls.ExtendLabel();
+            this.lblSkin3 = new SuperLotto.Controls.ExtendLabel();
+            this.lblSkin2 = new SuperLotto.Controls.ExtendLabel();
+            this.lblSkin1 = new SuperLotto.Controls.ExtendLabel();
+            this.label51 = new System.Windows.Forms.Label();
             this.leeLabel2 = new SuperLotto.Controls.LeeLabel();
             this.label71 = new System.Windows.Forms.Label();
             this.nudCustomizePeriods = new System.Windows.Forms.NumericUpDown();
@@ -238,18 +223,13 @@
             this.panEveryRandom = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
             this.nudRandomBuyZhu = new System.Windows.Forms.NumericUpDown();
-            this.pictureBox25 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox21 = new System.Windows.Forms.PictureBox();
-            this.pictureBox20 = new System.Windows.Forms.PictureBox();
+            this.lblSkin10 = new SuperLotto.Controls.ExtendLabel();
             this.ErrorLog = new System.Windows.Forms.TabPage();
             this.updateInfo = new System.Windows.Forms.TabPage();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label86 = new System.Windows.Forms.Label();
             this.leeLabel12 = new SuperLotto.Controls.LeeLabel();
             this.HistoryPage = new System.Windows.Forms.TabPage();
             this.leeLabel3 = new SuperLotto.Controls.LeeLabel();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.btnResetData = new MaterialSkin.Controls.MaterialFlatButton();
             this.label28 = new System.Windows.Forms.Label();
             this.lblSuperLottoPeriods = new System.Windows.Forms.Label();
@@ -417,59 +397,67 @@
             this.panTop = new System.Windows.Forms.Panel();
             this.extendLabel10 = new SuperLotto.Controls.ExtendLabel();
             this.extendLabel4 = new SuperLotto.Controls.ExtendLabel();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.lblMin = new SuperLotto.Controls.LeeLabel();
             this.lblClose = new SuperLotto.Controls.LeeLabel();
             this.lblMaxUndo = new SuperLotto.Controls.LeeLabel();
             this.lblTitle = new System.Windows.Forms.Label();
+            this.panBody = new System.Windows.Forms.Panel();
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.picMenuWork = new System.Windows.Forms.PictureBox();
+            this.pictureBox22 = new System.Windows.Forms.PictureBox();
+            this.pictureBox23 = new System.Windows.Forms.PictureBox();
+            this.picComplexAccomplish = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.picScheme = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.picDantuoAccomplish = new System.Windows.Forms.PictureBox();
+            this.pictureBox27 = new System.Windows.Forms.PictureBox();
+            this.picDantuoBlue = new System.Windows.Forms.PictureBox();
+            this.pictureBox24 = new System.Windows.Forms.PictureBox();
+            this.picDantuoRed = new System.Windows.Forms.PictureBox();
+            this.pictureBox26 = new System.Windows.Forms.PictureBox();
+            this.picUseIt = new System.Windows.Forms.PictureBox();
+            this.pictureBox31 = new System.Windows.Forms.PictureBox();
+            this.pictureBox25 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox21 = new System.Windows.Forms.PictureBox();
+            this.pictureBox20 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox30 = new System.Windows.Forms.PictureBox();
+            this.pictureBox29 = new System.Windows.Forms.PictureBox();
+            this.pictureBox28 = new System.Windows.Forms.PictureBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.picHand = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.panBody = new System.Windows.Forms.Panel();
+            this.pictureBox19 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.DanTuoPage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.panDantuoStyle.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picDantuoAccomplish)).BeginInit();
             this.panDantuoStatistics.SuspendLayout();
             this.panStatisticsDantuo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picDantuoBlue)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picDantuoRed)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
             this.ExplainPage.SuspendLayout();
             this.AboutMePage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picHand)).BeginInit();
             this.CardInterface.SuspendLayout();
             this.RandomPage.SuspendLayout();
             this.panOrderRandom.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panRandomStyle.SuspendLayout();
             this.panRandomFilter.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             this.panRandomStatistics.SuspendLayout();
             this.panStatisticsRandom.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picMenuWork)).BeginInit();
             this.OneselfPage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
             this.panComplexStyle.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picComplexAccomplish)).BeginInit();
             this.panComplexStatistics.SuspendLayout();
             this.panStatisticsComplex.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picScheme)).BeginInit();
             this.SettingPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudCustomizePeriods)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudTwoBonus)).BeginInit();
@@ -482,24 +470,53 @@
             this.panel1.SuspendLayout();
             this.panEveryRandom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudRandomBuyZhu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
             this.updateInfo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.HistoryPage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.panKeepDataView.SuspendLayout();
             this.panLoopYear.SuspendLayout();
             this.panMaxSuperLotto.SuspendLayout();
             this.panLotteryRules.SuspendLayout();
             this.panTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
+            this.panBody.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMenuWork)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picComplexAccomplish)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picScheme)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDantuoAccomplish)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDantuoBlue)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDantuoRed)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picUseIt)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHand)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.panBody.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.SuspendLayout();
             // 
             // lblDate
@@ -619,37 +636,9 @@
             this.DanTuoPage.Location = new System.Drawing.Point(4, 26);
             this.DanTuoPage.Name = "DanTuoPage";
             this.DanTuoPage.Padding = new System.Windows.Forms.Padding(3);
-            this.DanTuoPage.Size = new System.Drawing.Size(832, 638);
+            this.DanTuoPage.Size = new System.Drawing.Size(832, 633);
             this.DanTuoPage.TabIndex = 3;
             this.DanTuoPage.Text = "自选~胆拖";
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox10.Enabled = false;
-            this.pictureBox10.Image = global::SuperLotto.Properties.Resources.LotteryMoney;
-            this.pictureBox10.Location = new System.Drawing.Point(370, 33);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(21, 19);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 731;
-            this.pictureBox10.TabStop = false;
-            this.pictureBox10.Tag = "0";
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox11.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox11.Enabled = false;
-            this.pictureBox11.Image = global::SuperLotto.Properties.Resources.OrderBy;
-            this.pictureBox11.Location = new System.Drawing.Point(367, 6);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(25, 24);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 730;
-            this.pictureBox11.TabStop = false;
-            this.pictureBox11.Tag = "0";
             // 
             // lblTuoBlueTitle
             // 
@@ -1009,19 +998,6 @@
             this.lblBlueBallTuo.Tag = "TBlue";
             this.lblBlueBallTuo.Text = "00";
             // 
-            // picDantuoAccomplish
-            // 
-            this.picDantuoAccomplish.BackColor = System.Drawing.Color.Transparent;
-            this.picDantuoAccomplish.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picDantuoAccomplish.Image = global::SuperLotto.Properties.Resources.Accomplish;
-            this.picDantuoAccomplish.Location = new System.Drawing.Point(120, 6);
-            this.picDantuoAccomplish.Name = "picDantuoAccomplish";
-            this.picDantuoAccomplish.Size = new System.Drawing.Size(18, 18);
-            this.picDantuoAccomplish.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picDantuoAccomplish.TabIndex = 704;
-            this.picDantuoAccomplish.TabStop = false;
-            this.picDantuoAccomplish.Tag = "0";
-            // 
             // lblRedBallTuo
             // 
             this.lblRedBallTuo.AutoSize = true;
@@ -1181,71 +1157,6 @@
             this.label69.TabIndex = 611;
             this.label69.Text = "中奖注数";
             // 
-            // pictureBox27
-            // 
-            this.pictureBox27.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox27.Enabled = false;
-            this.pictureBox27.Image = global::SuperLotto.Properties.Resources.lblaxe;
-            this.pictureBox27.Location = new System.Drawing.Point(7, 5);
-            this.pictureBox27.Name = "pictureBox27";
-            this.pictureBox27.Size = new System.Drawing.Size(23, 21);
-            this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox27.TabIndex = 598;
-            this.pictureBox27.TabStop = false;
-            this.pictureBox27.Tag = "0";
-            // 
-            // picDantuoBlue
-            // 
-            this.picDantuoBlue.BackColor = System.Drawing.Color.Transparent;
-            this.picDantuoBlue.Enabled = false;
-            this.picDantuoBlue.Image = global::SuperLotto.Properties.Resources.BlueBalls;
-            this.picDantuoBlue.Location = new System.Drawing.Point(150, 34);
-            this.picDantuoBlue.Name = "picDantuoBlue";
-            this.picDantuoBlue.Size = new System.Drawing.Size(18, 18);
-            this.picDantuoBlue.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picDantuoBlue.TabIndex = 721;
-            this.picDantuoBlue.TabStop = false;
-            this.picDantuoBlue.Tag = "0";
-            // 
-            // pictureBox24
-            // 
-            this.pictureBox24.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox24.Enabled = false;
-            this.pictureBox24.Image = global::SuperLotto.Properties.Resources.scheme;
-            this.pictureBox24.Location = new System.Drawing.Point(19, 18);
-            this.pictureBox24.Name = "pictureBox24";
-            this.pictureBox24.Size = new System.Drawing.Size(21, 21);
-            this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox24.TabIndex = 705;
-            this.pictureBox24.TabStop = false;
-            this.pictureBox24.Tag = "0";
-            // 
-            // picDantuoRed
-            // 
-            this.picDantuoRed.BackColor = System.Drawing.Color.Transparent;
-            this.picDantuoRed.Enabled = false;
-            this.picDantuoRed.Image = global::SuperLotto.Properties.Resources.RedMess;
-            this.picDantuoRed.Location = new System.Drawing.Point(150, 9);
-            this.picDantuoRed.Name = "picDantuoRed";
-            this.picDantuoRed.Size = new System.Drawing.Size(18, 18);
-            this.picDantuoRed.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picDantuoRed.TabIndex = 698;
-            this.picDantuoRed.TabStop = false;
-            this.picDantuoRed.Tag = "0";
-            // 
-            // pictureBox26
-            // 
-            this.pictureBox26.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox26.Enabled = false;
-            this.pictureBox26.Image = global::SuperLotto.Properties.Resources.MyInfo;
-            this.pictureBox26.Location = new System.Drawing.Point(10, 63);
-            this.pictureBox26.Name = "pictureBox26";
-            this.pictureBox26.Size = new System.Drawing.Size(25, 24);
-            this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox26.TabIndex = 718;
-            this.pictureBox26.TabStop = false;
-            this.pictureBox26.Tag = "0";
-            // 
             // ExplainPage
             // 
             this.ExplainPage.Controls.Add(this.SoftwareExplain);
@@ -1294,7 +1205,7 @@
             this.AboutMePage.Location = new System.Drawing.Point(4, 26);
             this.AboutMePage.Name = "AboutMePage";
             this.AboutMePage.Padding = new System.Windows.Forms.Padding(3);
-            this.AboutMePage.Size = new System.Drawing.Size(832, 638);
+            this.AboutMePage.Size = new System.Drawing.Size(832, 633);
             this.AboutMePage.TabIndex = 6;
             this.AboutMePage.Text = "关于软件";
             // 
@@ -1304,10 +1215,14 @@
             this.extendLabel9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.extendLabel9.EnterColor = System.Drawing.Color.Black;
             this.extendLabel9.EnterFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.extendLabel9.Fillet = false;
             this.extendLabel9.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.extendLabel9.ForeColor = System.Drawing.Color.Black;
             this.extendLabel9.Location = new System.Drawing.Point(414, 505);
+            this.extendLabel9.MouseEnterEffect = false;
             this.extendLabel9.Name = "extendLabel9";
+            this.extendLabel9.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.extendLabel9.ShadowWidth = 8;
             this.extendLabel9.Size = new System.Drawing.Size(161, 17);
             this.extendLabel9.TabIndex = 622;
             this.extendLabel9.Text = "Email：javaleerf@163.com";
@@ -1318,10 +1233,14 @@
             this.extendLabel8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.extendLabel8.EnterColor = System.Drawing.Color.Black;
             this.extendLabel8.EnterFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.extendLabel8.Fillet = false;
             this.extendLabel8.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.extendLabel8.ForeColor = System.Drawing.Color.Black;
             this.extendLabel8.Location = new System.Drawing.Point(265, 506);
+            this.extendLabel8.MouseEnterEffect = false;
             this.extendLabel8.Name = "extendLabel8";
+            this.extendLabel8.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.extendLabel8.ShadowWidth = 8;
             this.extendLabel8.Size = new System.Drawing.Size(103, 17);
             this.extendLabel8.TabIndex = 619;
             this.extendLabel8.Text = "VeChat：leeyoio";
@@ -1332,10 +1251,14 @@
             this.extendLabel7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.extendLabel7.EnterColor = System.Drawing.Color.Black;
             this.extendLabel7.EnterFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.extendLabel7.Fillet = false;
             this.extendLabel7.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.extendLabel7.ForeColor = System.Drawing.Color.DimGray;
             this.extendLabel7.Location = new System.Drawing.Point(91, 504);
+            this.extendLabel7.MouseEnterEffect = false;
             this.extendLabel7.Name = "extendLabel7";
+            this.extendLabel7.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.extendLabel7.ShadowWidth = 8;
             this.extendLabel7.Size = new System.Drawing.Size(135, 17);
             this.extendLabel7.TabIndex = 618;
             this.extendLabel7.Text = "Individual developer";
@@ -1346,10 +1269,14 @@
             this.extendLabel6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.extendLabel6.EnterColor = System.Drawing.Color.Black;
             this.extendLabel6.EnterFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.extendLabel6.Fillet = false;
             this.extendLabel6.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.extendLabel6.ForeColor = System.Drawing.Color.DimGray;
             this.extendLabel6.Location = new System.Drawing.Point(91, 482);
+            this.extendLabel6.MouseEnterEffect = false;
             this.extendLabel6.Name = "extendLabel6";
+            this.extendLabel6.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.extendLabel6.ShadowWidth = 8;
             this.extendLabel6.Size = new System.Drawing.Size(29, 17);
             this.extendLabel6.TabIndex = 617;
             this.extendLabel6.Text = "Lee";
@@ -1360,9 +1287,13 @@
             this.lblBilibiliLink.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblBilibiliLink.EnterColor = System.Drawing.Color.Red;
             this.lblBilibiliLink.EnterFont = new System.Drawing.Font("JetBrains Mono", 10.5F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.lblBilibiliLink.Fillet = false;
             this.lblBilibiliLink.Font = new System.Drawing.Font("JetBrains Mono Light", 10.5F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBilibiliLink.Location = new System.Drawing.Point(136, 424);
+            this.lblBilibiliLink.MouseEnterEffect = false;
             this.lblBilibiliLink.Name = "lblBilibiliLink";
+            this.lblBilibiliLink.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblBilibiliLink.ShadowWidth = 8;
             this.lblBilibiliLink.Size = new System.Drawing.Size(296, 18);
             this.lblBilibiliLink.TabIndex = 616;
             this.lblBilibiliLink.Text = "https://space.bilibili.com/486305074";
@@ -1374,9 +1305,13 @@
             this.extendLabel5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.extendLabel5.EnterColor = System.Drawing.Color.Red;
             this.extendLabel5.EnterFont = new System.Drawing.Font("JetBrains Mono", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.extendLabel5.Fillet = false;
             this.extendLabel5.Font = new System.Drawing.Font("JetBrains Mono Light", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.extendLabel5.Location = new System.Drawing.Point(135, 401);
+            this.extendLabel5.MouseEnterEffect = false;
             this.extendLabel5.Name = "extendLabel5";
+            this.extendLabel5.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.extendLabel5.ShadowWidth = 8;
             this.extendLabel5.Size = new System.Drawing.Size(144, 18);
             this.extendLabel5.TabIndex = 614;
             this.extendLabel5.Text = "Bilibili 个人主页";
@@ -1399,9 +1334,13 @@
             this.lblGitHubLink.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblGitHubLink.EnterColor = System.Drawing.Color.Red;
             this.lblGitHubLink.EnterFont = new System.Drawing.Font("JetBrains Mono", 10.5F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGitHubLink.Fillet = false;
             this.lblGitHubLink.Font = new System.Drawing.Font("JetBrains Mono Light", 10.5F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGitHubLink.Location = new System.Drawing.Point(90, 308);
+            this.lblGitHubLink.MouseEnterEffect = false;
             this.lblGitHubLink.Name = "lblGitHubLink";
+            this.lblGitHubLink.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblGitHubLink.ShadowWidth = 8;
             this.lblGitHubLink.Size = new System.Drawing.Size(312, 18);
             this.lblGitHubLink.TabIndex = 612;
             this.lblGitHubLink.Text = "https://github.com/LeeRf/LotterySource";
@@ -1413,10 +1352,14 @@
             this.extendLabel3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.extendLabel3.EnterColor = System.Drawing.Color.Black;
             this.extendLabel3.EnterFont = new System.Drawing.Font("JetBrains Mono", 10.5F, System.Drawing.FontStyle.Bold);
+            this.extendLabel3.Fillet = false;
             this.extendLabel3.Font = new System.Drawing.Font("JetBrains Mono Light", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.extendLabel3.ForeColor = System.Drawing.Color.Black;
             this.extendLabel3.Location = new System.Drawing.Point(89, 286);
+            this.extendLabel3.MouseEnterEffect = false;
             this.extendLabel3.Name = "extendLabel3";
+            this.extendLabel3.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.extendLabel3.ShadowWidth = 8;
             this.extendLabel3.Size = new System.Drawing.Size(160, 18);
             this.extendLabel3.TabIndex = 610;
             this.extendLabel3.Text = "GitHub 开源仓库地址";
@@ -1438,8 +1381,12 @@
             this.extendLabel2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.extendLabel2.EnterColor = System.Drawing.Color.Red;
             this.extendLabel2.EnterFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.extendLabel2.Fillet = false;
             this.extendLabel2.Location = new System.Drawing.Point(24, 177);
+            this.extendLabel2.MouseEnterEffect = false;
             this.extendLabel2.Name = "extendLabel2";
+            this.extendLabel2.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.extendLabel2.ShadowWidth = 8;
             this.extendLabel2.Size = new System.Drawing.Size(791, 55);
             this.extendLabel2.TabIndex = 608;
             this.extendLabel2.Text = "如果遇到Bug、可以通过把发生Bug的界面截图保存、并简要概述下做了哪些操作步骤。可以通过以下几种方式联系作者修复\r\n    -> 微信、邮件、B站评论区或者私信" +
@@ -1462,8 +1409,12 @@
             this.extendLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.extendLabel1.EnterColor = System.Drawing.Color.Red;
             this.extendLabel1.EnterFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.extendLabel1.Fillet = false;
             this.extendLabel1.Location = new System.Drawing.Point(24, 56);
+            this.extendLabel1.MouseEnterEffect = false;
             this.extendLabel1.Name = "extendLabel1";
+            this.extendLabel1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.extendLabel1.ShadowWidth = 8;
             this.extendLabel1.Size = new System.Drawing.Size(791, 55);
             this.extendLabel1.TabIndex = 606;
             this.extendLabel1.Text = "该软件完全免费为绿色离线版、用户可以完全自由使用。目前软件未在任何应用商店上线、仅为作者在互联网平台个人账号发布，软件源码已在 GitHub 开源。注意：该软件为" +
@@ -1489,79 +1440,11 @@
             this.leeLabel11.EnterColor = System.Drawing.Color.OrangeRed;
             this.leeLabel11.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.leeLabel11.ForeColor = System.Drawing.Color.Gray;
-            this.leeLabel11.Location = new System.Drawing.Point(522, 617);
+            this.leeLabel11.Location = new System.Drawing.Point(522, 612);
             this.leeLabel11.Name = "leeLabel11";
             this.leeLabel11.Size = new System.Drawing.Size(308, 17);
             this.leeLabel11.TabIndex = 598;
             this.leeLabel11.Text = "开发者未提供任何二维码或者链接来供打赏、请注意甄别";
-            // 
-            // pictureBox30
-            // 
-            this.pictureBox30.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox30.Enabled = false;
-            this.pictureBox30.Image = global::SuperLotto.Properties.Resources.email002;
-            this.pictureBox30.Location = new System.Drawing.Point(382, 501);
-            this.pictureBox30.Name = "pictureBox30";
-            this.pictureBox30.Size = new System.Drawing.Size(25, 23);
-            this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox30.TabIndex = 620;
-            this.pictureBox30.TabStop = false;
-            this.pictureBox30.Tag = "0";
-            // 
-            // pictureBox29
-            // 
-            this.pictureBox29.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox29.BackgroundImage = global::SuperLotto.Properties.Resources.bilibili;
-            this.pictureBox29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox29.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox29.Location = new System.Drawing.Point(31, 400);
-            this.pictureBox29.Name = "pictureBox29";
-            this.pictureBox29.Size = new System.Drawing.Size(94, 46);
-            this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox29.TabIndex = 615;
-            this.pictureBox29.TabStop = false;
-            this.pictureBox29.Tag = "1";
-            // 
-            // pictureBox28
-            // 
-            this.pictureBox28.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox28.BackgroundImage = global::SuperLotto.Properties.Resources.github_ico;
-            this.pictureBox28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox28.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox28.Location = new System.Drawing.Point(33, 282);
-            this.pictureBox28.Name = "pictureBox28";
-            this.pictureBox28.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox28.TabIndex = 611;
-            this.pictureBox28.TabStop = false;
-            this.pictureBox28.Tag = "1";
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox14.Enabled = false;
-            this.pictureBox14.Image = global::SuperLotto.Properties.Resources.VeChat_ico;
-            this.pictureBox14.Location = new System.Drawing.Point(232, 501);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox14.TabIndex = 591;
-            this.pictureBox14.TabStop = false;
-            this.pictureBox14.Tag = "0";
-            // 
-            // picHand
-            // 
-            this.picHand.BackColor = System.Drawing.Color.Transparent;
-            this.picHand.BackgroundImage = global::SuperLotto.Properties.Resources.author;
-            this.picHand.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picHand.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picHand.Location = new System.Drawing.Point(33, 475);
-            this.picHand.Name = "picHand";
-            this.picHand.Size = new System.Drawing.Size(50, 50);
-            this.picHand.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picHand.TabIndex = 243;
-            this.picHand.TabStop = false;
-            this.picHand.Tag = "1";
             // 
             // label15
             // 
@@ -1690,7 +1573,7 @@
             this.RandomPage.Location = new System.Drawing.Point(4, 26);
             this.RandomPage.Name = "RandomPage";
             this.RandomPage.Padding = new System.Windows.Forms.Padding(3);
-            this.RandomPage.Size = new System.Drawing.Size(832, 638);
+            this.RandomPage.Size = new System.Drawing.Size(832, 633);
             this.RandomPage.TabIndex = 0;
             this.RandomPage.Text = "机 选";
             // 
@@ -1768,19 +1651,6 @@
             this.panOrderRandom.Size = new System.Drawing.Size(221, 31);
             this.panOrderRandom.TabIndex = 597;
             this.panOrderRandom.Visible = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox8.Enabled = false;
-            this.pictureBox8.Image = global::SuperLotto.Properties.Resources.OrderBy;
-            this.pictureBox8.Location = new System.Drawing.Point(2, 3);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(25, 24);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 598;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Tag = "0";
             // 
             // label3
             // 
@@ -1991,19 +1861,6 @@
             this.panRandomFilter.TabIndex = 598;
             this.panRandomFilter.Visible = false;
             // 
-            // pictureBox13
-            // 
-            this.pictureBox13.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox13.Enabled = false;
-            this.pictureBox13.Image = global::SuperLotto.Properties.Resources.filter;
-            this.pictureBox13.Location = new System.Drawing.Point(1, 4);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(23, 23);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox13.TabIndex = 605;
-            this.pictureBox13.TabStop = false;
-            this.pictureBox13.Tag = "0";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -2155,19 +2012,6 @@
             this.label30.TabIndex = 611;
             this.label30.Text = "中奖注数";
             // 
-            // pictureBox17
-            // 
-            this.pictureBox17.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox17.Enabled = false;
-            this.pictureBox17.Image = global::SuperLotto.Properties.Resources.lblaxe;
-            this.pictureBox17.Location = new System.Drawing.Point(7, 5);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(23, 21);
-            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox17.TabIndex = 598;
-            this.pictureBox17.TabStop = false;
-            this.pictureBox17.Tag = "0";
-            // 
             // lblRandom50
             // 
             this.lblRandom50.AutoSize = true;
@@ -2271,60 +2115,6 @@
             this.lblRandom1.Text = "机选1注";
             this.lblRandom1.Click += new System.EventHandler(this.lblRandom1_Click);
             // 
-            // pictureBox16
-            // 
-            this.pictureBox16.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox16.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox16.Enabled = false;
-            this.pictureBox16.Image = global::SuperLotto.Properties.Resources.LotteryMoney;
-            this.pictureBox16.Location = new System.Drawing.Point(396, 33);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(21, 19);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox16.TabIndex = 603;
-            this.pictureBox16.TabStop = false;
-            this.pictureBox16.Tag = "0";
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox15.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox15.Enabled = false;
-            this.pictureBox15.Image = global::SuperLotto.Properties.Resources.OrderBy;
-            this.pictureBox15.Location = new System.Drawing.Point(393, 6);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(25, 24);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox15.TabIndex = 601;
-            this.pictureBox15.TabStop = false;
-            this.pictureBox15.Tag = "0";
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.Enabled = false;
-            this.pictureBox7.Image = global::SuperLotto.Properties.Resources.MyInfo;
-            this.pictureBox7.Location = new System.Drawing.Point(10, 63);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(25, 24);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 590;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Tag = "0";
-            // 
-            // picMenuWork
-            // 
-            this.picMenuWork.BackColor = System.Drawing.Color.Transparent;
-            this.picMenuWork.Enabled = false;
-            this.picMenuWork.Image = global::SuperLotto.Properties.Resources.Work;
-            this.picMenuWork.Location = new System.Drawing.Point(22, 16);
-            this.picMenuWork.Name = "picMenuWork";
-            this.picMenuWork.Size = new System.Drawing.Size(32, 27);
-            this.picMenuWork.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picMenuWork.TabIndex = 421;
-            this.picMenuWork.TabStop = false;
-            this.picMenuWork.Tag = "0";
-            // 
             // OneselfPage
             // 
             this.OneselfPage.BackColor = System.Drawing.Color.White;
@@ -2354,37 +2144,9 @@
             this.OneselfPage.Location = new System.Drawing.Point(4, 26);
             this.OneselfPage.Name = "OneselfPage";
             this.OneselfPage.Padding = new System.Windows.Forms.Padding(3);
-            this.OneselfPage.Size = new System.Drawing.Size(832, 638);
+            this.OneselfPage.Size = new System.Drawing.Size(832, 633);
             this.OneselfPage.TabIndex = 1;
             this.OneselfPage.Text = "自选~复式";
-            // 
-            // pictureBox22
-            // 
-            this.pictureBox22.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox22.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox22.Enabled = false;
-            this.pictureBox22.Image = global::SuperLotto.Properties.Resources.LotteryMoney;
-            this.pictureBox22.Location = new System.Drawing.Point(370, 33);
-            this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(21, 19);
-            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox22.TabIndex = 700;
-            this.pictureBox22.TabStop = false;
-            this.pictureBox22.Tag = "0";
-            // 
-            // pictureBox23
-            // 
-            this.pictureBox23.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox23.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox23.Enabled = false;
-            this.pictureBox23.Image = global::SuperLotto.Properties.Resources.OrderBy;
-            this.pictureBox23.Location = new System.Drawing.Point(367, 6);
-            this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.Size = new System.Drawing.Size(25, 24);
-            this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox23.TabIndex = 699;
-            this.pictureBox23.TabStop = false;
-            this.pictureBox23.Tag = "0";
             // 
             // label18
             // 
@@ -2678,19 +2440,6 @@
             this.lblComplexRed.Tag = "Red";
             this.lblComplexRed.Text = "00";
             // 
-            // picComplexAccomplish
-            // 
-            this.picComplexAccomplish.BackColor = System.Drawing.Color.Transparent;
-            this.picComplexAccomplish.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picComplexAccomplish.Image = global::SuperLotto.Properties.Resources.Accomplish;
-            this.picComplexAccomplish.Location = new System.Drawing.Point(78, 7);
-            this.picComplexAccomplish.Name = "picComplexAccomplish";
-            this.picComplexAccomplish.Size = new System.Drawing.Size(18, 18);
-            this.picComplexAccomplish.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picComplexAccomplish.TabIndex = 694;
-            this.picComplexAccomplish.TabStop = false;
-            this.picComplexAccomplish.Tag = "0";
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -2807,61 +2556,25 @@
             this.label55.TabIndex = 611;
             this.label55.Text = "中奖注数";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Enabled = false;
-            this.pictureBox1.Image = global::SuperLotto.Properties.Resources.lblaxe;
-            this.pictureBox1.Location = new System.Drawing.Point(7, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(23, 21);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 598;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Tag = "0";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Enabled = false;
-            this.pictureBox3.Image = global::SuperLotto.Properties.Resources.scheme;
-            this.pictureBox3.Location = new System.Drawing.Point(23, 18);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(23, 23);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 525;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Tag = "0";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Enabled = false;
-            this.pictureBox2.Image = global::SuperLotto.Properties.Resources.MyInfo;
-            this.pictureBox2.Location = new System.Drawing.Point(10, 63);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(25, 24);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 519;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Tag = "0";
-            // 
-            // picScheme
-            // 
-            this.picScheme.BackColor = System.Drawing.Color.Transparent;
-            this.picScheme.Enabled = false;
-            this.picScheme.Image = global::SuperLotto.Properties.Resources.Statistical3;
-            this.picScheme.Location = new System.Drawing.Point(158, 20);
-            this.picScheme.Name = "picScheme";
-            this.picScheme.Size = new System.Drawing.Size(20, 18);
-            this.picScheme.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picScheme.TabIndex = 422;
-            this.picScheme.TabStop = false;
-            this.picScheme.Tag = "0";
-            // 
             // SettingPage
             // 
+            this.SettingPage.AutoScroll = true;
+            this.SettingPage.AutoScrollMargin = new System.Drawing.Size(0, 50);
+            this.SettingPage.AutoScrollMinSize = new System.Drawing.Size(1, 1);
             this.SettingPage.BackColor = System.Drawing.Color.White;
+            this.SettingPage.Controls.Add(this.lblDefaultSkin);
+            this.SettingPage.Controls.Add(this.label87);
+            this.SettingPage.Controls.Add(this.lblSkin9);
+            this.SettingPage.Controls.Add(this.lblSkin8);
+            this.SettingPage.Controls.Add(this.lblSkin7);
+            this.SettingPage.Controls.Add(this.lblSkin6);
+            this.SettingPage.Controls.Add(this.lblSkin5);
+            this.SettingPage.Controls.Add(this.lblSkin4);
+            this.SettingPage.Controls.Add(this.lblSkin3);
+            this.SettingPage.Controls.Add(this.lblSkin2);
+            this.SettingPage.Controls.Add(this.lblSkin1);
+            this.SettingPage.Controls.Add(this.label51);
+            this.SettingPage.Controls.Add(this.pictureBox31);
             this.SettingPage.Controls.Add(this.leeLabel2);
             this.SettingPage.Controls.Add(this.label71);
             this.SettingPage.Controls.Add(this.nudCustomizePeriods);
@@ -2890,12 +2603,220 @@
             this.SettingPage.Controls.Add(this.pictureBox9);
             this.SettingPage.Controls.Add(this.pictureBox21);
             this.SettingPage.Controls.Add(this.pictureBox20);
+            this.SettingPage.Controls.Add(this.lblSkin10);
+            this.SettingPage.Controls.Add(this.picUseIt);
             this.SettingPage.Location = new System.Drawing.Point(4, 26);
             this.SettingPage.Name = "SettingPage";
             this.SettingPage.Padding = new System.Windows.Forms.Padding(3);
-            this.SettingPage.Size = new System.Drawing.Size(832, 638);
+            this.SettingPage.Size = new System.Drawing.Size(832, 633);
             this.SettingPage.TabIndex = 7;
             this.SettingPage.Text = "设置";
+            // 
+            // lblDefaultSkin
+            // 
+            this.lblDefaultSkin.AutoSize = true;
+            this.lblDefaultSkin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblDefaultSkin.EnterColor = System.Drawing.Color.Red;
+            this.lblDefaultSkin.EnterFont = new System.Drawing.Font("微软雅黑", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.lblDefaultSkin.Fillet = false;
+            this.lblDefaultSkin.Font = new System.Drawing.Font("微软雅黑", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblDefaultSkin.ForeColor = System.Drawing.Color.Gray;
+            this.lblDefaultSkin.Location = new System.Drawing.Point(289, 192);
+            this.lblDefaultSkin.MouseEnterEffect = false;
+            this.lblDefaultSkin.Name = "lblDefaultSkin";
+            this.lblDefaultSkin.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblDefaultSkin.ShadowWidth = 8;
+            this.lblDefaultSkin.Size = new System.Drawing.Size(51, 16);
+            this.lblDefaultSkin.TabIndex = 674;
+            this.lblDefaultSkin.Text = "默认皮肤";
+            this.lblDefaultSkin.Click += new System.EventHandler(this.lblDefaultSkin_Click);
+            // 
+            // label87
+            // 
+            this.label87.AutoSize = true;
+            this.label87.BackColor = System.Drawing.Color.Gainsboro;
+            this.label87.Cursor = System.Windows.Forms.Cursors.SizeAll;
+            this.label87.Enabled = false;
+            this.label87.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label87.Location = new System.Drawing.Point(128, 42);
+            this.label87.MaximumSize = new System.Drawing.Size(0, 1);
+            this.label87.Name = "label87";
+            this.label87.Size = new System.Drawing.Size(283, 1);
+            this.label87.TabIndex = 673;
+            this.label87.Text = "_______________________________________________________";
+            // 
+            // lblSkin9
+            // 
+            this.lblSkin9.BackColor = System.Drawing.Color.Gainsboro;
+            this.lblSkin9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblSkin9.EnterColor = System.Drawing.Color.Black;
+            this.lblSkin9.EnterFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSkin9.Fillet = false;
+            this.lblSkin9.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblSkin9.ForeColor = System.Drawing.Color.Black;
+            this.lblSkin9.Location = new System.Drawing.Point(237, 131);
+            this.lblSkin9.MouseEnterEffect = true;
+            this.lblSkin9.Name = "lblSkin9";
+            this.lblSkin9.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblSkin9.ShadowWidth = 8;
+            this.lblSkin9.Size = new System.Drawing.Size(44, 45);
+            this.lblSkin9.TabIndex = 671;
+            this.lblSkin9.Click += new System.EventHandler(this.lblSkin1_Click);
+            // 
+            // lblSkin8
+            // 
+            this.lblSkin8.BackColor = System.Drawing.Color.Gainsboro;
+            this.lblSkin8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblSkin8.EnterColor = System.Drawing.Color.Black;
+            this.lblSkin8.EnterFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSkin8.Fillet = false;
+            this.lblSkin8.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblSkin8.ForeColor = System.Drawing.Color.Black;
+            this.lblSkin8.Location = new System.Drawing.Point(183, 131);
+            this.lblSkin8.MouseEnterEffect = true;
+            this.lblSkin8.Name = "lblSkin8";
+            this.lblSkin8.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblSkin8.ShadowWidth = 8;
+            this.lblSkin8.Size = new System.Drawing.Size(44, 45);
+            this.lblSkin8.TabIndex = 670;
+            this.lblSkin8.Click += new System.EventHandler(this.lblSkin1_Click);
+            // 
+            // lblSkin7
+            // 
+            this.lblSkin7.BackColor = System.Drawing.Color.Gainsboro;
+            this.lblSkin7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblSkin7.EnterColor = System.Drawing.Color.Black;
+            this.lblSkin7.EnterFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSkin7.Fillet = false;
+            this.lblSkin7.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblSkin7.ForeColor = System.Drawing.Color.Black;
+            this.lblSkin7.Location = new System.Drawing.Point(128, 131);
+            this.lblSkin7.MouseEnterEffect = true;
+            this.lblSkin7.Name = "lblSkin7";
+            this.lblSkin7.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblSkin7.ShadowWidth = 8;
+            this.lblSkin7.Size = new System.Drawing.Size(44, 45);
+            this.lblSkin7.TabIndex = 669;
+            this.lblSkin7.Click += new System.EventHandler(this.lblSkin1_Click);
+            // 
+            // lblSkin6
+            // 
+            this.lblSkin6.BackColor = System.Drawing.Color.Gainsboro;
+            this.lblSkin6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblSkin6.EnterColor = System.Drawing.Color.Black;
+            this.lblSkin6.EnterFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSkin6.Fillet = false;
+            this.lblSkin6.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblSkin6.ForeColor = System.Drawing.Color.Black;
+            this.lblSkin6.Location = new System.Drawing.Point(73, 131);
+            this.lblSkin6.MouseEnterEffect = true;
+            this.lblSkin6.Name = "lblSkin6";
+            this.lblSkin6.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblSkin6.ShadowWidth = 8;
+            this.lblSkin6.Size = new System.Drawing.Size(44, 45);
+            this.lblSkin6.TabIndex = 668;
+            this.lblSkin6.Click += new System.EventHandler(this.lblSkin1_Click);
+            // 
+            // lblSkin5
+            // 
+            this.lblSkin5.BackColor = System.Drawing.Color.Gainsboro;
+            this.lblSkin5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblSkin5.EnterColor = System.Drawing.Color.Black;
+            this.lblSkin5.EnterFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSkin5.Fillet = false;
+            this.lblSkin5.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblSkin5.ForeColor = System.Drawing.Color.Black;
+            this.lblSkin5.Location = new System.Drawing.Point(292, 71);
+            this.lblSkin5.MouseEnterEffect = true;
+            this.lblSkin5.Name = "lblSkin5";
+            this.lblSkin5.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblSkin5.ShadowWidth = 8;
+            this.lblSkin5.Size = new System.Drawing.Size(44, 45);
+            this.lblSkin5.TabIndex = 667;
+            this.lblSkin5.Click += new System.EventHandler(this.lblSkin1_Click);
+            // 
+            // lblSkin4
+            // 
+            this.lblSkin4.BackColor = System.Drawing.Color.Gainsboro;
+            this.lblSkin4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblSkin4.EnterColor = System.Drawing.Color.Black;
+            this.lblSkin4.EnterFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSkin4.Fillet = false;
+            this.lblSkin4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblSkin4.ForeColor = System.Drawing.Color.Black;
+            this.lblSkin4.Location = new System.Drawing.Point(237, 71);
+            this.lblSkin4.MouseEnterEffect = true;
+            this.lblSkin4.Name = "lblSkin4";
+            this.lblSkin4.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblSkin4.ShadowWidth = 8;
+            this.lblSkin4.Size = new System.Drawing.Size(44, 45);
+            this.lblSkin4.TabIndex = 666;
+            this.lblSkin4.Click += new System.EventHandler(this.lblSkin1_Click);
+            // 
+            // lblSkin3
+            // 
+            this.lblSkin3.BackColor = System.Drawing.Color.Gainsboro;
+            this.lblSkin3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblSkin3.EnterColor = System.Drawing.Color.Black;
+            this.lblSkin3.EnterFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSkin3.Fillet = false;
+            this.lblSkin3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblSkin3.ForeColor = System.Drawing.Color.Black;
+            this.lblSkin3.Location = new System.Drawing.Point(183, 71);
+            this.lblSkin3.MouseEnterEffect = true;
+            this.lblSkin3.Name = "lblSkin3";
+            this.lblSkin3.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblSkin3.ShadowWidth = 8;
+            this.lblSkin3.Size = new System.Drawing.Size(44, 45);
+            this.lblSkin3.TabIndex = 665;
+            this.lblSkin3.Click += new System.EventHandler(this.lblSkin1_Click);
+            // 
+            // lblSkin2
+            // 
+            this.lblSkin2.BackColor = System.Drawing.Color.Gainsboro;
+            this.lblSkin2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblSkin2.EnterColor = System.Drawing.Color.Black;
+            this.lblSkin2.EnterFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSkin2.Fillet = false;
+            this.lblSkin2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblSkin2.ForeColor = System.Drawing.Color.Black;
+            this.lblSkin2.Location = new System.Drawing.Point(128, 71);
+            this.lblSkin2.MouseEnterEffect = true;
+            this.lblSkin2.Name = "lblSkin2";
+            this.lblSkin2.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblSkin2.ShadowWidth = 8;
+            this.lblSkin2.Size = new System.Drawing.Size(44, 45);
+            this.lblSkin2.TabIndex = 664;
+            this.lblSkin2.Click += new System.EventHandler(this.lblSkin1_Click);
+            // 
+            // lblSkin1
+            // 
+            this.lblSkin1.BackColor = System.Drawing.Color.Gainsboro;
+            this.lblSkin1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblSkin1.EnterColor = System.Drawing.Color.Black;
+            this.lblSkin1.EnterFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSkin1.Fillet = false;
+            this.lblSkin1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblSkin1.ForeColor = System.Drawing.Color.Black;
+            this.lblSkin1.Location = new System.Drawing.Point(73, 71);
+            this.lblSkin1.MouseEnterEffect = true;
+            this.lblSkin1.Name = "lblSkin1";
+            this.lblSkin1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblSkin1.ShadowWidth = 8;
+            this.lblSkin1.Size = new System.Drawing.Size(44, 45);
+            this.lblSkin1.TabIndex = 663;
+            this.lblSkin1.Click += new System.EventHandler(this.lblSkin1_Click);
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label51.ForeColor = System.Drawing.Color.Black;
+            this.label51.Location = new System.Drawing.Point(65, 34);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(56, 17);
+            this.label51.TabIndex = 1;
+            this.label51.Text = "系统皮肤";
             // 
             // leeLabel2
             // 
@@ -2904,7 +2825,7 @@
             this.leeLabel2.EnterColor = System.Drawing.Color.OrangeRed;
             this.leeLabel2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.leeLabel2.ForeColor = System.Drawing.Color.DarkGray;
-            this.leeLabel2.Location = new System.Drawing.Point(239, 587);
+            this.leeLabel2.Location = new System.Drawing.Point(245, 781);
             this.leeLabel2.Name = "leeLabel2";
             this.leeLabel2.Size = new System.Drawing.Size(123, 17);
             this.leeLabel2.TabIndex = 660;
@@ -2916,7 +2837,7 @@
             this.label71.AutoSize = true;
             this.label71.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label71.ForeColor = System.Drawing.Color.Black;
-            this.label71.Location = new System.Drawing.Point(62, 586);
+            this.label71.Location = new System.Drawing.Point(68, 780);
             this.label71.Name = "label71";
             this.label71.Size = new System.Drawing.Size(92, 17);
             this.label71.TabIndex = 659;
@@ -2925,7 +2846,7 @@
             // nudCustomizePeriods
             // 
             this.nudCustomizePeriods.ForeColor = System.Drawing.Color.Black;
-            this.nudCustomizePeriods.Location = new System.Drawing.Point(161, 584);
+            this.nudCustomizePeriods.Location = new System.Drawing.Point(167, 778);
             this.nudCustomizePeriods.Maximum = new decimal(new int[] {
             15600,
             0,
@@ -2952,7 +2873,7 @@
             this.label63.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.label63.Enabled = false;
             this.label63.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label63.Location = new System.Drawing.Point(220, 558);
+            this.label63.Location = new System.Drawing.Point(226, 752);
             this.label63.MaximumSize = new System.Drawing.Size(0, 1);
             this.label63.Name = "label63";
             this.label63.Size = new System.Drawing.Size(203, 1);
@@ -2964,7 +2885,7 @@
             this.label64.AutoSize = true;
             this.label64.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label64.ForeColor = System.Drawing.Color.Black;
-            this.label64.Location = new System.Drawing.Point(62, 550);
+            this.label64.Location = new System.Drawing.Point(68, 744);
             this.label64.Name = "label64";
             this.label64.Size = new System.Drawing.Size(152, 17);
             this.label64.TabIndex = 655;
@@ -2977,7 +2898,7 @@
             this.leeLabel10.EnterColor = System.Drawing.Color.OrangeRed;
             this.leeLabel10.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.leeLabel10.ForeColor = System.Drawing.Color.DarkGray;
-            this.leeLabel10.Location = new System.Drawing.Point(256, 507);
+            this.leeLabel10.Location = new System.Drawing.Point(262, 701);
             this.leeLabel10.Name = "leeLabel10";
             this.leeLabel10.Size = new System.Drawing.Size(136, 17);
             this.leeLabel10.TabIndex = 654;
@@ -2991,7 +2912,7 @@
             this.leeLabel9.EnterColor = System.Drawing.Color.OrangeRed;
             this.leeLabel9.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.leeLabel9.ForeColor = System.Drawing.Color.DarkGray;
-            this.leeLabel9.Location = new System.Drawing.Point(256, 471);
+            this.leeLabel9.Location = new System.Drawing.Point(262, 665);
             this.leeLabel9.Name = "leeLabel9";
             this.leeLabel9.Size = new System.Drawing.Size(150, 17);
             this.leeLabel9.TabIndex = 653;
@@ -3005,7 +2926,7 @@
             this.label34.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.label34.Enabled = false;
             this.label34.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label34.Location = new System.Drawing.Point(146, 444);
+            this.label34.Location = new System.Drawing.Point(152, 638);
             this.label34.MaximumSize = new System.Drawing.Size(0, 1);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(273, 1);
@@ -3019,7 +2940,7 @@
             this.label21.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.label21.Enabled = false;
             this.label21.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label21.Location = new System.Drawing.Point(145, 206);
+            this.label21.Location = new System.Drawing.Point(151, 400);
             this.label21.MaximumSize = new System.Drawing.Size(0, 1);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(273, 1);
@@ -3033,7 +2954,7 @@
             this.label13.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.label13.Enabled = false;
             this.label13.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label13.Location = new System.Drawing.Point(140, 34);
+            this.label13.Location = new System.Drawing.Point(146, 228);
             this.label13.MaximumSize = new System.Drawing.Size(0, 1);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(273, 1);
@@ -3043,7 +2964,7 @@
             // nudTwoBonus
             // 
             this.nudTwoBonus.ForeColor = System.Drawing.Color.Black;
-            this.nudTwoBonus.Location = new System.Drawing.Point(136, 505);
+            this.nudTwoBonus.Location = new System.Drawing.Point(142, 699);
             this.nudTwoBonus.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -3068,7 +2989,7 @@
             this.label58.AutoSize = true;
             this.label58.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label58.ForeColor = System.Drawing.Color.Black;
-            this.label58.Location = new System.Drawing.Point(62, 508);
+            this.label58.Location = new System.Drawing.Point(68, 702);
             this.label58.Name = "label58";
             this.label58.Size = new System.Drawing.Size(68, 17);
             this.label58.TabIndex = 648;
@@ -3077,7 +2998,7 @@
             // nudOneBonus
             // 
             this.nudOneBonus.ForeColor = System.Drawing.Color.Black;
-            this.nudOneBonus.Location = new System.Drawing.Point(136, 468);
+            this.nudOneBonus.Location = new System.Drawing.Point(142, 662);
             this.nudOneBonus.Maximum = new decimal(new int[] {
             20000000,
             0,
@@ -3102,7 +3023,7 @@
             this.label57.AutoSize = true;
             this.label57.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label57.ForeColor = System.Drawing.Color.Black;
-            this.label57.Location = new System.Drawing.Point(62, 471);
+            this.label57.Location = new System.Drawing.Point(68, 665);
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(68, 17);
             this.label57.TabIndex = 646;
@@ -3113,7 +3034,7 @@
             this.label56.AutoSize = true;
             this.label56.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label56.ForeColor = System.Drawing.Color.Black;
-            this.label56.Location = new System.Drawing.Point(61, 436);
+            this.label56.Location = new System.Drawing.Point(67, 630);
             this.label56.Name = "label56";
             this.label56.Size = new System.Drawing.Size(80, 17);
             this.label56.TabIndex = 643;
@@ -3121,7 +3042,7 @@
             // 
             // btnSaveSetting
             // 
-            this.btnSaveSetting.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSaveSetting.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSaveSetting.AutoSize = true;
             this.btnSaveSetting.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnSaveSetting.CFlat_Height = 30;
@@ -3132,7 +3053,7 @@
             this.btnSaveSetting.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnSaveSetting.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnSaveSetting.Icon = null;
-            this.btnSaveSetting.Location = new System.Drawing.Point(732, 598);
+            this.btnSaveSetting.Location = new System.Drawing.Point(648, 578);
             this.btnSaveSetting.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnSaveSetting.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnSaveSetting.Name = "btnSaveSetting";
@@ -3146,7 +3067,7 @@
             // 
             // btnRestoreDefault
             // 
-            this.btnRestoreDefault.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRestoreDefault.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRestoreDefault.AutoSize = true;
             this.btnRestoreDefault.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnRestoreDefault.CFlat_Height = 30;
@@ -3157,7 +3078,7 @@
             this.btnRestoreDefault.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnRestoreDefault.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnRestoreDefault.Icon = null;
-            this.btnRestoreDefault.Location = new System.Drawing.Point(633, 598);
+            this.btnRestoreDefault.Location = new System.Drawing.Point(549, 578);
             this.btnRestoreDefault.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnRestoreDefault.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnRestoreDefault.Name = "btnRestoreDefault";
@@ -3183,7 +3104,7 @@
             this.panCustomizeMode.Controls.Add(this.label43);
             this.panCustomizeMode.Controls.Add(this.nudFixedPeriod);
             this.panCustomizeMode.Enabled = false;
-            this.panCustomizeMode.Location = new System.Drawing.Point(62, 261);
+            this.panCustomizeMode.Location = new System.Drawing.Point(68, 455);
             this.panCustomizeMode.Name = "panCustomizeMode";
             this.panCustomizeMode.Size = new System.Drawing.Size(345, 167);
             this.panCustomizeMode.TabIndex = 640;
@@ -3357,7 +3278,7 @@
             this.panel2.Controls.Add(this.rbMonthlyPeriod);
             this.panel2.Controls.Add(this.rbWeeklyPeriod);
             this.panel2.Controls.Add(this.rbEveryPeriod);
-            this.panel2.Location = new System.Drawing.Point(62, 226);
+            this.panel2.Location = new System.Drawing.Point(68, 420);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(345, 31);
             this.panel2.TabIndex = 639;
@@ -3425,7 +3346,7 @@
             this.label40.AutoSize = true;
             this.label40.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label40.ForeColor = System.Drawing.Color.Black;
-            this.label40.Location = new System.Drawing.Point(62, 198);
+            this.label40.Location = new System.Drawing.Point(68, 392);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(80, 17);
             this.label40.TabIndex = 635;
@@ -3436,7 +3357,7 @@
             this.panel1.Controls.Add(this.rbEveryRandom);
             this.panel1.Controls.Add(this.rbAlreadySelect);
             this.panel1.ForeColor = System.Drawing.Color.DimGray;
-            this.panel1.Location = new System.Drawing.Point(62, 86);
+            this.panel1.Location = new System.Drawing.Point(68, 280);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(257, 31);
             this.panel1.TabIndex = 634;
@@ -3476,7 +3397,7 @@
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label33.ForeColor = System.Drawing.Color.Black;
-            this.label33.Location = new System.Drawing.Point(61, 61);
+            this.label33.Location = new System.Drawing.Point(67, 255);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(272, 17);
             this.label33.TabIndex = 633;
@@ -3487,7 +3408,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(60, 26);
+            this.label11.Location = new System.Drawing.Point(66, 220);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(80, 17);
             this.label11.TabIndex = 627;
@@ -3498,7 +3419,7 @@
             this.panEveryRandom.Controls.Add(this.label14);
             this.panEveryRandom.Controls.Add(this.nudRandomBuyZhu);
             this.panEveryRandom.Enabled = false;
-            this.panEveryRandom.Location = new System.Drawing.Point(62, 117);
+            this.panEveryRandom.Location = new System.Drawing.Point(68, 311);
             this.panEveryRandom.Name = "panEveryRandom";
             this.panEveryRandom.Size = new System.Drawing.Size(345, 65);
             this.panEveryRandom.TabIndex = 642;
@@ -3532,69 +3453,37 @@
             0,
             0});
             // 
-            // pictureBox25
+            // lblSkin10
             // 
-            this.pictureBox25.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox25.Enabled = false;
-            this.pictureBox25.Image = global::SuperLotto.Properties.Resources.Loop;
-            this.pictureBox25.Location = new System.Drawing.Point(33, 544);
-            this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(28, 28);
-            this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox25.TabIndex = 656;
-            this.pictureBox25.TabStop = false;
-            this.pictureBox25.Tag = "0";
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox9.Enabled = false;
-            this.pictureBox9.Image = global::SuperLotto.Properties.Resources.LotteryMoney;
-            this.pictureBox9.Location = new System.Drawing.Point(32, 430);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 644;
-            this.pictureBox9.TabStop = false;
-            this.pictureBox9.Tag = "0";
-            // 
-            // pictureBox21
-            // 
-            this.pictureBox21.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox21.Enabled = false;
-            this.pictureBox21.Image = global::SuperLotto.Properties.Resources.buy1;
-            this.pictureBox21.Location = new System.Drawing.Point(33, 193);
-            this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox21.TabIndex = 636;
-            this.pictureBox21.TabStop = false;
-            this.pictureBox21.Tag = "0";
-            // 
-            // pictureBox20
-            // 
-            this.pictureBox20.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox20.Enabled = false;
-            this.pictureBox20.Image = global::SuperLotto.Properties.Resources.Setting;
-            this.pictureBox20.Location = new System.Drawing.Point(29, 19);
-            this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox20.TabIndex = 629;
-            this.pictureBox20.TabStop = false;
-            this.pictureBox20.Tag = "0";
+            this.lblSkin10.BackColor = System.Drawing.Color.Gainsboro;
+            this.lblSkin10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblSkin10.EnterColor = System.Drawing.Color.Black;
+            this.lblSkin10.EnterFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSkin10.Fillet = false;
+            this.lblSkin10.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblSkin10.ForeColor = System.Drawing.Color.Black;
+            this.lblSkin10.Location = new System.Drawing.Point(292, 131);
+            this.lblSkin10.MouseEnterEffect = true;
+            this.lblSkin10.Name = "lblSkin10";
+            this.lblSkin10.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblSkin10.ShadowWidth = 8;
+            this.lblSkin10.Size = new System.Drawing.Size(44, 45);
+            this.lblSkin10.TabIndex = 672;
+            this.lblSkin10.Click += new System.EventHandler(this.lblSkin1_Click);
             // 
             // ErrorLog
             // 
             this.ErrorLog.BackColor = System.Drawing.Color.White;
             this.ErrorLog.Location = new System.Drawing.Point(4, 26);
             this.ErrorLog.Name = "ErrorLog";
-            this.ErrorLog.Size = new System.Drawing.Size(832, 638);
+            this.ErrorLog.Size = new System.Drawing.Size(832, 633);
             this.ErrorLog.TabIndex = 9;
             this.ErrorLog.Text = "崩溃日志";
             // 
             // updateInfo
             // 
+            this.updateInfo.AutoScroll = true;
+            this.updateInfo.AutoScrollMargin = new System.Drawing.Size(0, 100);
             this.updateInfo.BackColor = System.Drawing.Color.White;
             this.updateInfo.Controls.Add(this.pictureBox6);
             this.updateInfo.Controls.Add(this.label86);
@@ -3602,23 +3491,9 @@
             this.updateInfo.Location = new System.Drawing.Point(4, 26);
             this.updateInfo.Name = "updateInfo";
             this.updateInfo.Padding = new System.Windows.Forms.Padding(3);
-            this.updateInfo.Size = new System.Drawing.Size(832, 638);
+            this.updateInfo.Size = new System.Drawing.Size(832, 633);
             this.updateInfo.TabIndex = 8;
             this.updateInfo.Text = "更新日志";
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.BackgroundImage = global::SuperLotto.Properties.Resources.upage_data;
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox6.Location = new System.Drawing.Point(25, 25);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 598;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Tag = "1";
             // 
             // label86
             // 
@@ -3669,21 +3544,6 @@
             this.leeLabel3.Size = new System.Drawing.Size(198, 28);
             this.leeLabel3.TabIndex = 595;
             this.leeLabel3.Text = "该功能正在开发中...";
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.pictureBox12.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox12.Image = global::SuperLotto.Properties.Resources.Kaifa;
-            this.pictureBox12.Location = new System.Drawing.Point(266, 100);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox12.TabIndex = 596;
-            this.pictureBox12.TabStop = false;
-            this.pictureBox12.Tag = "1";
             // 
             // btnResetData
             // 
@@ -6205,10 +6065,14 @@
             this.extendLabel10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.extendLabel10.EnterColor = System.Drawing.Color.Black;
             this.extendLabel10.EnterFont = new System.Drawing.Font("微软雅黑", 7.5F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.extendLabel10.Fillet = false;
             this.extendLabel10.Font = new System.Drawing.Font("微软雅黑", 7.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.extendLabel10.ForeColor = System.Drawing.Color.Gray;
-            this.extendLabel10.Location = new System.Drawing.Point(30, 17);
+            this.extendLabel10.Location = new System.Drawing.Point(31, 19);
+            this.extendLabel10.MouseEnterEffect = false;
             this.extendLabel10.Name = "extendLabel10";
+            this.extendLabel10.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.extendLabel10.ShadowWidth = 8;
             this.extendLabel10.Size = new System.Drawing.Size(131, 15);
             this.extendLabel10.TabIndex = 627;
             this.extendLabel10.Text = "CHINA SPORTS LOTTERY";
@@ -6219,26 +6083,17 @@
             this.extendLabel4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.extendLabel4.EnterColor = System.Drawing.Color.Black;
             this.extendLabel4.EnterFont = new System.Drawing.Font("微软雅黑", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.extendLabel4.Fillet = false;
             this.extendLabel4.Font = new System.Drawing.Font("微软雅黑", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.extendLabel4.ForeColor = System.Drawing.Color.Gray;
-            this.extendLabel4.Location = new System.Drawing.Point(30, 2);
+            this.extendLabel4.Location = new System.Drawing.Point(31, 4);
+            this.extendLabel4.MouseEnterEffect = false;
             this.extendLabel4.Name = "extendLabel4";
+            this.extendLabel4.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.extendLabel4.ShadowWidth = 8;
             this.extendLabel4.Size = new System.Drawing.Size(73, 16);
             this.extendLabel4.TabIndex = 626;
             this.extendLabel4.Text = "中国体育彩票";
-            // 
-            // pictureBox19
-            // 
-            this.pictureBox19.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox19.Enabled = false;
-            this.pictureBox19.Image = global::SuperLotto.Properties.Resources.logo;
-            this.pictureBox19.Location = new System.Drawing.Point(3, 4);
-            this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox19.TabIndex = 622;
-            this.pictureBox19.TabStop = false;
-            this.pictureBox19.Tag = "0";
             // 
             // lblMin
             // 
@@ -6294,53 +6149,11 @@
             this.lblTitle.Enabled = false;
             this.lblTitle.Font = new System.Drawing.Font("微软雅黑", 8.25F);
             this.lblTitle.ForeColor = System.Drawing.Color.Gray;
-            this.lblTitle.Location = new System.Drawing.Point(163, 17);
+            this.lblTitle.Location = new System.Drawing.Point(163, 19);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(207, 16);
             this.lblTitle.TabIndex = 621;
             this.lblTitle.Text = "超级大乐透概率可视化模拟软件  V1.0.0.6";
-            // 
-            // pictureBox18
-            // 
-            this.pictureBox18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox18.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox18.Enabled = false;
-            this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
-            this.pictureBox18.Location = new System.Drawing.Point(851, 233);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox18.TabIndex = 610;
-            this.pictureBox18.TabStop = false;
-            this.pictureBox18.Tag = "0";
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Enabled = false;
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(851, 4);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 563;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Tag = "0";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Enabled = false;
-            this.pictureBox4.Image = global::SuperLotto.Properties.Resources.stop1;
-            this.pictureBox4.Location = new System.Drawing.Point(851, 418);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 561;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Tag = "0";
             // 
             // panBody
             // 
@@ -6403,6 +6216,529 @@
             this.panBody.Size = new System.Drawing.Size(1155, 802);
             this.panBody.TabIndex = 635;
             // 
+            // pictureBox18
+            // 
+            this.pictureBox18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox18.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox18.Enabled = false;
+            this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
+            this.pictureBox18.Location = new System.Drawing.Point(851, 233);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox18.TabIndex = 610;
+            this.pictureBox18.TabStop = false;
+            this.pictureBox18.Tag = "0";
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox8.Enabled = false;
+            this.pictureBox8.Image = global::SuperLotto.Properties.Resources.OrderBy;
+            this.pictureBox8.Location = new System.Drawing.Point(2, 3);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(25, 24);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 598;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.Tag = "0";
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox13.Enabled = false;
+            this.pictureBox13.Image = global::SuperLotto.Properties.Resources.filter;
+            this.pictureBox13.Location = new System.Drawing.Point(1, 4);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(23, 23);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox13.TabIndex = 605;
+            this.pictureBox13.TabStop = false;
+            this.pictureBox13.Tag = "0";
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox17.Enabled = false;
+            this.pictureBox17.Image = global::SuperLotto.Properties.Resources.lblaxe;
+            this.pictureBox17.Location = new System.Drawing.Point(7, 5);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(23, 21);
+            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox17.TabIndex = 598;
+            this.pictureBox17.TabStop = false;
+            this.pictureBox17.Tag = "0";
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox16.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox16.Enabled = false;
+            this.pictureBox16.Image = global::SuperLotto.Properties.Resources.LotteryMoney;
+            this.pictureBox16.Location = new System.Drawing.Point(396, 33);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(21, 19);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox16.TabIndex = 603;
+            this.pictureBox16.TabStop = false;
+            this.pictureBox16.Tag = "0";
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox15.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox15.Enabled = false;
+            this.pictureBox15.Image = global::SuperLotto.Properties.Resources.OrderBy;
+            this.pictureBox15.Location = new System.Drawing.Point(393, 6);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(25, 24);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox15.TabIndex = 601;
+            this.pictureBox15.TabStop = false;
+            this.pictureBox15.Tag = "0";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox7.Enabled = false;
+            this.pictureBox7.Image = global::SuperLotto.Properties.Resources.MyInfo;
+            this.pictureBox7.Location = new System.Drawing.Point(10, 63);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(25, 24);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 590;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Tag = "0";
+            // 
+            // picMenuWork
+            // 
+            this.picMenuWork.BackColor = System.Drawing.Color.Transparent;
+            this.picMenuWork.Enabled = false;
+            this.picMenuWork.Image = global::SuperLotto.Properties.Resources.Work;
+            this.picMenuWork.Location = new System.Drawing.Point(22, 16);
+            this.picMenuWork.Name = "picMenuWork";
+            this.picMenuWork.Size = new System.Drawing.Size(32, 27);
+            this.picMenuWork.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picMenuWork.TabIndex = 421;
+            this.picMenuWork.TabStop = false;
+            this.picMenuWork.Tag = "0";
+            // 
+            // pictureBox22
+            // 
+            this.pictureBox22.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox22.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox22.Enabled = false;
+            this.pictureBox22.Image = global::SuperLotto.Properties.Resources.LotteryMoney;
+            this.pictureBox22.Location = new System.Drawing.Point(370, 33);
+            this.pictureBox22.Name = "pictureBox22";
+            this.pictureBox22.Size = new System.Drawing.Size(21, 19);
+            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox22.TabIndex = 700;
+            this.pictureBox22.TabStop = false;
+            this.pictureBox22.Tag = "0";
+            // 
+            // pictureBox23
+            // 
+            this.pictureBox23.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox23.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox23.Enabled = false;
+            this.pictureBox23.Image = global::SuperLotto.Properties.Resources.OrderBy;
+            this.pictureBox23.Location = new System.Drawing.Point(367, 6);
+            this.pictureBox23.Name = "pictureBox23";
+            this.pictureBox23.Size = new System.Drawing.Size(25, 24);
+            this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox23.TabIndex = 699;
+            this.pictureBox23.TabStop = false;
+            this.pictureBox23.Tag = "0";
+            // 
+            // picComplexAccomplish
+            // 
+            this.picComplexAccomplish.BackColor = System.Drawing.Color.Transparent;
+            this.picComplexAccomplish.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picComplexAccomplish.Image = global::SuperLotto.Properties.Resources.Accomplish;
+            this.picComplexAccomplish.Location = new System.Drawing.Point(78, 7);
+            this.picComplexAccomplish.Name = "picComplexAccomplish";
+            this.picComplexAccomplish.Size = new System.Drawing.Size(18, 18);
+            this.picComplexAccomplish.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picComplexAccomplish.TabIndex = 694;
+            this.picComplexAccomplish.TabStop = false;
+            this.picComplexAccomplish.Tag = "0";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Enabled = false;
+            this.pictureBox1.Image = global::SuperLotto.Properties.Resources.lblaxe;
+            this.pictureBox1.Location = new System.Drawing.Point(7, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(23, 21);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 598;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Tag = "0";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Enabled = false;
+            this.pictureBox3.Image = global::SuperLotto.Properties.Resources.scheme;
+            this.pictureBox3.Location = new System.Drawing.Point(23, 18);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(23, 23);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 525;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Tag = "0";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Enabled = false;
+            this.pictureBox2.Image = global::SuperLotto.Properties.Resources.MyInfo;
+            this.pictureBox2.Location = new System.Drawing.Point(10, 63);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(25, 24);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 519;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Tag = "0";
+            // 
+            // picScheme
+            // 
+            this.picScheme.BackColor = System.Drawing.Color.Transparent;
+            this.picScheme.Enabled = false;
+            this.picScheme.Image = global::SuperLotto.Properties.Resources.Statistical3;
+            this.picScheme.Location = new System.Drawing.Point(158, 20);
+            this.picScheme.Name = "picScheme";
+            this.picScheme.Size = new System.Drawing.Size(20, 18);
+            this.picScheme.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picScheme.TabIndex = 422;
+            this.picScheme.TabStop = false;
+            this.picScheme.Tag = "0";
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox10.Enabled = false;
+            this.pictureBox10.Image = global::SuperLotto.Properties.Resources.LotteryMoney;
+            this.pictureBox10.Location = new System.Drawing.Point(370, 33);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(21, 19);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 731;
+            this.pictureBox10.TabStop = false;
+            this.pictureBox10.Tag = "0";
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox11.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox11.Enabled = false;
+            this.pictureBox11.Image = global::SuperLotto.Properties.Resources.OrderBy;
+            this.pictureBox11.Location = new System.Drawing.Point(367, 6);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(25, 24);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 730;
+            this.pictureBox11.TabStop = false;
+            this.pictureBox11.Tag = "0";
+            // 
+            // picDantuoAccomplish
+            // 
+            this.picDantuoAccomplish.BackColor = System.Drawing.Color.Transparent;
+            this.picDantuoAccomplish.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picDantuoAccomplish.Image = global::SuperLotto.Properties.Resources.Accomplish;
+            this.picDantuoAccomplish.Location = new System.Drawing.Point(120, 6);
+            this.picDantuoAccomplish.Name = "picDantuoAccomplish";
+            this.picDantuoAccomplish.Size = new System.Drawing.Size(18, 18);
+            this.picDantuoAccomplish.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picDantuoAccomplish.TabIndex = 704;
+            this.picDantuoAccomplish.TabStop = false;
+            this.picDantuoAccomplish.Tag = "0";
+            // 
+            // pictureBox27
+            // 
+            this.pictureBox27.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox27.Enabled = false;
+            this.pictureBox27.Image = global::SuperLotto.Properties.Resources.lblaxe;
+            this.pictureBox27.Location = new System.Drawing.Point(7, 5);
+            this.pictureBox27.Name = "pictureBox27";
+            this.pictureBox27.Size = new System.Drawing.Size(23, 21);
+            this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox27.TabIndex = 598;
+            this.pictureBox27.TabStop = false;
+            this.pictureBox27.Tag = "0";
+            // 
+            // picDantuoBlue
+            // 
+            this.picDantuoBlue.BackColor = System.Drawing.Color.Transparent;
+            this.picDantuoBlue.Enabled = false;
+            this.picDantuoBlue.Image = global::SuperLotto.Properties.Resources.BlueBalls;
+            this.picDantuoBlue.Location = new System.Drawing.Point(150, 34);
+            this.picDantuoBlue.Name = "picDantuoBlue";
+            this.picDantuoBlue.Size = new System.Drawing.Size(18, 18);
+            this.picDantuoBlue.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picDantuoBlue.TabIndex = 721;
+            this.picDantuoBlue.TabStop = false;
+            this.picDantuoBlue.Tag = "0";
+            // 
+            // pictureBox24
+            // 
+            this.pictureBox24.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox24.Enabled = false;
+            this.pictureBox24.Image = global::SuperLotto.Properties.Resources.scheme;
+            this.pictureBox24.Location = new System.Drawing.Point(19, 18);
+            this.pictureBox24.Name = "pictureBox24";
+            this.pictureBox24.Size = new System.Drawing.Size(21, 21);
+            this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox24.TabIndex = 705;
+            this.pictureBox24.TabStop = false;
+            this.pictureBox24.Tag = "0";
+            // 
+            // picDantuoRed
+            // 
+            this.picDantuoRed.BackColor = System.Drawing.Color.Transparent;
+            this.picDantuoRed.Enabled = false;
+            this.picDantuoRed.Image = global::SuperLotto.Properties.Resources.RedMess;
+            this.picDantuoRed.Location = new System.Drawing.Point(150, 9);
+            this.picDantuoRed.Name = "picDantuoRed";
+            this.picDantuoRed.Size = new System.Drawing.Size(18, 18);
+            this.picDantuoRed.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picDantuoRed.TabIndex = 698;
+            this.picDantuoRed.TabStop = false;
+            this.picDantuoRed.Tag = "0";
+            // 
+            // pictureBox26
+            // 
+            this.pictureBox26.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox26.Enabled = false;
+            this.pictureBox26.Image = global::SuperLotto.Properties.Resources.MyInfo;
+            this.pictureBox26.Location = new System.Drawing.Point(10, 63);
+            this.pictureBox26.Name = "pictureBox26";
+            this.pictureBox26.Size = new System.Drawing.Size(25, 24);
+            this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox26.TabIndex = 718;
+            this.pictureBox26.TabStop = false;
+            this.pictureBox26.Tag = "0";
+            // 
+            // picUseIt
+            // 
+            this.picUseIt.BackColor = System.Drawing.Color.Transparent;
+            this.picUseIt.Enabled = false;
+            this.picUseIt.Image = global::SuperLotto.Properties.Resources.use_skin;
+            this.picUseIt.Location = new System.Drawing.Point(0, 0);
+            this.picUseIt.Name = "picUseIt";
+            this.picUseIt.Size = new System.Drawing.Size(44, 45);
+            this.picUseIt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picUseIt.TabIndex = 675;
+            this.picUseIt.TabStop = false;
+            this.picUseIt.Tag = "0";
+            this.picUseIt.Visible = false;
+            // 
+            // pictureBox31
+            // 
+            this.pictureBox31.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox31.Enabled = false;
+            this.pictureBox31.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox31.Image")));
+            this.pictureBox31.Location = new System.Drawing.Point(36, 31);
+            this.pictureBox31.Name = "pictureBox31";
+            this.pictureBox31.Size = new System.Drawing.Size(25, 23);
+            this.pictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox31.TabIndex = 662;
+            this.pictureBox31.TabStop = false;
+            this.pictureBox31.Tag = "0";
+            // 
+            // pictureBox25
+            // 
+            this.pictureBox25.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox25.Enabled = false;
+            this.pictureBox25.Image = global::SuperLotto.Properties.Resources.Loop;
+            this.pictureBox25.Location = new System.Drawing.Point(39, 738);
+            this.pictureBox25.Name = "pictureBox25";
+            this.pictureBox25.Size = new System.Drawing.Size(28, 28);
+            this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox25.TabIndex = 656;
+            this.pictureBox25.TabStop = false;
+            this.pictureBox25.Tag = "0";
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox9.Enabled = false;
+            this.pictureBox9.Image = global::SuperLotto.Properties.Resources.LotteryMoney;
+            this.pictureBox9.Location = new System.Drawing.Point(38, 624);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 644;
+            this.pictureBox9.TabStop = false;
+            this.pictureBox9.Tag = "0";
+            // 
+            // pictureBox21
+            // 
+            this.pictureBox21.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox21.Enabled = false;
+            this.pictureBox21.Image = global::SuperLotto.Properties.Resources.buy1;
+            this.pictureBox21.Location = new System.Drawing.Point(39, 387);
+            this.pictureBox21.Name = "pictureBox21";
+            this.pictureBox21.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox21.TabIndex = 636;
+            this.pictureBox21.TabStop = false;
+            this.pictureBox21.Tag = "0";
+            // 
+            // pictureBox20
+            // 
+            this.pictureBox20.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox20.Enabled = false;
+            this.pictureBox20.Image = global::SuperLotto.Properties.Resources.Setting;
+            this.pictureBox20.Location = new System.Drawing.Point(35, 213);
+            this.pictureBox20.Name = "pictureBox20";
+            this.pictureBox20.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox20.TabIndex = 629;
+            this.pictureBox20.TabStop = false;
+            this.pictureBox20.Tag = "0";
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.BackgroundImage = global::SuperLotto.Properties.Resources.upage_data;
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox6.Location = new System.Drawing.Point(25, 25);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 598;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Tag = "1";
+            // 
+            // pictureBox30
+            // 
+            this.pictureBox30.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox30.Enabled = false;
+            this.pictureBox30.Image = global::SuperLotto.Properties.Resources.email002;
+            this.pictureBox30.Location = new System.Drawing.Point(382, 501);
+            this.pictureBox30.Name = "pictureBox30";
+            this.pictureBox30.Size = new System.Drawing.Size(25, 23);
+            this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox30.TabIndex = 620;
+            this.pictureBox30.TabStop = false;
+            this.pictureBox30.Tag = "0";
+            // 
+            // pictureBox29
+            // 
+            this.pictureBox29.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox29.BackgroundImage = global::SuperLotto.Properties.Resources.bilibili;
+            this.pictureBox29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox29.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox29.Location = new System.Drawing.Point(31, 400);
+            this.pictureBox29.Name = "pictureBox29";
+            this.pictureBox29.Size = new System.Drawing.Size(94, 46);
+            this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox29.TabIndex = 615;
+            this.pictureBox29.TabStop = false;
+            this.pictureBox29.Tag = "1";
+            // 
+            // pictureBox28
+            // 
+            this.pictureBox28.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox28.BackgroundImage = global::SuperLotto.Properties.Resources.github_ico;
+            this.pictureBox28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox28.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox28.Location = new System.Drawing.Point(33, 282);
+            this.pictureBox28.Name = "pictureBox28";
+            this.pictureBox28.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox28.TabIndex = 611;
+            this.pictureBox28.TabStop = false;
+            this.pictureBox28.Tag = "1";
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox14.Enabled = false;
+            this.pictureBox14.Image = global::SuperLotto.Properties.Resources.VeChat_ico;
+            this.pictureBox14.Location = new System.Drawing.Point(232, 501);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox14.TabIndex = 591;
+            this.pictureBox14.TabStop = false;
+            this.pictureBox14.Tag = "0";
+            // 
+            // picHand
+            // 
+            this.picHand.BackColor = System.Drawing.Color.Transparent;
+            this.picHand.BackgroundImage = global::SuperLotto.Properties.Resources.author;
+            this.picHand.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picHand.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picHand.Location = new System.Drawing.Point(33, 475);
+            this.picHand.Name = "picHand";
+            this.picHand.Size = new System.Drawing.Size(50, 50);
+            this.picHand.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picHand.TabIndex = 243;
+            this.picHand.TabStop = false;
+            this.picHand.Tag = "1";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.Enabled = false;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(851, 4);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 563;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Tag = "0";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.Enabled = false;
+            this.pictureBox4.Image = global::SuperLotto.Properties.Resources.stop1;
+            this.pictureBox4.Location = new System.Drawing.Point(851, 418);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 561;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Tag = "0";
+            // 
+            // pictureBox19
+            // 
+            this.pictureBox19.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox19.Enabled = false;
+            this.pictureBox19.Image = global::SuperLotto.Properties.Resources.logo;
+            this.pictureBox19.Location = new System.Drawing.Point(4, 6);
+            this.pictureBox19.Name = "pictureBox19";
+            this.pictureBox19.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox19.TabIndex = 622;
+            this.pictureBox19.TabStop = false;
+            this.pictureBox19.Tag = "0";
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.pictureBox12.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox12.Image = global::SuperLotto.Properties.Resources.Kaifa;
+            this.pictureBox12.Location = new System.Drawing.Point(266, 100);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox12.TabIndex = 596;
+            this.pictureBox12.TabStop = false;
+            this.pictureBox12.Tag = "1";
+            // 
             // SuperLottoView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -6423,63 +6759,36 @@
             this.Resize += new System.EventHandler(this.SuperLottoView_Resize);
             this.DanTuoPage.ResumeLayout(false);
             this.DanTuoPage.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.panDantuoStyle.ResumeLayout(false);
             this.panDantuoStyle.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picDantuoAccomplish)).EndInit();
             this.panDantuoStatistics.ResumeLayout(false);
             this.panDantuoStatistics.PerformLayout();
             this.panStatisticsDantuo.ResumeLayout(false);
             this.panStatisticsDantuo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picDantuoBlue)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picDantuoRed)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
             this.ExplainPage.ResumeLayout(false);
             this.AboutMePage.ResumeLayout(false);
             this.AboutMePage.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picHand)).EndInit();
             this.CardInterface.ResumeLayout(false);
             this.RandomPage.ResumeLayout(false);
             this.RandomPage.PerformLayout();
             this.panOrderRandom.ResumeLayout(false);
             this.panOrderRandom.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.panRandomStyle.ResumeLayout(false);
             this.panRandomStyle.PerformLayout();
             this.panRandomFilter.ResumeLayout(false);
             this.panRandomFilter.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             this.panRandomStatistics.ResumeLayout(false);
             this.panRandomStatistics.PerformLayout();
             this.panStatisticsRandom.ResumeLayout(false);
             this.panStatisticsRandom.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picMenuWork)).EndInit();
             this.OneselfPage.ResumeLayout(false);
             this.OneselfPage.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
             this.panComplexStyle.ResumeLayout(false);
             this.panComplexStyle.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picComplexAccomplish)).EndInit();
             this.panComplexStatistics.ResumeLayout(false);
             this.panComplexStatistics.PerformLayout();
             this.panStatisticsComplex.ResumeLayout(false);
             this.panStatisticsComplex.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picScheme)).EndInit();
             this.SettingPage.ResumeLayout(false);
             this.SettingPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudCustomizePeriods)).EndInit();
@@ -6497,16 +6806,10 @@
             this.panEveryRandom.ResumeLayout(false);
             this.panEveryRandom.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudRandomBuyZhu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
             this.updateInfo.ResumeLayout(false);
             this.updateInfo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.HistoryPage.ResumeLayout(false);
             this.HistoryPage.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.panKeepDataView.ResumeLayout(false);
             this.panKeepDataView.PerformLayout();
             this.panLoopYear.ResumeLayout(false);
@@ -6517,12 +6820,47 @@
             this.panLotteryRules.PerformLayout();
             this.panTop.ResumeLayout(false);
             this.panTop.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panBody.ResumeLayout(false);
             this.panBody.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMenuWork)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picComplexAccomplish)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picScheme)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDantuoAccomplish)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDantuoBlue)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDantuoRed)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picUseIt)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHand)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -6925,6 +7263,21 @@
         private Controls.ExtendLabel extendLabel4;
         private Controls.ExtendLabel extendLabel10;
         private System.Windows.Forms.Panel panBody;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.PictureBox pictureBox31;
+        private Controls.ExtendLabel lblSkin1;
+        private Controls.ExtendLabel lblSkin10;
+        private Controls.ExtendLabel lblSkin9;
+        private Controls.ExtendLabel lblSkin8;
+        private Controls.ExtendLabel lblSkin7;
+        private Controls.ExtendLabel lblSkin6;
+        private Controls.ExtendLabel lblSkin5;
+        private Controls.ExtendLabel lblSkin4;
+        private Controls.ExtendLabel lblSkin3;
+        private Controls.ExtendLabel lblSkin2;
+        private System.Windows.Forms.Label label87;
+        private Controls.ExtendLabel lblDefaultSkin;
+        private System.Windows.Forms.PictureBox picUseIt;
     }
 }
 

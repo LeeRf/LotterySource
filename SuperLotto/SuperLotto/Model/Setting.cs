@@ -76,7 +76,6 @@ namespace SuperLotto.Model
         /// 不固定期数结束
         /// </summary>
         public int UncertaintyEndPeriod { get; set; } = 5;
-
         /// <summary>
         /// 循环摇奖停止条件
         /// </summary>
@@ -97,6 +96,10 @@ namespace SuperLotto.Model
         /// 循环守号和随机守号的期数
         /// </summary>
         public int CustomizePeriods { get; set; } = 156;
+        /// <summary>
+        /// 背景颜色
+        /// </summary>
+        public int BackColorArgb { get; set; } = -1;
         /// <summary>
         /// 是否同意软件免责声明
         /// </summary>
