@@ -97,6 +97,10 @@ namespace SuperLotto.Model
         /// 循环守号和随机守号的期数
         /// </summary>
         public int CustomizePeriods { get; set; } = 156;
+        /// <summary>
+        /// 是否同意软件免责声明
+        /// </summary>
+        public bool AgreeDeclaration { get; set; } = false;
 
         /// <summary>
         /// 保存程序设置

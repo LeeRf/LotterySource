@@ -59,8 +59,30 @@ namespace SuperLotto
 
         public event RefreshResizeEventHandler RefreshResize;
         public event RefreshMoveLocationEventHandler RefreshMoveLocation;
+        public event ExitLoopWaitEventHandler ExitLoopWaitEvent;
 
-        public SuperLottoView() { InitializeComponent(); }
+        public SuperLottoView() 
+        {
+            #region Do you agree to the declaration
+
+            Config.Setting = Setting.LoadSetting();
+
+            if (Config.Setting.AgreeDeclaration is false)
+            {
+                DialogResult yesNo = MessageBox.Show(Info.AgreeDeclarationContent, Info.AgreeDeclarationTitle, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (yesNo == DialogResult.No) this.Close();
+                else
+                {
+                    Config.Setting.AgreeDeclaration = true;
+                    Config.Setting.SaveSetting();
+                }
+            }
+
+            #endregion
+
+            InitializeComponent();
+        }
 
         private void SuperLotto_Load(object sender, EventArgs e)
         {
@@ -69,9 +91,8 @@ namespace SuperLotto
             WinSize = true;
 
             for (int i = 1; i < 100; i++)
-            {
                 cmbMultiple.Items.Add(FormatNumber(i.ToString(), 3));
-            }
+
 
             cmbCPattern.SelectedIndex = 0;
             cmbRedComplexCount.SelectedIndex = 0;
@@ -91,10 +112,13 @@ namespace SuperLotto
             _redBallLabelStyles[4] = lblRedBallE;
             _redBallLabelStyles[5] = lblBlueBallA;
 
-            LoadSettingApply();
             #endregion
 
             #region Initialize the new instance
+            
+            LoadSettingApply();
+
+            ExitLoopWaitEvent += ExitThatLoop;
 
             _superLottoToo = new SuperLottoTool();
             _publicSuperLottoToo = new SimplexSuperLottoNumber();
@@ -394,7 +418,7 @@ namespace SuperLotto
         private void LoopDataPreparationAndSettingFlag(long loopCount)
         {
             ResetLoopRunLotteryData();
-            LoadingHelper.ShowLoading(Info.LoopRunLotteryIng, Color.White, this, o =>
+            LoadingHelper.ShowLoading(Info.LoopRunLotteryIng, Color.White, ExitLoopWaitEvent, this, o =>
             {
                 _loopRunLotterysFlag = 0;
                 _loopRunLotteryCount = 0;
@@ -414,11 +438,11 @@ namespace SuperLotto
                 {
                     if (_loopRunLotterysFlag != -1 && _loopRunLotteryCount < _loopRunLotteryTotalCount)
                     {
-                        Thread.Sleep(100);
+                        Thread.Sleep(10);
                     }
                     else
                     {
-                        Thread.Sleep(100);
+                        Thread.Sleep(10);
                         break;
                     }
                 }
@@ -448,15 +472,22 @@ namespace SuperLotto
         private long _loopRunLotteryTotalCount = 0;
 
         /// <summary>
+        /// 退出循环方法事件
+        /// </summary>
+        private void ExitThatLoop()
+        {
+            _loopRunLotterysFlag = -1;
+            LoopRunLotterysTimer.Stop();
+        }
+
+        /// <summary>
         /// 循环五年十年摇奖定时器
         /// </summary>
         private void LoopRunLotterys_Tick(object sender, EventArgs e)
         {
             if (_loopRunLotterysFlag == 1 || _loopRunLotteryCount >= _loopRunLotteryTotalCount)
             {
-                //恢复默认状态
-                _loopRunLotterysFlag = -1;
-                LoopRunLotterysTimer.Stop();
+                this.ExitThatLoop();
             }
             else
             {
@@ -1459,7 +1490,6 @@ namespace SuperLotto
                 LoadingHelper.ShowLoading(Info.RefreshData, Color.White, this, o =>
                 {
                     Thread.Sleep(350);
-
                     _orderBySuperLottoDelegate = new RefreshOrderBySuperLottoDelegate(OrderBySuperLottoAndShow);
                     Invoke(_orderBySuperLottoDelegate, sender);
                 });
@@ -4330,7 +4360,7 @@ namespace SuperLotto
         /// </summary>
         private void LoadSettingApply()
         {
-            Setting setting = Setting.LoadSetting();
+            Setting setting = Config.Setting;
 
             cmbStopCondition.SelectedIndex = setting.LoopStopCondition;
             cmbMultiple.SelectedIndex = setting.ZhuMultiple;
@@ -4517,6 +4547,7 @@ namespace SuperLotto
 
             setting.LoopStopCondition = cmbStopCondition.SelectedIndex;
             setting.ZhuMultiple = cmbMultiple.SelectedIndex;
+            setting.AgreeDeclaration = true;
 
             Config.Setting = setting;
 

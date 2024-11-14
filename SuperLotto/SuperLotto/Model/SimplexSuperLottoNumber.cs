@@ -146,7 +146,7 @@ namespace SuperLotto.Model
         /// <param name="awardType"></param>
         public override void CopyLeftToRightBy(SimplexSuperLottoNumber sdbn, AwardType awardType)
         {
-            base.CopyLeftToRightDataOfMaxAward(sdbn);
+            this.CopyLeftToRightDataOfMaxAward(sdbn);
         }
     }
 }
