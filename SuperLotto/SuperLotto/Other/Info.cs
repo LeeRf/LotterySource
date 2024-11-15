@@ -15,6 +15,10 @@ namespace SuperLotto.Other
         /// </summary>
         public static readonly string Multiple = "倍";
         /// <summary>
+        /// SuperLotto
+        /// </summary>
+        public static readonly string SuperLotto = "SuperLotto";
+        /// <summary>
         /// 数据更新中
         /// </summary>
         public static readonly string RefreshData = "数据更新中";
@@ -160,6 +164,22 @@ namespace SuperLotto.Other
         public static readonly string AgreeDeclarationContent = "本软件的初衷是一款能够直观展示大乐透客观概率的可视化模拟软件，功能只展示大乐透的模拟摇奖和数据统计功能，" +
             "不包含任何选号技巧和开奖分析。另外本软件生成的所有数据均为计算机虚拟生成数据，实际情况以现实开奖结果为准，" +
             "切勿将本软件的数据用于实际购彩当中，如果不按声明造成了现实中的财产损失、本人一概不负任何责任。是否同意该份声明？";
+        /// <summary>
+        /// 将要清空所有异常日志
+        /// </summary>
+        public static readonly string ClearExceptionLog = "将要清空所有异常日志？";
+        /// <summary>
+        /// 选择要保存的位置
+        /// </summary>
+        public static readonly string SaveLocation = "选要保存的位置";
+        /// <summary>
+        /// 至少选择一行数据
+        /// </summary>
+        public static readonly string SelectRow = "至少选择一行数据";
+        /// <summary>
+        /// {0}条异常信息导出成功.
+        /// </summary>
+        public static readonly string ExprotLogCount = "{0}条异常信息导出成功.";
 
         /// <summary>
         /// 获取循环开奖消息提示

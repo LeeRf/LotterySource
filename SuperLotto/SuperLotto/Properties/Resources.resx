@@ -124,11 +124,17 @@
   <data name="Work" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Work.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="refresh3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\refresh3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="RedMess" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RedMess.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="stop1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\stop1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MyInfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MyInfo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bilibili" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bilibili.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -150,6 +156,9 @@
   </data>
   <data name="Setting" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Setting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="email002" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\email002.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -174,9 +183,6 @@
   </data>
   <data name="Buy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Buy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="rounded_corners4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rounded_corners4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Lotterys" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Lotterys.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,17 +214,14 @@
   <data name="SuperLotto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SuperLotto3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ShaLou" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ShaLou.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="regret" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\regret.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="VeChat-ico" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\VeChat-ico.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="email002" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\email002.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="TiCai" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TiCai.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Statistical2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Statistical2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -235,8 +238,8 @@
   <data name="Loop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Loop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MyInfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MyInfo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ShaLou" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ShaLou.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="filter" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\filter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -253,6 +256,9 @@
   <data name="LotteryMoney" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LotteryMoney.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="error-log" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\error-log.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="github-ico" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\github-ico.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -268,13 +274,16 @@
   <data name="CarInfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CarInfo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TiCai" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TiCai.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="historys" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\historys.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="use_skin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\use_skin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rounded_corners4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rounded_corners4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clear02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clear02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

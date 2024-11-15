@@ -45,9 +45,17 @@ namespace SuperLotto.Model
         private const int TWOMINAWARD = 100000;
 
         /// <summary>
+        /// 配置文件目录
+        /// </summary>
+        public static string ConfigDirectory => @"config";
+        /// <summary>
+        /// 运行日志
+        /// </summary>
+        public static string RunningLog => ConfigDirectory + @"\running.log";
+        /// <summary>
         /// 配置文件路径和名称
         /// </summary>
-        private static string SettingFilePath = Application.StartupPath + @"\Setting.ini";
+        private static string SettingFilePath = Application.StartupPath + @"\" + ConfigDirectory + @"\setting.ini";
         /// <summary>
         /// 产生摇奖号码时、比对中奖信息按照
         /// </summary>
@@ -111,6 +119,7 @@ namespace SuperLotto.Model
         /// <returns></returns>
         public bool SaveSetting()
         {
+            Directory.CreateDirectory(ConfigDirectory);
             return IniHelper.SaveOrUpdateIniData(this, SettingFilePath);
         }
 

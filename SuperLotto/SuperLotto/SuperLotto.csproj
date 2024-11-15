@@ -53,6 +53,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Other\DLL\MaterialSkin.dll</HintPath>
     </Reference>
+    <Reference Include="SQLite-net">
+      <HintPath>Other\DLL\SQLite-net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -73,6 +76,9 @@
     <Compile Include="Data\IniHelper.cs">
       <CustomToolNamespace>SuperLotto.Data</CustomToolNamespace>
     </Compile>
+    <Compile Include="Data\Logger.cs" />
+    <Compile Include="Data\SQL.cs" />
+    <Compile Include="Data\SqlLite.cs" />
     <Compile Include="Demo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,7 @@
       <CustomToolNamespace>SuperLotto.Controls</CustomToolNamespace>
     </Compile>
     <Compile Include="Model\DantuoSuperLottoNumber.cs" />
+    <Compile Include="Model\ExceptionLog.cs" />
     <Compile Include="Model\SuperLottos.cs" />
     <Compile Include="Model\SuperLottoTool.cs">
       <CustomToolNamespace>SuperLotto.Model</CustomToolNamespace>
@@ -238,7 +245,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\DoubleBall.png" />
   </ItemGroup>
@@ -263,6 +269,9 @@
   <ItemGroup>
     <Content Include="Other\DLL\e_sqlite3.dll" />
     <Content Include="Other\DLL\MaterialSkin.dll" />
+    <None Include="Resources\clear02.png" />
+    <None Include="Resources\refresh3.png" />
+    <None Include="Resources\error-log.png" />
     <None Include="Resources\use_skin.png" />
     <None Include="Resources\logo.png" />
     <None Include="Resources\stop1.png" />

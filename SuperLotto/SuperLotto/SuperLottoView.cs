@@ -14,6 +14,8 @@ using System.Threading;
 using System.Windows.Forms;
 using System.Diagnostics;
 using System.Reflection;
+using SuperLotto.Data;
+using System.ComponentModel;
 
 namespace SuperLotto
 {
@@ -65,7 +67,7 @@ namespace SuperLotto
         public event RefreshMoveLocationEventHandler RefreshMoveLocation;
         public event ExitLoopWaitEventHandler ExitLoopWaitEvent;
 
-        public SuperLottoView() 
+        public SuperLottoView()
         {
             #region Do you agree to the declaration
 
@@ -80,6 +82,7 @@ namespace SuperLotto
                 {
                     Config.Setting.AgreeDeclaration = true;
                     Config.Setting.SaveSetting();
+                    Logger.Info("user agree declaration.");
                 }
             }
 
@@ -182,6 +185,8 @@ namespace SuperLotto
             };
 
             this.BackColor = Color.FromArgb(Config.Setting.BackColorArgb);
+
+            Logger.Info("is running...");
 
             #endregion
         }
@@ -536,7 +541,7 @@ namespace SuperLotto
                     //[机选页]、自选复式页] 的无限守号开奖
                     case int index when index <= 3 && index >= 1:
                         //八等奖及以下用动画方案过渡
-                        if ((int)GetLoopStopCondition() <= (int) AwardType.EightAward) LoopDataPreparationAndSettingFlag(long.MaxValue);
+                        if ((int)GetLoopStopCondition() <= (int)AwardType.EightAward) LoopDataPreparationAndSettingFlag(long.MaxValue);
                         else
                         {
                             //七等奖及以上用最佳算力方案
@@ -2177,7 +2182,7 @@ namespace SuperLotto
         /// <param name="loopSumZing"></param>
         private void RefreshRightSynthesisData(SyntheticDataVariate synSumZing, LoopDataSummarizing loopSumZing)
         {
-            LeeLabel winPrizeTotalZhu = null, 
+            LeeLabel winPrizeTotalZhu = null,
                 buyTotalZhu = null, winPrizeTotalMoney = null, totalConsumptionMoney = null;
 
             #region 累加数据来源页选择
@@ -2391,7 +2396,7 @@ namespace SuperLotto
 
                 int selectIndex = CardInterface.SelectedIndex;
 
-                if(selectIndex == 1)
+                if (selectIndex == 1)
                 {
                     loopDataSummarizing.LoopWinPrizeLotteryTotalZhu += ParseTagValueToLong(lblRandomWinZhu);
                     loopDataSummarizing.LoopWinPrizeLotteryTotalMoney += ParseTagValueToLong(lblRandomWinTotalMonery);
@@ -2860,7 +2865,7 @@ namespace SuperLotto
 
             panComplexStatistics.Visible = false;
 
-            if(_ComplexTipInfo != null) _ComplexTipInfo.RemoveAll();
+            if (_ComplexTipInfo != null) _ComplexTipInfo.RemoveAll();
 
             ResetComplexVariate();
         }
@@ -2912,11 +2917,11 @@ namespace SuperLotto
             ballOne.MouseLeave += LabelBall_MouseLeave;
             ballOne.Click += lblComplexRollBack_Click;
 
-            if (ballType == 0) 
+            if (ballType == 0)
                 CopyComplexLabelStyle(isComplex ? lblComplexRed : lblRedBallDan, ballOne);
-            else if (ballType == 1) 
+            else if (ballType == 1)
                 CopyComplexLabelStyle(lblRedBallTuo, ballOne);
-            else if(ballType == 2)
+            else if (ballType == 2)
                 CopyComplexLabelStyle(isComplex ? lblComplexBlue : lblBlueBallDan, ballOne);
             else
                 CopyComplexLabelStyle(lblBlueBallTuo, ballOne);
@@ -2948,7 +2953,7 @@ namespace SuperLotto
                 {
                     Chelper.buttonImage.Click += picDantuoAccomplish_Click;
                 }
-                
+
                 Chelper.buttonImage.Location = new Point(Chelper.cumsumPoint.X + _INTERVAL, Chelper.cumsumPoint.Y);
 
                 CopyPictureStyle(picComplexAccomplish, Chelper.buttonImage);
@@ -3027,7 +3032,7 @@ namespace SuperLotto
                 Chelper.oneselfPanel.Dispose();
                 Chelper.oneselfStatus = true;
 
-                if(CardInterface.SelectedIndex == 2)
+                if (CardInterface.SelectedIndex == 2)
                 {
                     ResetComplexVariate();
                     _ComplexSuperLottoSuperLottoCount--;
@@ -3125,7 +3130,7 @@ namespace SuperLotto
                 ball.Location = lblRedBallA.Location;
                 CopyComplexLabelStyle(lblRedBallTuo, ball);
             }
-            else if(ballType == 2)
+            else if (ballType == 2)
             {
                 ball.Location = lblRedBallA.Location;
                 CopyComplexLabelStyle(isComplex ? lblComplexBlue : lblBlueBallDan, ball);
@@ -3652,7 +3657,7 @@ namespace SuperLotto
             {
                 _myComplexSuperLottoNumberList.ForEach(cdbn =>
                 {
-                    if(cdbn.serialNumber > serialNumber)
+                    if (cdbn.serialNumber > serialNumber)
                     {
                         cdbn.serialNumber--;
                     }
@@ -3709,7 +3714,7 @@ namespace SuperLotto
             {
                 ((Control)sender).ForeColor = _RedColorTuo;
             }
-            else if(ballType == "Blue" || ballType == "DBlue")
+            else if (ballType == "Blue" || ballType == "DBlue")
             {
                 ((Control)sender).ForeColor = _BlueBallColor;
             }
@@ -3766,7 +3771,7 @@ namespace SuperLotto
 
             if (_DantuoHelper.oneselfPanel == null)
                 InitialFirstControls(_DantuoSuperLottoNumber, _DantuoHelper, ballType, number);
-            else 
+            else
             {
                 ContinueAddSuperLottoToControls(
                     _DantuoSuperLottoNumber, _DantuoHelper, ballType, number);
@@ -3969,7 +3974,7 @@ namespace SuperLotto
                 if (((redDanCount + redTuoCount) == 5) && (blueDanCount + blueTuoCount) == 2) break;
             }
 
-            buyTotalZhu += (int)_superLottoToo.GetDantuoCombinationTotalZhu(redDanCount, redTuoCount,blueDanCount, blueTuoCount);
+            buyTotalZhu += (int)_superLottoToo.GetDantuoCombinationTotalZhu(redDanCount, redTuoCount, blueDanCount, blueTuoCount);
         }
 
         private int _CreateIndexByDantuo = 0;
@@ -4015,13 +4020,13 @@ namespace SuperLotto
             SetSuperLottoInfo(serial,
                 dantuoNumber.redBallDanCount + "-" + dantuoNumber.redBallTuoCount + "-" + dantuoNumber.blueBallDanCount + "-" + dantuoNumber.blueBallTuoCount);
 
-            AddSuperLottosLabel(1, 
+            AddSuperLottosLabel(1,
                 dantuoNumber.redBallDanCount, dantuoNumber.redBalls, lblRedBallDan, _DantuoHelper);
 
-            AddSuperLottosLabel(0, 
+            AddSuperLottosLabel(0,
                 dantuoNumber.redBallTuoCount, dantuoNumber.redBallTuos, lblRedBallTuo, _DantuoHelper);
 
-            AddSuperLottosLabel(0, 
+            AddSuperLottosLabel(0,
                 dantuoNumber.blueBallDanCount, dantuoNumber.blueBalls, lblBlueBallDan, _DantuoHelper);
 
             AddSuperLottosLabel(0,
@@ -4246,7 +4251,7 @@ namespace SuperLotto
 
                     if (!selfSelect) return true;
 
-                    else if(_randomSuperLottoCount == 0)
+                    else if (_randomSuperLottoCount == 0)
                     {
                         Info.ShowWarningMessage(Info.MyNumberIsEmpty);
                     }
@@ -4254,7 +4259,7 @@ namespace SuperLotto
                     return _randomSuperLottoCount != 0;
 
                 case 2:
-                    
+
                     if (!selfSelect) return true;
 
                     else if (_myComplexSuperLottoNumberList.Count == 0 && _ComplexSuperLottoNumber == null)
@@ -4350,6 +4355,10 @@ namespace SuperLotto
         /// 复试自选号窗体
         /// </summary>
         private OneselfComplex _OneselfComplex;
+        /// <summary>
+        /// 是否加载过异常日志
+        /// </summary>
+        private bool loadExceptionLog = false;
 
         /// <summary>
         /// 选项卡切换到自选页时展示自选号窗体
@@ -4379,6 +4388,18 @@ namespace SuperLotto
                     _OneselfDantuo.Show(this);
                 }
                 else _OneselfDantuo.ShowThis();
+            }
+
+            //Load Exception Log
+            if (CardInterface.SelectedIndex == 5)
+            {
+                this.DataError.AutoGenerateColumns = false;
+
+                if (!loadExceptionLog)
+                {
+                    loadExceptionLog = true;
+                    RefreshExceptionData();
+                }
             }
         }
 
@@ -4500,7 +4521,7 @@ namespace SuperLotto
                 nudOneBonus.Value = (int)AwardType.OneAward;
                 nudTwoBonus.Value = (int)AwardType.TwoAward;
                 nudCustomizePeriods.Value = 156;
-                
+
                 RefreshIntervalPeriods();
 
                 rbAlreadySelect_Click(sender, e);
@@ -4524,7 +4545,7 @@ namespace SuperLotto
         /// </summary>
         private void btnSaveSetting_Click(object sender, EventArgs e)
         {
-            if(nudUncertaintyEndPeriod.Value <= nudUncertaintyStartPeriod.Value)
+            if (nudUncertaintyEndPeriod.Value <= nudUncertaintyStartPeriod.Value)
             {
                 Info.ShowWarningMessage(Info.ApplySettingIniterval);
                 return;
@@ -4612,6 +4633,8 @@ namespace SuperLotto
             setting.ZhuMultiple = cmbMultiple.SelectedIndex;
 
             setting.SaveSetting();
+
+            Logger.Info("stop it...");
         }
 
         /// <summary>
@@ -4691,7 +4714,7 @@ namespace SuperLotto
                 lblRedTuoTitle.Enabled = true;
                 cmbRedTuoCount.Enabled = true;
                 lblDanBlueTitle.Enabled = true;
-                lblTuoBlueTitle.Enabled= true;
+                lblTuoBlueTitle.Enabled = true;
                 cmbBlueDanCount.Enabled = true;
                 cmbBlueTuoCount.Enabled = true;
 
@@ -4765,7 +4788,7 @@ namespace SuperLotto
                 if (cmbDPattern.SelectedIndex == 0)
                 {
                     _OneselfDantuo?.ShowThis();
-                    
+
                     lblRedDanTitle.Enabled = false;
                     cmbRedDanCount.Enabled = false;
                     lblRedTuoTitle.Enabled = false;
@@ -4863,6 +4886,9 @@ namespace SuperLotto
             Config.Setting.SaveSetting();
         }
 
+        /// <summary>
+        /// 加载默认皮肤颜色
+        /// </summary>
         private void LoadDefaultColor()
         {
             ExtendLabel useThat = null;
@@ -4907,6 +4933,137 @@ namespace SuperLotto
                 picUseIt.Visible = true;
                 useThat.Controls.Add(picUseIt);
             }
+        }
+
+        /// <summary>
+        /// 刷新异常日志
+        /// </summary>
+        private void RefreshExceptionData()
+        {
+            List<ExceptionLog> logs = SqlLite.Table<ExceptionLog>() as List<ExceptionLog>;
+
+            if (logs != null)
+            {
+                BindingList<ExceptionLog> bindings = new BindingList<ExceptionLog>(logs);
+                this.DataError.DataSource = bindings;
+                this.DataError.ClearSelection();
+            }
+        }
+
+        /// <summary>
+        /// 清空所有日志
+        /// </summary>
+        private void btnClearLog_Click(object sender, EventArgs e)
+        {
+            DialogResult oKCancel = MessageBox.Show(Info.ClearExceptionLog, Info.SuperLotto, MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (oKCancel == DialogResult.OK)
+            {
+                int result = SqlLite.DeleteAll<ExceptionLog>();
+                if (result >= 0)
+                {
+                    this.DataError.DataSource = null;
+                }
+            }
+        }
+
+        /// <summary>
+        /// 异常日志右键菜单事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MenuDelete_Click(object sender, EventArgs e)
+        {
+            if (this.DataError.SelectedRows.Count == 0)
+            {
+                return;
+            }
+
+            List<int> primaryKeys = new List<int>();
+            foreach (DataGridViewRow row in DataError.SelectedRows)
+            {
+                primaryKeys.Add(int.Parse(row.Cells[0].Value.ToString()));
+                this.DataError.Rows.Remove(row);
+            }
+            //batch delete
+            SqlLite.Execute(SQL.DeleteLogByIds(primaryKeys));
+        }
+
+        /// <summary>
+        /// 导出异常日志
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MenuExport_Click(object sender, EventArgs e)
+        {
+            if (this.DataError.SelectedRows.Count == 0)
+                return;
+
+            FolderBrowserDialog locationResult = new FolderBrowserDialog();
+            locationResult.Description = Info.SaveLocation;
+
+            if (locationResult.ShowDialog() != DialogResult.OK)
+                return;
+
+            List<int> primaryKeys = new List<int>();
+            string exportPath = locationResult.SelectedPath;
+
+            foreach (DataGridViewRow row in DataError.SelectedRows)
+            {
+                primaryKeys.Add(int.Parse(row.Cells[0].Value.ToString()));
+            }
+
+            List<ExceptionLog> exList 
+                = SqlLite.Query<ExceptionLog>(SQL.SelectLogByIds(primaryKeys)) as List<ExceptionLog>;
+
+            int exportCount = ExportThatToFile(exList, exportPath);
+
+            notify.ShowBalloonTip(500, string.Empty, string.Format(Info.ExprotLogCount, exportCount), ToolTipIcon.Info);
+        }
+
+        /// <summary>
+        /// 查看异常日志
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MenuView_Click(object sender, EventArgs e)
+        {
+            if (this.DataError.SelectedRows.Count == 0)
+            {
+                return;
+            }
+
+
+        }
+
+        /// <summary>
+        /// 导出数据到文件
+        /// </summary>
+        /// <param name="exList"></param>
+        /// <param name="directory"></param>
+        /// <returns></returns>
+        public int ExportThatToFile(List<ExceptionLog> exList, string directory)
+        {
+            int count = 0;
+            StringBuilder errorText = new StringBuilder();
+
+            foreach (var ex in exList)
+            {
+                errorText.Append("encoding：" + "\t\t\t" + ex.Encoding + "\n");
+                errorText.Append("exception date：" + "\t" + ex.ExceptionDate + "\n");
+                errorText.Append("exception type：" + "\t" + ex.ExceptionType + "\n");
+                errorText.Append("exception source：" + "\t" + ex.ExceptionSource + "\n");
+                errorText.Append("exception method：" + "\t" + ex.ExceptionMethod + "\n");
+                errorText.Append("exception message：" + "\t" + ex.ExceptionMessage + "\n");
+                errorText.Append("call stack：" + "\n");
+                errorText.Append(ex.CallStack + "\n");
+                count++;
+            }
+
+            string fileName = DateTime.Now.ToString("yyyyMMdd_HH-mm-ss-fffff");
+            Logger.WriteContentToFile(directory, directory + @"\" + "exception-" + fileName + ".log", errorText.ToString());
+
+            errorText.Clear();
+            return count;
         }
 
         private bool _max = false;
@@ -4990,7 +5147,7 @@ namespace SuperLotto
             }
             else
             {
-                if(isHide) _LotteryHistory.ShowThis();
+                if (isHide) _LotteryHistory.ShowThis();
                 if (!isHide) _LotteryHistory.HideThis();
             }
 
@@ -5021,6 +5178,8 @@ namespace SuperLotto
                 LoopDataAnalyse.SetWindowRegion(panBody, 50);
             }
         }
+
+        private void btnRefreshLog_Click(object sender, EventArgs e) => RefreshExceptionData();
 
         private int ParseTagValueToInt(Control control) => int.Parse(control.Tag.ToString());
 

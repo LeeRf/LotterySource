@@ -163,6 +163,16 @@ namespace SuperLotto.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap clear02 {
+            get {
+                object obj = ResourceManager.GetObject("clear02", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap Color {
             get {
                 object obj = ResourceManager.GetObject("Color", resourceCulture);
@@ -226,6 +236,16 @@ namespace SuperLotto.Properties {
         internal static System.Drawing.Bitmap email002 {
             get {
                 object obj = ResourceManager.GetObject("email002", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap error_log {
+            get {
+                object obj = ResourceManager.GetObject("error-log", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -386,6 +406,16 @@ namespace SuperLotto.Properties {
         internal static System.Drawing.Bitmap RedMess {
             get {
                 object obj = ResourceManager.GetObject("RedMess", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap refresh3 {
+            get {
+                object obj = ResourceManager.GetObject("refresh3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

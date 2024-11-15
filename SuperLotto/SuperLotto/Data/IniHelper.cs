@@ -206,11 +206,13 @@ namespace SuperLotto.Data
 
             foreach (var propertyInfo in pis)
             {
+                if (propertyInfo.GetMethod.IsStatic)
+                    continue;
                 isSucceed = IniWriteValue
                 (
                     iniPath, propertyInfo.DeclaringType.Name, propertyInfo.Name, propertyInfo.GetValue(obj) + ""
-                ); 
-                if(!isSucceed) break;
+                );
+                if (!isSucceed) break;
             }
 
             return isSucceed;
