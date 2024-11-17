@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SuperLottoView));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblDate = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
@@ -3396,7 +3396,7 @@
             this.nudOneBonus.ForeColor = System.Drawing.Color.Black;
             this.nudOneBonus.Location = new System.Drawing.Point(142, 662);
             this.nudOneBonus.Maximum = new decimal(new int[] {
-            20000000,
+            10000000,
             0,
             0,
             0});
@@ -3449,7 +3449,7 @@
             this.btnSaveSetting.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnSaveSetting.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnSaveSetting.Icon = null;
-            this.btnSaveSetting.Location = new System.Drawing.Point(664, 576);
+            this.btnSaveSetting.Location = new System.Drawing.Point(613, 576);
             this.btnSaveSetting.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnSaveSetting.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnSaveSetting.Name = "btnSaveSetting";
@@ -3474,7 +3474,7 @@
             this.btnRestoreDefault.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnRestoreDefault.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnRestoreDefault.Icon = null;
-            this.btnRestoreDefault.Location = new System.Drawing.Point(565, 576);
+            this.btnRestoreDefault.Location = new System.Drawing.Point(514, 576);
             this.btnRestoreDefault.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnRestoreDefault.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnRestoreDefault.Name = "btnRestoreDefault";
@@ -4021,15 +4021,15 @@
             this.label88.Name = "label88";
             this.label88.Size = new System.Drawing.Size(65, 19);
             this.label88.TabIndex = 599;
-            this.label88.Text = "崩溃详情";
+            this.label88.Text = "崩溃记录";
             // 
             // DataError
             // 
             this.DataError.AllowUserToAddRows = false;
             this.DataError.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            this.DataError.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            this.DataError.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.DataError.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -4037,14 +4037,14 @@
             this.DataError.BackgroundColor = System.Drawing.Color.White;
             this.DataError.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DataError.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataError.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataError.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.DataError.ColumnHeadersHeight = 30;
             this.DataError.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DataError.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -4055,14 +4055,14 @@
             this.ExceptionSource,
             this.ExceptionType});
             this.DataError.ContextMenuStrip = this.MenuErrorLog;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataError.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataError.DefaultCellStyle = dataGridViewCellStyle6;
             this.DataError.GridColor = System.Drawing.Color.WhiteSmoke;
             this.DataError.Location = new System.Drawing.Point(1, 79);
             this.DataError.Name = "DataError";
@@ -4126,12 +4126,12 @@
             this.MenuView});
             this.MenuErrorLog.Name = "MenuErrorLog";
             this.MenuErrorLog.ShowImageMargin = false;
-            this.MenuErrorLog.Size = new System.Drawing.Size(156, 92);
+            this.MenuErrorLog.Size = new System.Drawing.Size(100, 70);
             // 
             // MenuDelete
             // 
             this.MenuDelete.Name = "MenuDelete";
-            this.MenuDelete.Size = new System.Drawing.Size(155, 22);
+            this.MenuDelete.Size = new System.Drawing.Size(99, 22);
             this.MenuDelete.Tag = "Delete";
             this.MenuDelete.Text = "删除";
             this.MenuDelete.Click += new System.EventHandler(this.MenuDelete_Click);
@@ -4139,7 +4139,7 @@
             // MenuExport
             // 
             this.MenuExport.Name = "MenuExport";
-            this.MenuExport.Size = new System.Drawing.Size(155, 22);
+            this.MenuExport.Size = new System.Drawing.Size(99, 22);
             this.MenuExport.Tag = "Export";
             this.MenuExport.Text = "导出";
             this.MenuExport.Click += new System.EventHandler(this.MenuExport_Click);
@@ -4147,7 +4147,7 @@
             // MenuView
             // 
             this.MenuView.Name = "MenuView";
-            this.MenuView.Size = new System.Drawing.Size(155, 22);
+            this.MenuView.Size = new System.Drawing.Size(99, 22);
             this.MenuView.Tag = "View";
             this.MenuView.Text = "查看详情";
             this.MenuView.Click += new System.EventHandler(this.MenuView_Click);
@@ -6622,6 +6622,7 @@
             this.lblOneBonus.TabIndex = 637;
             this.lblOneBonus.Tag = "0";
             this.lblOneBonus.Text = "10000000";
+            this.lblOneBonus.TextChanged += new System.EventHandler(this.lblOneBonus_TextChanged);
             // 
             // leeLabel88
             // 

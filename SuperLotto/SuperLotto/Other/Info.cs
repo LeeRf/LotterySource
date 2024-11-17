@@ -180,6 +180,10 @@ namespace SuperLotto.Other
         /// {0}条异常信息导出成功.
         /// </summary>
         public static readonly string ExprotLogCount = "{0}条异常信息导出成功.";
+        /// <summary>
+        /// 此异常日志已经打开
+        /// </summary>
+        public static readonly string AlreadyOpenLog = "此异常日志已经打开";
 
         /// <summary>
         /// 获取循环开奖消息提示

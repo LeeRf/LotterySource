@@ -110,7 +110,7 @@ namespace SuperLotto
             cmbBlueDanCount.SelectedIndex = 0;
             cmbBlueTuoCount.SelectedIndex = 0;
             cmbMultiple.SelectedIndex = 0;
-            cmbStopCondition.SelectedIndex = 0;
+            cmbStopCondition.SelectedIndex = 8;
 
             _redBallLabelStyles[0] = lblRedBallA;
             _redBallLabelStyles[1] = lblRedBallB;
@@ -152,8 +152,6 @@ namespace SuperLotto
 
             Config._historyPublicSuperLottoNumbers = new Queue<SimplexSuperLottoNumber>(100);
 
-            SoftwareExplain.LoadFile(Application.StartupPath + @"\explain.data");
-
             #endregion
 
             #region Shown Event
@@ -187,6 +185,8 @@ namespace SuperLotto
             this.BackColor = Color.FromArgb(Config.Setting.BackColorArgb);
 
             Logger.Info("is running...");
+
+            SoftwareExplain.LoadFile(Application.StartupPath + @"\explain.data");
 
             #endregion
         }
@@ -4456,6 +4456,8 @@ namespace SuperLotto
 
             nudOneBonus.Value = setting.GetOneAward();
             nudTwoBonus.Value = setting.GetTwoAward();
+            lblOneBonus.Text = setting.GetOneAward().ToString();
+            lblTwoBonus.Text = setting.GetTwoAward().ToString();
 
             nudCustomizePeriods.Value = setting.CustomizePeriods;
             btnCustomizeRunLotterys.Tag = setting.CustomizePeriods;
@@ -4516,10 +4518,13 @@ namespace SuperLotto
 
                 cmbCPattern.SelectedIndex = 0;
                 cmbMultiple.SelectedIndex = 0;
-                cmbStopCondition.SelectedIndex = 0;
+                cmbStopCondition.SelectedIndex = 8;
 
                 nudOneBonus.Value = (int)AwardType.OneAward;
                 nudTwoBonus.Value = (int)AwardType.TwoAward;
+                lblOneBonus.Text = nudOneBonus.Value.ToString();
+                lblTwoBonus.Text = nudTwoBonus.Value.ToString();
+
                 nudCustomizePeriods.Value = 156;
 
                 RefreshIntervalPeriods();
@@ -4592,6 +4597,8 @@ namespace SuperLotto
 
             setting.CustomizePeriods = (int)nudCustomizePeriods.Value;
 
+            lblOneBonus.Text = nudOneBonus.Value.ToString();
+            lblTwoBonus.Text = nudTwoBonus.Value.ToString();
             btnCustomizeRunLotterys.Tag = setting.CustomizePeriods;
             btnRondomCustomize.Tag = setting.CustomizePeriods;
 
@@ -5027,12 +5034,23 @@ namespace SuperLotto
         /// <param name="e"></param>
         private void MenuView_Click(object sender, EventArgs e)
         {
-            if (this.DataError.SelectedRows.Count == 0)
-            {
+            if (this.DataError.SelectedRows.Count == 0) 
                 return;
+
+            string rowId = DataError.SelectedRows[0].Cells[0].Value.ToString();
+
+            ExceptionLog exLog = SqlLite.Get<ExceptionLog>(rowId) as ExceptionLog;
+
+            if (exLog != null)
+            {
+                if (ViewException.isOpenThat(exLog.Id))
+                {
+                    notify.ShowBalloonTip(500, "", Info.AlreadyOpenLog, ToolTipIcon.Info);
+                    return;
+                }
+                ViewException viewException = new ViewException(exLog);
+                viewException.Show();
             }
-
-
         }
 
         /// <summary>
@@ -5059,7 +5077,7 @@ namespace SuperLotto
                 count++;
             }
 
-            string fileName = DateTime.Now.ToString("yyyyMMdd_HH-mm-ss-fffff");
+            string fileName = DateTime.Now.ToString("yyyyMMddHHmmssfffff");
             Logger.WriteContentToFile(directory, directory + @"\" + "exception-" + fileName + ".log", errorText.ToString());
 
             errorText.Clear();
@@ -5073,7 +5091,8 @@ namespace SuperLotto
             {
                 _max = true;
                 lblMaxUndo.Text = "Uno";
-                MaximumSize = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
+                Screen currentScreen = Screen.FromControl(this);
+                MaximumSize = currentScreen.WorkingArea.Size;
                 WindowState = FormWindowState.Maximized;
             }
             else
@@ -5176,6 +5195,18 @@ namespace SuperLotto
             {
                 //窗体大小变化时重新应用圆角
                 LoopDataAnalyse.SetWindowRegion(panBody, 50);
+            }
+        }
+
+        private void lblOneBonus_TextChanged(object sender, EventArgs e)
+        {
+            if (lblOneBonus.Text.Length > 7)
+            {
+                lblOneBonus.Location = new Point(221, lblOneBonus.Location.Y);
+            }
+            else
+            {
+                lblOneBonus.Location = new Point(229, lblOneBonus.Location.Y);
             }
         }
 

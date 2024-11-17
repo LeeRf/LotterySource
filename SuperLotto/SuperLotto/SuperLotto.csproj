@@ -195,6 +195,12 @@
     <Compile Include="Style\SkinMain.designer.cs">
       <DependentUpon>SkinMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewException.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewException.Designer.cs">
+      <DependentUpon>ViewException.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Controls\FrmLoading.resx">
       <DependentUpon>FrmLoading.cs</DependentUpon>
     </EmbeddedResource>
@@ -231,6 +237,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Style\SkinMain.resx">
       <DependentUpon>SkinMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewException.resx">
+      <DependentUpon>ViewException.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -269,6 +278,8 @@
   <ItemGroup>
     <Content Include="Other\DLL\e_sqlite3.dll" />
     <Content Include="Other\DLL\MaterialSkin.dll" />
+    <None Include="Resources\exception08.png" />
+    <None Include="Resources\exception01.png" />
     <None Include="Resources\clear02.png" />
     <None Include="Resources\refresh3.png" />
     <None Include="Resources\error-log.png" />

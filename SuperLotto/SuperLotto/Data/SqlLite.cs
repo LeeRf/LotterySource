@@ -137,6 +137,8 @@ namespace SuperLotto.Data
             }
         }
 
+        public static object Get<T>(object id) => Get<T>(id, ConnectStr);
+
         /// <summary>
         /// 
         /// </summary>

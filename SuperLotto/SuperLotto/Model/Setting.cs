@@ -87,7 +87,7 @@ namespace SuperLotto.Model
         /// <summary>
         /// 循环摇奖停止条件
         /// </summary>
-        public int LoopStopCondition { get; set; }
+        public int LoopStopCondition { get; set; } = 8;
         /// <summary>
         /// 单注追加倍数
         /// </summary>
