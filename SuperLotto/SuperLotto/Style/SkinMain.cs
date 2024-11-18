@@ -26,34 +26,41 @@ namespace SuperLotto.Style
         /// </summary>
         public bool _isMove { get; set; } = true;
 
-        public SkinMain() {
-            InitializeComponent(); SetStyles();
+        public SkinMain()
+        {
+            InitializeComponent(); 
+            SetStyles();
         }
 
         [Browsable(false)]
         [EditorBrowsable(EditorBrowsableState.Never)]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        public new FormBorderStyle FormBorderStyle {
+        public new FormBorderStyle FormBorderStyle
+        {
             get { return base.FormBorderStyle; }
             set { base.FormBorderStyle = FormBorderStyle.None; }
         }
 
         //设置阴影层的显示/隐藏
-        public void ThisVisible(bool visible) {
+        public void ThisVisible(bool visible)
+        {
             _skin.Visible = visible;
         }
 
-        protected override CreateParams CreateParams {
-            get {
+        protected override CreateParams CreateParams
+        {
+            get
+            {
                 const int WS_MINIMIZEBOX = 0x00020000;  // Winuser.h中定义
                 CreateParams cp = base.CreateParams;
                 cp.Style = cp.Style | WS_MINIMIZEBOX;   // 允许最小化操作
                 return cp;
             }
         }
-        
+
         //减少闪烁
-        public void SetStyles() {
+        public void SetStyles()
+        {
             SetStyle(ControlStyles.UserPaint | ControlStyles.AllPaintingInWmPaint |
                 ControlStyles.OptimizedDoubleBuffer | ControlStyles.ResizeRedraw | ControlStyles.DoubleBuffer, true);
 
@@ -88,10 +95,12 @@ namespace SuperLotto.Style
         }
 
         //窗体关闭时
-        protected override void OnClosing(CancelEventArgs e) {
+        protected override void OnClosing(CancelEventArgs e)
+        {
             base.OnClosing(e);
             //先关闭阴影窗体并且当为主窗体时不可关闭阴影窗体
-            if (_skin != null && this.GetType().Name != "Main"){
+            if (_skin != null && this.GetType().Name != "Main")
+            {
                 _skin.Close();
             }
             //在Form_FormClosing中添加代码实现窗体的淡出
@@ -99,13 +108,15 @@ namespace SuperLotto.Style
         }
 
         //控件首次创建时被调用
-        protected override void OnCreateControl() {
+        protected override void OnCreateControl()
+        {
             base.OnCreateControl();
             SetReion();
         }
 
         //圆角
-        private void SetReion() {
+        private void SetReion()
+        {
             using (GraphicsPath path = GraphicsPathHelper.CreatePath(new Rectangle(Point.Empty, base.Size), _filletSize, RoundStyle.All, true))
             {
                 Region region = new Region(path);
@@ -116,7 +127,8 @@ namespace SuperLotto.Style
         }
 
         //改变窗体大小时
-        protected override void OnSizeChanged(EventArgs e) {
+        protected override void OnSizeChanged(EventArgs e)
+        {
             base.OnSizeChanged(e);
             SetReion();
         }

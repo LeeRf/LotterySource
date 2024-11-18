@@ -2487,7 +2487,7 @@ namespace SuperLotto
         /// <summary>
         /// 机选单式号码的中奖情况颜色绘制
         /// </summary>
-        public void DrawingSimplexColorLotteryNumber(Panel superLottoNumber, SuperLottos myNumber, SimplexSuperLottoNumber publicDoubleNumber)
+        public void DrawingSimplexColorLotteryNumber(Panel superLottoNumber, SuperLottos myNumber, SimplexSuperLottoNumber publicLottoNumber)
         {
             foreach (Control control in superLottoNumber.Controls)
             {
@@ -2509,13 +2509,13 @@ namespace SuperLotto
                         //红球中奖情况下
                         if (ballColorType.IndexOf("Red") != -1)
                         {
-                            SettingRedColor(publicDoubleNumber, label);
+                            SettingRedColor(publicLottoNumber, label);
                         }
 
                         //蓝球中奖情况下
                         if (ballColorType.IndexOf("Blue") != -1)
                         {
-                            SettingBlueColor(publicDoubleNumber, label, _BlueBallColor, _NotLotteryColor);
+                            SettingBlueColor(publicLottoNumber, label, _BlueBallColor, _NotLotteryColor);
                         }
                     }
                 }
@@ -2525,7 +2525,7 @@ namespace SuperLotto
         /// <summary>
         /// 自选&复试号码的中奖情况颜色绘制
         /// </summary>
-        private void DrawingComplexColorLotteryNumber(Panel superLottoNumber, SuperLottos myNumber, SimplexSuperLottoNumber publicDoubleNumber)
+        private void DrawingComplexColorLotteryNumber(Panel superLottoNumber, SuperLottos myNumber, SimplexSuperLottoNumber publicLottoNumber)
         {
             foreach (Control control in superLottoNumber.Controls)
             {
@@ -2546,12 +2546,12 @@ namespace SuperLotto
                     {
                         if (ballColorType.IndexOf("Red") != -1)
                         {
-                            SettingRedColor(publicDoubleNumber, label);
+                            SettingRedColor(publicLottoNumber, label);
                         }
 
                         if (ballColorType.IndexOf("Blue") != -1)
                         {
-                            SettingBlueColor(publicDoubleNumber, label, _BlueBallColor, _NotComplexBlueColor);
+                            SettingBlueColor(publicLottoNumber, label, _BlueBallColor, _NotComplexBlueColor);
                         }
                     }
                 }
@@ -2561,7 +2561,7 @@ namespace SuperLotto
         /// <summary>
         /// 自选&胆拖号码的中奖情况颜色绘制
         /// </summary>
-        private void DrawingDantuoColorLotteryNumber(Panel superLottoNumber, SuperLottos myNumber, SimplexSuperLottoNumber publicDoubleNumber)
+        private void DrawingDantuoColorLotteryNumber(Panel superLottoNumber, SuperLottos myNumber, SimplexSuperLottoNumber publicLottoNumber)
         {
             //红拖号理应上色的数量
             int redTuoShouldCount = 0;
@@ -2602,7 +2602,7 @@ namespace SuperLotto
                             int ballValue = int.Parse(label.Text);
                             bool isRedTuo = ballType.Equals("TRed");
 
-                            if (publicDoubleNumber.redBalls.Contains(ballValue))
+                            if (publicLottoNumber.redBalls.Contains(ballValue))
                             {
                                 //拖号
                                 if (isRedTuo)
@@ -2636,7 +2636,7 @@ namespace SuperLotto
                             int ballValue = int.Parse(label.Text);
                             bool isBlueTuo = ballType.Equals("TBlue");
 
-                            if (publicDoubleNumber.blueBalls.Contains(ballValue))
+                            if (publicLottoNumber.blueBalls.Contains(ballValue))
                             {
                                 //拖号
                                 if (isBlueTuo)
@@ -2687,12 +2687,12 @@ namespace SuperLotto
         /// <summary>
         /// 设置红球颜色
         /// </summary>
-        private void SettingRedColor(SimplexSuperLottoNumber publicDoubleNumber, Label label)
+        private void SettingRedColor(SimplexSuperLottoNumber publicLottoNumber, Label label)
         {
             int ballValue = int.Parse(label.Text);
             Color lotteryColor = _NotLotteryColor;
 
-            if (publicDoubleNumber.redBalls.Contains(ballValue))
+            if (publicLottoNumber.redBalls.Contains(ballValue))
             {
                 lotteryColor = _RedBallColor;
             }
@@ -2705,12 +2705,12 @@ namespace SuperLotto
         /// </summary>
         /// <param name="winLotteryColor">中奖颜色</param>
         /// <param name="notLotteryColor">未中奖颜色</param>
-        private void SettingBlueColor(SimplexSuperLottoNumber publicDoubleNumber, Label label, Color winLotteryColor, Color notLotteryColor)
+        private void SettingBlueColor(SimplexSuperLottoNumber publicLottoNumber, Label label, Color winLotteryColor, Color notLotteryColor)
         {
             int ballValue = int.Parse(label.Text);
             Color lotteryColor = notLotteryColor;
 
-            if (publicDoubleNumber.blueBalls.Contains(ballValue))
+            if (publicLottoNumber.blueBalls.Contains(ballValue))
             {
                 lotteryColor = winLotteryColor;
             }
@@ -2723,18 +2723,18 @@ namespace SuperLotto
         private void SettingColorForMaxSuperLottoPanel(Panel maxSuperLottoPanel, SimplexSuperLottoNumber maxSimplexSuperLotto, Label[] labelBlue)
         {
             int maxRedBallIndex = 0;
-            SimplexSuperLottoNumber _lotteryDoubleNumber = _publicSuperLottoToo;
+            SimplexSuperLottoNumber _lotteryLottoNumber = _publicSuperLottoToo;
 
             if (isRandomRun)
             {
-                _lotteryDoubleNumber = maxSuperLottoPanel.Name.Equals("panMaxSuperLotto") ? _historyMaxPublicSuperLottoNumber : _maxLoopLotterySuperLottoNumber;
+                _lotteryLottoNumber = maxSuperLottoPanel.Name.Equals("panMaxSuperLotto") ? _historyMaxPublicSuperLottoNumber : _maxLoopLotterySuperLottoNumber;
             }
 
             foreach (Label label in maxSuperLottoPanel.Controls)
             {
                 if (label.Tag.ToString() == "Red")
                 {
-                    if (_lotteryDoubleNumber.redBalls.Contains(maxSimplexSuperLotto.redBalls[maxRedBallIndex]))
+                    if (_lotteryLottoNumber.redBalls.Contains(maxSimplexSuperLotto.redBalls[maxRedBallIndex]))
                     {
                         label.ForeColor = _RedBallColor;
                     }
@@ -2752,7 +2752,7 @@ namespace SuperLotto
             for (int i = 0; i < labelBlue.Length; i++)
             {
                 labelBlue[i].Text = FormatNumber(maxSimplexSuperLotto.blueBalls[i], 2);
-                if (_lotteryDoubleNumber.blueBalls.Contains(maxSimplexSuperLotto.blueBalls[i]))
+                if (_lotteryLottoNumber.blueBalls.Contains(maxSimplexSuperLotto.blueBalls[i]))
                 {
                     labelBlue[i].ForeColor = _BlueBallColor;
                 }
@@ -3582,23 +3582,23 @@ namespace SuperLotto
             //要释放的panel
             Control faterControl = ((Control)sender).Parent;
 
-            SuperLottos disposeDoubleNumber;
+            SuperLottos disposeLottoNumber;
 
             int removeSerialNumber = int.Parse(faterControl.Tag.ToString());
             if (selectIndex == 2)
             {
-                disposeDoubleNumber = _myComplexSuperLottoNumberList.Where(cdbn => cdbn.serialNumber == removeSerialNumber).ToList()[0];
-                _myComplexSuperLottoNumberList.Remove(disposeDoubleNumber as ComplexSuperLottoNumber);
+                disposeLottoNumber = _myComplexSuperLottoNumberList.Where(cdbn => cdbn.serialNumber == removeSerialNumber).ToList()[0];
+                _myComplexSuperLottoNumberList.Remove(disposeLottoNumber as ComplexSuperLottoNumber);
             }
             else
             {
-                disposeDoubleNumber = _myDantuoSuperLottoNumberList.Where(ddbn => ddbn.serialNumber == removeSerialNumber).ToList()[0];
-                _myDantuoSuperLottoNumberList.Remove(disposeDoubleNumber as DantuoSuperLottoNumber);
+                disposeLottoNumber = _myDantuoSuperLottoNumberList.Where(ddbn => ddbn.serialNumber == removeSerialNumber).ToList()[0];
+                _myDantuoSuperLottoNumberList.Remove(disposeLottoNumber as DantuoSuperLottoNumber);
             }
 
             _CreateIndex--;
             _SuperLottoCount--;
-            RefreshSuperLottoNumbersSerialNumber(selectIndex, disposeDoubleNumber.serialNumber);
+            RefreshSuperLottoNumbersSerialNumber(selectIndex, disposeLottoNumber.serialNumber);
 
             int resetIndex = 0;
             //得到释放大乐透的序号
@@ -3638,11 +3638,11 @@ namespace SuperLotto
 
             if (selectIndex == 2)
             {
-                RefreshOneselfNumberMoneyByComplex(false, disposeDoubleNumber as ComplexSuperLottoNumber);
+                RefreshOneselfNumberMoneyByComplex(false, disposeLottoNumber as ComplexSuperLottoNumber);
             }
             else
             {
-                RefreshOneselfNumberMoneyByDantuo(false, disposeDoubleNumber as DantuoSuperLottoNumber);
+                RefreshOneselfNumberMoneyByDantuo(false, disposeLottoNumber as DantuoSuperLottoNumber);
             }
         }
 

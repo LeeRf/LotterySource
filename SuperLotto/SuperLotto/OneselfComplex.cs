@@ -77,7 +77,7 @@ namespace SuperLotto
             LeeLabel superLotto = ((LeeLabel)sender);
             string superLottoType = superLotto.Tag.ToString();
 
-            #region Check Double Ball Count
+            #region Check SuperLotto Ball Count
 
             bool isRed = superLottoType.Equals("Red");
 

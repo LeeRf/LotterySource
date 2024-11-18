@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewException));
             this.panBody = new System.Windows.Forms.Panel();
+            this.extendLabel7 = new SuperLotto.Controls.ExtendLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblExceptionMessage = new SuperLotto.Controls.ExtendLabel();
             this.lblExceptionMethod = new SuperLotto.Controls.ExtendLabel();
@@ -42,7 +43,6 @@
             this.extendLabel3 = new SuperLotto.Controls.ExtendLabel();
             this.extendLabel2 = new SuperLotto.Controls.ExtendLabel();
             this.extendLabel1 = new SuperLotto.Controls.ExtendLabel();
-            this.extendLabel7 = new SuperLotto.Controls.ExtendLabel();
             this.callStack = new System.Windows.Forms.RichTextBox();
             this.extendLabel6 = new SuperLotto.Controls.ExtendLabel();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
@@ -78,6 +78,24 @@
             this.panBody.Name = "panBody";
             this.panBody.Size = new System.Drawing.Size(868, 555);
             this.panBody.TabIndex = 0;
+            // 
+            // extendLabel7
+            // 
+            this.extendLabel7.AutoSize = true;
+            this.extendLabel7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.extendLabel7.EnterColor = System.Drawing.Color.Black;
+            this.extendLabel7.EnterFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.extendLabel7.Fillet = false;
+            this.extendLabel7.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.extendLabel7.ForeColor = System.Drawing.Color.DimGray;
+            this.extendLabel7.Location = new System.Drawing.Point(62, 11);
+            this.extendLabel7.MouseEnterEffect = false;
+            this.extendLabel7.Name = "extendLabel7";
+            this.extendLabel7.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.extendLabel7.ShadowWidth = 8;
+            this.extendLabel7.Size = new System.Drawing.Size(68, 17);
+            this.extendLabel7.TabIndex = 619;
+            this.extendLabel7.Text = "发生日期：";
             // 
             // pictureBox1
             // 
@@ -285,24 +303,6 @@
             this.extendLabel1.Size = new System.Drawing.Size(68, 17);
             this.extendLabel1.TabIndex = 620;
             this.extendLabel1.Text = "异常对象：";
-            // 
-            // extendLabel7
-            // 
-            this.extendLabel7.AutoSize = true;
-            this.extendLabel7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.extendLabel7.EnterColor = System.Drawing.Color.Black;
-            this.extendLabel7.EnterFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.extendLabel7.Fillet = false;
-            this.extendLabel7.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.extendLabel7.ForeColor = System.Drawing.Color.DimGray;
-            this.extendLabel7.Location = new System.Drawing.Point(62, 11);
-            this.extendLabel7.MouseEnterEffect = false;
-            this.extendLabel7.Name = "extendLabel7";
-            this.extendLabel7.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.extendLabel7.ShadowWidth = 8;
-            this.extendLabel7.Size = new System.Drawing.Size(68, 17);
-            this.extendLabel7.TabIndex = 619;
-            this.extendLabel7.Text = "发生日期：";
             // 
             // callStack
             // 
