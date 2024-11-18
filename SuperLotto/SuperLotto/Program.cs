@@ -1,5 +1,6 @@
 ﻿using SuperLotto.Data;
 using SuperLotto.Model;
+using SuperLotto.Other;
 using System;
 using System.Threading;
 using System.Windows.Forms;
@@ -14,7 +15,26 @@ namespace SuperLotto
         [STAThread]
         static void Main()
         {
-            // 设置全局异常处理
+            #region Do you agree to the declaration
+
+            Config.Setting = Setting.LoadSetting();
+
+            if (Config.Setting.AgreeDeclaration is false)
+            {
+                DialogResult yesNo = MessageBox.Show(Info.AgreeDeclarationContent, Info.AgreeDeclarationTitle, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (yesNo == DialogResult.No) return;
+                else
+                {
+                    Config.Setting.AgreeDeclaration = true;
+                    Config.Setting.SaveSetting();
+                    Logger.Info("user agree declaration.");
+                }
+            }
+
+            #endregion
+
+            //设置全局异常处理
             Application.ThreadException += Application_ThreadException;
             AppDomain.CurrentDomain.UnhandledException += CurrentDomain_UnhandledException;
             Application.SetUnhandledExceptionMode(UnhandledExceptionMode.CatchException);

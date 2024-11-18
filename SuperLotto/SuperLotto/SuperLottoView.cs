@@ -69,25 +69,6 @@ namespace SuperLotto
 
         public SuperLottoView()
         {
-            #region Do you agree to the declaration
-
-            Config.Setting = Setting.LoadSetting();
-
-            if (Config.Setting.AgreeDeclaration is false)
-            {
-                DialogResult yesNo = MessageBox.Show(Info.AgreeDeclarationContent, Info.AgreeDeclarationTitle, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-                if (yesNo == DialogResult.No) this.Close();
-                else
-                {
-                    Config.Setting.AgreeDeclaration = true;
-                    Config.Setting.SaveSetting();
-                    Logger.Info("user agree declaration.");
-                }
-            }
-
-            #endregion
-
             InitializeComponent();
         }
 
