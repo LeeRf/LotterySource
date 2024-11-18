@@ -65,10 +65,14 @@
             this.lblExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblExit.EnterColor = System.Drawing.Color.Red;
             this.lblExit.EnterFont = new System.Drawing.Font("微软雅黑", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblExit.Fillet = false;
             this.lblExit.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblExit.ForeColor = System.Drawing.Color.DarkOrange;
+            this.lblExit.ForeColor = System.Drawing.Color.OrangeRed;
             this.lblExit.Location = new System.Drawing.Point(279, 364);
+            this.lblExit.MouseEnterEffect = false;
             this.lblExit.Name = "lblExit";
+            this.lblExit.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblExit.ShadowWidth = 8;
             this.lblExit.Size = new System.Drawing.Size(48, 26);
             this.lblExit.TabIndex = 620;
             this.lblExit.Text = "exit";

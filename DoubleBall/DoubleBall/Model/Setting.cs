@@ -45,9 +45,17 @@ namespace DoubleBalls.Model
         private const int TWOMINAWARD = 100000;
 
         /// <summary>
+        /// 配置文件目录
+        /// </summary>
+        public static string ConfigDirectory => @"config";
+        /// <summary>
+        /// 运行日志
+        /// </summary>
+        public static string RunningLog => ConfigDirectory + @"\running.log";
+        /// <summary>
         /// 配置文件路径和名称
         /// </summary>
-        private static string SettingFilePath = Application.StartupPath + @"\Setting.ini";
+        private static string SettingFilePath = Application.StartupPath + @"\" + ConfigDirectory + @"\setting.ini";
         /// <summary>
         /// 产生摇奖号码时、比对中奖信息按照
         /// </summary>
@@ -76,11 +84,10 @@ namespace DoubleBalls.Model
         /// 不固定期数结束
         /// </summary>
         public int UncertaintyEndPeriod { get; set; } = 5;
-
         /// <summary>
         /// 循环摇奖停止条件
         /// </summary>
-        public int LoopStopCondition { get; set; }
+        public int LoopStopCondition { get; set; } = 5;
         /// <summary>
         /// 单注追加倍数
         /// </summary>
@@ -97,6 +104,14 @@ namespace DoubleBalls.Model
         /// 循环守号和随机守号的期数
         /// </summary>
         public int CustomizePeriods { get; set; } = 156;
+        /// <summary>
+        /// 背景颜色
+        /// </summary>
+        public int BackColorArgb { get; set; } = -1;
+        /// <summary>
+        /// 是否同意软件免责声明
+        /// </summary>
+        public bool AgreeDeclaration { get; set; } = false;
 
         /// <summary>
         /// 保存程序设置
@@ -104,6 +119,7 @@ namespace DoubleBalls.Model
         /// <returns></returns>
         public bool SaveSetting()
         {
+            Directory.CreateDirectory(ConfigDirectory);
             return IniHelper.SaveOrUpdateIniData(this, SettingFilePath);
         }
 

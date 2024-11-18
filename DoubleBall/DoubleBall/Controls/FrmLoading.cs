@@ -11,9 +11,14 @@ using UITimer = System.Windows.Forms.Timer;
 
 namespace DoubleBalls.Controls
 {
+    //退出循环委托
+    public delegate void ExitLoopWaitEventHandler();
+
     public partial class FrmLoading : Form
     {
-        public FrmLoading(object message, Color color)
+        public event ExitLoopWaitEventHandler exitEvent;
+
+        public FrmLoading(object message, Color color, ExitLoopWaitEventHandler thatExitEvent)
         {
             InitializeComponent();
             SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.OptimizedDoubleBuffer, true);
@@ -26,6 +31,7 @@ namespace DoubleBalls.Controls
             _dots = new LoadingDot[5];
             Color = color;
             Message = message.ToString();
+            this.exitEvent = thatExitEvent;
         }
 
         public FrmLoading(object message)
@@ -55,7 +61,19 @@ namespace DoubleBalls.Controls
                 var screenRect = Screen.PrimaryScreen.WorkingArea;
                 Location = new Point((screenRect.Width - Width) / 2, (screenRect.Height - Height) / 2);
             }
+
+            lblExit.Location = new Point((this.Width - lblExit.Width) / 2, lblExit.Location.Y);
             Start();
+        }
+
+        public void setExitVisible(bool visible)
+        {
+            this.lblExit.Visible = visible;
+        }
+
+        private void lblExit_Click(object sender, EventArgs e)
+        {
+            exitEvent?.Invoke();
         }
 
         private void FrmLoading_Shown(object sender, EventArgs e)

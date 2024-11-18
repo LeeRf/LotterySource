@@ -3205,7 +3205,7 @@
             // 
             this.pictureBox31.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox31.Enabled = false;
-            this.pictureBox31.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox31.Image")));
+            this.pictureBox31.Image = global::SuperLotto.Properties.Resources.skin1;
             this.pictureBox31.Location = new System.Drawing.Point(35, 30);
             this.pictureBox31.Name = "pictureBox31";
             this.pictureBox31.Size = new System.Drawing.Size(26, 24);
@@ -3449,7 +3449,7 @@
             this.btnSaveSetting.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnSaveSetting.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnSaveSetting.Icon = null;
-            this.btnSaveSetting.Location = new System.Drawing.Point(613, 576);
+            this.btnSaveSetting.Location = new System.Drawing.Point(686, 576);
             this.btnSaveSetting.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnSaveSetting.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnSaveSetting.Name = "btnSaveSetting";
@@ -3474,7 +3474,7 @@
             this.btnRestoreDefault.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnRestoreDefault.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnRestoreDefault.Icon = null;
-            this.btnRestoreDefault.Location = new System.Drawing.Point(514, 576);
+            this.btnRestoreDefault.Location = new System.Drawing.Point(587, 576);
             this.btnRestoreDefault.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnRestoreDefault.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnRestoreDefault.Name = "btnRestoreDefault";
@@ -4290,7 +4290,7 @@
             this.lblSuperLottoPeriods.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.lblSuperLottoPeriods.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSuperLottoPeriods.ForeColor = System.Drawing.Color.OrangeRed;
-            this.lblSuperLottoPeriods.Location = new System.Drawing.Point(82, 8);
+            this.lblSuperLottoPeriods.Location = new System.Drawing.Point(82, 7);
             this.lblSuperLottoPeriods.Name = "lblSuperLottoPeriods";
             this.lblSuperLottoPeriods.Size = new System.Drawing.Size(120, 22);
             this.lblSuperLottoPeriods.TabIndex = 550;
@@ -4351,7 +4351,7 @@
             // 
             this.label37.AutoSize = true;
             this.label37.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label37.Location = new System.Drawing.Point(13, 8);
+            this.label37.Location = new System.Drawing.Point(13, 7);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(74, 21);
             this.label37.TabIndex = 530;
@@ -4361,7 +4361,7 @@
             // 
             this.label39.AutoSize = true;
             this.label39.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label39.Location = new System.Drawing.Point(198, 8);
+            this.label39.Location = new System.Drawing.Point(198, 7);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(90, 21);
             this.label39.TabIndex = 577;
@@ -6433,6 +6433,7 @@
             this.lblTwoBonus.TabIndex = 658;
             this.lblTwoBonus.Tag = "0";
             this.lblTwoBonus.Text = "300000";
+            this.lblTwoBonus.TextChanged += new System.EventHandler(this.lblTwoBonus_TextChanged);
             // 
             // label83
             // 
@@ -6991,7 +6992,7 @@
             this.Name = "SuperLottoView";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "中国福利彩票 大乐透摇奖模拟程序  V1.0.0.0";
+            this.Text = "中国体育彩票 大乐透摇奖模拟程序  V1.0.0.0";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SuperLottoView_FormClosing);
             this.Load += new System.EventHandler(this.SuperLotto_Load);
             this.SizeChanged += new System.EventHandler(this.SuperLottoView_SizeChanged);

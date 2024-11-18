@@ -163,10 +163,8 @@ namespace SuperLotto
                 LoopDataAnalyse.SetWindowRegion(panBody, 50);
             };
 
-            this.BackColor = Color.FromArgb(Config.Setting.BackColorArgb);
-
             Logger.Info("is running...");
-
+            this.BackColor = Color.FromArgb(Config.Setting.BackColorArgb);
             SoftwareExplain.LoadFile(Application.StartupPath + @"\explain.data");
 
             #endregion
@@ -5188,6 +5186,18 @@ namespace SuperLotto
             else
             {
                 lblOneBonus.Location = new Point(229, lblOneBonus.Location.Y);
+            }
+        }
+
+        private void lblTwoBonus_TextChanged(object sender, EventArgs e)
+        {
+            if (lblTwoBonus.Text.Length > 6)
+            {
+                lblTwoBonus.Location = new Point(230, lblTwoBonus.Location.Y);
+            }
+            else
+            {
+                lblTwoBonus.Location = new Point(236, lblTwoBonus.Location.Y);
             }
         }
 

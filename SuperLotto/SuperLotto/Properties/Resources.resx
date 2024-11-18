@@ -124,17 +124,11 @@
   <data name="Work" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Work.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="refresh3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\refresh3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="RedMess" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RedMess.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="stop1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\stop1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MyInfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MyInfo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bilibili" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bilibili.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,6 +142,9 @@
   <data name="earned" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\earned.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="clear02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clear02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Accomplish" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Accomplish.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,6 +154,9 @@
   <data name="Setting" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Setting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TiCai" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TiCai.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="exception01" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exception01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -165,9 +165,6 @@
   </data>
   <data name="buy1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\buy1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="historys" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\historys.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="money" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\money.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,8 +196,8 @@
   <data name="scheme" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\scheme.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="filter" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\filter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="exception08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exception08.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="OrderBy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\OrderBy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -219,6 +216,9 @@
   </data>
   <data name="SuperLotto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SuperLotto3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ShaLou" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ShaLou.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="regret" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\regret.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -241,14 +241,17 @@
   <data name="RandomCount" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RandomCount.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="use_skin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\use_skin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Loop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Loop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ShaLou" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ShaLou.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MyInfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MyInfo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="clear02" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\clear02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="filter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\filter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="analyse-data" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\analyse-data.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -280,16 +283,16 @@
   <data name="CarInfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CarInfo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TiCai" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TiCai.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="historys" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\historys.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="use_skin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\use_skin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="refresh3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\refresh3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="rounded_corners4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rounded_corners4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exception08" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exception08.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="skin1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\skin1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

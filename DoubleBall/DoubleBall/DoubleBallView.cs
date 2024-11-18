@@ -1,11 +1,12 @@
 ﻿using DoubleBalls.Controls;
+using DoubleBalls.Data;
 using DoubleBalls.Model;
 using DoubleBalls.Other;
 using DoubleBalls.Style;
 using MaterialSkin.Controls;
-using SuperLotto.Controls;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
@@ -22,6 +23,7 @@ namespace DoubleBalls
 
     public partial class DoubleBallView : SkinMain
     {
+        private Point _mPoint;
         /// <summary>
         /// 双色球类工具类
         /// </summary>
@@ -59,6 +61,7 @@ namespace DoubleBalls
 
         public event RefreshResizeEventHandler RefreshResize;
         public event RefreshMoveLocationEventHandler RefreshMoveLocation;
+        public event ExitLoopWaitEventHandler ExitLoopWaitEvent;
 
         public DoubleBallView() { InitializeComponent(); }
 
@@ -81,7 +84,7 @@ namespace DoubleBalls
             cmbRedTuoCount.SelectedIndex = 0;
             cmbBlueDanCount.SelectedIndex = 0;
             cmbMultiple.SelectedIndex = 0;
-            cmbStopCondition.SelectedIndex = 0;
+            cmbStopCondition.SelectedIndex = 5;
 
             _redBallLabelStyles[0] = lblRedBallA;
             _redBallLabelStyles[1] = lblRedBallB;
@@ -90,10 +93,17 @@ namespace DoubleBalls
             _redBallLabelStyles[4] = lblRedBallE;
             _redBallLabelStyles[5] = lblRedBallF;
 
-            LoadSettingApply();
+            panTop.MouseMove += (se, ev) => OffSetIt(ev);
+            panTop.MouseDown += (se, ev) => { _mPoint.X = ev.X; _mPoint.Y = ev.Y; };
+
             #endregion
 
             #region Initialize the new instance
+
+            LoadSettingApply();
+            LoadDefaultColor();
+
+            ExitLoopWaitEvent += ExitThatLoop;
 
             _doubleBallToo = new DoubleBallTool();
             _publicDoubleNumber = new SimplexDoubleBallNumber();
@@ -113,12 +123,11 @@ namespace DoubleBalls
 
             Config._historyPublicDoubleBallNumbers = new Queue<SimplexDoubleBallNumber>(100);
 
-            SoftwareExplain.LoadFile(Application.StartupPath + @"\explain.data");
-
             #endregion
 
             #region Shown Event
 
+            isLoad = false;
             lblDate.Text = DateTime.Now.ToString("yyyy.MM.dd");
 
             Shown += (o, args) =>
@@ -140,9 +149,29 @@ namespace DoubleBalls
                 {
                     if (!item.Visible) item.Visible = true;
                 }
+
+                LoopDataAnalyse.SetWindowRegion(panBody, 50);
             };
 
+            Logger.Info("is running...");
+            this.BackColor = Color.FromArgb(Config.Setting.BackColorArgb);
+            SoftwareExplain.LoadFile(Application.StartupPath + @"\explain.data");
+
             #endregion
+        }
+
+        /// <summary>
+        /// 鼠标移动方法
+        /// </summary>
+        /// <param name="ev"></param>
+        private void OffSetIt(MouseEventArgs ev)
+        {
+            if (ev.Button == MouseButtons.Left)
+            {
+                Point myPosition = MousePosition;
+                myPosition.Offset(-_mPoint.X, -_mPoint.Y);
+                Location = myPosition;
+            }
         }
 
         /// <summary>
@@ -390,7 +419,7 @@ namespace DoubleBalls
         private void LoopDataPreparationAndSettingFlag(long loopCount)
         {
             ResetLoopRunLotteryData();
-            LoadingHelper.ShowLoading(Info.LoopRunLotteryIng, Color.White, this, o =>
+            LoadingHelper.ShowLoading(Info.LoopRunLotteryIng, Color.White, ExitLoopWaitEvent, this, o =>
             {
                 _loopRunLotterysFlag = 0;
                 _loopRunLotteryCount = 0;
@@ -432,6 +461,15 @@ namespace DoubleBalls
 
             LoopRunLotterysTimer.Enabled = true;
             LoopRunLotterysTimer.Start();
+        }
+
+        /// <summary>
+        /// 退出循环方法事件
+        /// </summary>
+        private void ExitThatLoop()
+        {
+            _loopRunLotterysFlag = -1;
+            LoopRunLotterysTimer.Stop();
         }
 
         /// <summary>
@@ -4119,6 +4157,10 @@ namespace DoubleBalls
         /// 复试自选号窗体
         /// </summary>
         private OneselfComplex _OneselfComplex;
+        /// <summary>
+        /// 是否加载过异常日志
+        /// </summary>
+        private bool loadExceptionLog = false;
 
         /// <summary>
         /// 选项卡切换到自选页时展示自选号窗体
@@ -4148,6 +4190,18 @@ namespace DoubleBalls
                     _OneselfDantuo.Show(this);
                 }
                 else _OneselfDantuo.ShowThis();
+            }
+
+            //Load Exception Log
+            if (CardInterface.SelectedIndex == 5)
+            {
+                this.DataError.AutoGenerateColumns = false;
+
+                if (!loadExceptionLog)
+                {
+                    loadExceptionLog = true;
+                    RefreshExceptionData();
+                }
             }
         }
 
@@ -4204,6 +4258,8 @@ namespace DoubleBalls
 
             nudOneBonus.Value = setting.GetOneAward();
             nudTwoBonus.Value = setting.GetTwoAward();
+            lblOneBonus.Text = setting.GetOneAward().ToString();
+            lblTwoBonus.Text = setting.GetTwoAward().ToString();
 
             nudCustomizePeriods.Value = setting.CustomizePeriods;
             btnCustomizeRunLotterys.Tag = setting.CustomizePeriods;
@@ -4264,10 +4320,13 @@ namespace DoubleBalls
 
                 cmbCPattern.SelectedIndex = 0;
                 cmbMultiple.SelectedIndex = 0;
-                cmbStopCondition.SelectedIndex = 0;
+                cmbStopCondition.SelectedIndex = 5;
 
                 nudOneBonus.Value = (int)AwardType.OneAward;
                 nudTwoBonus.Value = (int)AwardType.TwoAward;
+                lblOneBonus.Text = nudOneBonus.Value.ToString();
+                lblTwoBonus.Text = nudTwoBonus.Value.ToString();
+
                 nudCustomizePeriods.Value = 156;
                 
                 RefreshIntervalPeriods();
@@ -4277,6 +4336,8 @@ namespace DoubleBalls
 
                 btnCustomizeRunLotterys.Tag = 156;
                 btnRondomCustomize.Tag = 156;
+                this.BackColor = Color.White;
+                picUseIt.Visible = false;
 
                 Info.ShowInfoMessage(Info.RestoreDefaultSetting);
             }
@@ -4338,11 +4399,15 @@ namespace DoubleBalls
 
             setting.CustomizePeriods = (int)nudCustomizePeriods.Value;
 
+            lblOneBonus.Text = nudOneBonus.Value.ToString();
+            lblTwoBonus.Text = nudTwoBonus.Value.ToString();
             btnCustomizeRunLotterys.Tag = setting.CustomizePeriods;
             btnRondomCustomize.Tag = setting.CustomizePeriods;
 
             setting.LoopStopCondition = cmbStopCondition.SelectedIndex;
+            setting.BackColorArgb = Config.Setting.BackColorArgb;
             setting.ZhuMultiple = cmbMultiple.SelectedIndex;
+            setting.AgreeDeclaration = true;
 
             Config.Setting = setting;
 
@@ -4377,6 +4442,8 @@ namespace DoubleBalls
             setting.ZhuMultiple = cmbMultiple.SelectedIndex;
 
             setting.SaveSetting();
+
+            Logger.Info("stop it...");
         }
 
         /// <summary>
@@ -4601,7 +4668,8 @@ namespace DoubleBalls
             {
                 _max = true;
                 lblMaxUndo.Text = "Uno";
-                MaximumSize = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
+                Screen currentScreen = Screen.FromControl(this);
+                MaximumSize = currentScreen.WorkingArea.Size;
                 WindowState = FormWindowState.Maximized;
             }
             else
@@ -4615,6 +4683,207 @@ namespace DoubleBalls
         private void DoubleBallView_Resize(object sender, EventArgs e) => RefreshResize?.Invoke();
 
         private void DoubleBallView_Move(object sender, EventArgs e) => RefreshMoveLocation?.Invoke();
+
+        /// <summary>
+        /// 单击改变皮肤事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void lblSkin1_Click(object sender, EventArgs e)
+        {
+            ExtendLabel colorLabel = sender as ExtendLabel;
+            this.BackColor = colorLabel.BackColor;
+
+            picUseIt.Visible = true;
+            colorLabel.removePicture();
+            colorLabel.Controls.Add(picUseIt);
+
+            Config.Setting.BackColorArgb = colorLabel.BackColor.ToArgb();
+            Config.Setting.SaveSetting();
+        }
+
+        private void lblDefaultSkin_Click(object sender, EventArgs e)
+        {
+            picUseIt.Visible = false;
+            this.BackColor = Color.White;
+            Config.Setting.BackColorArgb = -1;
+            Config.Setting.SaveSetting();
+        }
+
+        /// <summary>
+        /// 加载默认皮肤颜色
+        /// </summary>
+        private void LoadDefaultColor()
+        {
+            ExtendLabel useThat = null;
+            int backColor = Config.Setting.BackColorArgb;
+            //深蓝色
+            this.lblSkin1.BackColor = Color.FromArgb(-2892833);
+            if (backColor == -2892833) useThat = lblSkin1;
+
+            //星空灰
+            this.lblSkin2.BackColor = Color.FromArgb(-1382941);
+            if (backColor == -1382941) useThat = lblSkin2;
+
+            //天空蓝
+            this.lblSkin3.BackColor = Color.FromArgb(-12094);
+            if (backColor == -12094) useThat = lblSkin3;
+
+            //水彩粉
+            this.lblSkin4.BackColor = Color.FromArgb(-270873);
+            if (backColor == -270873) useThat = lblSkin4;
+
+            //活力橙
+            this.lblSkin5.BackColor = Color.FromArgb(-4594978);
+            if (backColor == -4594978) useThat = lblSkin5;
+
+            this.lblSkin6.BackColor = Color.FromArgb(-2101555);
+            if (backColor == -2101555) useThat = lblSkin6;
+
+            this.lblSkin7.BackColor = Color.FromArgb(-1123343);
+            if (backColor == -1123343) useThat = lblSkin7;
+
+            this.lblSkin8.BackColor = Color.FromArgb(-2436916);
+            if (backColor == -2436916) useThat = lblSkin8;
+
+            this.lblSkin9.BackColor = Color.FromArgb(-2822677);
+            if (backColor == -2822677) useThat = lblSkin9;
+
+            this.lblSkin10.BackColor = Color.FromArgb(-2756355);
+            if (backColor == -2756355) useThat = lblSkin10;
+
+            if (useThat != null)
+            {
+                picUseIt.Visible = true;
+                useThat.Controls.Add(picUseIt);
+            }
+        }
+
+        /// <summary>
+        /// 刷新异常日志
+        /// </summary>
+        private void RefreshExceptionData()
+        {
+            List<ExceptionLog> logs = SqlLite.Table<ExceptionLog>() as List<ExceptionLog>;
+
+            if (logs != null)
+            {
+                BindingList<ExceptionLog> bindings = new BindingList<ExceptionLog>(logs);
+                this.DataError.DataSource = bindings;
+                this.DataError.ClearSelection();
+            }
+        }
+
+        private void btnClearLog_Click(object sender, EventArgs e)
+        {
+            DialogResult oKCancel = MessageBox.Show(Info.ClearExceptionLog, Info.DoubleBall, MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (oKCancel == DialogResult.OK)
+            {
+                int result = SqlLite.DeleteAll<ExceptionLog>();
+                if (result >= 0)
+                {
+                    this.DataError.DataSource = null;
+                }
+            }
+        }
+
+        private void btnRefreshLog_Click(object sender, EventArgs e) => RefreshExceptionData();
+
+        private void MenuDelete_Click(object sender, EventArgs e)
+        {
+            if (this.DataError.SelectedRows.Count == 0)
+            {
+                return;
+            }
+
+            List<int> primaryKeys = new List<int>();
+            foreach (DataGridViewRow row in DataError.SelectedRows)
+            {
+                primaryKeys.Add(int.Parse(row.Cells[0].Value.ToString()));
+                this.DataError.Rows.Remove(row);
+            }
+            //batch delete
+            SqlLite.Execute(SQL.DeleteLogByIds(primaryKeys));
+        }
+
+        private void MenuExport_Click(object sender, EventArgs e)
+        {
+            if (this.DataError.SelectedRows.Count == 0)
+                return;
+
+            FolderBrowserDialog locationResult = new FolderBrowserDialog();
+            locationResult.Description = Info.SaveLocation;
+
+            if (locationResult.ShowDialog() != DialogResult.OK)
+                return;
+
+            List<int> primaryKeys = new List<int>();
+            string exportPath = locationResult.SelectedPath;
+
+            foreach (DataGridViewRow row in DataError.SelectedRows)
+            {
+                primaryKeys.Add(int.Parse(row.Cells[0].Value.ToString()));
+            }
+
+            List<ExceptionLog> exList
+                = SqlLite.Query<ExceptionLog>(SQL.SelectLogByIds(primaryKeys)) as List<ExceptionLog>;
+
+            int exportCount = ExportThatToFile(exList, exportPath);
+
+            notify.ShowBalloonTip(500, string.Empty, string.Format(Info.ExprotLogCount, exportCount), ToolTipIcon.Info);
+        }
+
+        private void MenuView_Click(object sender, EventArgs e)
+        {
+            if (this.DataError.SelectedRows.Count == 0)
+                return;
+
+            string rowId = DataError.SelectedRows[0].Cells[0].Value.ToString();
+
+            ExceptionLog exLog = SqlLite.Get<ExceptionLog>(rowId) as ExceptionLog;
+
+            if (exLog != null)
+            {
+                if (ViewException.isOpenThat(exLog.Id))
+                {
+                    notify.ShowBalloonTip(500, "", Info.AlreadyOpenLog, ToolTipIcon.Info);
+                    return;
+                }
+                ViewException viewException = new ViewException(exLog);
+                viewException.Show();
+            }
+        }
+
+        /// <summary>
+        /// 导出数据到文件
+        /// </summary>
+        /// <param name="exList"></param>
+        /// <param name="directory"></param>
+        /// <returns></returns>
+        public int ExportThatToFile(List<ExceptionLog> exList, string directory)
+        {
+            int count = 0;
+            StringBuilder errorText = new StringBuilder();
+
+            foreach (var ex in exList)
+            {
+                errorText.Append("encoding：" + "\t\t\t" + ex.Encoding + "\n");
+                errorText.Append("exception date：" + "\t" + ex.ExceptionDate + "\n");
+                errorText.Append("exception type：" + "\t" + ex.ExceptionType + "\n");
+                errorText.Append("exception source：" + "\t" + ex.ExceptionSource + "\n");
+                errorText.Append("exception method：" + "\t" + ex.ExceptionMethod + "\n");
+                errorText.Append("exception message：" + "\t" + ex.ExceptionMessage + "\n");
+                errorText.Append("call stack：" + "\n");
+                errorText.Append(ex.CallStack + "\n");
+                count++;
+            }
+
+            string fileName = DateTime.Now.ToString("yyyyMMddHHmmssfffff");
+            Logger.WriteContentToFile(directory, directory + @"\" + "exception-" + fileName + ".log", errorText.ToString());
+
+            errorText.Clear();
+            return count;
+        }
 
         /// <summary>
         /// 获取单注追加倍数
@@ -4682,6 +4951,17 @@ namespace DoubleBalls
             isHide = !isHide;
         }
 
+        //窗体 Load 时不要触发圆角设置
+        bool isLoad = true;
+        private void DoubleBallView_SizeChanged(object sender, EventArgs e)
+        {
+            if (!isLoad)
+            {
+                //窗体大小变化时重新应用圆角
+                LoopDataAnalyse.SetWindowRegion(panBody, 50);
+            }
+        }
+
         private void lblClose_Click(object sender, EventArgs e) => Application.Exit();
 
         private void lblMin_Click(object sender, EventArgs e)
@@ -4695,6 +4975,31 @@ namespace DoubleBalls
             ExtendLabel link = sender as ExtendLabel;
             Process.Start(link.Text);
         }
+
+        private void lblOneBonus_TextChanged(object sender, EventArgs e)
+        {
+            if (lblOneBonus.Text.Length > 7)
+            {
+                lblOneBonus.Location = new Point(221, lblOneBonus.Location.Y);
+            }
+            else
+            {
+                lblOneBonus.Location = new Point(229, lblOneBonus.Location.Y);
+            }
+        }
+
+        private void lblTwoBonus_TextChanged(object sender, EventArgs e)
+        {
+            if (lblTwoBonus.Text.Length > 6)
+            {
+                lblTwoBonus.Location = new Point(230, lblTwoBonus.Location.Y);
+            }
+            else
+            {
+                lblTwoBonus.Location = new Point(236, lblTwoBonus.Location.Y);
+            }
+        }
+
 
         private int ParseTagValueToInt(Control control) => int.Parse(control.Tag.ToString());
 

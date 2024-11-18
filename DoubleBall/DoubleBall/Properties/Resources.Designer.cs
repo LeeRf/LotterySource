@@ -133,9 +133,29 @@ namespace DoubleBalls.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap buy1 {
+            get {
+                object obj = ResourceManager.GetObject("buy1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap CarInfo {
             get {
                 object obj = ResourceManager.GetObject("CarInfo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap clear02 {
+            get {
+                object obj = ResourceManager.GetObject("clear02", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,6 +203,16 @@ namespace DoubleBalls.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap doubleball01 {
+            get {
+                object obj = ResourceManager.GetObject("doubleball01", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap earned {
             get {
                 object obj = ResourceManager.GetObject("earned", resourceCulture);
@@ -206,6 +236,36 @@ namespace DoubleBalls.Properties {
         internal static System.Drawing.Bitmap email002 {
             get {
                 object obj = ResourceManager.GetObject("email002", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap error_log {
+            get {
+                object obj = ResourceManager.GetObject("error-log", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap exception01 {
+            get {
+                object obj = ResourceManager.GetObject("exception01", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap exception08 {
+            get {
+                object obj = ResourceManager.GetObject("exception08", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -363,6 +423,16 @@ namespace DoubleBalls.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap refresh3 {
+            get {
+                object obj = ResourceManager.GetObject("refresh3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap regret {
             get {
                 object obj = ResourceManager.GetObject("regret", resourceCulture);
@@ -406,6 +476,16 @@ namespace DoubleBalls.Properties {
         internal static System.Drawing.Bitmap ShaLou {
             get {
                 object obj = ResourceManager.GetObject("ShaLou", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap skin1 {
+            get {
+                object obj = ResourceManager.GetObject("skin1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -466,6 +546,16 @@ namespace DoubleBalls.Properties {
         internal static System.Drawing.Bitmap upage_data {
             get {
                 object obj = ResourceManager.GetObject("upage-data", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap use_skin {
+            get {
+                object obj = ResourceManager.GetObject("use_skin", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
