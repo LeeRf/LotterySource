@@ -169,5 +169,25 @@ namespace SuperLotto.Model
             }
             return true;
         }
+
+        public override string ToString()
+        {
+            return "{" + $"" +
+                $"\"MyNumberType\":\"{myNumberType}\"," +
+                $"\"RandomGenerateCount\":\"{RandomGenerateCount}\"," +
+                $"\"BuyHabit\":\"{BuyHabit}\"," +
+                $"\"CustomizeModeType\":\"{CustomizeModeType}\"," +
+                $"\"FixedPeriod\":\"{FixedPeriod}\"," +
+                $"\"UncertaintyStartPeriod\":\"{UncertaintyStartPeriod}\"," +
+                $"\"UncertaintyEndPeriod\":\"{UncertaintyEndPeriod}\"," +
+                $"\"LoopStopCondition\":\"{LoopStopCondition}\"," +
+                $"\"ZhuMultiple\":\"{ZhuMultiple}\"," +
+                $"\"OneAward\":\"{OneAward}\"," +
+                $"\"TwoAward\":\"{TwoAward}\"," +
+                $"\"CustomizePeriods\":\"{CustomizePeriods}\"," +
+                $"\"BackColorArgb\":\"{BackColorArgb}\"," +
+                $"\"AgreeDeclaration\":\"{AgreeDeclaration}\""
+                + "}";
+        }
     }
 }

@@ -3111,7 +3111,7 @@
             this.btnSaveSetting.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnSaveSetting.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnSaveSetting.Icon = null;
-            this.btnSaveSetting.Location = new System.Drawing.Point(735, 575);
+            this.btnSaveSetting.Location = new System.Drawing.Point(718, 575);
             this.btnSaveSetting.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnSaveSetting.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnSaveSetting.Name = "btnSaveSetting";
@@ -3136,7 +3136,7 @@
             this.btnRestoreDefault.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnRestoreDefault.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnRestoreDefault.Icon = null;
-            this.btnRestoreDefault.Location = new System.Drawing.Point(636, 575);
+            this.btnRestoreDefault.Location = new System.Drawing.Point(619, 575);
             this.btnRestoreDefault.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnRestoreDefault.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnRestoreDefault.Name = "btnRestoreDefault";

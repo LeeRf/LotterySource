@@ -153,7 +153,7 @@ namespace DoubleBalls
                 LoopDataAnalyse.SetWindowRegion(panBody, 50);
             };
 
-            Logger.Info("is running...");
+            Logger.Info("is running.");
             this.BackColor = Color.FromArgb(Config.Setting.BackColorArgb);
             SoftwareExplain.LoadFile(Application.StartupPath + @"\explain.data");
 
@@ -361,6 +361,20 @@ namespace DoubleBalls
         {
             if (WhetherMeetsCriteria())
             {
+                string buttonType = ((MaterialFlatButton)sender).Name;
+                if (buttonType == "btnFiveYearsRunLotterys")
+                {
+                    Logger.Info("five year fixed number run lottery.");
+                }
+                else if (buttonType == "btnTenYearsRunLotterys")
+                {
+                    Logger.Info("ten year fixed number run lottery.");
+                }
+                else if (buttonType == "btnCustomizeRunLotterys")
+                {
+                    Logger.Info($"customize {Config.Setting.CustomizePeriods} fixed number run lottery.");
+                }
+
                 switch (CardInterface.SelectedIndex)
                 {
                     //机选页 & 自选复式页
@@ -470,6 +484,8 @@ namespace DoubleBalls
         {
             _loopRunLotterysFlag = -1;
             LoopRunLotterysTimer.Stop();
+
+            Logger.Info($"early exit loop : {_loopRunLotteryCount}");
         }
 
         /// <summary>
@@ -507,6 +523,7 @@ namespace DoubleBalls
         {
             if (WhetherMeetsCriteria())
             {
+                Logger.Info("infinite fixed number run lottery.");
                 switch (CardInterface.SelectedIndex)
                 {
                     //[机选页]、自选复式页] 的无限守号开奖
@@ -1164,6 +1181,9 @@ namespace DoubleBalls
         /// </summary>
         private void btnResetData_Click(object sender, EventArgs e)
         {
+            Logger.Info("reset all data.");
+            Logger.Info($"reset all of periods : {lblDoubleBallPeriods.Text}");
+
             //重置期数及次数
             _loopRunLotterysFlag = -1;
             lblDoubleBallPeriods.Tag = 0;
@@ -1276,6 +1296,25 @@ namespace DoubleBalls
                 //机选页
                 case int index when index >= 1 && index <= 3:
 
+                    string buttonType = ((MaterialFlatButton)sender).Name;
+
+                    if (buttonType == "btnRondomFiveYear")
+                    {
+                        Logger.Info("five year random number run lottery.");
+                    }
+                    else if (buttonType == "btnRondomTenYear")
+                    {
+                        Logger.Info("ten year random number run lottery.");
+                    }
+                    else if (buttonType == "btnRondomCustomize")
+                    {
+                        Logger.Info($"customize {Config.Setting.CustomizePeriods} random number run lottery.");
+                    }
+                    else if (buttonType == "btnInfiniteRondomLoopYear")
+                    {
+                        Logger.Info("infinite random number run lottery.");
+                    }
+
                     if (loopCount == 9999)
                     {
                         if (Info.ShowQuestionMessage(Info.LoopRunLotteryMessage1) != DialogResult.OK)
@@ -1357,6 +1396,8 @@ namespace DoubleBalls
                 RefreshRandomMoney();
 
                 panOrderRandom.Visible = _randomDoubleBallCount > 1;
+
+                Logger.Info($"random {randomCount} simplex number.");
             }
             else
             {
@@ -1611,6 +1652,8 @@ namespace DoubleBalls
         /// </summary>
         private void btnResetRandomNo_Click(object sender, EventArgs e)
         {
+            Logger.Info($"reset my simplex number : {_mySimplexDoubleBallNumberList.Count} row");
+
             _randomDoubleBallCount = 0;
             _randomDoubleBallMoney = 0;
             _randomDoubleDoubleBallSerial = 0;
@@ -2684,6 +2727,8 @@ namespace DoubleBalls
         /// </summary>
         private void btnResetOneself_Click(object sender, EventArgs e)
         {
+            Logger.Info($"reset my complex number : {_myComplexDoubleBallNumberList.Count} row");
+
             _CreateIndexByComplex = 0;
             _ComplexDoubleBallDoubleBallCount = 0;
             _myComplexDoubleBallNumberList.Clear();
@@ -2924,11 +2969,13 @@ namespace DoubleBalls
 
             RefreshOneselfNumberMoneyByComplex(true, _ComplexDoubleBallNumber);
 
-            SetDoubleBallInfo(
-                _ComplexHelper.oneselfLabelNo, _ComplexDoubleBallNumber.redBallCount + "-" + _ComplexDoubleBallNumber.blueBallCount);
+            string selfCount = $"[{_ComplexDoubleBallNumber.redBallCount}-{_ComplexDoubleBallNumber.blueBallCount}]";
+            SetDoubleBallInfo(_ComplexHelper.oneselfLabelNo, selfCount);
 
             _OneselfComplex.ResetDoubleBallNumber();
             ResetComplexVariate();
+
+            Logger.Info($"self complex number : {selfCount}");
         }
 
         /// <summary>
@@ -3090,6 +3137,8 @@ namespace DoubleBalls
 
             //显示机选双色球号码
             CreateAllComplexDoubleBalls(complexCount, true);
+
+            Logger.Info($"random {complexCount} complex number.");
         }
 
         /// <summary>
@@ -3658,12 +3707,17 @@ namespace DoubleBalls
 
             RefreshOneselfNumberMoneyByDantuo(true, _DantuoDoubleBallNumber);
 
-            SetDoubleBallInfo(_DantuoHelper.oneselfLabelNo,
-                _DantuoDoubleBallNumber.redBallDanCount + "-" +
-                _DantuoDoubleBallNumber.redBallTuoCount + "-" + _DantuoDoubleBallNumber.blueBallCount);
+            string selfCount = "[" + _DantuoDoubleBallNumber.redBallDanCount + "-"
+                + _DantuoDoubleBallNumber.redBallTuoCount + "-"
+                + _DantuoDoubleBallNumber.blueBallCount
+                + "]";
+
+            SetDoubleBallInfo(_DantuoHelper.oneselfLabelNo, selfCount);
 
             _OneselfDantuo.ResetDoubleBallNumber();
             ResetDantuoVariate();
+
+            Logger.Info($"self dantuo number : {selfCount}");
         }
 
         /// <summary>
@@ -3752,6 +3806,8 @@ namespace DoubleBalls
             RefreshOneselfNumberMoneyByDantuoList(_myDantuoDoubleBallNumberList.Cast<DoubleBall>().ToList());
 
             CreateAllDantuoDoubleBalls(createCount, true);
+
+            Logger.Info($"random {createCount} dantuo number.");
         }
 
         /// <summary>
@@ -3974,6 +4030,8 @@ namespace DoubleBalls
         /// <param name="e"></param>
         private void btnResetDOneself_Click(object sender, EventArgs e)
         {
+            Logger.Info($"reset my dantuo number : {_myDantuoDoubleBallNumberList.Count} row");
+
             _CreateIndexByDantuo = 0;
             _DantuoDoubleBallDoubleBallCount = 0;
             _myDantuoDoubleBallNumberList.Clear();
@@ -4203,6 +4261,17 @@ namespace DoubleBalls
                     RefreshExceptionData();
                 }
             }
+
+            //Log it
+            if (CardInterface.SelectedIndex == 0) Logger.Info("to software desc page.");
+            else if (CardInterface.SelectedIndex == 1) Logger.Info("to simplex page.");
+            else if (CardInterface.SelectedIndex == 2) Logger.Info("to complex page.");
+            else if (CardInterface.SelectedIndex == 3) Logger.Info("to dantuo page.");
+            else if (CardInterface.SelectedIndex == 4) Logger.Info("to setting page.");
+            else if (CardInterface.SelectedIndex == 5) Logger.Info("to exception log page.");
+            else if (CardInterface.SelectedIndex == 6) Logger.Info("to update log page.");
+            else if (CardInterface.SelectedIndex == 7) Logger.Info("to about software page.");
+
         }
 
         /// <summary>
@@ -4339,10 +4408,12 @@ namespace DoubleBalls
                 this.BackColor = Color.White;
                 picUseIt.Visible = false;
 
+                Logger.Warning("reset default setting success.");
                 Info.ShowInfoMessage(Info.RestoreDefaultSetting);
             }
             else
             {
+                Logger.Warning("reset default setting fail.");
                 Info.ShowErrorMessage(Info.OperatioFail);
             }
         }
@@ -4414,10 +4485,12 @@ namespace DoubleBalls
             if (setting.SaveSetting())
             {
                 RefreshIntervalPeriods();
+                Logger.Warning($"apply my setting success : {setting.ToString()}");
                 Info.ShowInfoMessage(Info.SaveSettingSuccess);
             }
             else
             {
+                Logger.Warning("apply my setting fail.");
                 Info.ShowErrorMessage(Info.OperatioFail);
             }
         }
@@ -4443,7 +4516,8 @@ namespace DoubleBalls
 
             setting.SaveSetting();
 
-            Logger.Info("stop it...");
+            Logger.Info($"number of lottery periods : {lblDoubleBallPeriods.Text}");
+            Logger.Info("stop it.");
         }
 
         /// <summary>
@@ -4671,12 +4745,14 @@ namespace DoubleBalls
                 Screen currentScreen = Screen.FromControl(this);
                 MaximumSize = currentScreen.WorkingArea.Size;
                 WindowState = FormWindowState.Maximized;
+                Logger.Info("maximize window.");
             }
             else
             {
                 _max = false;
                 lblMaxUndo.Text = "Max";
                 WindowState = FormWindowState.Normal;
+                Logger.Info("normal window.");
             }
         }
 
@@ -4700,6 +4776,8 @@ namespace DoubleBalls
 
             Config.Setting.BackColorArgb = colorLabel.BackColor.ToArgb();
             Config.Setting.SaveSetting();
+
+            Logger.Info($"skin modification:{colorLabel.BackColor}");
         }
 
         private void lblDefaultSkin_Click(object sender, EventArgs e)
@@ -4708,6 +4786,8 @@ namespace DoubleBalls
             this.BackColor = Color.White;
             Config.Setting.BackColorArgb = -1;
             Config.Setting.SaveSetting();
+
+            Logger.Info("setting default skin.");
         }
 
         /// <summary>
@@ -4783,11 +4863,16 @@ namespace DoubleBalls
                 if (result >= 0)
                 {
                     this.DataError.DataSource = null;
+                    Logger.Info($"clear all exception log : {result} row");
                 }
             }
         }
 
-        private void btnRefreshLog_Click(object sender, EventArgs e) => RefreshExceptionData();
+        private void btnRefreshLog_Click(object sender, EventArgs e)
+        {
+            RefreshExceptionData();
+            Logger.Info($"refresh exception log : {DataError.Rows.Count} row");
+        }
 
         private void MenuDelete_Click(object sender, EventArgs e)
         {
@@ -4803,7 +4888,9 @@ namespace DoubleBalls
                 this.DataError.Rows.Remove(row);
             }
             //batch delete
-            SqlLite.Execute(SQL.DeleteLogByIds(primaryKeys));
+            int result = SqlLite.Execute(SQL.DeleteLogByIds(primaryKeys));
+
+            Logger.Info($"delete exception log : {result} row");
         }
 
         private void MenuExport_Click(object sender, EventArgs e)
@@ -4830,6 +4917,8 @@ namespace DoubleBalls
 
             int exportCount = ExportThatToFile(exList, exportPath);
 
+            Logger.Info($"export exception log to {exportPath} : {exportCount} row");
+
             notify.ShowBalloonTip(500, string.Empty, string.Format(Info.ExprotLogCount, exportCount), ToolTipIcon.Info);
         }
 
@@ -4849,6 +4938,7 @@ namespace DoubleBalls
                     notify.ShowBalloonTip(500, "", Info.AlreadyOpenLog, ToolTipIcon.Info);
                     return;
                 }
+                Logger.Info($"view exception : id {exLog.Id} | message : {exLog.ExceptionMessage}");
                 ViewException viewException = new ViewException(exLog);
                 viewException.Show();
             }
@@ -4949,6 +5039,8 @@ namespace DoubleBalls
             }
 
             isHide = !isHide;
+
+            Logger.Info("open history number windons");
         }
 
         //窗体 Load 时不要触发圆角设置
@@ -4968,12 +5060,16 @@ namespace DoubleBalls
         {
             _OneselfComplex?.HideThis();
             WindowState = FormWindowState.Minimized;
+
+            Logger.Info("minimized window.");
         }
 
         private void lblGitHubLink_Click(object sender, EventArgs e)
         {
             ExtendLabel link = sender as ExtendLabel;
             Process.Start(link.Text);
+
+            Logger.Info("click author link : " + link.Text);
         }
 
         private void lblOneBonus_TextChanged(object sender, EventArgs e)

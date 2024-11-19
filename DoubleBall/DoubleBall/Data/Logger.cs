@@ -78,8 +78,16 @@ namespace DoubleBalls.Data
         /// <returns></returns>
         private static string FormatThat(string message, LogLevel level)
         {
+            //DEBUG是调用方法的上一层
+            int stackDepth = 2;
+
+            //Release 模式下适当减少层数
+            #if !DEBUG
+                stackDepth = 1;
+            #endif
+
             // 获取调用日志的文件名和行号
-            var stackFrame = new StackFrame(2, true); // 2 表示调用栈中的上一层
+            var stackFrame = new StackFrame(stackDepth, true);
             string fileName = stackFrame.GetFileName();
             int lineNumber = stackFrame.GetFileLineNumber();
 

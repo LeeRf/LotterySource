@@ -163,7 +163,7 @@ namespace SuperLotto
                 LoopDataAnalyse.SetWindowRegion(panBody, 50);
             };
 
-            Logger.Info("is running...");
+            Logger.Info("is running.");
             this.BackColor = Color.FromArgb(Config.Setting.BackColorArgb);
             SoftwareExplain.LoadFile(Application.StartupPath + @"\explain.data");
 
@@ -371,6 +371,20 @@ namespace SuperLotto
         {
             if (WhetherMeetsCriteria())
             {
+                string buttonType = ((MaterialFlatButton)sender).Name;
+                if (buttonType == "btnFiveYearsRunLotterys")
+                {
+                    Logger.Info("five year fixed number run lottery.");
+                }
+                else if (buttonType == "btnTenYearsRunLotterys")
+                {
+                    Logger.Info("ten year fixed number run lottery.");
+                }
+                else if (buttonType == "btnCustomizeRunLotterys")
+                {
+                    Logger.Info($"customize {Config.Setting.CustomizePeriods} fixed number run lottery.");
+                }
+
                 switch (CardInterface.SelectedIndex)
                 {
                     //机选页 & 自选复式页
@@ -489,6 +503,8 @@ namespace SuperLotto
         {
             _loopRunLotterysFlag = -1;
             LoopRunLotterysTimer.Stop();
+
+            Logger.Info($"early exit loop : {_loopRunLotteryCount}");
         }
 
         /// <summary>
@@ -515,6 +531,7 @@ namespace SuperLotto
         {
             if (WhetherMeetsCriteria())
             {
+                Logger.Info("infinite fixed number run lottery.");
                 switch (CardInterface.SelectedIndex)
                 {
                     //[机选页]、自选复式页] 的无限守号开奖
@@ -1246,6 +1263,9 @@ namespace SuperLotto
         /// </summary>
         private void btnResetData_Click(object sender, EventArgs e)
         {
+            Logger.Info("reset all data.");
+            Logger.Info($"reset all of periods : {lblSuperLottoPeriods.Text}");
+
             //重置期数及次数
             _loopRunLotterysFlag = -1;
             lblSuperLottoPeriods.Tag = 0;
@@ -1358,6 +1378,25 @@ namespace SuperLotto
                 //机选页
                 case int index when index >= 1 && index <= 3:
 
+                    string buttonType = ((MaterialFlatButton)sender).Name;
+
+                    if (buttonType == "btnRondomFiveYear")
+                    {
+                        Logger.Info("five year random number run lottery.");
+                    }
+                    else if (buttonType == "btnRondomTenYear")
+                    {
+                        Logger.Info("ten year random number run lottery.");
+                    }
+                    else if (buttonType == "btnRondomCustomize")
+                    {
+                        Logger.Info($"customize {Config.Setting.CustomizePeriods} random number run lottery.");
+                    }
+                    else if (buttonType == "btnInfiniteRondomLoopYear")
+                    {
+                        Logger.Info("infinite random number run lottery.");
+                    }
+
                     if (loopCount == 9999)
                     {
                         if (Info.ShowQuestionMessage(Info.LoopRunLotteryMessage1) != DialogResult.OK)
@@ -1439,6 +1478,8 @@ namespace SuperLotto
                 RefreshRandomMoney();
 
                 panOrderRandom.Visible = _randomSuperLottoCount > 1;
+
+                Logger.Info($"random {randomCount} simplex number.");
             }
             else
             {
@@ -1708,6 +1749,8 @@ namespace SuperLotto
         /// </summary>
         private void btnResetRandomNo_Click(object sender, EventArgs e)
         {
+            Logger.Info($"reset my simplex number : {_mySimplexSuperLottoNumberList.Count} row");
+
             _randomSuperLottoCount = 0;
             _randomSuperLottoMoney = 0;
             _randomSuperLottoBallSerial = 0;
@@ -2830,6 +2873,8 @@ namespace SuperLotto
         /// </summary>
         private void btnResetOneself_Click(object sender, EventArgs e)
         {
+            Logger.Info($"reset my complex number : {_myComplexSuperLottoNumberList.Count} row");
+
             _CreateIndexByComplex = 0;
             _ComplexSuperLottoSuperLottoCount = 0;
             _myComplexSuperLottoNumberList.Clear();
@@ -3074,11 +3119,12 @@ namespace SuperLotto
 
             RefreshOneselfNumberMoneyByComplex(true, _ComplexSuperLottoNumber);
 
-            SetSuperLottoInfo(
-                _ComplexHelper.oneselfLabelNo, _ComplexSuperLottoNumber.redBallCount + "-" + _ComplexSuperLottoNumber.blueBallCount);
-
+            string selfCount = $"[{ _ComplexSuperLottoNumber.redBallCount}-{ _ComplexSuperLottoNumber.blueBallCount}]";
+            SetSuperLottoInfo(_ComplexHelper.oneselfLabelNo, selfCount);
             _OneselfComplex.ResetSuperLottoNumber();
             ResetComplexVariate();
+
+            Logger.Info($"self complex number : {selfCount}");
         }
 
         /// <summary>
@@ -3247,6 +3293,8 @@ namespace SuperLotto
 
             //显示机选大乐透号码
             CreateAllComplexSuperLottos(complexCount, true);
+
+            Logger.Info($"random {complexCount} complex number.");
         }
 
         /// <summary>
@@ -3823,12 +3871,17 @@ namespace SuperLotto
 
             RefreshOneselfNumberMoneyByDantuo(true, _DantuoSuperLottoNumber);
 
-            SetSuperLottoInfo(_DantuoHelper.oneselfLabelNo,
-                _DantuoSuperLottoNumber.redBallDanCount + "-" +
-                _DantuoSuperLottoNumber.redBallTuoCount + "-" + _DantuoSuperLottoNumber.blueBallDanCount + "-" + _DantuoSuperLottoNumber.blueBallTuoCount);
+            string selfCount = "[" + _DantuoSuperLottoNumber.redBallDanCount + "-" 
+                + _DantuoSuperLottoNumber.redBallTuoCount + "-" 
+                + _DantuoSuperLottoNumber.blueBallDanCount 
+                + "-" + _DantuoSuperLottoNumber.blueBallTuoCount 
+                + "]";
 
+            SetSuperLottoInfo(_DantuoHelper.oneselfLabelNo, selfCount);
             _OneselfDantuo.ResetSuperLottoNumber();
             ResetDantuoVariate();
+
+            Logger.Info($"self dantuo number : {selfCount}");
         }
 
         /// <summary>
@@ -3916,6 +3969,8 @@ namespace SuperLotto
             RefreshOneselfNumberMoneyByDantuoList(_myDantuoSuperLottoNumberList.Cast<SuperLottos>().ToList());
 
             CreateAllDantuoSuperLottos(createCount, true);
+
+            Logger.Info($"random {createCount} dantuo number.");
         }
 
         /// <summary>
@@ -4148,6 +4203,8 @@ namespace SuperLotto
         /// <param name="e"></param>
         private void btnResetDOneself_Click(object sender, EventArgs e)
         {
+            Logger.Info($"reset my dantuo number : {_myDantuoSuperLottoNumberList.Count} row");
+
             _CreateIndexByDantuo = 0;
             _DantuoSuperLottoSuperLottoCount = 0;
             _myDantuoSuperLottoNumberList.Clear();
@@ -4380,6 +4437,17 @@ namespace SuperLotto
                     RefreshExceptionData();
                 }
             }
+
+            //Log it
+            if(CardInterface.SelectedIndex == 0) Logger.Info("to software desc page.");
+            else if(CardInterface.SelectedIndex == 1) Logger.Info("to simplex page.");
+            else if (CardInterface.SelectedIndex == 2) Logger.Info("to complex page.");
+            else if (CardInterface.SelectedIndex == 3) Logger.Info("to dantuo page.");
+            else if (CardInterface.SelectedIndex == 4) Logger.Info("to setting page.");
+            else if (CardInterface.SelectedIndex == 5) Logger.Info("to exception log page.");
+            else if (CardInterface.SelectedIndex == 6) Logger.Info("to update log page.");
+            else if (CardInterface.SelectedIndex == 7) Logger.Info("to about software page.");
+
         }
 
         /// <summary>
@@ -4516,10 +4584,12 @@ namespace SuperLotto
                 this.BackColor = Color.White;
                 picUseIt.Visible = false;
 
+                Logger.Warning("reset default setting success.");
                 Info.ShowInfoMessage(Info.RestoreDefaultSetting);
             }
             else
             {
+                Logger.Warning("reset default setting fail.");
                 Info.ShowErrorMessage(Info.OperatioFail);
             }
         }
@@ -4591,10 +4661,12 @@ namespace SuperLotto
             if (setting.SaveSetting())
             {
                 RefreshIntervalPeriods();
+                Logger.Warning($"apply my setting success : {setting.ToString()}");
                 Info.ShowInfoMessage(Info.SaveSettingSuccess);
             }
             else
             {
+                Logger.Warning("apply my setting fail.");
                 Info.ShowErrorMessage(Info.OperatioFail);
             }
         }
@@ -4620,7 +4692,8 @@ namespace SuperLotto
 
             setting.SaveSetting();
 
-            Logger.Info("stop it...");
+            Logger.Info($"number of lottery periods : {lblSuperLottoPeriods.Text}");
+            Logger.Info("stop it.");
         }
 
         /// <summary>
@@ -4862,6 +4935,8 @@ namespace SuperLotto
 
             Config.Setting.BackColorArgb = colorLabel.BackColor.ToArgb();
             Config.Setting.SaveSetting();
+
+            Logger.Info($"skin modification:{colorLabel.BackColor}");
         }
 
         private void lblDefaultSkin_Click(object sender, EventArgs e)
@@ -4870,6 +4945,8 @@ namespace SuperLotto
             this.BackColor = Color.White;
             Config.Setting.BackColorArgb = -1;
             Config.Setting.SaveSetting();
+
+            Logger.Info("setting default skin.");
         }
 
         /// <summary>
@@ -4948,6 +5025,7 @@ namespace SuperLotto
                 if (result >= 0)
                 {
                     this.DataError.DataSource = null;
+                    Logger.Info($"clear all exception log : {result} row");
                 }
             }
         }
@@ -4971,7 +5049,9 @@ namespace SuperLotto
                 this.DataError.Rows.Remove(row);
             }
             //batch delete
-            SqlLite.Execute(SQL.DeleteLogByIds(primaryKeys));
+            int result = SqlLite.Execute(SQL.DeleteLogByIds(primaryKeys));
+
+            Logger.Info($"delete exception log : {result} row");
         }
 
         /// <summary>
@@ -5003,6 +5083,8 @@ namespace SuperLotto
 
             int exportCount = ExportThatToFile(exList, exportPath);
 
+            Logger.Info($"export exception log to {exportPath} : {exportCount} row");
+
             notify.ShowBalloonTip(500, string.Empty, string.Format(Info.ExprotLogCount, exportCount), ToolTipIcon.Info);
         }
 
@@ -5027,6 +5109,7 @@ namespace SuperLotto
                     notify.ShowBalloonTip(500, "", Info.AlreadyOpenLog, ToolTipIcon.Info);
                     return;
                 }
+                Logger.Info($"view exception : id {exLog.Id} | message : {exLog.ExceptionMessage}");
                 ViewException viewException = new ViewException(exLog);
                 viewException.Show();
             }
@@ -5073,12 +5156,14 @@ namespace SuperLotto
                 Screen currentScreen = Screen.FromControl(this);
                 MaximumSize = currentScreen.WorkingArea.Size;
                 WindowState = FormWindowState.Maximized;
+                Logger.Info("maximize window.");
             }
             else
             {
                 _max = false;
                 lblMaxUndo.Text = "Max";
                 WindowState = FormWindowState.Normal;
+                Logger.Info("normal window.");
             }
         }
 
@@ -5150,6 +5235,8 @@ namespace SuperLotto
             }
 
             isHide = !isHide;
+
+            Logger.Info("open history number windons");
         }
 
         private void lblClose_Click(object sender, EventArgs e) => Application.Exit();
@@ -5158,12 +5245,15 @@ namespace SuperLotto
         {
             _OneselfComplex?.HideThis();
             WindowState = FormWindowState.Minimized;
+
+            Logger.Info("minimized window.");
         }
 
         private void lblGitHubLink_Click(object sender, EventArgs e)
         {
             ExtendLabel link = sender as ExtendLabel;
             Process.Start(link.Text);
+            Logger.Info("click author link : " + link.Text);
         }
 
         //窗体 Load 时不要触发圆角设置
@@ -5201,7 +5291,11 @@ namespace SuperLotto
             }
         }
 
-        private void btnRefreshLog_Click(object sender, EventArgs e) => RefreshExceptionData();
+        private void btnRefreshLog_Click(object sender, EventArgs e)
+        {
+            RefreshExceptionData();
+            Logger.Info($"refresh exception log : {DataError.Rows.Count} row");
+        }
 
         private int ParseTagValueToInt(Control control) => int.Parse(control.Tag.ToString());
 
