@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
 [assembly: AssemblyTitle("SuperLotto")]
-[assembly: AssemblyDescription("大乐透概率模拟程序")]
+[assembly: AssemblyDescription("大乐透概率可视化模拟程序")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Author: Lee")]
 [assembly: AssemblyProduct("SuperLotto")]

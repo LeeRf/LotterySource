@@ -18,6 +18,11 @@ namespace DoubleBalls
         [STAThread]
         static void Main()
         {
+            //设置全局异常处理
+            Application.ThreadException += Application_ThreadException;
+            AppDomain.CurrentDomain.UnhandledException += CurrentDomain_UnhandledException;
+            Application.SetUnhandledExceptionMode(UnhandledExceptionMode.CatchException);
+
             #region Do you agree to the declaration
 
             Config.Setting = Setting.LoadSetting();
@@ -36,11 +41,6 @@ namespace DoubleBalls
             }
 
             #endregion
-
-            //设置全局异常处理
-            Application.ThreadException += Application_ThreadException;
-            AppDomain.CurrentDomain.UnhandledException += CurrentDomain_UnhandledException;
-            Application.SetUnhandledExceptionMode(UnhandledExceptionMode.CatchException);
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

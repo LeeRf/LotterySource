@@ -85,7 +85,6 @@
             this.SoftwareExplain = new System.Windows.Forms.RichTextBox();
             this.AboutMePage = new System.Windows.Forms.TabPage();
             this.extendLabel9 = new DoubleBalls.Controls.ExtendLabel();
-            this.extendLabel8 = new DoubleBalls.Controls.ExtendLabel();
             this.extendLabel7 = new DoubleBalls.Controls.ExtendLabel();
             this.extendLabel6 = new DoubleBalls.Controls.ExtendLabel();
             this.lblBilibiliLink = new DoubleBalls.Controls.ExtendLabel();
@@ -102,7 +101,6 @@
             this.pictureBox30 = new System.Windows.Forms.PictureBox();
             this.pictureBox29 = new System.Windows.Forms.PictureBox();
             this.pictureBox28 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.picHand = new System.Windows.Forms.PictureBox();
             this.label15 = new System.Windows.Forms.Label();
             this.lblLengthways = new System.Windows.Forms.Label();
@@ -444,7 +442,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHand)).BeginInit();
             this.CardInterface.SuspendLayout();
             this.RandomPage.SuspendLayout();
@@ -1237,7 +1234,6 @@
             // 
             this.AboutMePage.BackColor = System.Drawing.Color.White;
             this.AboutMePage.Controls.Add(this.extendLabel9);
-            this.AboutMePage.Controls.Add(this.extendLabel8);
             this.AboutMePage.Controls.Add(this.extendLabel7);
             this.AboutMePage.Controls.Add(this.extendLabel6);
             this.AboutMePage.Controls.Add(this.lblBilibiliLink);
@@ -1254,7 +1250,6 @@
             this.AboutMePage.Controls.Add(this.pictureBox30);
             this.AboutMePage.Controls.Add(this.pictureBox29);
             this.AboutMePage.Controls.Add(this.pictureBox28);
-            this.AboutMePage.Controls.Add(this.pictureBox6);
             this.AboutMePage.Controls.Add(this.picHand);
             this.AboutMePage.Location = new System.Drawing.Point(4, 26);
             this.AboutMePage.Name = "AboutMePage";
@@ -1272,7 +1267,7 @@
             this.extendLabel9.Fillet = false;
             this.extendLabel9.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.extendLabel9.ForeColor = System.Drawing.Color.Black;
-            this.extendLabel9.Location = new System.Drawing.Point(414, 505);
+            this.extendLabel9.Location = new System.Drawing.Point(271, 506);
             this.extendLabel9.MouseEnterEffect = false;
             this.extendLabel9.Name = "extendLabel9";
             this.extendLabel9.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -1280,24 +1275,6 @@
             this.extendLabel9.Size = new System.Drawing.Size(161, 17);
             this.extendLabel9.TabIndex = 641;
             this.extendLabel9.Text = "Email：javaleerf@163.com";
-            // 
-            // extendLabel8
-            // 
-            this.extendLabel8.AutoSize = true;
-            this.extendLabel8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.extendLabel8.EnterColor = System.Drawing.Color.Black;
-            this.extendLabel8.EnterFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.extendLabel8.Fillet = false;
-            this.extendLabel8.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.extendLabel8.ForeColor = System.Drawing.Color.Black;
-            this.extendLabel8.Location = new System.Drawing.Point(265, 506);
-            this.extendLabel8.MouseEnterEffect = false;
-            this.extendLabel8.Name = "extendLabel8";
-            this.extendLabel8.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.extendLabel8.ShadowWidth = 8;
-            this.extendLabel8.Size = new System.Drawing.Size(103, 17);
-            this.extendLabel8.TabIndex = 639;
-            this.extendLabel8.Text = "VeChat：leeyoio";
             // 
             // extendLabel7
             // 
@@ -1505,7 +1482,7 @@
             this.pictureBox30.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox30.Enabled = false;
             this.pictureBox30.Image = global::DoubleBalls.Properties.Resources.email002;
-            this.pictureBox30.Location = new System.Drawing.Point(382, 501);
+            this.pictureBox30.Location = new System.Drawing.Point(239, 502);
             this.pictureBox30.Name = "pictureBox30";
             this.pictureBox30.Size = new System.Drawing.Size(25, 23);
             this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1540,19 +1517,6 @@
             this.pictureBox28.TabIndex = 631;
             this.pictureBox28.TabStop = false;
             this.pictureBox28.Tag = "1";
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Enabled = false;
-            this.pictureBox6.Image = global::DoubleBalls.Properties.Resources.VeChat_ico;
-            this.pictureBox6.Location = new System.Drawing.Point(232, 501);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 624;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Tag = "0";
             // 
             // picHand
             // 
@@ -3379,7 +3343,7 @@
             this.btnSaveSetting.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnSaveSetting.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnSaveSetting.Icon = null;
-            this.btnSaveSetting.Location = new System.Drawing.Point(720, 577);
+            this.btnSaveSetting.Location = new System.Drawing.Point(735, 578);
             this.btnSaveSetting.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnSaveSetting.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnSaveSetting.Name = "btnSaveSetting";
@@ -3404,7 +3368,7 @@
             this.btnRestoreDefault.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnRestoreDefault.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnRestoreDefault.Icon = null;
-            this.btnRestoreDefault.Location = new System.Drawing.Point(621, 577);
+            this.btnRestoreDefault.Location = new System.Drawing.Point(636, 578);
             this.btnRestoreDefault.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnRestoreDefault.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnRestoreDefault.Name = "btnRestoreDefault";
@@ -6445,11 +6409,11 @@
             this.ClientSize = new System.Drawing.Size(1155, 842);
             this.Controls.Add(this.panBody);
             this.Controls.Add(this.panTop);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1155, 842);
             this.Name = "DoubleBallView";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "中国福利彩票 双色球摇奖模拟程序  V1.0.0.0";
+            this.Text = "中国福利彩票 双色球摇奖模拟程序  V1.0.0.6";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DoubleBallView_FormClosing);
             this.Load += new System.EventHandler(this.DoubleBall_Load);
             this.SizeChanged += new System.EventHandler(this.DoubleBallView_SizeChanged);
@@ -6477,7 +6441,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHand)).EndInit();
             this.CardInterface.ResumeLayout(false);
             this.RandomPage.ResumeLayout(false);
@@ -6832,7 +6795,6 @@
         private System.Windows.Forms.TabPage UpdateInfo;
         private Controls.ExtendLabel extendLabel9;
         private System.Windows.Forms.PictureBox pictureBox30;
-        private Controls.ExtendLabel extendLabel8;
         private Controls.ExtendLabel extendLabel7;
         private Controls.ExtendLabel extendLabel6;
         private Controls.ExtendLabel lblBilibiliLink;
@@ -6847,7 +6809,6 @@
         private System.Windows.Forms.Label label29;
         private Controls.ExtendLabel extendLabel1;
         private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox picHand;
         private Controls.LeeLabel leeLabel11;
         private System.Windows.Forms.PictureBox pictureBox14;

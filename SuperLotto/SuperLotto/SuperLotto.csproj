@@ -50,6 +50,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo_ico.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -351,6 +354,7 @@
     <None Include="Resources\Work.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="logo_ico.ico" />
     <Content Include="Other\DLL\MaterialSkin.dll" />
     <None Include="Resources\skin1.png" />
   </ItemGroup>
