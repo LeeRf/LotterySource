@@ -12,7 +12,7 @@ using UITimer = System.Windows.Forms.Timer;
 namespace DoubleBalls.Controls
 {
     //退出循环委托
-    public delegate void ExitLoopWaitEventHandler();
+    public delegate void ExitLoopWaitEventHandler(bool userExit);
 
     public partial class FrmLoading : Form
     {
@@ -73,7 +73,7 @@ namespace DoubleBalls.Controls
 
         private void lblExit_Click(object sender, EventArgs e)
         {
-            exitEvent?.Invoke();
+            exitEvent?.Invoke(true);
         }
 
         private void FrmLoading_Shown(object sender, EventArgs e)

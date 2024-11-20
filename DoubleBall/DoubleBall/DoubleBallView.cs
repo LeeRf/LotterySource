@@ -480,12 +480,22 @@ namespace DoubleBalls
         /// <summary>
         /// 退出循环方法事件
         /// </summary>
-        private void ExitThatLoop()
+        private void ExitThatLoop(bool userExit = false)
         {
+            if (userExit)
+            {
+                Logger.Info($"user exit loop : {_loopRunLotteryCount}，exit condition : {cmbStopCondition.SelectedIndex}");
+            }
+            else
+            {
+                string prefixText = "did not meet expectations";
+                if (_loopRunLotterysFlag == 1) prefixText = "reach expectations";
+
+                Logger.Info(prefixText + $" loop count : {_loopRunLotteryCount}，exit condition : {cmbStopCondition.SelectedIndex}");
+            }
+
             _loopRunLotterysFlag = -1;
             LoopRunLotterysTimer.Stop();
-
-            Logger.Info($"early exit loop : {_loopRunLotteryCount}");
         }
 
         /// <summary>
@@ -505,8 +515,7 @@ namespace DoubleBalls
             if(_loopRunLotterysFlag == 1 || _loopRunLotteryCount >= _loopRunLotteryTotalCount)
             {
                 //恢复默认状态
-                _loopRunLotterysFlag = -1;
-                LoopRunLotterysTimer.Stop();
+                this.ExitThatLoop();
             }
             else
             {
